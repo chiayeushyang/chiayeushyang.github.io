@@ -1,0 +1,46 @@
+<style>
+        a:link {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(35, 239, 8);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: hotpink;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blue;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-position: inside;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        li {
+            font-size: 20px;
+        }
+
+        body {
+            background-color: lightgoldenrodyellow;
+            text-align: center;
+        }
+
+        .week {
+            margin: auto;
+            width: 28%;
+            padding-left: 5vw;
+            text-align: left;
+            background-color: aliceblue;
+        }
+    </style>
