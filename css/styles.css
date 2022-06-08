@@ -11442,7 +11442,7 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: rgba(0, 0, 30, 0.4);
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -11465,5 +11465,22 @@ header.masthead h1, header.masthead .h1 {
   background-size: 200px;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   margin-bottom: 20px;
+}
+
+.portfolio-modal .btn-close {
+  color: #1abc9c;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 2rem;
+    line-height: 1.3rem;
+  }
 }
