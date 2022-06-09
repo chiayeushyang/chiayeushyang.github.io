@@ -95,6 +95,12 @@
   }
 } */
 
+@media screen and (max-width: 1016px) {
+  .footer a{
+    width: 40%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .row {
 	flex-wrap: wrap;
@@ -121,6 +127,7 @@
 
   #column1 {
     width: 100%; 
+    order: 0;
   }
 
   .footer a{
