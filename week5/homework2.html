@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css/hw2.css">
+        <link rel="icon" type="image/png" href="images/github.png" />
+
+        <title>Homework 2</title>
+    </head>
+    <body>
+        <div id="container">
+            <div class="header">
+                <div><img id="logo" src="images/logo_Nebula.png"  /></div>
+
+                <div class="right">
+                    <div id="phonenumber"><a href="tel:010-7871683">0107871683</a></div>
+                    <div class="menu">
+                            <a href="#">Link1</a>
+                            <a href="#">Link2</a>
+                            <a href="#">Link3</a>
+                            <a href="#">Link4</a>
+                    </div>
+                </div>
+            </div>
+    
+            
+    
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+    
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/red_and_blue.png" width="100%" hieght="30%">
+                    <div class="text">Giant red nebula (NGC 2014) & blue nebula (NGC 2020)</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/EagleNebula.jpg" style="width:100%">
+                    <div class="text">Eagle Nebula</div>
+                </div>
+    
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/eskimo_nebula.jpg" style="width:100%">
+                    <div class="text">Eskimo Nebula</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/helixNebula.jpg" style="width:100%">
+                    <div class="text">Helix Nebula</div>
+                </div>
+    
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+    
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+    
+            <div class="content">
+                <div id="textContent">
+                    <h1>What is Nebula ? </h1>
+                    <p>
+                        Nebulae are made of dust and gases—mostly hydrogen and helium. The dust and gases in a nebula are very spread out, but gravity can slowly begin to pull together clumps of dust and gas. As these clumps get bigger and bigger, their gravity gets stronger and stronger.
+                        <br><br>
+                        Eventually, the clump of dust and gas gets so big that it collapses from its own gravity. The collapse causes the material at the center of the cloud to heat up-and this hot core is the beginning of a star.
+                    </p>
+                </div>
+                <div id="sidebar">
+                    <div class="link"><a href="#">Link1</a></div>
+                    <div class="link"><a href="#">Link1</a></div>
+                    <div class="link"><a href="#">Link1</a></div>
+                    <div class="link"><a href="#">Link1</a></div>
+                </div>
+            </div>
+    
+            <div class="footer">
+                <img src="images/github.png" width="8%">
+                <div><a href="https://github.com/ChiaYeuShyang/chiayeushyang.github.io" target="_blank">Copyright &copy; 2022 - Chia Yeu Shyang</a></div>
+            </div>
+        </div>
+    
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+    
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+    
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+    
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </body>
+</html>
