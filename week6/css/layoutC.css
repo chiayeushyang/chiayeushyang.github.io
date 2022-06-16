@@ -1,5 +1,6 @@
 .LOGO {
     grid-area: logo;
+    padding: 40px 0;
 }
 
 .BLANK {
@@ -12,26 +13,32 @@
 
 .PHONENUMBER {
     grid-area: pNumber;
+    padding: 10px 0;
 }
 
 .MENU {
     grid-area: menu;
+    padding: 10px 0;
 }
 
 .IMAGESLIDESHOW {
     grid-area: sshow;
+    padding: 60px 0;
 }
 
 .SIDEBAR {
     grid-area: sidebar;
+    padding: 150px 0;
 }
 
 .TEXTCONTENT {
     grid-area: textContent;
+    padding: 150px 0;
 }
 
 .FOOTER {
     grid-area: footer;
+    padding: 40px 0;
 }
 
 .grid-container {
@@ -50,6 +57,5 @@
 .grid-container>div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 20px 0;
     font-size: 30px;
 }
