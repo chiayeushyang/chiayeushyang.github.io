@@ -1,0 +1,134 @@
+.container {
+    background-color: #333;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 16px;
+    background-color: #f2f2f2;
+}
+
+#navbar a {
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #333;
+    color: black;
+    text-decoration: underline;
+}
+
+#navright {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    position: relative;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1.0;
+    color: #f2f2f2;
+    height: 560px;
+}
+
+div.center {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+h1.center {
+    margin: 0px;
+}
+
+div.bottomleft {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    font-size: 18px;
+}
+
+div.bottomright {
+    position: absolute;
+    border: #f2f2f2 2px dashed;
+    border-radius: 5%;
+    width: 30%;
+    padding: 20px;
+    bottom: 20px;
+    right: 30px;
+    font-size: 18px;
+}
+
+.bottomleft img {
+    width: 50px;
+    border: #f2f2f2 solid 3px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: #a2a0a0;
+}
+
+#travel {
+    display: flex;
+    margin-right: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerbottom {
+    display: flex;
+    justify-content: center;
+}
+
+#world {
+    margin-right: 10px;
+}
+
+#file {
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+h5 {
+    margin: 0px;
+}
+
+p {
+    margin: 5px 0px;
+}
+
+h4 {
+    color: rgb(175, 56, 56);
+    margin-top: 0px;
+}
