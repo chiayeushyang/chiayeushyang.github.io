@@ -1,0 +1,68 @@
+.LOGO {
+    grid-area: logo;
+}
+
+.BLANK {
+    grid-area: blank;
+}
+
+.PHONENUMBER {
+    grid-area: pNumber;
+}
+
+.MENU {
+    grid-area: menu;
+}
+
+.IMAGESLIDESHOW {
+    grid-area: sshow;
+}
+
+.FEAT1 {
+    grid-area: feat1;
+}
+
+.FEAT2 {
+    grid-area: feat2;
+}
+
+.FEAT3 {
+    grid-area: feat3;
+}
+
+.FEAT4 {
+    grid-area: feat4;
+}
+
+.SIDEBAR {
+    grid-area: sidebar;
+}
+
+.TEXTCONTENT {
+    grid-area: textContent;
+}
+
+.FOOTER {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'logo logo logo blank blank pNumber pNumber pNumber'
+        'menu menu menu menu menu menu menu menu'
+        'sshow sshow sshow sshow sshow sshow sshow sshow '
+        'feat1 feat1 feat2 feat2 feat3 feat3 feat4 feat4'
+        'textContent textContent textContent textContent textContent sidebar sidebar sidebar'
+        'footer footer footer footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
