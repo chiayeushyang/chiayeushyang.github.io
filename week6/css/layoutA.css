@@ -1,5 +1,6 @@
 .LOGO {
     grid-area: logo;
+    
 }
 
 .MENU {
@@ -8,30 +9,37 @@
 
 .IMAGESLIDESHOW {
     grid-area: sshow;
+    padding: 60px 0px;
 }
 
 .FEAT1 {
     grid-area: feat1;
+    padding: 50px 0px;
 }
 
 .FEAT2 {
     grid-area: feat2;
+    padding: 50px 0px;
 }
 
 .FEAT3 {
     grid-area: feat3;
+    padding: 50px 0px;
 }
 
 .SIDEBAR {
     grid-area: sidebar;
+    padding: 100px 0px;
 }
 
 .TEXTCONTENT {
     grid-area: textContent;
+    padding: 100px 0px;
 }
 
 .FOOTER {
     grid-area: footer;
+    padding: 30px 0px;
 }
 
 .grid-container {
@@ -50,6 +58,5 @@
 .grid-container>div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 20px 0;
     font-size: 30px;
 }
