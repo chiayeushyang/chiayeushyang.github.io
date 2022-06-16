@@ -35,9 +35,8 @@
 
 .content {
     position: relative;
-    background-image: url("../images/background.png");
+    background: linear-gradient( rgba(184, 184, 185, 0.064), rgba(0, 0, 0, 0.618)), url("../images/background.png");
     background-size: cover;
-    background-repeat: no-repeat;
     opacity: 1.0;
     color: #f2f2f2;
     height: 560px;
