@@ -1,13 +1,21 @@
 .LOGO {
     grid-area: logo;
+    height: 100px;
 }
 
 .BLANK {
     grid-area: blank;
 }
 
+.BLANK1 {
+    grid-area: blank1;
+}
+
+
 .PHONENUMBER {
     grid-area: pNumber;
+    position: relative;
+    top: 10px
 }
 
 .MENU {
@@ -16,30 +24,37 @@
 
 .IMAGESLIDESHOW {
     grid-area: sshow;
+    padding: 60px 0px;
 }
 
 .FEAT1 {
     grid-area: feat1;
+    padding: 30px 0px;
 }
 
 .FEAT2 {
     grid-area: feat2;
+    padding: 30px 0px;
 }
 
 .FEAT3 {
     grid-area: feat3;
+    padding: 30px 0px;
 }
 
 .FEAT4 {
     grid-area: feat4;
+    padding: 30px 0px;
 }
 
 .SIDEBAR {
     grid-area: sidebar;
+    padding: 100px 0px;
 }
 
 .TEXTCONTENT {
     grid-area: textContent;
+    padding: 100px 0px;
 }
 
 .FOOTER {
@@ -50,6 +65,7 @@
     display: grid;
     grid-template-areas:
         'logo logo logo blank blank pNumber pNumber pNumber'
+        'logo logo logo blank1 blank1 blank1 blank1 blank1'
         'menu menu menu menu menu menu menu menu'
         'sshow sshow sshow sshow sshow sshow sshow sshow '
         'feat1 feat1 feat2 feat2 feat3 feat3 feat4 feat4'
@@ -63,6 +79,5 @@
 .grid-container>div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 20px 0;
     font-size: 30px;
 }
