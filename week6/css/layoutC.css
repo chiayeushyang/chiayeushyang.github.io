@@ -1,0 +1,55 @@
+.LOGO {
+    grid-area: logo;
+}
+
+.BLANK {
+    grid-area: blank;
+}
+
+.BLANK1 {
+    grid-area: blank1;
+}
+
+.PHONENUMBER {
+    grid-area: pNumber;
+}
+
+.MENU {
+    grid-area: menu;
+}
+
+.IMAGESLIDESHOW {
+    grid-area: sshow;
+}
+
+.SIDEBAR {
+    grid-area: sidebar;
+}
+
+.TEXTCONTENT {
+    grid-area: textContent;
+}
+
+.FOOTER {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'logo logo logo blank blank pNumber pNumber pNumber'
+        'logo logo logo blank1 menu menu menu menu'
+        'sshow sshow sshow sshow sshow sshow sshow sshow '
+        'textContent textContent textContent textContent textContent sidebar sidebar sidebar'
+        'footer footer footer footer footer footer footer footer';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
