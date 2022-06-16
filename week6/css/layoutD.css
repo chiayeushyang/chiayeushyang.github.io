@@ -1,5 +1,6 @@
 .LOGO {
     grid-area: logo;
+    padding: 30px 0;
 }
 
 .BLOGMENU {
@@ -20,18 +21,25 @@
 
 .IMAGESLIDESHOW {
     grid-area: sshow;
+    padding: 50px 0;
 }
 
 .SIDEBAR {
     grid-area: sidebar;
+    padding: 160px 0;
+
 }
 
 .TEXTCONTENT {
     grid-area: textContent;
+    padding: 100px 0;
+
 }
 
 .FOOTER {
     grid-area: footer;
+    padding: 50px 0;
+
 }
 
 .grid-container {
@@ -51,6 +59,5 @@
 .grid-container>div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 20px 0;
     font-size: 30px;
 }
