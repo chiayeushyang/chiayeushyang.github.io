@@ -1,0 +1,94 @@
+/* Pre-set */
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+body {
+    margin: 0;
+}
+
+.test {
+    background-color: brown;
+}
+
+
+.container {    
+    height: 1000px;
+    background-color:rgb(177, 250, 226);
+    background-image: url("../images/Homework Images/Bg Shape@2x.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 60%;
+}
+
+.header {
+    width: 100%;
+}
+
+
+#marketing {
+    font-family:'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    width: 20%;
+    margin-top: 15px;
+    margin-left: 120px;
+}
+
+#marketing h3 {
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+#navbar {
+    width: 50%;
+    padding: 14px 16px;
+    margin-left: 210px;
+}
+
+
+#navbar a{
+    font-family:'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 0.9vw;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+}
+
+#navbar a:hover {
+    color: rgb(40, 108, 234);
+    text-decoration: underline;
+  }
