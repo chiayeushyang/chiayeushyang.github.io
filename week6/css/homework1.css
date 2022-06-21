@@ -44,9 +44,9 @@ body {
 }
 
 
-.container {    
+.container {
     height: 1000px;
-    background-color:rgb(177, 250, 226);
+    background-color: rgb(177, 250, 226);
     background-image: url("../images/Homework Images/Bg Shape@2x.png");
     background-repeat: no-repeat;
     background-position: top right;
@@ -59,7 +59,7 @@ body {
 
 
 #marketing {
-    font-family:'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
     font-weight: 700;
     width: 20%;
     margin-top: 15px;
@@ -78,17 +78,43 @@ body {
 }
 
 
-#navbar a{
-    font-family:'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+#navbar a {
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 0.9vw;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 #navbar a:hover {
-    color: rgb(40, 108, 234);
+    color: rgb(30, 224, 218);
     text-decoration: underline;
-  }
+}
+
+#socalmedia-nav {
+    align-content: space-between;
+    margin-top: 40vh;
+    margin-left: 80px;
+}
+
+#socalmedia-nav img {
+    padding: 10px 0px;
+    width: 10px;
+}
+
+#socalmedia-nav a:hover {
+    opacity: 0.5;
+}
+
+.vl {
+    position: relative;
+    left: 3px;
+    border-left: 3px solid #272194;
+    height: 30px;
+}
+
+.vl:hover{
+    opacity: 0.5;
+}
