@@ -7,8 +7,16 @@
     align-items: center;
 }
 
+.content-center {
+    align-content: center;
+}
+
 .justify-center {
     justify-content: center;
+}
+
+.self-center {
+    align-self: center;
 }
 
 .space-between {
@@ -35,6 +43,23 @@
     position: absolute;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.weight-700 {
+    font-weight: 700;
+}
+
+.title {
+    color: #42495b
+}
+
+.text-muted {
+    color: #6c757d
+}
+
+
 body {
     margin: 0;
 }
@@ -46,11 +71,11 @@ body {
 
 .container {
     height: 1000px;
-    background-color: rgb(177, 250, 226);
+    /* background-color: rgb(177, 250, 226); */
     background-image: url("../images/Homework Images/Bg Shape@2x.png");
     background-repeat: no-repeat;
     background-position: top right;
-    background-size: 60%;
+    background-size: 55%;
 }
 
 .header {
@@ -60,21 +85,26 @@ body {
 
 #marketing {
     font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
-    font-weight: 700;
+    position: relative;
+    bottom: 10px;
     width: 20%;
-    margin-top: 15px;
-    margin-left: 120px;
+    margin-left: 140px;
+}
+
+#marketing img{
+    object-fit: contain;
 }
 
 #marketing h3 {
+    font-size: 2.2vw;
     margin-left: 10px;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 #navbar {
     width: 50%;
-    padding: 14px 16px;
-    margin-left: 210px;
+    padding: 30px 16px;
+    margin-left: 290px;
 }
 
 
@@ -93,28 +123,66 @@ body {
     text-decoration: underline;
 }
 
-#socalmedia-nav {
+#socialmedia-nav {
     align-content: space-between;
-    margin-top: 40vh;
+    margin-top: 36vh;
     margin-left: 80px;
 }
 
-#socalmedia-nav img {
-    padding: 10px 0px;
-    width: 10px;
+#socialmedia-nav img {
+    padding: 20px 0px;
+    width: 12px;
 }
 
-#socalmedia-nav a:hover {
+#socialmedia-nav a:hover {
     opacity: 0.5;
 }
 
 .vl {
     position: relative;
-    left: 3px;
+    left: 4px;
     border-left: 3px solid #272194;
     height: 30px;
 }
 
 .vl:hover{
     opacity: 0.5;
+}
+
+#socialmedia {
+    position: relative;
+    bottom: 100px;
+    margin-left: 80px;
+    margin-right: 86px;
+}
+
+#socialmedia h1 {
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 3.3vw;
+    margin-bottom: 0px;
+}
+
+#socialmedia p {
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    font-size: 1vw;
+    margin-top: 10px;
+}
+
+#socialmedia span {
+    font-size: 5vw;
+}
+
+#content1-img {
+    width: 40%;
+}
+ 
+#mouse {
+    position: absolute;
+    right: 48%;
+    bottom: -40px;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 50%;
+    box-shadow: 0 8px 40px 0 #251fa55e, 0 6px 20px 0 #251fa55e;
 }
