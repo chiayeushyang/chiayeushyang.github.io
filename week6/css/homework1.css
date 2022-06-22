@@ -35,12 +35,25 @@
     text-align: center;
 }
 
+.lh-14 {
+    line-height: 1.4;
+}
+
+.deco-none {
+    text-decoration: none;
+}
+
 .relative {
     position: relative;
 }
 
 .absolute {
     position: absolute;
+}
+
+.b-20_r-40 {
+    bottom: 20px;
+    right: 40px;
 }
 
 .bold {
@@ -59,6 +72,96 @@
     color: #6c757d
 }
 
+/* Button */
+.btn {
+    background: linear-gradient(to right, #1a119e, #5248e3);
+    padding: 15px 40px;
+    border: 0;
+    border-radius: 50px;
+}
+
+.btn .btnspan {
+    color: white;
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif; 
+    font-size: 1vw;
+}
+
+.btnsmall{
+    background: linear-gradient(to right, #1a119e, #5248e3);
+    padding: 5px 15px;
+    border: 0;
+    border-radius: 50px;
+}
+
+.btnsmall .btnspan {
+    color: white;
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif; 
+    font-size: 0.7vw;
+}
+
+
+.btn:hover, .btnsmall:hover{
+    animation: btnrotate 0.7s ease-in-out both;
+}
+
+.btn:hover .btnspan, .btnsmall:hover .btnspan{
+    animation: btnstorm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+@keyframes btnrotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes btnstorm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
+
+/* Box */
+.box {
+    width: 20%;
+    height: 330px;
+    box-shadow: 0 8px 15px 0 #1b0ffc23;
+    border-radius: 35px;
+    margin: 0 40px;
+    padding: 14px 20px;
+}
 
 body {
     margin: 0;
@@ -70,7 +173,6 @@ body {
 
 
 .container {
-    height: 1000px;
     /* background-color: rgb(177, 250, 226); */
     background-image: url("../images/Homework Images/Bg Shape@2x.png");
     background-repeat: no-repeat;
@@ -91,7 +193,7 @@ body {
     margin-left: 140px;
 }
 
-#marketing img{
+#marketing img {
     object-fit: contain;
 }
 
@@ -125,7 +227,7 @@ body {
 
 #socialmedia-nav {
     align-content: space-between;
-    margin-top: 36vh;
+    margin-top: 30.5vh;
     margin-left: 80px;
 }
 
@@ -145,7 +247,7 @@ body {
     height: 30px;
 }
 
-.vl:hover{
+.vl:hover {
     opacity: 0.5;
 }
 
@@ -169,14 +271,14 @@ body {
     margin-top: 10px;
 }
 
-#socialmedia span {
+#socialspan {
     font-size: 5vw;
 }
 
 #content1-img {
     width: 40%;
 }
- 
+
 #mouse {
     position: absolute;
     right: 48%;
@@ -185,4 +287,83 @@ body {
     padding: 15px 20px;
     border-radius: 50%;
     box-shadow: 0 8px 40px 0 #1b0ffc23, 0 6px 20px 0 #1b0ffc23;
+}
+
+.content2 {
+    margin-top: 120px;
+}
+
+.content2 a {
+    text-decoration: none;
+}
+
+#content2-img {
+    width: 45%;
+    margin-left: 50px;
+}
+
+#content2-img img{
+    width: 80%;
+}
+
+#biography {
+    width: 50%;
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    position: relative;
+    bottom: 40px;
+    left: 40px;
+}
+
+#biography h4 {
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: #aba5fe;
+}
+
+#biography button {
+    margin-top: 40px;
+}
+
+#ourservice{
+    margin-top: 100px;
+    margin-left: 13vw;
+    width: 50%;
+    font-family:'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+}
+
+#ourservice h4 {
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: #aba5fe;
+}
+
+#ourservice h1 {
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+#content3-row1 {
+    font-family:'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    margin-top: 80px;
+}
+
+#content3-row1 h4 {
+    margin: 30px 0px;
+}
+
+#content3-row1 p {
+    font-size: 0.9vw;
+}
+
+#content3-row2 {
+    font-family:'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    margin-top: 100px;
+}
+
+#content3-row2 h4 {
+    margin: 30px 0px;
+}
+
+#content3-row2 p {
+    font-size: 0.9vw;
 }
