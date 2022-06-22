@@ -43,8 +43,8 @@
     margin-top: 20px;
 } 
 
-.mt-50 {
-    margin-top: 50px;
+.mt-30 {
+    margin-top: 30px;
 } 
 
 .deco-none {
@@ -578,7 +578,13 @@ h1.price {
 }
 
 #contact {
+    text-align: left;
     margin-left: 150px;
+}
+
+#contact h2{
+    text-align: left;
+    margin-left: 14px;
 }
 
 @media screen and (max-width: 600px) {
@@ -643,11 +649,31 @@ h1.price {
     }
 
     #footer div{
+        justify-content: center;
         width: 100%;
     }
 
+    #footer #logo {
+        margin-left: 0px;
+    }
+
+    #hours {
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    #quicklink {
+        margin: 20px 0px;
+        text-align: center;
+    }
+
     #contact {
-        margin: 0%;
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+    #contact h2{
+        margin: 0;
         text-align: center;
     }
 
