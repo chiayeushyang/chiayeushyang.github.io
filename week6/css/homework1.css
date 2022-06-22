@@ -91,7 +91,7 @@
 .btn .btnspan {
     color: white;
     font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
-    font-size: 1vw;
+    font-size: 15px;
 }
 
 .btnsmall {
@@ -104,7 +104,7 @@
 .btnsmall .btnspan {
     color: white;
     font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
-    font-size: 0.7vw;
+    font-size: 10px;
 }
 
 .inversebtn {
@@ -115,9 +115,8 @@
     border-radius: 50px;
 }
 
-
 .inversebtn .btnspan {
-    font-size: 1vw;
+    font-size: 15px;
 }
 
 .inversebtn:hover {
@@ -219,7 +218,9 @@ body {
 
 .container {
     /* background-color: rgb(177, 250, 226); */
-    max-width: 1920px;
+    max-width: 1800px;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-image: url("../images/Homework Images/Bg Shape@2x.png");
     background-repeat: no-repeat;
     background-position: top right;
@@ -228,6 +229,7 @@ body {
 
 .header {
     width: 100%;
+    flex-wrap: wrap;
 }
 
 
@@ -244,22 +246,21 @@ body {
 }
 
 #marketing h3 {
-    font-size: 2.2vw;
+    font-size: 30px;
     margin-left: 10px;
     margin-top: 60px;
 }
 
 #navbar {
-    width: 50%;
+    width: 40%;
     padding: 30px 16px;
     margin-left: 290px;
 }
 
-
 #navbar a {
     font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 0.9vw;
+    font-size: 15px;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
@@ -313,7 +314,7 @@ body {
 
 #socialmedia p {
     font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
-    font-size: 1vw;
+    font-size: 15px;
     margin-top: 10px;
 }
 
@@ -336,6 +337,7 @@ body {
 }
 
 .content2 {
+    flex-wrap: wrap;
     margin-top: 120px;
 }
 
@@ -361,7 +363,7 @@ body {
 }
 
 #biography h4 {
-    font-size: 1.2vw;
+    font-size: 20px;
     font-weight: 700;
     color: #aba5fe;
 }
@@ -378,7 +380,7 @@ body {
 }
 
 #ourservice h4 {
-    font-size: 1.2vw;
+    font-size: 20px;
     font-weight: 700;
     color: #aba5fe;
 }
@@ -390,6 +392,7 @@ body {
 
 #content3-row1 {
     font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    flex-wrap: wrap;
     margin-top: 80px;
 }
 
@@ -403,6 +406,7 @@ body {
 
 #content3-row2 {
     font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    flex-wrap: wrap;
     margin-top: 100px;
 }
 
@@ -429,7 +433,7 @@ body {
 }
 
 #content4-title h4 {
-    font-size: 1.2vw;
+    font-size: 20px;
     font-weight: 700;
     color: #aba5fe;
     margin-bottom: 15px;
@@ -489,15 +493,15 @@ h1.price {
     position: relative;
     font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
     flex-direction: column;
-    height: 1000px;
+    height: auto;
     background-image: url("../images/Homework Images/Bg Shape footer 2@2x.png"), url("../images/Homework Images/Bg Shape footer 1@2x.png");
-    background-size: 130%, 190%;
+    background-size:2000px, 2900px;
     background-repeat: no-repeat;
     background-position: -250px -100px , -1250px -500px ;
 }
 
 .content5 h4 {
-    font-size: 1.2vw;
+    font-size: 20px;
     font-weight: 700;
     color: #aba5fe;
     margin-top: 150px;
@@ -526,9 +530,9 @@ h1.price {
 }
 
 #footer {
-    position: absolute;
-    bottom: 20px;
+    margin-top: 290px;
     color: white;
+    flex-wrap: wrap;
 }
 
 #footer h1{
@@ -560,7 +564,7 @@ h1.price {
     font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
     text-decoration: none;
     color: white;
-    font-size: 1.1vw;
+    font-size: 15px;
     padding: 8px 0px;
 } 
 
@@ -576,3 +580,76 @@ h1.price {
 #contact {
     margin-left: 150px;
 }
+
+@media screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar {
+        margin: 0;
+        text-align: center;
+    }
+
+    #navbar a{
+        color: black;
+        box-shadow: 0 8px 40px 0 #1b0ffc23, 0 6px 20px 0 #1b0ffc23;
+        border-radius: 20px;
+    }
+
+    #marketing {
+        margin: 0%;
+        text-align: center;
+    }
+
+    #ourservice {
+        text-align: center;
+    }
+
+    #content3-row1 .box{
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    #content3-row1 p{
+        font-size: 2vw;
+        margin-bottom: 30px;
+    }
+
+    #content3-row2 .box{
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    #content3-row2 p{
+        font-size: 2vw;
+        margin-bottom: 30px;
+    }
+
+    #package {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Lbox {
+        margin-top: 40px;
+        width: 90%;
+    }
+
+    #footer {
+        flex-direction: column;
+    }
+
+    #footer div{
+        width: 100%;
+    }
+
+    #contact {
+        margin: 0%;
+        text-align: center;
+    }
+
+}
+  
