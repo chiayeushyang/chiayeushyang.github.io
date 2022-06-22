@@ -39,6 +39,14 @@
     line-height: 1.4;
 }
 
+.mt-20 {
+    margin-top: 20px;
+} 
+
+.mt-50 {
+    margin-top: 50px;
+} 
+
 .deco-none {
     text-decoration: none;
 }
@@ -76,35 +84,57 @@
 .btn {
     background: linear-gradient(to right, #1a119e, #5248e3);
     padding: 15px 40px;
-    border: 0;
+    border: 1px solid #1a119e;
     border-radius: 50px;
 }
 
 .btn .btnspan {
     color: white;
-    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif; 
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
     font-size: 1vw;
 }
 
-.btnsmall{
+.btnsmall {
     background: linear-gradient(to right, #1a119e, #5248e3);
     padding: 5px 15px;
-    border: 0;
+    border: 1px solid #1a119e;
     border-radius: 50px;
 }
 
 .btnsmall .btnspan {
     color: white;
-    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif; 
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
     font-size: 0.7vw;
 }
 
+.inversebtn {
+    background-color: white;
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    padding: 15px 40px;
+    border: 2px solid #1a119e;
+    border-radius: 50px;
+}
 
-.btn:hover, .btnsmall:hover{
+
+.inversebtn .btnspan {
+    font-size: 1vw;
+}
+
+.inversebtn:hover {
+    background: linear-gradient(to right, #1a119e, #5248e3);
+    color: white;
+}
+
+.btn:hover,
+.btnsmall:hover,
+.inversebtn:hover {
+    cursor: pointer;
     animation: btnrotate 0.7s ease-in-out both;
 }
 
-.btn:hover .btnspan, .btnsmall:hover .btnspan{
+.btn:hover .btnspan,
+.btnsmall:hover .btnspan,
+.inversebtn:hover .btnspan {
     animation: btnstorm 0.7s ease-in-out both;
     animation-delay: 0.06s;
 }
@@ -157,14 +187,29 @@
 .box {
     width: 20%;
     height: 330px;
+    background-color: white;
     box-shadow: 0 8px 15px 0 #1b0ffc23;
     border-radius: 35px;
     margin: 0 40px;
     padding: 14px 20px;
 }
 
+.Lbox {
+    width: 20%;
+    height: 405px;
+    background-color: white;
+    border-radius: 35px;
+    margin: 0 40px;
+    padding: 14px 20px;
+}
+
+.Lbox:hover {
+    box-shadow: 0 8px 15px 0 #1b0ffc23;
+}
+
 body {
     margin: 0;
+    overflow-x: hidden;  
 }
 
 .test {
@@ -174,6 +219,7 @@ body {
 
 .container {
     /* background-color: rgb(177, 250, 226); */
+    max-width: 1920px;
     background-image: url("../images/Homework Images/Bg Shape@2x.png");
     background-repeat: no-repeat;
     background-position: top right;
@@ -302,7 +348,7 @@ body {
     margin-left: 50px;
 }
 
-#content2-img img{
+#content2-img img {
     width: 80%;
 }
 
@@ -324,11 +370,11 @@ body {
     margin-top: 40px;
 }
 
-#ourservice{
+#ourservice {
     margin-top: 100px;
     margin-left: 13vw;
     width: 50%;
-    font-family:'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
 }
 
 #ourservice h4 {
@@ -343,7 +389,7 @@ body {
 }
 
 #content3-row1 {
-    font-family:'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
     margin-top: 80px;
 }
 
@@ -356,7 +402,7 @@ body {
 }
 
 #content3-row2 {
-    font-family:'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
     margin-top: 100px;
 }
 
@@ -366,4 +412,167 @@ body {
 
 #content3-row2 p {
     font-size: 0.9vw;
+}
+
+.content3 {
+    margin-bottom: 250px;
+}
+
+.content4 {
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    background-color: #eceaff;
+    padding: 30px;
+}
+
+#content4-title {
+    padding-top: 20px;
+}
+
+#content4-title h4 {
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: #aba5fe;
+    margin-bottom: 15px;
+}
+
+#content4-title h1 {
+    font-size: 3vw;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 80px;
+}
+
+#Lbox1 h2 {
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+#Lbox2 h2 {
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+#Lbox3 h2 {
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+h1.price {
+    margin: 40px 0px;
+    color: #1203e1;
+}
+
+#dots {
+    margin-top: 60px;
+}
+
+#dots a {
+    cursor: pointer;
+    height: 5px;
+    width: 5px;
+    margin: 0 5px;
+    border: 1px solid #982ff3;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#dots a:hover {
+    background-color: #9790fe;
+    height: 10px;
+    width: 10px;
+}
+
+.content5 {
+    position: relative;
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    flex-direction: column;
+    height: 1000px;
+    background-image: url("../images/Homework Images/Bg Shape footer 2@2x.png"), url("../images/Homework Images/Bg Shape footer 1@2x.png");
+    background-size: 130%, 190%;
+    background-repeat: no-repeat;
+    background-position: -250px -100px , -1250px -500px ;
+}
+
+.content5 h4 {
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: #aba5fe;
+    margin-top: 150px;
+    margin-bottom: 8px;
+}
+
+.content5 h1 {
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+.search-container {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.search-container input {
+    width: 25vw;
+    height: 48px;
+    background-color: #f6f7fb;
+    border: 0;
+}
+
+.search-container a {
+    margin-left: 20px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+}
+
+#footer h1{
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+}
+
+#footer img {
+    margin: 0px 17px;
+}
+
+#footer #logo {
+    margin-left: 170px;
+    margin-bottom: 60px;
+}
+
+#logospan {
+    line-height: 1.9;
+    font-size: 2.7vw;
+}
+
+#quicklink {
+    flex-direction: column;
+    text-align: left;
+    margin-left: 150px;
+}
+
+#quicklink a {
+    font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1vw;
+    padding: 8px 0px;
+} 
+
+#quicklink a:hover {
+    color:#aba5fe ;
+}
+
+#hours {
+    margin-left: 130px;
+    text-align: left;
+}
+
+#contact {
+    margin-left: 150px;
 }
