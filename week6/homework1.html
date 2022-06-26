@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0e2f315c7.js" crossorigin="anonymous"></script>
 
     <title>
         Week 6 Homework 1
@@ -17,9 +18,25 @@
 </head>
 
 <body>
+    
     <div class="container">
+        <div id="socialmedia-nav">
+            <div>
+                <a href="#"><img src="images/Homework Images/003-facebook@2x.png"></a>
+            </div>
+            <div>
+                <a href="#"><img src="images/Homework Images/002-google-plus@2x.png"></a>
+            </div>
+            <div>
+                <a href="#"><img src="images/Homework Images/001-twitter-logo-silhouette@2x.png"></a>
+            </div>
+            <div>
+                <a href="#"><img src="images/Homework Images/instagram@2x.png"></a>
+            </div>
+            <div class="vl"></div>
+        </div>
         <!-- Header -->
-        <div class="header flex text-center">
+        <div class="header flex text-center space-around">
             <div class="flex justify-center" id="marketing">
                 <img src="images/Homework Images/Group 1539@2x.png" width="70vw">
                 <h3 class="title weight-700">Marketing</h3>
@@ -29,37 +46,25 @@
                 <a href="#ourservice">SERVICES</a>
                 <a href="#content4-title">PRICES</a>
                 <a href="#contact">CONTACT</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i id="icon" class="fa-solid fa-magnifying-glass-plus fa-beat"></i>
+                </a>
             </div>
         </div>
         <!-- Content row 1 -->
-        <div class="content1 flex ">
-            <div id="socialmedia-nav">
-                <div>
-                    <a href="#"><img src="images/Homework Images/003-facebook@2x.png"></a>
-                </div>
-                <div>
-                    <a href="#"><img src="images/Homework Images/002-google-plus@2x.png"></a>
-                </div>
-                <div>
-                    <a href="#"><img src="images/Homework Images/001-twitter-logo-silhouette@2x.png"></a>
-                </div>
-                <div>
-                    <a href="#"><img src="images/Homework Images/instagram@2x.png"></a>
-                </div>
-                <div class="vl"></div>
-            </div>
+        <div class="content1 space-between relative flex ">
             <div class="self-center" id="socialmedia">
                 <h1 class="title">SOCIAL MEDIA <br> <span class="weight-700" id="socialspan">FOR BUSINESS!</span></h1>
                 <p class="text-muted weight-700">PERFORMANCE BASED SOCIAL MEDIA AGENCY <br> WE ARE LOREM MEDIA</p>
                 <a class="deco-none" href="#">
-                    <button class="btn flex weight-700">
+                    <button id="freeAudit" class="btn flex weight-700">
                         <span class="btnspan">GET A FREE AUDIT</span>
                     </button>
                 </a>
             </div>
             <div id="content1-img">
-                <img id="mouse" src="images/Homework Images/mouse_2x-removebg-preview.png" width="70px" />
-                <img src="images/Homework Images/Group 1423@2x.png" width="100%" />
+                <img id="mouse" src="images/Homework Images/mouse_2x-removebg-preview.png" width="50px" />
+                <img id="shout" src="images/Homework Images/Group 1423@2x.png" width="100%" />
             </div>
         </div>
 
@@ -315,6 +320,25 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar");
+            if (x.className === "flex justify-center") {
+                x.className += " responsive";
+            } else {
+                x.className = "flex justify-center";
+            }
+
+            var x = document.getElementById("icon");
+            if (x.className === "fa-solid fa-magnifying-glass-plus fa-beat") {
+                x.className = "fa-solid fa-magnifying-glass-minus fa-beat";
+            } else {
+                x.className = "fa-solid fa-magnifying-glass-plus fa-beat";
+            }
+        }
+    </script>
+
 </body>
 
 </html>

@@ -41,11 +41,11 @@
 
 .mt-20 {
     margin-top: 20px;
-} 
+}
 
 .mt-30 {
     margin-top: 30px;
-} 
+}
 
 .deco-none {
     text-decoration: none;
@@ -185,7 +185,7 @@
 /* Box */
 .box {
     width: 20%;
-    height: 330px;
+    height: auto;
     background-color: white;
     box-shadow: 0 8px 15px 0 #1b0ffc23;
     border-radius: 35px;
@@ -195,7 +195,7 @@
 
 .Lbox {
     width: 20%;
-    height: 405px;
+    height: auto;
     background-color: white;
     border-radius: 35px;
     margin: 0 40px;
@@ -208,7 +208,7 @@
 
 body {
     margin: 0;
-    overflow-x: hidden;  
+    overflow-x: hidden;
 }
 
 .test {
@@ -218,7 +218,9 @@ body {
 
 .container {
     /* background-color: rgb(177, 250, 226); */
-    max-width: 1800px;
+    overflow-x: hidden ;
+    max-width: 1920px;
+    margin: auto;
     flex-direction: column;
     flex-wrap: wrap;
     background-image: url("../images/Homework Images/Bg Shape@2x.png");
@@ -235,10 +237,8 @@ body {
 
 #marketing {
     font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
-    position: relative;
-    bottom: 10px;
-    width: 20%;
-    margin-left: 140px;
+    width: 29%;
+
 }
 
 #marketing img {
@@ -254,7 +254,6 @@ body {
 #navbar {
     width: 40%;
     padding: 30px 16px;
-    margin-left: 290px;
 }
 
 #navbar a {
@@ -272,10 +271,14 @@ body {
     text-decoration: underline;
 }
 
+#icon {
+    display: none;
+}
+
 #socialmedia-nav {
-    align-content: space-between;
-    margin-top: 30.5vh;
-    margin-left: 80px;
+    position: fixed;
+    left: 50px;
+    top: 50%;
 }
 
 #socialmedia-nav img {
@@ -299,16 +302,20 @@ body {
 }
 
 #socialmedia {
-    position: relative;
-    bottom: 100px;
-    margin-left: 80px;
+    padding-bottom: 100px;
+    margin-left: 170px;
     margin-right: 86px;
+}
+
+#shout {
+    position: relative;
+    right: 10%;
 }
 
 #socialmedia h1 {
     font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
     font-weight: normal;
-    font-size: 3.3vw;
+    font-size: 40px;
     margin-bottom: 0px;
 }
 
@@ -319,7 +326,7 @@ body {
 }
 
 #socialspan {
-    font-size: 5vw;
+    font-size: 60px;
 }
 
 #content1-img {
@@ -328,9 +335,10 @@ body {
 
 #mouse {
     position: absolute;
-    right: 48%;
-    bottom: -40px;
+    right: 50%;
+    bottom: -100px;
     background-color: white;
+    padding: 7px 15px;
     border-radius: 50%;
     box-shadow: 0 8px 40px 0 #1b0ffc23, 0 6px 20px 0 #1b0ffc23;
 }
@@ -374,7 +382,7 @@ body {
 #ourservice {
     margin-top: 100px;
     margin-left: 13vw;
-    width: 50%;
+
     font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
 }
 
@@ -385,7 +393,7 @@ body {
 }
 
 #ourservice h1 {
-    font-size: 3vw;
+    font-size: 50px;
     font-weight: 700;
 }
 
@@ -401,6 +409,7 @@ body {
 
 #content3-row1 p {
     font-size: 14px;
+    margin-bottom: 70px;
 }
 
 #content3-row2 {
@@ -415,6 +424,7 @@ body {
 
 #content3-row2 p {
     font-size: 14px;
+    margin-bottom: 70px;
 }
 
 .content3 {
@@ -439,7 +449,7 @@ body {
 }
 
 #content4-title h1 {
-    font-size: 3vw;
+    font-size: 50px;
     font-weight: 700;
     margin-top: 0px;
     margin-bottom: 80px;
@@ -494,9 +504,9 @@ h1.price {
     flex-direction: column;
     height: auto;
     background-image: url("../images/Homework Images/Bg Shape footer 2@2x.png"), url("../images/Homework Images/Bg Shape footer 1@2x.png");
-    background-size:2000px, 2900px;
+    background-size: 2000px, 2900px;
     background-repeat: no-repeat;
-    background-position: -250px -100px , -1250px -500px ;
+    background-position: -250px -100px, -1250px -500px;
 }
 
 .content5 h4 {
@@ -534,9 +544,9 @@ h1.price {
     flex-wrap: wrap;
 }
 
-#footer h1{
+#footer h1 {
     font-family: 'DM Sans', Courier, monospace, 'Times New Roman', Times, serif;
-    font-size: 2vw;
+    font-size: 37px;
 }
 
 #footer img {
@@ -550,7 +560,7 @@ h1.price {
 
 #logospan {
     line-height: 1.9;
-    font-size: 2.7vw;
+    font-size: 43px;
 }
 
 #quicklink {
@@ -565,10 +575,10 @@ h1.price {
     color: white;
     font-size: 15px;
     padding: 8px 0px;
-} 
+}
 
 #quicklink a:hover {
-    color:#aba5fe ;
+    color: #aba5fe;
 }
 
 #hours {
@@ -581,24 +591,87 @@ h1.price {
     margin-left: 150px;
 }
 
-#contact h2{
+#contact h2 {
     text-align: left;
     margin-left: 14px;
 }
+
+@media screen and (max-width: 1200px) {
+    #mouse {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #content2-img {
+        width: 50%;
+        margin: auto;
+    }
+
+    #biography {
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+        padding: 0 10%;
+    }
+
+}
+
+
 @media screen and (max-width: 900px) {
+    #navbar a:not(:last-child) {
+        display: none;
+    }
+
+    .responsive#navbar {
+        margin: 0;
+        text-align: center;
+    }
+
+    .responsive#navbar a:not(:last-child){
+        display: block;
+        color: black;
+        box-shadow: 0 8px 40px 0 #1b0ffc23, 0 6px 20px 0 #1b0ffc23;
+        border-radius: 20px;
+    }
+
+    #socialmedia-nav {
+        display: none;
+    }
+
+    #icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    
+
     .box {
         width: 36%;
     }
- }
+}
 
 
 @media screen and (max-width: 600px) {
+    .container {
+        background-size: 100px;
+    }
+
     .header {
         flex-direction: column;
         align-items: center;
     }
+    #socialmedia h1 {
+        font-size: 3.3vw;
+    }
 
-    #navbar {
+    #socialspan {
+        font-size: 4.7vw;
+    }
+
+    /* #navbar {
         margin: 0;
         text-align: center;
     }
@@ -607,6 +680,10 @@ h1.price {
         color: black;
         box-shadow: 0 8px 40px 0 #1b0ffc23, 0 6px 20px 0 #1b0ffc23;
         border-radius: 20px;
+    } */
+
+    #freeAudit {
+        margin: auto;
     }
 
     #marketing {
@@ -614,26 +691,39 @@ h1.price {
         text-align: center;
     }
 
-    #ourservice {
-        text-align: center;
+    #content1-img {
+        display: none;
     }
 
-    #content3-row1 .box{
+    #socialmedia {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0px; 
+        margin-left: 0px; 
+        margin-right: 0px;
+    }
+
+    #ourservice {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    #content3-row1 .box {
         width: 100%;
         margin: 20px 0px;
     }
 
-    #content3-row1 p{
+    #content3-row1 p {
         font-size: 2vw;
         margin-bottom: 30px;
     }
 
-    #content3-row2 .box{
+    #content3-row2 .box {
         width: 100%;
         margin: 20px 0px;
     }
 
-    #content3-row2 p{
+    #content3-row2 p {
         font-size: 2vw;
         margin-bottom: 30px;
     }
@@ -653,7 +743,7 @@ h1.price {
         flex-direction: column;
     }
 
-    #footer div{
+    #footer div {
         justify-content: center;
         width: 100%;
     }
@@ -677,10 +767,9 @@ h1.price {
         text-align: center;
     }
 
-    #contact h2{
+    #contact h2 {
         margin: 0;
         text-align: center;
     }
 
 }
-  
