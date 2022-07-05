@@ -24,13 +24,30 @@
 
 <body>
     <div id="container">
-        <div class="flex" id="menu">
-            <div class="flex align-center" id="logo">
+        <header class="flex j-a a-c" id="menu">
+            <div class="flex a-c" id="menu-logo">
                 <img src="images/logo.png">
                 <h4>Nebula</h4>
             </div>
-        </div>
+            <div id="menu-main">
+                <ul class="flex text">
+                    <li><a href="#origins">Origins</a></li>
+                    <li><a href="#list">List</a></li>
+                    <li><a href="#end">End</a></li>
+                    <li><a href="#details">Details</a></li>
+                </ul>
+            </div>
+            <div class="flex a-c j-c" id="menu-home">
+                <a href="#">Home</a>
+            </div>
+        </header>
     </div>
-</body>
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var h = document.querySelector("#menu");
+        h.classList.toggle("sticky", window.scrollY > 0);
+    })
 
+</script>
+</body>
 </html>

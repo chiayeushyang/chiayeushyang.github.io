@@ -6,53 +6,59 @@
     --text_Dark_Gray: rgba(57, 20, 0, 0.64);
     --text_Light: #FFFFFF;
     --text_Light_Accent: #EF6D58;
-    --text_Light_Gray:  rgba(255, 255, 255, 0.64);
+    --text_Light_Gray: rgba(255, 255, 255, 0.64);
 }
 
 .flex {
     display: flex;
 }
 
-.flex-row {
+.f-r {
     flex-direction: row;
 }
 
-.flex-column {
+.f-c {
     flex-direction: column;
 }
 
-.text-center {
+.t-c {
     text-align: center;
 }
 
-.align-center {
+.a-c {
     align-items: center;
 }
 
-.content-center {
+.c-c {
     align-content: center;
 }
 
-.justify-center {
+.j-c {
     justify-content: center;
 }
 
-.justify-between {
+.j-b {
     justify-content: space-between;
 }
 
-.justify-around {
+.j-a {
     justify-content: space-around;
 }
 
-.justify-evenly {
+.j-e {
     justify-content: space-evenly;
 }
 
+.t-d-n {
+    text-decoration: none;
+}
+
 /* text */
+* {
+    font-family: 'Epilogue', 'Times New Roman';
+}
 
 h1 {
-    font-family: 'Epilogue', 'Times New Roman';
     font-style: normal;
     font-weight: 800;
     font-size: 72px;
@@ -61,7 +67,6 @@ h1 {
 }
 
 h2 {
-    font-family: 'Epilogue';
     font-style: normal;
     font-weight: 800;
     font-size: 56px;
@@ -70,7 +75,6 @@ h2 {
 }
 
 h3 {
-    font-family: 'Epilogue';
     font-style: normal;
     font-weight: 800;
     font-size: 40px;
@@ -78,7 +82,6 @@ h3 {
 }
 
 h4 {
-    font-family: 'Epilogue';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -86,7 +89,6 @@ h4 {
 }
 
 h5 {
-    font-family: 'Epilogue';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -96,7 +98,6 @@ h5 {
 }
 
 .label {
-    font-family: 'Epilogue';
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -105,7 +106,6 @@ h5 {
 }
 
 .text-big {
-    font-family: 'Epilogue';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -113,7 +113,6 @@ h5 {
 }
 
 .text {
-    font-family: 'Epilogue';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -121,7 +120,6 @@ h5 {
 }
 
 .text-small {
-    font-family: 'Epilogue';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -139,13 +137,65 @@ body {
 
 #container {
     max-width: 1920px;
+    margin: auto;
+    height: 10000px;
     background-color: #EF6D58;
 }
 
-#menu {
+header {
+    width: 100%;
+    transition: 0.6s;
+}
+
+#menu, #menu a {
     color: var(--text_Light);
 }
 
-#logo img {
-    margin-right: 10px;
+#menu a {
+    text-decoration: none;
 }
+
+#menu-logo img {
+    margin-right: 11px;
+}
+
+#menu-main ul {
+    padding: 0;
+    list-style: none;
+}
+
+#menu-main li {
+    padding: 5px 45px;
+
+}
+
+#menu-home {
+    width: 138px;
+    height: 48px;
+    font-weight: 900;
+    box-shadow: -2px 4px 5px 0px rgba(22, 5, 207, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.295743);
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+/* ------------- Menu animation when scroll down -------------  */
+
+#menu.sticky {
+    position: sticky;
+    top: 0%;
+    background: #ffffff;
+    color: #3F3351;
+    height: 90px;
+}
+
+#menu.sticky a{
+    color: #3F3351;
+}
+
+.sticky #menu-home {
+    border: none;
+    box-shadow: 0px 5px 10px 0px rgba(22, 5, 207, 0.364);
+}
+
+/* ----------------------------------------------------------- */
