@@ -139,20 +139,40 @@ body {
     max-width: 1920px;
     margin: auto;
     height: 10000px;
-    background-color: #EF6D58;
+    background-color: #080302;
+}
+
+#banner {
+    position: relative;
+    top: -70px;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.51) 10%, rgba(0,0,0,0) 20%), url(../images/content/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    background-size: 100%;
 }
 
 header {
     width: 100%;
-    transition: 0.6s;
+    z-index: 1;
 }
 
+#menu{
+    height: 70px;
+    z-index: 1;
+}
 #menu, #menu a {
     color: var(--text_Light);
+    transition: 1s;
+    z-index: 1;
 }
 
 #menu a {
     text-decoration: none;
+    z-index: 1;
+}
+#menu-logo {
+    z-index: 1;
 }
 
 #menu-logo img {
@@ -165,8 +185,8 @@ header {
 }
 
 #menu-main li {
-    padding: 5px 45px;
-
+    padding: 5px 4vw;
+    z-index: 1;
 }
 
 #menu-home {
@@ -177,20 +197,29 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.295743);
     border-radius: 6px;
     text-transform: uppercase;
+    z-index: 1;
 }
+
 
 /* ------------- Menu animation when scroll down -------------  */
 
 #menu.sticky {
     position: sticky;
     top: 0%;
-    background: #ffffff;
-    color: #3F3351;
-    height: 90px;
+    background-color: #FFFFFF;
+    height: 70px;
+    padding: 5px 0px;
+    transition: ease-in-out 1s;
 }
 
-#menu.sticky a{
+#menu.sticky h4{
     color: #3F3351;
+    transition: 1s;
+}
+
+#menu.sticky ul li a{
+    color: #3F3351;
+    transition: ease-in-out 2s;
 }
 
 .sticky #menu-home {
@@ -198,4 +227,30 @@ header {
     box-shadow: 0px 5px 10px 0px rgba(22, 5, 207, 0.364);
 }
 
+.sticky #menu-home a {
+    color: #3F3351;
+    transition: 1s;
+}
+
 /* ----------------------------------------------------------- */
+
+
+@media (max-width: 992px) {
+    #menu {
+        justify-content: space-between;
+    }
+
+    #menu-logo {
+        position: relative;
+        left: 10px;
+    }
+
+    #menu-home {
+        position: relative;
+        right: 10px;
+    }
+
+    #menu-main{
+      display: none;
+    }
+}
