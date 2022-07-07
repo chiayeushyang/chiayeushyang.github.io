@@ -212,7 +212,7 @@ header {
     top: 0%;
     background-color: #FFFFFF;
     height: 65px;
-    padding: 5px 0px;
+    /* padding: 5px 0px; */
 }
 
 #menu.sticky h4{
@@ -282,7 +282,7 @@ header {
 
     #menu-main ul{
       flex-direction: column;
-      margin-top: 7px;
+      margin-top: 0px;
     }
     
     #menu-home {
