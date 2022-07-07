@@ -1,0 +1,79 @@
+body {
+    background-color: antiquewhite;
+    color: rgb(12, 132, 6);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+fieldset {
+    padding: 14px 16px;
+    margin: 0px -1vw; 
+    
+}
+
+::placeholder {
+    color: #33b745;
+}
+
+#email, #phone {
+    width: 49%;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input[type=text].half, select{
+    width: 49%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+select {
+    color: #33b745;
+}
+
+input[type=text].full{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+#myForm {
+max-width: 40%;
+margin: auto;
+padding-top: 10px;
+background-color: #acf0de6d;
+}
+
+#email-phone {
+    display: flex;
+}
+
+#phone {
+    margin-left: 4px;
+}
+
+#submit {
+    text-align: center;
+}
+
+#submit input{
+    text-align: center;
+    background-color: #23622B;
+    color: white;
+    padding: 10px 33px;
+    border: 1px solid saddlebrown;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 730px) {
+    #myForm {
+        max-width: 80%;}
+}
