@@ -126,6 +126,8 @@ h5 {
     line-height: 24px;
 }
 
+.btn {}
+
 
 
 
@@ -146,16 +148,42 @@ body {
     position: relative;
     top: -70px;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.51) 10%, rgba(0,0,0,0) 20%), url(../images/content/bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.51) 10%, rgba(0, 0, 0, 0) 20%), url(../images/content/bg.jpg);
     border-radius: 24px;
     background-repeat: no-repeat;
     background-position: center 40%;
     background-size: 100%;
 }
 
-#title {
+#title h1 {
     position: absolute;
-    top:20%;
+    color: var(--text-light);
+    top: 20%;
+    left: 10%
+}
+
+#title p {
+    position: absolute;
+    color: var(--text-light);
+    opacity: 0.64;
+    top: 55%;
+    left: 10%
+}
+
+#title a {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: absolute;
+    padding: 16px 52px;
+    border-radius: 6px;
+    background: #864879;
+    color: var(--text-light);
+    top: 70%;
     left: 10%
 }
 
@@ -168,7 +196,8 @@ header {
 
 /* Navbar */
 
-#menu, #menu a {
+#menu,
+#menu a {
     color: var(--text_Light);
     transition: 1s;
 }
@@ -190,6 +219,10 @@ header {
     padding: 5px 4vw;
 }
 
+#menu-main a:first-child {
+    display: none;
+}
+
 #menu-home {
     width: 138px;
     height: 48px;
@@ -201,12 +234,13 @@ header {
 }
 
 #menu-home a:not(:first-child) {
-    display: none; 
+    display: none;
 }
 
 /* Hover */
 
-#menu a:hover, #menu h4:hover {
+#menu a:hover,
+#menu h4:hover {
     color: #f65ed3;
     transition: 0.3s;
     cursor: pointer;
@@ -223,12 +257,12 @@ header {
     /* padding: 5px 0px; */
 }
 
-#menu.sticky h4{
+#menu.sticky h4 {
     color: #3F3351;
     transition: color 0.3s;
 }
 
-#menu.sticky ul a li{
+#menu.sticky ul a li {
     color: #3F3351;
     transition: color 0.5s;
 }
@@ -243,7 +277,9 @@ header {
     transition: color 0.3s;
 }
 
-#menu.sticky ul a li:hover, #menu.sticky h4:hover, #menu.sticky a:hover{
+#menu.sticky ul a li:hover,
+#menu.sticky h4:hover,
+#menu.sticky a:hover {
     color: #0feed8;
 }
 
@@ -266,7 +302,7 @@ header {
         justify-content: space-between;
     }
 
-    #menu h4{
+    #menu h4 {
         margin: 0;
     }
 
@@ -274,7 +310,7 @@ header {
         position: relative;
         left: 10px;
     }
-   
+
     #menu-main {
         width: 100%;
         height: 0;
@@ -282,11 +318,15 @@ header {
         display: none;
     }
 
-    #menu-main ul{
-      flex-direction: column;
-      margin-top: 0px;
+    a#home li {
+        display: none;
     }
-    
+
+    #menu-main ul {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
     #menu-home {
         width: auto;
         padding: 0px 20px;
@@ -295,42 +335,47 @@ header {
     }
 
     #menu-home a:last-child {
-        display: block; 
+        display: block;
     }
 
     #menu-home a:not(:last-child) {
-        display: none; 
+        display: none;
     }
 
     .responsive#menu-main {
         display: block;
     }
 
-    .responsive#menu-main li{
+    .responsive#menu-main a:first-child {
+        display: block;
+    }
+
+    .responsive#menu-main li {
         background-color: #1f0567a5;
         font-weight: bold;
         padding: 14px 16px;
         animation: slide-down 1s ease-out;
     }
 
-    .sticky .responsive#menu-main li{
+    .sticky .responsive#menu-main li {
         background-color: white;
         color: rgb(142, 142, 142);
         font-weight: bold;
     }
 
-    .sticky .responsive#menu-main li:hover{
+    .sticky .responsive#menu-main li:hover {
         background-color: whitesmoke;
         font-size: larger;
         font-weight: bold;
     }
 
-    .responsive#menu-main li:hover{
+    .responsive#menu-main li:hover {
         background-color: #830cc862;
         font-size: larger;
     }
 
-    .responsive#menu-home, .responsive#menu-logo {
+    .responsive#menu-home,
+    .responsive#menu-logo {
         margin-top: 7px;
     }
 
@@ -350,6 +395,23 @@ header {
 @media (max-width: 600px) {
     #banner {
         background-size: 210%;
+    }
+
+    #title h1 {
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: -1px;
+        text-align: center;
+        width: 60%;
+        left: auto;
+    }
+
+    #title p {
+        left: auto;
+    }
+
+    #title a {
+        left: auto;
     }
 
 }

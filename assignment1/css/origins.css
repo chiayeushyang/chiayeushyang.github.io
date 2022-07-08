@@ -178,6 +178,10 @@ header {
     padding: 5px 4vw;
 }
 
+#menu-main a:first-child {
+    display: none;
+}
+
 #menu-home {
     width: 138px;
     height: 48px;
@@ -291,6 +295,10 @@ header {
     }
 
     .responsive#menu-main {
+        display: block;
+    }
+
+    .responsive#menu-main a:first-child {
         display: block;
     }
 
