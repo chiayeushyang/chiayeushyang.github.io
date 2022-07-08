@@ -146,11 +146,7 @@ body {
     position: relative;
     top: -70px;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.51) 10%, rgba(0,0,0,0) 20%), url(../images/content/bg.jpg);
-    border-radius: 24px;
-    background-repeat: no-repeat;
-    background-position: center 40%;
-    background-size: 100%;
+    background: #1F1D36;
 }
 
 header {

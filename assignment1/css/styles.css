@@ -153,6 +153,12 @@ body {
     background-size: 100%;
 }
 
+#title {
+    position: absolute;
+    top:20%;
+    left: 10%
+}
+
 header {
     position: relative;
     width: 100%;
