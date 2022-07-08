@@ -160,6 +160,8 @@ header {
     z-index: 1;
 }
 
+/* Navbar */
+
 #menu, #menu a {
     color: var(--text_Light);
     transition: 1s;
@@ -199,7 +201,7 @@ header {
 /* Hover */
 
 #menu a:hover, #menu h4:hover {
-    color: #b61896;
+    color: #f65ed3;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -220,7 +222,7 @@ header {
     transition: color 0.3s;
 }
 
-#menu.sticky ul li a{
+#menu.sticky ul a li{
     color: #3F3351;
     transition: color 0.5s;
 }
@@ -235,9 +237,7 @@ header {
     transition: color 0.3s;
 }
 
-/* Hover */
-
-#menu.sticky a:hover, #menu.sticky h4:hover{
+#menu.sticky ul a li:hover, #menu.sticky h4:hover, #menu.sticky a:hover{
     color: #0feed8;
 }
 
@@ -253,11 +253,7 @@ header {
     }
 }
 
-
 @media (max-width: 992px) {
-    #banner {
-        background-size: 130%;
-    }
 
     #menu {
         flex-wrap: wrap;
@@ -305,14 +301,27 @@ header {
     }
 
     .responsive#menu-main li{
-        background-color: #2196d9ed;
+        background-color: #1f0567a5;
+        font-weight: bold;
         padding: 14px 16px;
-        animation: slide-down 1.5s ease-out;
+        animation: slide-down 1s ease-out;
+    }
+
+    .sticky .responsive#menu-main li{
+        background-color: white;
+        color: rgb(142, 142, 142);
+        font-weight: bold;
+    }
+
+    .sticky .responsive#menu-main li:hover{
+        background-color: whitesmoke;
+        font-size: larger;
+        font-weight: bold;
     }
 
     .responsive#menu-main li:hover{
-        background-color: #b238f977;
-
+        background-color: #830cc862;
+        font-size: larger;
     }
 
     .responsive#menu-home, .responsive#menu-logo {
@@ -322,7 +331,14 @@ header {
     .responsive#menu-home#menu-home #icon {
         --fa-animation-duration: 2s;
     }
+}
 
+/* .................... Nav End .............................. .*/
+
+@media (max-width: 992px) {
+    #banner {
+        background-size: 130%;
+    }
 }
 
 @media (max-width: 600px) {
