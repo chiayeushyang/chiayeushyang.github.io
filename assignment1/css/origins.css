@@ -1,0 +1,349 @@
+/* Pre-set */
+:root {
+    --text-light: #FFFFFF;
+    --text-dark: #3F3351;
+    --text_Dark_Accent: #8C347A;
+    --text_Dark_Gray: rgba(57, 20, 0, 0.64);
+    --text_Light: #FFFFFF;
+    --text_Light_Accent: #EF6D58;
+    --text_Light_Gray: rgba(255, 255, 255, 0.64);
+}
+
+.flex {
+    display: flex;
+}
+
+.f-r {
+    flex-direction: row;
+}
+
+.f-c {
+    flex-direction: column;
+}
+
+.t-c {
+    text-align: center;
+}
+
+.a-c {
+    align-items: center;
+}
+
+.c-c {
+    align-content: center;
+}
+
+.j-c {
+    justify-content: center;
+}
+
+.j-b {
+    justify-content: space-between;
+}
+
+.j-a {
+    justify-content: space-around;
+}
+
+.j-e {
+    justify-content: space-evenly;
+}
+
+.t-d-n {
+    text-decoration: none;
+}
+
+/* text */
+* {
+    font-family: 'Epilogue', 'Times New Roman';
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.label {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+.text-big {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.text-small {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+
+
+
+/* Main */
+body {
+    margin: 0px;
+}
+
+#container {
+    max-width: 1920px;
+    margin: auto;
+    height: 10000px;
+    background-color: #080302;
+}
+
+#banner {
+    position: relative;
+    top: -70px;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.51) 10%, rgba(0,0,0,0) 20%), url(../images/content/bg.jpg);
+    border-radius: 24px;
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    background-size: 100%;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+
+/* Navbar */
+
+#menu, #menu a {
+    color: var(--text_Light);
+    transition: 1s;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+#menu-logo img {
+    margin-right: 11px;
+}
+
+#menu-main ul {
+    padding: 0;
+    list-style: none;
+}
+
+#menu-main li {
+    padding: 5px 4vw;
+}
+
+#menu-home {
+    width: 138px;
+    height: 48px;
+    font-weight: 900;
+    box-shadow: -2px 4px 5px 0px rgba(22, 5, 207, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.295743);
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+#menu-home a:not(:first-child) {
+    display: none; 
+}
+
+/* Hover */
+
+#menu a:hover, #menu h4:hover {
+    color: #f65ed3;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+/* ------------- Menu animation when scroll down -------------  */
+
+#menu.sticky {
+    position: sticky;
+    top: 0%;
+    background-color: #FFFFFF;
+    height: 65px;
+    /* padding: 5px 0px; */
+}
+
+#menu.sticky h4{
+    color: #3F3351;
+    transition: color 0.3s;
+}
+
+#menu.sticky ul a li{
+    color: #3F3351;
+    transition: color 0.5s;
+}
+
+.sticky #menu-home {
+    border: none;
+    box-shadow: 0px 5px 10px 0px rgba(22, 5, 207, 0.364);
+}
+
+.sticky #menu-home a {
+    color: #3F3351;
+    transition: color 0.3s;
+}
+
+#menu.sticky ul a li:hover, #menu.sticky h4:hover, #menu.sticky a:hover{
+    color: #0feed8;
+}
+
+/* ----------------------------------------------------------- */
+
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 992px) {
+
+    #menu {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #menu h4{
+        margin: 0;
+    }
+
+    #menu-logo {
+        position: relative;
+        left: 10px;
+    }
+   
+    #menu-main {
+        width: 100%;
+        height: 0;
+        order: 3;
+        display: none;
+    }
+
+    #menu-main ul{
+      flex-direction: column;
+      margin-top: 0px;
+    }
+    
+    #menu-home {
+        width: auto;
+        padding: 0px 20px;
+        position: relative;
+        right: 10px;
+    }
+
+    #menu-home a:last-child {
+        display: block; 
+    }
+
+    #menu-home a:not(:last-child) {
+        display: none; 
+    }
+
+    .responsive#menu-main {
+        display: block;
+    }
+
+    .responsive#menu-main li{
+        background-color: #1f0567a5;
+        font-weight: bold;
+        padding: 14px 16px;
+        animation: slide-down 1s ease-out;
+    }
+
+    .sticky .responsive#menu-main li{
+        background-color: white;
+        color: rgb(142, 142, 142);
+        font-weight: bold;
+    }
+
+    .sticky .responsive#menu-main li:hover{
+        background-color: whitesmoke;
+        font-size: larger;
+        font-weight: bold;
+    }
+
+    .responsive#menu-main li:hover{
+        background-color: #830cc862;
+        font-size: larger;
+    }
+
+    .responsive#menu-home, .responsive#menu-logo {
+        margin-top: 7px;
+    }
+
+    .responsive#menu-home#menu-home #icon {
+        --fa-animation-duration: 2s;
+    }
+}
+
+/* .................... Nav End .............................. .*/
+
+@media (max-width: 992px) {
+    #banner {
+        background-size: 130%;
+    }
+}
+
+@media (max-width: 600px) {
+    #banner {
+        background-size: 210%;
+    }
+
+}
