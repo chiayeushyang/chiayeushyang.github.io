@@ -552,6 +552,10 @@ header {
         height: 331px;
     }
 
+    #about-text {
+        width: 80%;
+    }
+
     #about-img img {
         width: 312px;
         height: 331px;
