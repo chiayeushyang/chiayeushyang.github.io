@@ -33,6 +33,10 @@
     margin-top: 20px;
 }
 
+.mb-460 {
+    margin-bottom: 460px;
+}
+
 .d-n {
     text-decoration: none;
 }
@@ -59,6 +63,14 @@
 
 .j-e {
     justify-content: space-evenly;
+}
+
+.j-f-e {
+    justify-content: flex-end;
+}
+
+.s-e {
+    align-self: flex-end;
 }
 
 .t-d-n {
@@ -218,6 +230,18 @@ h5 {
     background-color: #3F3351;
 }
 
+.timeline-img {
+    border-radius: 31px;
+    z-index: 1;
+}
+
+.box {
+    position: relative;
+    width: 36%;
+    padding: 20px 60px 90px 60px;
+    border: 1px solid #864879;
+}
+
 
 /* Main */
 body {
@@ -278,7 +302,7 @@ header {
     position: relative;
     width: 100%;
     height: 70px;
-    z-index: 1;
+    z-index: 10000;
 }
 
 /* Navbar */
@@ -574,20 +598,20 @@ header {
     margin-right: auto;
 }
 
-#intro h3{
+#intro h3 {
     color: var(--text-Dark);
 }
 
-#intro p{
-   color: var(--text_Dark_Gray);
+#intro p {
+    color: var(--text_Dark_Gray);
 }
 
-#number h1{
+#number h1 {
     margin: 20px 50px 20px 0px;
     color: #391400;
 }
 
-#number h4{
+#number h4 {
     color: var(--text-Dark);
 }
 
@@ -595,6 +619,57 @@ header {
     margin-bottom: 50px;
 }
 
+#timeline {
+    width: 95%;
+    margin: 220px auto 0 auto;
+}
+
+#timeline-line {
+    position: absolute;
+    width: 8px;
+    height: 1000px;
+    margin-top: 30px;
+    background: #D9D9D9; 
+    left: 48%;
+    transform: translateX(-50%);
+}
+
+#timeline div .box h5{
+    color: var(--text_Dark_Accent);
+}
+
+#timeline div .box h3{
+    color: var(--text-Dark);
+}
+
+#timeline div .box p{
+    color: var(--text_Dark_Gray);
+}
+
+#timeline div .box p.text-big{
+    color: var(--text_Dark);
+}
+
+#origins {
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+}
+
+#origins-box {
+    box-shadow: 10px 10px 20px 5px rgba(134, 72, 102, 0.25);
+}
+
+#end-box {
+    margin-right: 3vw;
+    box-shadow: -10px 10px 20px 5px rgba(134, 72, 102, 0.25);
+}
+
+#end {
+    position: absolute;
+    bottom: 20px;
+    right: 60px;
+}
 
 @media (max-width: 992px) {
     #about {
@@ -629,11 +704,11 @@ header {
     #web-intro #intro {
         width: 100%;
     }
-    
+
     #web-intro #number {
         width: 100%;
     }
- }
+}
 
 @media (max-width: 600px) {
     #about-img {
@@ -651,5 +726,5 @@ header {
         border-radius: 147px;
     }
 
-    
+
 }
