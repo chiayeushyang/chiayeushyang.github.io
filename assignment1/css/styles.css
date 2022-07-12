@@ -556,6 +556,45 @@ header {
     margin-bottom: 0;
 }
 
+#what-this-websites {
+    margin-top: 70px;
+    margin-bottom: 0;
+    color: var(--text_Dark_Accent);
+}
+
+#web-intro #intro {
+    width: 38%;
+}
+
+#web-intro #number {
+    width: 50%;
+}
+
+#intro {
+    margin-right: auto;
+}
+
+#intro h3{
+    color: var(--text-Dark);
+}
+
+#intro p{
+   color: var(--text_Dark_Gray);
+}
+
+#number h1{
+    margin: 20px 50px 20px 0px;
+    color: #391400;
+}
+
+#number h4{
+    color: var(--text-Dark);
+}
+
+#number #number-4 {
+    margin-bottom: 50px;
+}
+
 
 @media (max-width: 992px) {
     #about {
@@ -577,6 +616,22 @@ header {
 @media (max-width: 800px) {
     #information-content {
         flex-direction: column;
+    }
+
+    #intro p {
+        margin-bottom: 30px;
+    }
+
+    #web-intro {
+        flex-direction: column;
+    }
+
+    #web-intro #intro {
+        width: 100%;
+    }
+    
+    #web-intro #number {
+        width: 100%;
     }
  }
 
