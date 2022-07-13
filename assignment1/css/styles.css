@@ -160,7 +160,16 @@ h5 {
     height: 48px;
 }
 
-.btn .btnspan {
+.l-btn {
+    background: linear-gradient(90deg, #458FFE 0%, rgba(0, 102, 255, 0.35) 97.06%);
+    box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+    border: 0px;
+    border-radius: 6px;
+    width: 227px;
+    height: 48px;
+}
+
+.btn .btnspan, .l-btn .btnspan{
     font-family: 'Epilogue';
     font-style: normal;
     font-weight: 900;
@@ -170,12 +179,12 @@ h5 {
     color: #FFEF5A;
 }
 
-.btn:hover {
+.btn:hover, .l-btn:hover  {
     cursor: pointer;
     animation: btnrotate 0.7s ease-in-out both;
 }
 
-.btn:hover .btnspan {
+.btn:hover .btnspan, .l-btn:hover .btnspan  {
     animation: btnstorm 0.7s ease-in-out both;
     animation-delay: 0.06s;
 }
@@ -240,6 +249,17 @@ h5 {
     width: 36%;
     padding: 20px 60px 90px 60px;
     border: 1px solid #864879;
+    background: #E9A6A6;
+    z-index: 1;
+}
+
+.b-box {
+    position: relative;
+    width: 65%;
+    margin: auto;
+    padding: 20px 60px 90px 60px;
+    border: 1px solid #864879;
+    background: #E9A6A6;
 }
 
 
@@ -529,7 +549,7 @@ header {
 #content {
     position: relative;
     top: -70px;
-    height: 1000vh;
+    height: auto;
     background-color: #E9A6A6;
 }
 
@@ -627,26 +647,48 @@ header {
 #timeline-line {
     position: absolute;
     width: 8px;
-    height: 1000px;
+    height: 2000px;
     margin-top: 30px;
-    background: #D9D9D9; 
+    background: #D9D9D9;
     left: 48%;
     transform: translateX(-50%);
 }
 
-#timeline div .box h5{
+#s-timeline-line1 {
+    position: absolute;
+    display: none;
+    width: 8px;
+    height: 700px;
+    margin-top: 800px;
+    background: #D9D9D9;
+    left: 48%;
+    transform: translateX(-50%);
+}
+
+#s-timeline-line2 {
+    position: absolute;
+    display: none;
+    width: 8px;
+    height: 720px;
+    margin-top: 800px;
+    background: #D9D9D9;
+    left: 48%;
+    transform: translateX(-50%);
+}
+
+#timeline div .box h5 ,#timeline div .b-box h5{
     color: var(--text_Dark_Accent);
 }
 
-#timeline div .box h3{
+#timeline div .box h3,#timeline div .b-box h3 {
     color: var(--text-Dark);
 }
 
-#timeline div .box p{
+#timeline div .box p,#timeline div .b-box p {
     color: var(--text_Dark_Gray);
 }
 
-#timeline div .box p.text-big{
+#timeline div .box p.text-big, #timeline div .b-box p.text-big{
     color: var(--text_Dark);
 }
 
@@ -671,7 +713,94 @@ header {
     right: 60px;
 }
 
+#origins-img {
+    position: relative;
+    width: 50%;
+    height: 400px;
+    background: url(../images/content/supernova.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    margin: 0 auto 0 auto;
+    z-index: 1;
+}
+
+#end-img {
+    position: relative;
+    width: 62%;
+    height: 400px;
+    background: url(../images/content/STScI-H-stars-nebulae-9545-2400x1200.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    margin: 0 auto 0 auto;
+    z-index: 1;
+}
+
+#details-img {
+    position: relative;
+    width: 73%;
+    height: 400px;
+    background: url(../images/content/The-Fairy-of-Eagle-Nebula.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    margin: 0px auto 60px auto;
+    z-index: 1;
+}
+
+#check {
+    margin: 30px 0px;
+}
+
+#check img {
+    margin-right: 20px;
+}
+
+#check p {
+    color: var(--text_Dark_Gray);
+}
+
+#timeline-details a {
+    position: absolute;
+    bottom: 20;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 @media (max-width: 992px) {
+    .btn, .l-btn {
+        width: 103px;
+    }
+
+    #end, #origins {
+        bottom: 20px;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+    .box, .b-box {
+        margin: 50px auto 0px auto;
+        width: 80%;
+    }
+
+    #origins-box, #end-box {
+        box-shadow: 0px 10px 20px 5px rgba(134, 72, 102, 0.25);
+    }
+
+    #timeline-line {
+        display: none;
+    }
+
+    #s-timeline-line1, #s-timeline-line2 {
+        display: block;
+    }
+    
     #about {
         flex-direction: column;
         padding: 100px 0px;
@@ -686,6 +815,20 @@ header {
         margin-top: 100px;
     }
 
+    .timeline-object  {
+        flex-direction: column;
+    }
+    #end-box {
+        order: 1;
+    }
+    #end-img {
+        order: 0;
+    }
+
+    #origins-img, #end-img,#details-img {
+        width: 98%;
+    }
+ 
 }
 
 @media (max-width: 800px) {
@@ -711,6 +854,12 @@ header {
 }
 
 @media (max-width: 600px) {
+    .box, .b-box {
+        padding: 20px 2vw 90px 2vw;
+        margin: 50px 1vw 0px 1vww;
+        width: 95%;
+    }
+
     #about-img {
         width: 312px;
         height: 331px;
