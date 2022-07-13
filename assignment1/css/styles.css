@@ -328,8 +328,8 @@ header {
 /* Navbar */
 
 #menu {
-position: fixed;
-top: 0%;
+    position: fixed;
+    top: 0%;
 }
 
 #menu,
@@ -806,19 +806,27 @@ footer {
 
 #footer-menu {
     width: 10%;
-} 
+}
 
-#footer-icon img{
+#footer-icon a img {
     margin: 14px;
     width: 48px;
     height: 48px;
     border-radius: 50%;
 }
 
+#footer-icon a img:hover {
+    width: 60px;
+    height: 60px;
+}
+
 footer div.line {
-    position: relative;
-    top: 50px;
-    width: 83%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 49px;
+    width: 84%;
     height: 1px;
     background-color: #F3D1BF;
 }
@@ -827,11 +835,38 @@ footer div.line {
     color: var(--text_Light_Accent);
 }
 
-#footer-menu ul{
+#footer-menu ul {
     padding: 0;
     list-style: none;
+}
+
+#footer-menu ul a{
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
     color: var(--text_Light_Gray);
-} 
+}
+
+#footer-menu ul a:hover{
+    transition: 0.5s;
+    color: #0feed8;
+}
+
+#copyright {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    color: var(--text_Light_Gray);
+}
+
+#copyright p {
+    margin: 5px 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
 
 @media (max-width: 992px) {
 
@@ -923,6 +958,34 @@ footer div.line {
     #web-intro #number {
         width: 100%;
     }
+
+    #icon-menu {
+        flex-direction: column;
+    }
+
+    #footer-icon {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    #footer-menu {
+        text-align: center;
+        margin: auto;
+    }
+
+    #footer-menu h5 {
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    #copyright p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 32px;
+    }
+
 }
 
 @media (max-width: 600px) {
