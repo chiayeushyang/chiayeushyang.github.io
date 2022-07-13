@@ -126,6 +126,15 @@ h5 {
     line-height: 24px;
 }
 
+/* Box */
+.box {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    padding: 20px 30px;
+    border: 1px solid #864879;
+    box-shadow: 10px 10px 20px 5px rgba(134, 72, 102, 0.25);
+}
 
 
 /* Main */
@@ -142,8 +151,7 @@ body {
 
 #banner {
     position: relative;
-    top: -70px;
-    height: 20vh;
+    height: 50vh;
     background: #1F1D36;
 }
 
@@ -155,8 +163,13 @@ header {
 }
 
 /* Navbar */
+#menu {
+    position: fixed;
+    top: 0;
+}
 
-#menu, #menu a {
+#menu,
+#menu a {
     color: var(--text_Light);
     transition: 1s;
 }
@@ -193,12 +206,13 @@ header {
 }
 
 #menu-home a:not(:first-child) {
-    display: none; 
+    display: none;
 }
 
 /* Hover */
 
-#menu a:hover, #menu h4:hover {
+#menu a:hover,
+#menu h4:hover {
     color: #f65ed3;
     transition: 0.3s;
     cursor: pointer;
@@ -208,19 +222,17 @@ header {
 /* ------------- Menu animation when scroll down -------------  */
 
 #menu.sticky {
-    position: sticky;
-    top: 0%;
     background-color: #FFFFFF;
     height: 65px;
     /* padding: 5px 0px; */
 }
 
-#menu.sticky h4{
+#menu.sticky h4 {
     color: #3F3351;
     transition: color 0.3s;
 }
 
-#menu.sticky ul a li{
+#menu.sticky ul a li {
     color: #3F3351;
     transition: color 0.5s;
 }
@@ -235,7 +247,9 @@ header {
     transition: color 0.3s;
 }
 
-#menu.sticky ul a li:hover, #menu.sticky h4:hover, #menu.sticky a:hover{
+#menu.sticky ul a li:hover,
+#menu.sticky h4:hover,
+#menu.sticky a:hover {
     color: #0feed8;
 }
 
@@ -258,7 +272,7 @@ header {
         justify-content: space-between;
     }
 
-    #menu h4{
+    #menu h4 {
         margin: 0;
     }
 
@@ -266,7 +280,7 @@ header {
         position: relative;
         left: 10px;
     }
-   
+
     #menu-main {
         width: 100%;
         height: 0;
@@ -274,11 +288,11 @@ header {
         display: none;
     }
 
-    #menu-main ul{
-      flex-direction: column;
-      margin-top: 0px;
+    #menu-main ul {
+        flex-direction: column;
+        margin-top: 0px;
     }
-    
+
     #menu-home {
         width: auto;
         padding: 0px 20px;
@@ -287,11 +301,11 @@ header {
     }
 
     #menu-home a:last-child {
-        display: block; 
+        display: block;
     }
 
     #menu-home a:not(:last-child) {
-        display: none; 
+        display: none;
     }
 
     .responsive#menu-main {
@@ -302,31 +316,32 @@ header {
         display: block;
     }
 
-    .responsive#menu-main li{
+    .responsive#menu-main li {
         background-color: #1f0567a5;
         font-weight: bold;
         padding: 14px 16px;
         animation: slide-down 1s ease-out;
     }
 
-    .sticky .responsive#menu-main li{
+    .sticky .responsive#menu-main li {
         background-color: white;
         color: rgb(142, 142, 142);
         font-weight: bold;
     }
 
-    .sticky .responsive#menu-main li:hover{
+    .sticky .responsive#menu-main li:hover {
         background-color: whitesmoke;
         font-size: larger;
         font-weight: bold;
     }
 
-    .responsive#menu-main li:hover{
+    .responsive#menu-main li:hover {
         background-color: #830cc862;
         font-size: larger;
     }
 
-    .responsive#menu-home, .responsive#menu-logo {
+    .responsive#menu-home,
+    .responsive#menu-logo {
         margin-top: 7px;
     }
 
@@ -337,15 +352,134 @@ header {
 
 /* .................... Nav End .............................. .*/
 
-@media (max-width: 992px) {
+#banner h1 {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    color: var(--text-light);
+}
+
+#banner p {
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    color: var(--text_Light_Gray);
+}
+
+#content {
+    background-color: #E9A6A6;
+    height: 1000vh;
+}
+
+#end-of-stars {
+    padding-top: 150px;
+}
+
+#end-of-stars h5, #end-of-stars h2{
+    width: 73%;
+    margin: auto;
+}
+
+#end-of-stars h5{
+    color: var(--text_Dark_Accent);
+}
+
+#end-of-stars h2{
+    margin: 25px auto;
+    color: var(--text-dark);
+}
+
+#end-p1 {
+    width: 40%;
+    color: var(--text_Dark_Gray);
+}
+
+#end-p2 {
+    margin-top: 140px;
+    width: 60%;
+    color: var(--text_Dark_Gray);
+}
+
+#crab {
+    margin-left: 50px;
+    width: 70%;
+    border-radius: 50%;
+}
+
+#supernova {
+    width: 60%;
+    height: 35vw;
+    margin: 300px auto;
+    border-radius: 155px;
+    box-shadow: 0px 4px 250px 150px rgba(209, 222, 255, 0.32);
+    background-image: url(../images/content/supernova.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#gas {
+    background-color: #28293E;  
+    height: 100vh;
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 800px) {
     #banner {
-        background-size: 130%;
+        height: 65vh;
+    }
+
+    #end-box {
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box {
+        width: 95%;
+        padding: 0 0;
+        height: auto;
+        margin: auto;
+        border: none;
+        box-shadow: none;
+    }
+
+    #end-p1 {
+        width: 100%;
+        color: var(--text_Dark_Gray);
+    }
+    
+    #end-p2 {
+        margin-top: 0;
+        width: 100%;
+        color: var(--text_Dark_Gray);
+    }
+
+    #end-of-stars h5, #end-of-stars h2{
+        width: 95%;
+        margin: auto;
+    }
+
+    #end-of-stars h5{
+        margin: 20px auto;
+    }
+
+    #crab {
+        display: block;
+        margin: 50px auto;
+        width: 90%;
+        box-shadow: 0px 0px 100px 10px rgba(81, 44, 0, 0.58);
+    }
+
+    #supernova {
+        margin: 150px auto;;
+        box-shadow: 0px 4px 100px 50px rgba(209, 222, 255, 0.32);
     }
 }
 
 @media (max-width: 600px) {
     #banner {
-        background-size: 210%;
+        height: 75vh;
     }
-
 }
