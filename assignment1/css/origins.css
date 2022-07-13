@@ -145,7 +145,6 @@ body {
 #container {
     max-width: 1920px;
     margin: auto;
-    height: 10000px;
     background-color: #080302;
 }
 
@@ -368,7 +367,6 @@ header {
 
 #content {
     background-color: #E9A6A6;
-    height: 1000vh;
 }
 
 #end-of-stars {
@@ -528,6 +526,86 @@ header {
     border-radius: 9px;
 }
 
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#icon-menu {
+    padding-top: 60px;
+}
+
+#footer-icon {
+    width: 10%;
+    flex-direction: column;
+}
+
+#footer-menu {
+    width: 10%;
+}
+
+#footer-icon a img {
+    margin: 14px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+#footer-icon a img:hover {
+    width: 60px;
+    height: 60px;
+}
+
+footer div.line {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 49px;
+    width: 84%;
+    height: 1px;
+    background-color: #3F3351;
+}
+
+#footer-menu h5 {
+    color: var(--text_Dark_Accent);
+}
+
+#footer-menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+#footer-menu ul a{
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: var(--text_Dark_Gray);
+}
+
+#footer-menu ul a:hover{
+    transition: 0.5s;
+    color: #f65ed3;
+}
+
+#copyright {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    color: var(--text_Light_Gray);
+}
+
+#copyright p {
+    margin: 5px 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
 
 @media (max-width: 992px) {}
 
@@ -665,6 +743,33 @@ header {
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 9px;
+    }
+
+    #icon-menu {
+        flex-direction: column;
+    }
+
+    #footer-icon {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    #footer-menu {
+        text-align: center;
+        margin: auto;
+    }
+
+    #footer-menu h5 {
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    #copyright p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 32px;
     }
 }
 
