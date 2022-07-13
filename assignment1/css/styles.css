@@ -273,13 +273,11 @@ body {
 
 #container {
     max-width: 1920px;
-    height: 713px;
     margin: auto;
 }
 
 #banner {
     position: relative;
-    top: -70px;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.51) 10%, rgba(0, 0, 0, 0) 20%), url(../images/content/bg.jpg);
     border-radius: 24px;
@@ -328,6 +326,11 @@ header {
 }
 
 /* Navbar */
+
+#menu {
+position: fixed;
+top: 0%;
+}
 
 #menu,
 #menu a {
@@ -383,11 +386,8 @@ header {
 /* ------------- Menu animation when scroll down -------------  */
 
 #menu.sticky {
-    position: sticky;
-    top: 0%;
     background-color: #FFFFFF;
     height: 65px;
-    /* padding: 5px 0px; */
 }
 
 #menu.sticky h4 {
@@ -550,7 +550,6 @@ header {
 
 #content {
     position: relative;
-    top: -70px;
     height: auto;
     background-color: #E9A6A6;
 }
