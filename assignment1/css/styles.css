@@ -169,7 +169,8 @@ h5 {
     height: 48px;
 }
 
-.btn .btnspan, .l-btn .btnspan{
+.btn .btnspan,
+.l-btn .btnspan {
     font-family: 'Epilogue';
     font-style: normal;
     font-weight: 900;
@@ -179,12 +180,14 @@ h5 {
     color: #FFEF5A;
 }
 
-.btn:hover, .l-btn:hover  {
+.btn:hover,
+.l-btn:hover {
     cursor: pointer;
     animation: btnrotate 0.7s ease-in-out both;
 }
 
-.btn:hover .btnspan, .l-btn:hover .btnspan  {
+.btn:hover .btnspan,
+.l-btn:hover .btnspan {
     animation: btnstorm 0.7s ease-in-out both;
     animation-delay: 0.06s;
 }
@@ -270,9 +273,8 @@ body {
 
 #container {
     max-width: 1920px;
+    height: 713px;
     margin: auto;
-    height: 10000px;
-    background-color: #080302;
 }
 
 #banner {
@@ -676,19 +678,23 @@ header {
     transform: translateX(-50%);
 }
 
-#timeline div .box h5 ,#timeline div .b-box h5{
+#timeline div .box h5,
+#timeline div .b-box h5 {
     color: var(--text_Dark_Accent);
 }
 
-#timeline div .box h3,#timeline div .b-box h3 {
+#timeline div .box h3,
+#timeline div .b-box h3 {
     color: var(--text-Dark);
 }
 
-#timeline div .box p,#timeline div .b-box p {
+#timeline div .box p,
+#timeline div .b-box p {
     color: var(--text_Dark_Gray);
 }
 
-#timeline div .box p.text-big, #timeline div .b-box p.text-big{
+#timeline div .box p.text-big,
+#timeline div .b-box p.text-big {
     color: var(--text_Dark);
 }
 
@@ -706,6 +712,12 @@ header {
     margin-right: 3vw;
     box-shadow: -10px 10px 20px 5px rgba(134, 72, 102, 0.25);
 }
+
+#details-box {
+    box-shadow: 0px 10px 20px 5px rgba(134, 72, 102, 0.25);
+}
+
+
 
 #end {
     position: absolute;
@@ -764,6 +776,10 @@ header {
     color: var(--text_Dark_Gray);
 }
 
+#timeline-details {
+    margin-bottom: 300px;
+}
+
 #timeline-details a {
     position: absolute;
     bottom: 20;
@@ -771,25 +787,77 @@ header {
     transform: translateX(-50%);
 }
 
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/Rectanglefooter-round\ .png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#icon-menu {
+    padding-top: 60px;
+}
+
+#footer-icon {
+    width: 10%;
+    flex-direction: column;
+}
+
+#footer-menu {
+    width: 10%;
+} 
+
+#footer-icon img{
+    margin: 14px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+footer div.line {
+    position: relative;
+    top: 50px;
+    width: 83%;
+    height: 1px;
+    background-color: #F3D1BF;
+}
+
+#footer-menu h5 {
+    color: var(--text_Light_Accent);
+}
+
+#footer-menu ul{
+    padding: 0;
+    list-style: none;
+    color: var(--text_Light_Gray);
+} 
+
 @media (max-width: 992px) {
-    .btn, .l-btn {
+
+    .btn,
+    .l-btn {
         width: 103px;
     }
 
-    #end, #origins {
+    #end,
+    #origins {
         bottom: 20px;
-        left: 0; 
-        right: 0; 
-        margin-left: auto; 
-        margin-right: auto; 
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .box, .b-box {
+    .box,
+    .b-box {
         margin: 50px auto 0px auto;
         width: 80%;
     }
 
-    #origins-box, #end-box {
+    #origins-box,
+    #end-box {
         box-shadow: 0px 10px 20px 5px rgba(134, 72, 102, 0.25);
     }
 
@@ -797,10 +865,11 @@ header {
         display: none;
     }
 
-    #s-timeline-line1, #s-timeline-line2 {
+    #s-timeline-line1,
+    #s-timeline-line2 {
         display: block;
     }
-    
+
     #about {
         flex-direction: column;
         padding: 100px 0px;
@@ -815,20 +884,24 @@ header {
         margin-top: 100px;
     }
 
-    .timeline-object  {
+    .timeline-object {
         flex-direction: column;
     }
+
     #end-box {
         order: 1;
     }
+
     #end-img {
         order: 0;
     }
 
-    #origins-img, #end-img,#details-img {
+    #origins-img,
+    #end-img,
+    #details-img {
         width: 98%;
     }
- 
+
 }
 
 @media (max-width: 800px) {
@@ -854,7 +927,9 @@ header {
 }
 
 @media (max-width: 600px) {
-    .box, .b-box {
+
+    .box,
+    .b-box {
         padding: 20px 2vw 90px 2vw;
         margin: 50px 1vw 0px 1vww;
         width: 95%;
