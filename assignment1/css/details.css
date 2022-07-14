@@ -115,7 +115,7 @@ h5 {
 .text {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 32px;
 }
 
@@ -126,8 +126,15 @@ h5 {
     line-height: 24px;
 }
 
-
-
+/* Box */
+.box {
+    width: 75%;
+    height: auto;
+    margin: auto;
+    padding: 20px 30px;
+    border: 1px solid #864879;
+    box-shadow: 10px 10px 20px 5px rgba(134, 72, 102, 0.25);
+}
 
 
 /* Main */
@@ -137,14 +144,45 @@ body {
 
 #container {
     max-width: 1920px;
+    overflow-x: hidden;
     margin: auto;
-    height: 10000px;
     background-color: #080302;
+}
+
+#banner {
+    position: relative;
+    height: 50vh;
+    background: #1F1D36;
+}
+
+#back-top {
+    display: none;
+    position: fixed;
+    padding: 10px 12px;
+    background-color: #ef6c58aa;
+    border-radius: 50%;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000;
+}
+
+#back-top:hover {
+    display: none;
+    position: fixed;
+    padding: 12px 14px;
+    background-color: #ef6c58;
+    border-radius: 50%;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000;
+}
+
+#back-top.sticky{
+    display: block;
 }
 
 header {
     position: relative;
-    background-color: #1F1D36;
     width: 100%;
     height: 70px;
     z-index: 1;
@@ -152,7 +190,14 @@ header {
 
 /* Navbar */
 
-#menu, #menu a {
+#menu {
+    position: fixed;
+    max-width: 1920px;
+    top: 0;
+}
+
+#menu,
+#menu a {
     color: var(--text_Light);
     transition: 1s;
 }
@@ -171,12 +216,12 @@ header {
 }
 
 #menu-main li {
-    padding: 5px 4vw;
+    padding: 5px 2.5vw;
 }
 
-#menu-main a:first-child {
+/* #menu-main a:first-child {
     display: none;
-}
+} */
 
 #menu-home {
     width: 138px;
@@ -189,12 +234,13 @@ header {
 }
 
 #menu-home a:not(:first-child) {
-    display: none; 
+    display: none;
 }
 
 /* Hover */
 
-#menu a:hover, #menu h4:hover {
+#menu a:hover,
+#menu h4:hover {
     color: #f65ed3;
     transition: 0.3s;
     cursor: pointer;
@@ -204,19 +250,17 @@ header {
 /* ------------- Menu animation when scroll down -------------  */
 
 #menu.sticky {
-    position: sticky;
-    top: 0%;
     background-color: #FFFFFF;
     height: 65px;
     /* padding: 5px 0px; */
 }
 
-#menu.sticky h4{
+#menu.sticky h4 {
     color: #3F3351;
     transition: color 0.3s;
 }
 
-#menu.sticky ul a li{
+#menu.sticky ul a li {
     color: #3F3351;
     transition: color 0.5s;
 }
@@ -231,7 +275,9 @@ header {
     transition: color 0.3s;
 }
 
-#menu.sticky ul a li:hover, #menu.sticky h4:hover, #menu.sticky a:hover{
+#menu.sticky ul a li:hover,
+#menu.sticky h4:hover,
+#menu.sticky a:hover {
     color: #0feed8;
 }
 
@@ -254,7 +300,7 @@ header {
         justify-content: space-between;
     }
 
-    #menu h4{
+    #menu h4 {
         margin: 0;
     }
 
@@ -262,7 +308,7 @@ header {
         position: relative;
         left: 10px;
     }
-   
+
     #menu-main {
         width: 100%;
         height: 0;
@@ -270,11 +316,11 @@ header {
         display: none;
     }
 
-    #menu-main ul{
-      flex-direction: column;
-      margin-top: 0px;
+    #menu-main ul {
+        flex-direction: column;
+        margin-top: 0px;
     }
-    
+
     #menu-home {
         width: auto;
         padding: 0px 20px;
@@ -283,46 +329,51 @@ header {
     }
 
     #menu-home a:last-child {
-        display: block; 
+        display: block;
     }
 
     #menu-home a:not(:last-child) {
-        display: none; 
+        display: none;
     }
 
     .responsive#menu-main {
         display: block;
     }
 
-    .responsive#menu-main a:first-child {
+    /* .responsive#menu-main a:first-child {
         display: block;
-    }
+    } */
 
-    .responsive#menu-main li{
-        background-color: #1f0567a5;
+    .responsive#menu-main li {
+        background-color: white;
+        color: rgb(142, 142, 142);
         font-weight: bold;
         padding: 14px 16px;
         animation: slide-down 1s ease-out;
     }
 
-    .sticky .responsive#menu-main li{
+    .sticky .responsive#menu-main li {
         background-color: white;
         color: rgb(142, 142, 142);
         font-weight: bold;
     }
 
-    .sticky .responsive#menu-main li:hover{
+    .sticky .responsive#menu-main li:hover {
         background-color: whitesmoke;
         font-size: larger;
         font-weight: bold;
     }
 
-    .responsive#menu-main li:hover{
-        background-color: #830cc862;
+    .responsive#menu-main li:hover {
+        background-color: whitesmoke;
+        transition: 0.3s;
+        color: #0feed8;
         font-size: larger;
+        font-weight: bold;
     }
 
-    .responsive#menu-home, .responsive#menu-logo {
+    .responsive#menu-home,
+    .responsive#menu-logo {
         margin-top: 7px;
     }
 
@@ -333,15 +384,30 @@ header {
 
 /* .................... Nav End .............................. .*/
 
-@media (max-width: 992px) {
-    #banner {
-        background-size: 130%;
-    }
+header {
+    position: relative;
+    background-color: #1F1D36;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+
+/* Navbar */
+
+#menu, #menu a {
+    color: var(--text_Light);
+    transition: 1s;
+}
+
+#content {
+    background-color: #E9A6A6;
+}
+
+@media (max-width: 800px) {
+
 }
 
 @media (max-width: 600px) {
-    #banner {
-        background-size: 210%;
-    }
 
 }
+

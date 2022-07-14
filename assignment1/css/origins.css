@@ -144,6 +144,7 @@ body {
 
 #container {
     max-width: 1920px;
+    overflow-x: hidden;
     margin: auto;
     background-color: #080302;
 }
@@ -154,6 +155,32 @@ body {
     background: #1F1D36;
 }
 
+#back-top {
+    display: none;
+    position: fixed;
+    padding: 10px 12px;
+    background-color: #ef6c58aa;
+    border-radius: 50%;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000;
+}
+
+#back-top:hover {
+    display: none;
+    position: fixed;
+    padding: 12px 14px;
+    background-color: #ef6c58;
+    border-radius: 50%;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000;
+}
+
+#back-top.sticky{
+    display: block;
+}
+
 header {
     position: relative;
     width: 100%;
@@ -162,8 +189,10 @@ header {
 }
 
 /* Navbar */
+
 #menu {
     position: fixed;
+    max-width: 1920px;
     top: 0;
 }
 
@@ -187,12 +216,12 @@ header {
 }
 
 #menu-main li {
-    padding: 5px 4vw;
+    padding: 5px 2.5vw;
 }
 
-#menu-main a:first-child {
+/* #menu-main a:first-child {
     display: none;
-}
+} */
 
 #menu-home {
     width: 138px;
@@ -311,12 +340,13 @@ header {
         display: block;
     }
 
-    .responsive#menu-main a:first-child {
+    /* .responsive#menu-main a:first-child {
         display: block;
-    }
+    } */
 
     .responsive#menu-main li {
-        background-color: #1f0567a5;
+        background-color: white;
+        color: rgb(142, 142, 142);
         font-weight: bold;
         padding: 14px 16px;
         animation: slide-down 1s ease-out;
@@ -335,8 +365,11 @@ header {
     }
 
     .responsive#menu-main li:hover {
-        background-color: #830cc862;
+        background-color: whitesmoke;
+        transition: 0.3s;
+        color: #0feed8;
         font-size: larger;
+        font-weight: bold;
     }
 
     .responsive#menu-home,
@@ -407,7 +440,7 @@ header {
 #supernova {
     width: 60%;
     height: 35vw;
-    margin: 300px auto;
+    margin: 200px auto;
     border-radius: 155px;
     box-shadow: 0px 4px 250px 150px rgba(209, 222, 255, 0.32);
     background-image: url(../images/content/supernova.png);
@@ -434,6 +467,7 @@ header {
 
 #gas h3 {
     margin: 50px auto;
+    margin-bottom: 0px;
     color: var(--text_Light);
 }
 
@@ -447,13 +481,13 @@ header {
     width: 47%;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 32px;
     color: var(--text_Light_Gray);
 }
 
 #gas-content img {
-    width: 40%;
+    width: 50%;
     border-radius: 50%;
     filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.25));
 }
@@ -607,7 +641,11 @@ footer div.line {
     line-height: 32px;
 }
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    #gas h3 {
+        margin-bottom: 50px;
+    }
+}
 
 @media (max-width: 800px) {
     #banner {
@@ -776,5 +814,11 @@ footer div.line {
 @media (max-width: 600px) {
     #banner {
         height: 75vh;
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 60px;
     }
 }
