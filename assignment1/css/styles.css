@@ -287,6 +287,32 @@ body {
     background-size: 100%;
 }
 
+#back-top {
+    display: none;
+    position: fixed;
+    padding: 10px 12px;
+    background-color: #ef6c58aa;
+    border-radius: 50%;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000;
+}
+
+#back-top:hover {
+    display: none;
+    position: fixed;
+    padding: 10px 12px;
+    background-color: #ef6c58;
+    border-radius: 50%;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1000;
+}
+
+#back-top.sticky{
+    display: block;
+}
+
 #title h1 {
     position: absolute;
     color: var(--text-Light);
@@ -330,7 +356,7 @@ header {
 
 #menu {
     position: fixed;
-    top: 0%;
+    top: 0;
 }
 
 #menu,
@@ -353,7 +379,7 @@ header {
 }
 
 #menu-main li {
-    padding: 5px 2vw;
+    padding: 5px 2.5vw;
 }
 
 #menu-main a:first-child {
@@ -361,8 +387,8 @@ header {
 }
 
 #menu-home {
-    display: none;
     width: 138px;
+    height: 48px;
     font-weight: 900;
     box-shadow: -2px 4px 5px 0px rgba(22, 5, 207, 0.13);
     border: 1px solid rgba(255, 255, 255, 0.295743);
@@ -389,6 +415,7 @@ header {
 #menu.sticky {
     background-color: #FFFFFF;
     height: 65px;
+    /* padding: 5px 0px; */
 }
 
 #menu.sticky h4 {
@@ -452,19 +479,14 @@ header {
         display: none;
     }
 
-    a#home li {
-        display: none;
-    }
-
     #menu-main ul {
         flex-direction: column;
         margin-top: 0px;
     }
 
     #menu-home {
-        display: block;
         width: auto;
-        padding: 15px 20px;
+        padding: 0px 20px;
         position: relative;
         right: 10px;
     }
@@ -520,6 +542,7 @@ header {
 }
 
 /* .................... Nav End .............................. .*/
+
 
 @media (max-width: 992px) {
     #banner {

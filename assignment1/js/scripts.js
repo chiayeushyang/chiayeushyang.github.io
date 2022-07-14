@@ -1,6 +1,8 @@
 window.addEventListener("scroll", function(){
     var h = document.querySelector("#menu");
+    var t = document.querySelector("#back-top");
     h.classList.toggle("sticky", window.scrollY > 0);
+    t.classList.toggle("sticky", window.scrollY > 100);
 })
 
 function myFunction() {
