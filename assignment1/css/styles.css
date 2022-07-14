@@ -579,7 +579,7 @@ header {
     #title p {
         width: 80%;
         text-align: center;
-        top: 50%;
+        top: 51%;
         left: 50%;
         transform: translateX(-50%);
     }
