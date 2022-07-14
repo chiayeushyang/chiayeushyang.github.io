@@ -29,6 +29,10 @@
     text-align: left;
 }
 
+.t-j {
+    text-align: justify; 
+}
+
 .mt-20 {
     margin-top: 20px;
 }
