@@ -132,13 +132,28 @@ h5 {
 
 /* Box */
 .box {
-    width: 85%;
+    width: 80%;
     height: auto;
     margin: auto;
-    padding: 50px 80px;
+    margin-bottom: 100px;
+    padding: 50px 6vw;
     border: 1px solid #864879;
-    box-shadow: 10px 10px 20px 5px rgba(134, 72, 102, 0.25);
 }
+
+.line {
+    display: none;
+    height: 1px;
+    margin: auto;
+    background-color: #3F3351;
+}
+
+.l-line {
+    width: 85%;
+    height: 1px;
+    margin: auto;
+    background-color: #3F3351;
+}
+
 
 
 /* Main */
@@ -148,7 +163,6 @@ body {
 
 #container {
     max-width: 1920px;
-    height: 1000vh;
     overflow-x: hidden;
     margin: auto;
     background-color: #080302;
@@ -426,6 +440,10 @@ header {
     color: var(--text-dark);
 }
 
+#end-box {
+    box-shadow: 10px 10px 20px 5px rgba(134, 72, 102, 0.25);
+}
+
 #end-box-img {
     width: 35vw;
     height: 35vw;
@@ -441,6 +459,136 @@ header {
     color: var(--text_Dark_Gray);
 }
 
+#right {
+    width: 90%;
+    margin: auto;
+}
+
+#born-of-stars {
+    margin-top: 150px;
+}
+
+#born-of-stars h5,
+#born-of-stars h2 {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+#born-of-stars h5 {
+    color: var(--text_Dark_Accent);
+}
+
+#born-of-stars h2 {
+    margin: 25px auto;
+    color: var(--text-dark);
+}
+
+#born-box {
+    box-shadow: -10px 10px 20px 5px rgba(134, 72, 102, 0.25);
+}
+
+#born-box-img {
+    width: 50%;
+    height: 20vw;
+    background-image: url(../images/content/stsci-h-p2055a-f-1800x900.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+}
+
+#born-p1 p {
+    width: 45%;
+    color: var(--text_Dark_Gray);
+}
+
+#born-of-stars div.box {
+    padding: 100px 6vw;
+    ;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#icon-menu {
+    padding-top: 60px;
+}
+
+#footer-icon {
+    width: 10%;
+    flex-direction: column;
+}
+
+#footer-menu {
+    width: 10%;
+}
+
+#footer-icon a img {
+    margin: 14px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+#footer-icon a img:hover {
+    width: 60px;
+    height: 60px;
+}
+
+footer div.l-line {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 49px;
+    width: 84%;
+    height: 1px;
+    background-color: #3F3351;
+}
+
+#footer-menu h5 {
+    color: var(--text_Dark_Accent);
+}
+
+#footer-menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+#footer-menu ul a{
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: var(--text_Dark_Gray);
+}
+
+#footer-menu ul a:hover{
+    transition: 0.5s;
+    color: #f65ed3;
+}
+
+#copyright {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    color: var(--text_Light_Gray);
+}
+
+#copyright p {
+    margin: 5px 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
+
 @media (max-width: 992px) {
     .text-big {
         font-size: 18px;
@@ -452,10 +600,101 @@ header {
     #banner {
         height: 65vh;
     }
+
+    .line {
+        display: block;
+        width: 85%;
+    }
+
+    .box {
+        border: none;
+        box-shadow: none;
+    }
+
+    #end-box {
+        flex-direction: column;
+    }
+
+    #end-box, #born-box {
+        box-shadow: 0px 10px 20px 5px rgba(134, 72, 102, 0.25);
+    }
+
+    #end-box-img {
+        width: 50vw;
+        height: 50vw;
+        order: 0;
+        margin-bottom: 75px;
+        box-shadow: 0px 4px 100px 10px rgba(2, 58, 142, 0.58);
+    }
+
+    #end-p1 {
+        width: 100%;
+        order: 1;
+    }
+
+    #born-of-stars {
+        margin-top: 100px;
+    }
+
+    #born-p1 {
+        flex-direction: column;
+    }
+
+    #born-p1 p {
+        width: 100%;
+    }
+
+    #born-box-img {
+        width: 80%;
+        height: 30vw;
+        margin-bottom: 75px;
+        box-shadow: 0px 4px 100px 10px rgba(0, 0, 0, 0.58);
+        border-radius: 16px;
+    }
+
+    #born-of-stars h5,
+    #born-of-stars h2 {
+        display: flex;
+        justify-content: left;
+        width: 100%;
+    }
+
+    #icon-menu {
+        flex-direction: column;
+    }
+
+    #footer-icon {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    #footer-menu {
+        text-align: center;
+        margin: auto;
+    }
+
+    #footer-menu h5 {
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    #copyright p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 32px;
+    }
+
 }
 
 @media (max-width: 600px) {
     #banner {
         height: 65vh;
+    }
+
+    #banner p {
+        top: 70%;
+
     }
 }
