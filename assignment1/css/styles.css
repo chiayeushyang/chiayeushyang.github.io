@@ -1017,6 +1017,7 @@ footer div.line {
 
     #footer-menu {
         text-align: center;
+        width: 100%;
         margin: auto;
     }
 

@@ -669,6 +669,7 @@ footer div.l-line {
     }
 
     #footer-menu {
+        width: 100%;
         text-align: center;
         margin: auto;
     }
