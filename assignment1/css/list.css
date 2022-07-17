@@ -25,6 +25,10 @@
     text-align: center;
 }
 
+.t-j {
+    text-align: justify;
+}
+
 .a-c {
     align-items: center;
 }
@@ -126,12 +130,18 @@ h5 {
     line-height: 24px;
 }
 
+.line {
+    height: 1px;
+    margin: auto;
+    background-color: #F3D1BF;
+}
+
 /* Box */
 .box {
     width: 75%;
     height: auto;
     margin: auto;
-    padding: 20px 30px;
+    padding: 30px 40px;
     border: 1px solid #864879;
     box-shadow: 10px 10px 20px 5px rgba(134, 72, 102, 0.25);
 }
@@ -177,7 +187,7 @@ body {
     z-index: 1000;
 }
 
-#back-top.sticky{
+#back-top.sticky {
     display: block;
 }
 
@@ -400,11 +410,116 @@ header {
 
 #content {
     background-color: #E9A6A6;
+    height: 1000vh;
+}
+
+#content .line {
+    width: 80%;
+    margin-top: 40px;
+}
+
+#famous-nebula {
+    padding: 150px 0px 40px 0px;
+}
+
+#famous-nebula h5,
+#famous-nebula h2 {
+    width: 75%;
+    margin: auto;
+}
+
+#famous-nebula h5 {
+    color: var(--text_Dark_Accent);
+}
+
+#famous-nebula h2 {
+    margin: 25px auto;
+    color: var(--text-dark);
+}
+
+#famous-p1-img {
+    width: 80%;
+    height: 30vw;
+    margin: auto;
+    border-radius: 24px;
+    background: url(../images/content/orion-nebula_1824x1158.jpg);
+    filter: contrast(120%) saturate(1.2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#famous-p1 {
+    width: 90%;
+    margin: auto;
+    color: var(--text_Dark_Gray);
+}
+
+#famous-p1 p {
+    margin-top: 50px;
+}
+
+#information-content {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0px;
+    color: var(--text-dark);
+}
+
+#information-content .main {
+    flex: 1;
+    text-align: left;
+    border: #F3D1BF 1px solid;
+}
+
+#information-content .main div h3 {
+   margin-bottom: 0px;
+}
+
+#information-content .main div {
+    padding: 20px 20px;
+}
+
+#information-content2 {
+    background-color: #FDF0E9;
+}
+
+@media (max-width: 992px) {
+    #famous-p1 p {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 800px) {
     #banner {
         height: 65vh;
+    }
+
+    .box {
+        width: 100%;
+        padding: 0px;
+        border: none;
+        box-shadow: none;
+    }
+
+    #famous-nebula {
+        padding-top: 100px;
+    }
+
+    #famous-p1-img {
+        width: 90%;
+        height: 50vw;
+    }
+
+    #famous-p1 {
+        width: 80%;
+        margin: auto;
+        color: var(--text_Dark_Gray);
+    }
+
+    #information-content {
+        flex-direction: column;
     }
 }
 
@@ -412,4 +527,22 @@ header {
     #banner {
         height: 65vh;
     }
+
+    #information-content1, #information-content2 {
+        padding: 20px;
+    }
+
+    #information-content .main div {
+        padding: 0px;
+    }
+
+    #information-content .main div.word {
+        margin-left: 30px;
+    }
+
+    #information-content .main div h3 {
+        font-size: 24px;
+     }
+
+
 }
