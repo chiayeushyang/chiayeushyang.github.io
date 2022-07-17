@@ -512,12 +512,6 @@ header {
         height: 50vw;
     }
 
-    #famous-p1 {
-        width: 80%;
-        margin: auto;
-        color: var(--text_Dark_Gray);
-    }
-
     #information-content {
         flex-direction: column;
     }
