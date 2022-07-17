@@ -311,11 +311,31 @@ body {
     border-radius: 50%;
     right: 10px;
     bottom: 10px;
+    animation: backtop-rotate 1.5s;
     z-index: 1000;
 }
 
-#back-top.sticky{
+#back-top.sticky {
     display: block;
+}
+
+@keyframes backtop-rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(390deg) translate3d(0, 0, 0);
+    }
+
+    70% {
+        transform: rotate(330deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(360deg) translate3d(0, 0, 0);
+    }
+
 }
 
 #title h1 {
