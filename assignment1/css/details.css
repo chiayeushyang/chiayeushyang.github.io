@@ -100,7 +100,7 @@ h5 {
 .label {
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 12px;
     text-transform: uppercase;
 }
@@ -110,6 +110,7 @@ h5 {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
+    color: var(--text-dark);
 }
 
 .text {
@@ -117,6 +118,7 @@ h5 {
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
+    color: var(--text_Dark_Gray);
 }
 
 .text-small {
@@ -174,11 +176,30 @@ body {
     border-radius: 50%;
     right: 10px;
     bottom: 10px;
+    animation: backtop-rotate 1.5s;
     z-index: 1000;
 }
 
-#back-top.sticky{
+#back-top.sticky {
     display: block;
+}
+
+@keyframes backtop-rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(390deg) translate3d(0, 0, 0);
+    }
+
+    70% {
+        transform: rotate(330deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(360deg) translate3d(0, 0, 0);
+    }
 }
 
 header {
@@ -187,6 +208,8 @@ header {
     height: 70px;
     z-index: 1;
 }
+
+/* Navbar */
 
 /* Navbar */
 
@@ -392,22 +415,214 @@ header {
     z-index: 1;
 }
 
-/* Navbar */
-
-#menu, #menu a {
-    color: var(--text_Light);
-    transition: 1s;
+#content {
+    height: 1000vh;
+    background-color: #E9A6A6;
+    padding-top: 100px;
 }
 
-#content {
-    background-color: #E9A6A6;
+
+#back-home {
+    position: relative;
+    color: var(--text-dark);
+}
+
+#back-home:hover {
+    animation: moveLeft 1.2s;
+}
+
+#back-home div {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#back-home div p {
+    margin-left: 20px;
+}
+
+#details {
+    width: 70%;
+    margin: auto;
+    color: var(--text_Dark);
+}
+
+#emission {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#emission img {
+    position: absolute;
+}
+
+#img1 {
+    top: 0%;
+    right: 3%;
+}
+
+#img2 {
+    top: 15%;
+    right: 14%;
+}
+
+#img3 {
+    top: 37%;
+    right: 3%;
+}
+
+#img4 {
+    top: 52%;
+    right: 14%;
+}
+
+#emission1 {
+    width: 40%;
+    margin-left: 7%;
+    margin-right: 150px;
+}
+
+#emission2 ul {
+    padding-left: 0;
+}
+
+#emission2 h5 {
+    color: var(--text_Dark_Accent);
+}
+
+#emission2 ul a li {
+    list-style: none;
+    margin-bottom: 50px;
+    color: var(--text-dark);
+}
+
+#emission3 {
+    width: 30%;
+}
+
+#emission-img1 {
+    display: none;
+    width: 70%;
+    height: 40vw;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    filter: contrast(1.15);
+    background-image: url(../images/content/Rosetta_NGC_2237_Ferretti-Bruzzone_Nit.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#emission-img2 {
+    width: 70%;
+    height: 40vw;
+    margin: auto;
+    border-radius: 25px;
+    filter: contrast(1.15);
+    background-image: url(../images/content/Rosetta_NGC_2237_Ferretti-Bruzzone_Nit.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 1150px) {
+    #img1 {
+        top: -5%;
+        right: 3%;
+    }
+
+    #img2 {
+        top: 22%;
+        right: 3%;
+    }
+
+    #img3 {
+        top: 49%;
+        right: 3%;
+    }
+
+    #img4 {
+        top: 76%;
+        right: 3%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    #emission img {
+        display: none;
+    }
 }
 
 @media (max-width: 800px) {
+    #details {
+        text-align: center;
+    }
 
+    #emission {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    #emission1,
+    #emission2 {
+        width: 80%;
+        margin: auto;
+    }
+
+    #emission1 {
+        text-align: center;
+    }
+
+    #emission-img1 {
+        display: block;
+    }
+
+    #emission2 {
+        border: 1px solid #864879;
+        box-shadow: 0px 10px 20px 5px rgba(134, 72, 102, 0.25);
+        padding-bottom: 80px;
+    }
+
+    #emission2 h5 {
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    #emission2 ul {
+        text-align: center;
+    }
+
+    #emission2 ul a li {
+        margin-bottom: 10px;
+    }
+
+    #emission-img2 {
+        display: none;
+    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) {}
 
+@keyframes moveLeft {
+    0% {
+        left: 0px;
+        ;
+    }
+
+    25% {
+        left: -30px;
+    }
+
+    50% {
+        left: 10px;
+    }
+
+    100% {
+        left: 0px;
+    }
 }
-
