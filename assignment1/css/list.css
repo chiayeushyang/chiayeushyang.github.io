@@ -765,9 +765,12 @@ footer div.footer-line {
 
     .s-box {
         width: 80%;
-        margin-top: 0px;
         border: none;
         padding: 14px 5vw;
+    }
+
+    #example h3 {
+        margin-bottom: 0;
     }
 
     #famous-nebula {

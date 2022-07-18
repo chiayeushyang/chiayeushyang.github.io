@@ -702,6 +702,10 @@ footer div.line {
         color: var(--text_Dark_Gray);
     }
 
+    #end-p2 p{
+        margin-bottom: 0;
+    }
+
     #end-of-stars h5, #end-of-stars h2{
         width: 95%;
         margin: auto;
