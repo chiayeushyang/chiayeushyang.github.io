@@ -130,14 +130,25 @@ h5 {
 
 /* Box */
 .box {
-    width: 75%;
+    width: 90%;
     height: auto;
     margin: auto;
-    padding: 20px 30px;
+    margin-bottom: 100px;
+    padding: 30px 0px;
     border: 1px solid #864879;
     box-shadow: 10px 10px 20px 5px rgba(134, 72, 102, 0.25);
 }
 
+.box p {
+    width: 43%;
+    text-align: justify;
+}
+
+.box img {
+   width: 43%;
+   border-radius: 50%;
+   filter: contrast(1.15);
+}
 
 /* Main */
 body {
@@ -200,6 +211,12 @@ body {
     100% {
         transform: rotate(360deg) translate3d(0, 0, 0);
     }
+}
+
+.line {
+    height: 1px;
+    margin: auto;
+    background-color: #3F3351;
 }
 
 header {
@@ -421,6 +438,13 @@ header {
     padding-top: 100px;
 }
 
+#content .line {
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 
 #back-home {
     position: relative;
@@ -528,6 +552,161 @@ header {
     background-repeat: no-repeat;
 }
 
+#reflections-text {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+#reflections-img {
+    position: relative;
+    width: 74%;
+    height: 29vw;
+    margin: auto;
+}
+
+#reflections-img div {
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    filter: contrast(1.15);
+}
+
+#reflections-img1 {
+    position: absolute;
+    width: 40%;
+    height: 29vw;
+    background-image: url(../images/content/Messier_78.jpg);
+    background-color: #8C347A;
+}
+
+#reflections-img2 {
+    position: absolute;
+    width: 23%;
+    height: 13vw;
+    top: 0%;
+    left: 47%;
+    background-image: url(../images/content/trifid\ nebula.jpg);
+    background-color: #8C347A;
+}
+
+#reflections-img3 {
+    position: absolute;
+    width: 23%;
+    height: 13vw;
+    bottom: 0%;
+    left: 47%;
+    background-image: url(../images/content/cave\ nebula.jpg);
+    background-color: #8C347A;
+}
+
+#reflections-img4 {
+    position: absolute;
+    width: 23%;
+    height: 13vw;
+    top: 0%;
+    right: 0%;
+    background-image: url(../images/content/iris\ nebula.jpg);
+    background-color: #8C347A;
+}
+
+#reflections-img5 {
+    position: absolute;
+    width: 23%;
+    height: 13vw;
+    bottom: 0%;
+    right: 0%;
+    background-image: url(../images/content/Orion_Nebula.jpg);
+    background-color: #8C347A;
+}
+
+#type h3 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    color: var(--text-dark);
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#icon-menu {
+    padding-top: 60px;
+}
+
+#footer-icon {
+    width: 10%;
+    flex-direction: column;
+}
+
+#footer-menu {
+    width: 10%;
+}
+
+#footer-icon a img {
+    margin: 14px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+#footer-icon a img:hover {
+    width: 60px;
+    height: 60px;
+}
+
+footer div.l-line {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 49px;
+    width: 84%;
+    height: 1px;
+    background-color: #3F3351;
+}
+
+#footer-menu h5 {
+    color: var(--text_Dark_Accent);
+}
+
+#footer-menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+#footer-menu ul a{
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: var(--text_Dark_Gray);
+}
+
+#footer-menu ul a:hover{
+    transition: 0.5s;
+    color: #f65ed3;
+}
+
+#copyright {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    color: var(--text_Light_Gray);
+}
+
+#copyright p {
+    margin: 5px 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
 
 @media (max-width: 1150px) {
     #img1 {
@@ -552,7 +731,6 @@ header {
 }
 
 @media (max-width: 992px) {
-
     #emission img {
         display: none;
     }
@@ -603,6 +781,125 @@ header {
 
     #emission-img2 {
         display: none;
+    }
+
+    #reflections-text {
+        width: 80%;
+        text-align: justify;
+        margin: auto;
+        margin-bottom: 70px;
+    }
+
+    #content .line {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    #reflections-img {
+        width: 90%;
+        height: 165vw;
+        margin: auto;
+    }
+
+    #reflections-img1 {
+        position: absolute;
+        width: 100%;
+        height: 70vw;
+        background-image: url(../images/content/Messier_78.jpg);
+        background-color: #8C347A;
+    }
+
+    #reflections-img2 {
+        position: absolute;
+        width: 45%;
+        height: 40vw;
+        top: 47%;
+        left: 0%;
+        background-image: url(../images/content/trifid\ nebula.jpg);
+        background-color: #8C347A;
+    }
+
+    #reflections-img3 {
+        position: absolute;
+        width: 45%;
+        height: 40vw;
+        bottom: 0%;
+        left: 0%;
+        background-image: url(../images/content/cave\ nebula.jpg);
+        background-color: #8C347A;
+    }
+
+    #reflections-img4 {
+        position: absolute;
+        width: 45%;
+        height: 40vw;
+        top: 47%;
+        right: 0%;
+        background-image: url(../images/content/iris\ nebula.jpg);
+        background-color: #8C347A;
+    }
+
+    #reflections-img5 {
+        position: absolute;
+        width: 45%;
+        height: 40vw;
+        bottom: 0%;
+        right: 0%;
+        background-image: url(../images/content/Orion_Nebula.jpg);
+        background-color: #8C347A;
+    } 
+
+    #type h3 {
+        width: 80%;
+    }
+
+    .box {
+        padding: 30px 8px;
+        border: none;
+        box-shadow: 10px 10px 20px 5px rgba(134, 72, 102, 0.25);
+    }
+
+    #type div.box {
+        flex-direction: column;
+        width: 85%;
+    }
+
+    #type div.box p{
+        width: 90%;
+        order: 2;
+    }
+
+    #type div.box img{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    #icon-menu {
+        flex-direction: column;
+    }
+
+    #footer-icon {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    #footer-menu {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    #footer-menu h5 {
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    #copyright p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 32px;
     }
 }
 
