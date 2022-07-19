@@ -433,7 +433,6 @@ header {
 }
 
 #content {
-    height: 1000vh;
     background-color: #E9A6A6;
     padding-top: 100px;
 }
@@ -625,6 +624,13 @@ header {
     margin: auto;
     margin-bottom: 50px;
     color: var(--text-dark);
+}
+
+#footer-line {
+    height: 1px;
+    margin: auto;
+    background-color: #3F3351;
+    width: 84%;
 }
 
 footer {
