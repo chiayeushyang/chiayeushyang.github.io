@@ -465,7 +465,7 @@ header {
     width: 60%;
     height: 35vw;
     margin: 200px auto;
-    border-radius: 155px;
+    border-radius: 100px;
     box-shadow: 0px 4px 250px 150px rgba(209, 222, 255, 0.32);
     background-image: url(../images/content/supernova.png);
     background-position: center;
@@ -706,6 +706,10 @@ footer div.line {
         margin-bottom: 0;
     }
 
+    #end-of-stars {
+        padding-top: 100px;
+    }
+
     #end-of-stars h5, #end-of-stars h2{
         width: 95%;
         margin: auto;
@@ -723,7 +727,10 @@ footer div.line {
     }
 
     #supernova {
-        margin: 150px auto;;
+        width: 70%;
+        height: 45vw;
+        border-radius: 25px;
+        margin: 100px auto;;
         box-shadow: 0px 4px 100px 50px rgba(209, 222, 255, 0.32);
     }
 
