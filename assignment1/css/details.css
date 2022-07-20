@@ -481,21 +481,25 @@ header {
 }
 
 #img1 {
+    display: none;
     top: 0%;
     right: 3%;
 }
 
 #img2 {
+    display: none;
     top: 15%;
     right: 14%;
 }
 
 #img3 {
+    display: none;
     top: 37%;
     right: 3%;
 }
 
 #img4 {
+    display: none;
     top: 52%;
     right: 14%;
 }
@@ -716,23 +720,23 @@ footer div.l-line {
 
 @media (max-width: 1150px) {
     #img1 {
-        top: -5%;
+        top: 20%;
         right: 3%;
     }
 
     #img2 {
-        top: 22%;
+        top: 35%;
         right: 3%;
     }
 
     #img3 {
-        top: 49%;
+        top: 48%;
         right: 3%;
     }
 
     #img4 {
-        top: 76%;
-        right: 3%;
+        top: 48%;
+        right: 6%;
     }
 }
 

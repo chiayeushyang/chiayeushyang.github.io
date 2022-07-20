@@ -21,25 +21,25 @@ function myFunction() {
     }
 }
 
-if($(window).innerWidth() > 992){
-        $(coco).hover(function () {
-            $(img1).css("display", "block");
+if($("#container").width() > 976){
+        $("#coco").hover(function () {
+            $('#img1').css("display", "block");
         }, function () {
-            $(img1).css("display", "none");
+            $("#img1").css("display", "none");
         })
-        $(pacman).hover(function () {
-            $(img2).css("display", "block");
+        $("#pacman").hover(function () {
+            $("#img2").css("display", "block");
         }, function () {
-            $(img2).css("display", "none");
+            $("#img2").css("display", "none");
         })
-        $(wizard).hover(function () {
-            $(img3).css("display", "block");
+        $("#wizard").hover(function () {
+            $("#img3").css("display", "block");
         }, function () {
-            $(img3).css("display", "none");
+            $("#img3").css("display", "none");
         })
-        $(elephant).hover(function () {
-            $(img4).css("display", "block");
+        $("#elephant").hover(function () {
+            $("#img4").css("display", "block");
         }, function () {
-            $(img4).css("display", "none");
+            $("#img4").css("display", "none");
         })
 } 
