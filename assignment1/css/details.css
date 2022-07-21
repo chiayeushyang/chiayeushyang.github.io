@@ -263,6 +263,10 @@ header {
     display: none;
 } */
 
+#contact {
+    display: none;
+}
+
 #menu-home {
     width: 138px;
     height: 48px;
@@ -361,6 +365,10 @@ header {
         margin-top: 0px;
     }
 
+    #contact {
+        display: block;
+    }
+    
     #menu-home {
         width: auto;
         padding: 0px 20px;

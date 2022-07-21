@@ -411,6 +411,10 @@ header {
     display: none;
 } */
 
+#contact {
+    display: none;
+}
+
 #menu-home {
     width: 138px;
     height: 48px;
@@ -507,6 +511,10 @@ header {
     #menu-main ul {
         flex-direction: column;
         margin-top: 0px;
+    }
+
+    #contact {
+        display: block;
     }
 
     #menu-home {

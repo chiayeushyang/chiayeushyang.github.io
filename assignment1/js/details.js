@@ -20,3 +20,26 @@ function myFunction() {
         x.className = "fa-solid fa-bars";
     }
 }
+
+if($("#container").width() > 976){
+        $("#coco").hover(function () {
+            $('#img1').css("display", "block");
+        }, function () {
+            $("#img1").css("display", "none");
+        })
+        $("#pacman").hover(function () {
+            $("#img2").css("display", "block");
+        }, function () {
+            $("#img2").css("display", "none");
+        })
+        $("#wizard").hover(function () {
+            $("#img4").css("display", "block");
+        }, function () {
+            $("#img4").css("display", "none");
+        })
+        $("#elephant").hover(function () {
+            $("#img3").css("display", "block");
+        }, function () {
+            $("#img3").css("display", "none");
+        })
+} 
