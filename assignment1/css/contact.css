@@ -474,7 +474,9 @@ fieldset {
 }
 
 #email,
-#phone {
+#phone, 
+#email2,
+#phone2 {
     width: 49%;
 }
 
@@ -486,7 +488,7 @@ legend {
 }
 
 input[type=text].half,
-select {
+select, select2 {
     width: 49%;
     padding: 12px;
     background: linear-gradient(rgba(241, 214, 191, 0.938), rgb(248, 247, 223));
@@ -496,7 +498,7 @@ select {
     resize: vertical;
 }
 
-select {
+select, select2 {
     color: #f68a05;
 }
 
@@ -537,7 +539,7 @@ input[type=text].full {
     background-color: #eeb5b5f1;
 }
 
-#email-phone {
+#email-phone, #email-phone2 {
     display: flex;
 }
 
@@ -545,11 +547,11 @@ input[type=text].full {
     margin-left: 4px;
 }
 
-#submit {
+#submit, #submit2 {
     text-align: center;
 }
 
-#submit input {
+#submit input, #submit2 input {
     text-align: center;
     background-color: #f68a05;
     color: white;
@@ -558,7 +560,7 @@ input[type=text].full {
     border-radius: 25px;
 }
 
-#submit input:hover {
+#submit input:hover, #submit2 input:hover{
     background-color: #080302;
     cursor: pointer;
 }
