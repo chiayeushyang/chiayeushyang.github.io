@@ -33,13 +33,13 @@ if($("#container").width() > 976){
             $("#img2").css("display", "none");
         })
         $("#wizard").hover(function () {
-            $("#img3").css("display", "block");
-        }, function () {
-            $("#img3").css("display", "none");
-        })
-        $("#elephant").hover(function () {
             $("#img4").css("display", "block");
         }, function () {
             $("#img4").css("display", "none");
+        })
+        $("#elephant").hover(function () {
+            $("#img3").css("display", "block");
+        }, function () {
+            $("#img3").css("display", "none");
         })
 } 
