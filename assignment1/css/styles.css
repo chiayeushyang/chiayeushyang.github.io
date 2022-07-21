@@ -33,6 +33,10 @@
     text-align: justify; 
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .mt-60 {
     margin-top: 60px;
 }

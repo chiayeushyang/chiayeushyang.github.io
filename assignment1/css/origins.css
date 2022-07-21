@@ -29,6 +29,10 @@
     text-align: justify;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .a-c {
     align-items: center;
 }
