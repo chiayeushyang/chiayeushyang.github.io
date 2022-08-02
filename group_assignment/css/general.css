@@ -101,6 +101,22 @@ footer {
     padding-bottom: 70px;
 }
 
+footer ul a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul a:hover li{
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+}
+
+footer a:hover img{
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.575));
+    filter: drop-shadow(0px 4px 4px rgb(0, 0, 0.575));
+}
+
 #line {
     width: 70%;
     height: 1px;
