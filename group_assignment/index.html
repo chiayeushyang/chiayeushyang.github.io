@@ -145,9 +145,9 @@
   </div>
 
   <div id="first-content" class="position-relative mx-auto">
-     
+
     <div class="row d-flex align-items-center justify-content-between">
-      <div class="col-7">
+      <div class="col-12  col-lg-7 col-sm-8">
         <h1 class="fw-bold mb-5">Plan for your next destination ?</h1>
         <p class="text text-justify">Still confusing where you want to go? Don’t hesitate, Malaysia is the best choice
           for your
@@ -155,17 +155,22 @@
           Malaysia. You may experience different type of cultural, different style of temple by just coming to
           Malaysia.
         </p>
-        <div class="d-flex justify-content-end">
+        <div class="d-none d-md-flex justify-content-end mt-4 mt-md-0">
           <a href="#" class="btn btn-brown text-light fs-5">Read More</a>
         </div>
       </div>
-      <div class="col-4">
-        <img src="images/home/chinese_temple.png" id="chineseTemple" class="d-flex" width="100%" />
+      <div class="col-12 col-sm-4">
+        <img src="images/home/chinese_temple.png" id="chineseTemple" class="d-flex" data-bs-toggle="tooltip"
+          data-bs-placement="left" data-bs-custom-class="custom-tooltip"
+          data-bs-title="Throw out all your stress, pray and bless. " />
+      </div>
+      <div class="d-md-none d-flex justify-content-center mt-4 mt-md-0">
+        <a href="#" class="btn btn-brown text-light fs-5">Read More</a>
       </div>
     </div>
-    <img src="images/home/Group_1475.png" id="first-content-bg1" class="position-absolute" />
+    <img src="images/home/Group_1475.png" id="first-content-bg1" class="position-absolute d-none d-sm-flex" />
     <img src="images/home/istockphoto-972680176-612x612-removebg-preview.png" id="first-content-bg2"
-      class="position-absolute" />
+      class="position-absolute d-none d-sm-flex" />
     <img src="images/home/Vector_1.png" id="first-content-bg3" class="position-absolute" />
   </div>
   <div id="second-content">
@@ -222,6 +227,10 @@
     <p class="position-absolute bottom-0 text-light">Copyright © 2022 3C2L. All Rights Reserved.</p>
   </footer>
   <script src="js/scripts.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
 </body>
 
 </html>

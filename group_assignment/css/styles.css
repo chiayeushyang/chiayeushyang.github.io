@@ -3,6 +3,7 @@
     --bg-btn-green: #519259E5;
     --bg-btn-lightBlue: #66BFBFE5;
     --bg-btn-brown: #CCA035E5;
+    --bg-toolsTip-orange: #F0BB62F2;
 }
 
 .text-justify {
@@ -28,29 +29,29 @@ h1 {
     min-height: 500px;
 }
 
-.slideshow-content-header{
+.slideshow-content-header {
     font-size: 75px;
     font-weight: 600;
 }
 
-.slideshow-content-paragraph{
+.slideshow-content-paragraph {
     font-size: calc(1.325rem + .9vw);
 }
 
 .btn {
-     --bs-btn-padding-x: 2rem !important;
+    --bs-btn-padding-x: 2rem !important;
 }
 
-.btn-green{
+.btn-green {
     background-color: var(--bg-btn-green) !important;
 }
 
 .btn-lightBlue {
-    background-color: var(--bg-btn-lightBlue) !important;  
+    background-color: var(--bg-btn-lightBlue) !important;
 }
 
 .btn-brown {
-    background-color: var(--bg-btn-brown) !important;  
+    background-color: var(--bg-btn-brown) !important;
 }
 
 .carousel-caption-middle {
@@ -76,12 +77,12 @@ h1 {
 
 #chineseTemple {
     position: relative;
-    bottom: 80px;
+    width: 100%;
 }
 
 #first-content-bg1 {
     width: 60%;
-    top: 13%;
+    top: 20%;
     right: 0%;
     z-index: -1;
 }
@@ -96,26 +97,34 @@ h1 {
 
 #first-content-bg3 {
     width: 50%;
-    top: 76%;
+    top: 90%;
     right: 10%;
     z-index: 0;
     opacity: 1;
 }
 
+.tooltip-inner {
+    --bs-tooltip-bg: var(--bg-toolsTip-orange);
+    color: black !important;
+    font-size: calc(20px + 0.5vw);
+    font-weight: 700;
+}
+
+.tooltip-arrow {
+    --bs-tooltip-bg: var(--bg-toolsTip-orange);
+}
+
 @media screen and (max-width: 1149px) {
     #first-content-bg3 {
-        top: 65%;
+        top: 80%;
     }
 }
 
 @media screen and (max-width: 993px) {
     #first-content-bg1 {
-
         top: 25%;
-
     }
 
-    
     #first-content-bg3 {
         display: none;
     }
@@ -125,14 +134,31 @@ h1 {
     .slideshow-content-header {
         font-size: calc(14px + 5.8vw);
     }
+
+    #first-content {
+        margin-top: 50px;
+        margin-bottom: 200px;
+    }
+
+    #first-content-bg1 {
+        width: 70%;
+        top: 32%;
+        right: -5%;
+    }
+
+    #first-content-bg2 {
+        width: 55%;
+        top: 50%;
+        left: -10%;
+    }
 }
- 
+
 @media screen and (max-width: 576px) {
-    .slideshow-content-header{
+    .slideshow-content-header {
         font-size: 35px
     }
 
-    .slideshow-content-paragraph{
+    .slideshow-content-paragraph {
         font-size: calc(1rem + .9vw);
     }
 
@@ -149,5 +175,16 @@ h1 {
         color: rgb(255, 255, 255);
         backdrop-filter: blur(8px);
         text-align: center;
+    }
+
+    #first-content {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    #chineseTemple {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
     }
 }

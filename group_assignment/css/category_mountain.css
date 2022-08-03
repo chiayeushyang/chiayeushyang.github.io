@@ -1,7 +1,9 @@
 :root{
     --bg-btn-green: rgba(81, 146, 89, 0.9);
+    --tooltip-green: #8FCD80;
+    --card-yellow: rgba(244, 238, 169, 1);
+    --card-gray: rgba(116, 116, 116, 0.2);
 }
-
 
 .image-fill-black{
     filter: brightness(70%); 
@@ -13,7 +15,7 @@
 
 .slideshow-content-position{
     top: 0;
-    left: 0;
+    left: 60px;
 }
 
 .slideshow-content-header{
@@ -40,7 +42,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 .padding-image-top{
     padding-top: 5vw;
@@ -82,7 +83,7 @@
 }
 
 .tooltip-inner {
-    background-color: #8FCD80 !important;
+    background-color: var(--tooltip-green) !important;
     color: black !important;
     font-size: calc(20px + 0.5vw);
     font-weight: 600;
@@ -109,7 +110,41 @@
     z-index: 2;
 }
 
+@media screen and (min-width: 3800px) {
+    #second_container h1{
+        font-size: 1.6vw !important;
+    }
+
+    #second_container h2{
+        font-size: 60px;
+    }
+
+    .bg-triangle-yellow h1{
+        font-size: calc(10px + 2vw);
+    }
+
+    .bg-triangle-yellow p{
+        font-size: calc(10px + 1vw) !important;
+    }
+}
+
+@media screen and (min-width: 2500px) {
+    .padding-image-top{
+        padding-top: 2vw;
+        padding-bottom: 10vw;
+    }
+    
+    .padding-image-bwl{
+        padding-top: 10vw;
+        padding-bottom: 2vw;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .slideshow-content-position{
+        left: 0;
+    }
+
     .slideshow-content-header{
         font-size: calc(14px + 5.8vw);
 
@@ -163,7 +198,7 @@
 }
 
 .card {
-    background: linear-gradient(4deg, rgba(244, 238, 169, 1), rgba(116, 116, 116, 0.2)), #F4EEA9;
+    background: linear-gradient(4deg, var(--card-yellow), var(--card-gray)), #F4EEA9;
     width: 18rem;
     min-width: 30% !important;
     box-shadow: -5px 5px 25px #0000009d;
