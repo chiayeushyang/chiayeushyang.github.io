@@ -1,0 +1,176 @@
+/* Showcase */
+.background {
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    background: url(../images/beach_pulau/beach-pulau-bg.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.location-name h1 {
+    font-size: 6rem;
+}
+
+.location-name p {
+    font-size: 2.25rem;
+}
+
+.location img{
+    width: 20px;
+}
+/* Showcase */
+
+/* About */
+.main-title img {
+    width: 90px;
+}
+
+.main-title h1 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.main-title p {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.detail h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.detail p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+/* About */
+
+/* Activities */
+.activity {
+    background-color: rgba(215, 255, 55, 0.1);
+}
+
+.activity .row {
+    padding-top: 6.25rem;
+    padding-bottom: 10rem;
+}
+
+.right-ellipse {
+    position: relative;
+}
+
+.right-ellipse img {
+    position: absolute;
+    width: 40rem;
+}
+
+.img2 {
+    display: none;
+    width: 38rem;
+}
+
+.right-ellipse h2,p {
+    z-index: 1;
+}
+
+.right-ellipse h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.right-ellipse p {
+    font-size: 24px;
+    width: 30rem;
+}
+/* Activities */
+
+/* Food */
+.food-title h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.food-title p {
+    font-size: 2rem;
+}
+
+.food .row {
+    padding-top: 6.25rem;
+    padding-bottom: 10rem;
+}
+/* Food */
+
+/* Gallery */
+.gallery {
+    background-color: rgba(215, 255, 55, 0.1);
+}
+
+.gallery .box :hover {
+    transition-duration: 0.3s;
+    border-radius: 20px;
+    z-index: 1;
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+/* Gallery */
+
+footer {
+    background-color: rgba(215, 255, 55, 0.1);
+}
+@media screen and (max-width: 1200px){
+    .right-ellipse {
+        height: 40rem;
+    }
+}
+
+@media screen and (max-width: 575px) {        
+    .main-title h1 {
+        font-size: 3rem;
+    }
+
+    .main-title p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+
+    .location-name h1 {
+        font-size: 4rem;
+    }
+    
+    .location-name p {
+        font-size: 1.5rem;
+    }
+
+    
+    .activity .row {
+        padding-top: 1rem;
+    }
+
+    .img2 {
+        display: block;
+        min-height: 30rem;
+    }
+
+    .right-ellipse p {
+        width: 90vw;
+    }
+
+    .food-title h2 {
+        font-size: 2rem;
+    }
+    
+        .food-title p {
+        font-size: 1.5rem;
+    }
+
+    .food .row {
+        padding-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+}
