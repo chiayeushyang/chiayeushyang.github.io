@@ -1,0 +1,236 @@
+:root{
+    --bg-btn-green: rgba(81, 146, 89, 0.9);
+}
+
+
+.image-fill-black{
+    filter: brightness(70%); 
+}
+
+.slidetshow-fixed-heigh{
+    min-height: 500px;
+}
+
+.slideshow-content-position{
+    top: 0;
+    left: 0;
+}
+
+.slideshow-content-header{
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.slideshow-content-paragraph{
+    font-size: calc(1.325rem + .9vw);
+}
+
+.bg-btn-green{
+    background-color: var(--bg-btn-green) !important;
+}
+
+.bg-triangle-green{
+    background-image: url(../images/category_mountain/bg-green-triangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-triangle-yellow{
+    background-image: url(../images/category_mountain/bg-yellow-triangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.padding-image-top{
+    padding-top: 5vw;
+    padding-bottom: 20vw;
+}
+
+.padding-image-bwl{
+    padding-top: 20vw;
+    padding-bottom: 5vw;
+}
+
+.content_body{
+    padding: 100px 0px;
+}
+
+.bg-triangle-green h1{
+    font-size: calc(18px + 1.5vw);
+}
+
+.bg-triangle-green h2{
+    font-size: calc(10px + 1.5vw);
+}
+
+.bg-triangle-yellow h1{
+    font-size: calc(20px + 3vw);
+}
+
+.bg-triangle-yellow h2{
+    font-size: calc(30px + 1vw);
+}
+
+.decoration_2-position{
+    left: 5%;
+    top: -150%;
+}
+
+#decoration_2{
+    z-index: 1;
+}
+
+.tooltip-inner {
+    background-color: #8FCD80 !important;
+    color: black !important;
+    font-size: calc(20px + 0.5vw);
+    font-weight: 600;
+}
+
+.bg-bottom{
+    background-image: url(../images/category_mountain/bottom-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.round-shape{
+    width: 30%;
+    height: 950%;
+}
+
+.round-shape_d2{
+    width: 20%;
+    height: 1000%;
+}
+
+
+.third_container_image{
+    z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+    .slideshow-content-header{
+        font-size: calc(14px + 5.8vw);
+
+    }
+
+    .slideshow-content-paragraph{
+        font-size: calc(20px);
+    }
+
+    .content_body{
+        padding: 20px 0px;
+    }
+
+    .round-shape{
+        width: 50%;
+        height: 500%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .round-shape{
+        width: 40%;
+        height: 400%;
+    }
+
+    .round-shape_d2{
+        width: 30%;
+        height: 500%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .padding-image-bwl{
+        padding-top: 7vw;
+    }
+
+    .round-shape{
+        height: 250%;
+    }
+}
+
+
+/* card css design, copy from my bootstrap_test folder file*/
+.container {
+    overflow: auto;
+}
+
+.cards {
+    overflow: auto;
+    min-height: 550px;
+}
+
+.card {
+    background: linear-gradient(4deg, rgba(244, 238, 169, 1), rgba(116, 116, 116, 0.2)), #F4EEA9;
+    width: 18rem;
+    min-width: 30% !important;
+    box-shadow: -5px 5px 25px #0000009d;
+    padding: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.card .fs-5 {
+    font-size: 1.15rem !important;
+}
+
+.card a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card:not(:first-child) {
+    margin-left: -8rem;
+}
+
+.card:hover,
+.card:focus-within {
+    transform: translateY(-1rem) rotateZ(5deg);
+}
+
+.card:hover~.card,
+.card:focus-within~.card {
+    transform: translateX(8rem);
+}
+
+.card .designation {
+    display: inline;
+    border-radius: 10px;
+    padding: 4px 10px;
+    border: 1px solid #ddd;
+}
+
+
+@media screen and (min-width: 768px) {
+    .w-30p{
+        width: 30% !important;
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .card{
+        margin-left: 15px !important;
+    }
+
+    .w-30p{
+        width: 90% !important;
+    }
+
+    .card:not(:first-child) {
+        margin-top: -5rem;
+        margin-left: 0rem;
+    }
+
+    .card:hover~.card,
+    .card:focus-within~.card {
+        transform: translateY(8rem);
+        transform: translateX(0rem);
+    }
+
+    .card:hover,
+    .card:focus-within{
+        transform: translateY(-8rem) rotateZ(5deg);
+    }
+}

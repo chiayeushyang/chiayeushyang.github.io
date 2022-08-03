@@ -13,6 +13,15 @@
     font-weight: 500;
 }
 
+body {
+   overflow-x: hidden; 
+}
+
+.container-1920 {
+    max-width: 1920px;
+    margin: auto;
+}
+
 .scrolled-down{
     transform:translateY(-100%); transition: all 0.25s ease-in-out;
 }
@@ -101,7 +110,7 @@
 
 /* footer */
 footer {
-    background-image: url(../images/Rectanglefooter-round.png);
+    background-image: url(../images/general/Rectanglefooter-round.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 80px;
@@ -141,6 +150,12 @@ footer a:hover img{
     left: 51vw;
     bottom: 80px;
     width: 20vw;
+}
+
+@media screen and (min-width: 1920px) {
+    #east_malaysia, #west_malaysia {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 992px) {
