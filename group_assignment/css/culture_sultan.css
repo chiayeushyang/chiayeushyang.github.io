@@ -1,0 +1,123 @@
+#pin {
+    bottom: 5%;
+    left: 5%;
+  }
+  
+  #pin p {
+    margin-bottom: 0%;
+  }
+  
+  .mimg {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .head {
+    font-weight: 600;
+  }
+  
+  .t1 {
+    font-size: 2vw;
+  }
+  
+  .t2 {
+    font-size: 1.5vw;
+  }
+  
+  .t3 {
+    font-weight: 700;
+    font-size: 1.3vw;
+    margin-bottom: 0%;
+  }
+  
+  .t4 {
+    font-size: 1.3vw;
+  }
+  
+  a {
+    font-size: 1.5vw;
+  }
+  
+  p {
+    font-size: 1.5vw;
+  }
+  
+  .link {
+    font-size: 2vw;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+  }
+  
+  .link p {
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+  }
+  
+  @media screen and (max-width: 768px) and (min-width: 577px) {
+    .head {
+      font-weight: 400;
+    }
+  
+    .t1 {
+      font-size: 2.3vw;
+    }
+  
+    .t2 {
+      font-size: 2vw;
+    }
+  
+    .t3 {
+      font-size: 1.8vw;
+    }
+  
+    .t4 {
+      font-size: 1.5vw;
+    }
+  
+    a {
+      font-size: 1.8vw;
+    }
+  
+    p {
+      font-size: 1.8vw;
+    }
+  
+    .link {
+      font-size: 2.3vw;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .head {
+      font-weight: 500;
+    }
+  
+    .t1 {
+      font-size: 5vw;
+    }
+  
+    .t2 {
+      font-size: 4.5vw;
+    }
+  
+    .t3 {
+      font-size: 4.3vw;
+    }
+  
+    .t4 {
+      font-size: 4vw;
+    }
+  
+    a {
+      font-size: 4.3vw;
+    }
+  
+    p {
+      font-size: 4.3vw;
+    }
+  
+    .link {
+      font-size: 4.8vw;
+    }
+  }

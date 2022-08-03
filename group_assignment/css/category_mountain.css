@@ -89,6 +89,10 @@
     font-weight: 600;
 }
 
+.tooltip-arrow {
+    --bs-tooltip-bg: var(--tooltip-green);
+}
+
 .bg-bottom{
     background-image: url(../images/category_mountain/bottom-bg.png);
     background-repeat: no-repeat;

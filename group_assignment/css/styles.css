@@ -114,6 +114,46 @@ h1 {
     --bs-tooltip-bg: var(--bg-toolsTip-orange);
 }
 
+#second-content {
+    background-color: #DCF5C8;
+}
+
+#second-content p {
+    width: 50%;
+}
+
+#second-content-text {
+    height: 150vh;
+}
+
+
+#waterfall {
+    width: 60%;
+    top: 27vw;
+    left: 0%;
+}
+
+#river {
+    width: 60%;
+    top: 50vw;
+    right: 0;
+}
+
+#b-leaf {
+    width: 80%;
+    top: 0%;
+    z-index: 0;
+}
+
+#b-leaf-stem {
+    width: 57%;
+    top: 4%;
+    left: 12%;
+    z-index: 1;
+}
+
+
+
 @media screen and (max-width: 1149px) {
     #first-content-bg3 {
         top: 80%;
