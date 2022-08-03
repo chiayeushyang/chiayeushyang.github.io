@@ -3,7 +3,9 @@
     --bg-btn-green: #519259E5;
     --bg-btn-lightBlue: #66BFBFE5;
     --bg-btn-brown: #CCA035E5;
+    --bg-btn-blue: #5899E7E5;
     --bg-toolsTip-orange: #F0BB62F2;
+    --bg-toolsTip-lightGreen: #a6dc98f1;
 }
 
 .text-justify {
@@ -103,60 +105,85 @@ h1 {
     opacity: 1;
 }
 
-.tooltip-inner {
+.custom-tooltip .tooltip-inner {
     --bs-tooltip-bg: var(--bg-toolsTip-orange);
     color: black !important;
     font-size: calc(20px + 0.5vw);
     font-weight: 700;
 }
 
-.tooltip-arrow {
+.custom-tooltip .tooltip-arrow {
     --bs-tooltip-bg: var(--bg-toolsTip-orange);
+}
+
+.custom-tooltip2 .tooltip-inner {
+    --bs-tooltip-bg: var(--bg-toolsTip-lightGreen);
+    color: black !important;
+    font-size: calc(20px + 0.5vw);
+    font-weight: 700;
+}
+
+.custom-tooltip2 .tooltip-arrow {
+    --bs-tooltip-bg: var(--bg-toolsTip-lightGreen);
 }
 
 #second-content {
     background-color: #DCF5C8;
+    height: 220vh;
 }
 
-#second-content p {
+#second-content-p1 {
     width: 50%;
+    z-index: 2;
 }
-
-#second-content-text {
-    height: 150vh;
-}
-
 
 #waterfall {
     width: 60%;
-    top: 27vw;
+    top: 32vw;
     left: 0%;
 }
 
 #river {
     width: 60%;
-    top: 50vw;
+    top: 58vw;
     right: 0;
 }
 
 #b-leaf {
     width: 80%;
-    top: 0%;
-    z-index: 0;
+    top: -20%;
+    left: 10%;
 }
 
-#b-leaf-stem {
-    width: 57%;
-    top: 4%;
-    left: 12%;
-    z-index: 1;
+#s-leaf {
+    width: 20%;
+    top: 80vw;
+    right: -6%;
+}
+ 
+#third-content-text {
+    width: 60%;  
 }
 
+#third-content {
+    background-image: url(../images/home/newera.png);
+    background-position-x: -10% ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
+#third-content-img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 @media screen and (max-width: 1149px) {
     #first-content-bg3 {
         top: 80%;
+    }
+
+    #second-content {
+        height: 170vh;
     }
 }
 
@@ -167,6 +194,10 @@ h1 {
 
     #first-content-bg3 {
         display: none;
+    }
+
+    #second-content {
+        height: 150vh;
     }
 }
 
@@ -190,6 +221,38 @@ h1 {
         width: 55%;
         top: 50%;
         left: -10%;
+    }
+
+    #second-content-p1 {
+        width: 100%;
+        z-index: 2;
+    }
+
+    #waterfall {
+        width: 70%;
+        top: 65vw;
+        left: 0%;
+    }
+    
+    #river {
+        width: 70%;
+        top: 90vw;
+        right: 0;
+    }
+    
+    #b-leaf {
+        width: 100%;
+        top: 50%;
+        left: 0%;
+    }
+    
+    #s-leaf {
+        top: 115vw;
+        right: -6%;
+    }
+
+    #third-content {
+        background-position-y: 70% ;
     }
 }
 
@@ -222,9 +285,106 @@ h1 {
         margin-bottom: 100px;
     }
 
+    #second-content {
+        height: 160vh;
+    }
+    
+
     #chineseTemple {
         left: 50%;
         transform: translateX(-50%);
         width: 60%;
     }
+
+    #second-content-p1 {
+        width: 100%;
+        z-index: 2;
+    }
+
+    #waterfall {
+        width: 90%;
+        top: 65vw;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+    
+    #river {
+        width:90%;
+        top: 130vw;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+    
+    #b-leaf {
+        width: 100%;
+        top: 40%;
+        left: -20%;
+    }
+    
+    #s-leaf {
+        width: 30%;
+        top: 200vw;
+        right: 0%;
+    }
+
+    #third-content {
+        background-position-y: 70% ;
+    }
 }
+
+@media screen and (max-width: 475px) {
+    #waterfall {
+        width: 90%;
+        top: 95vw;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+    
+    #river {
+        width:90%;
+        top: 160vw;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (min-width: 3800px) {
+    .text {
+        font-size: 60px;
+    }
+
+    #second-content {
+        background-color: #DCF5C8;
+        height: 80vh;
+    }
+
+    #second-content-p1 {
+        width: 80%;
+    }
+
+    #waterfall {
+        width: 60%;
+        top: 17vw;
+        left: 0%;
+    }
+    
+    #river {
+        width: 60%;
+        top: 24vw;
+        right: -2vw;
+    }
+
+    #s-leaf {
+        top: 29vw;
+        right: -20%;
+    }
+    
+ }
+ 
+@media screen and (min-width: 2500px) {
+
+ }
