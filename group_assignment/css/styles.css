@@ -8,10 +8,6 @@
     --bg-toolsTip-lightGreen: #a6dc98f1;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 .text-justify {
     text-align: justify;
 }
@@ -340,7 +336,8 @@ h1 {
     }
 
     #second-content-p1 {
-        width: 100%;
+        width: 90%;
+        margin: auto;
         z-index: 2;
     }
 
@@ -375,6 +372,9 @@ h1 {
     #third-content {
         background-position-y: 70% ;
     }
+
+    .row {
+        --bs-gutter-x: 0 !important ;}
 }
 
 @media screen and (max-width: 475px) {

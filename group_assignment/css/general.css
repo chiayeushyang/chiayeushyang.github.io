@@ -13,10 +13,6 @@
   font-weight: 500;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .container-1920 {
   max-width: 1920px;
   margin: auto;
