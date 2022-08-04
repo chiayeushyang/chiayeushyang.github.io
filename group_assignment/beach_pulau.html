@@ -1,285 +1,563 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pulau Rawa</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        <script src="https://kit.fontawesome.com/9d8effef28.js" crossorigin="anonymous"></script>
-        <link rel="icon" href="images/general/favicon.png">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/beach_pulau.css">
+  <head>
+    <title>Pulau Rawa</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script
+      src="https://kit.fontawesome.com/9d8effef28.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="images/general/favicon.png" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/beach_pulau.css" />
 
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
 
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    </head>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </head>
 
-    <body class="container-1920">
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-md bg-light py-0">
-          <div class="container-fluid bg-top-nav-green px-0">
-            <a class="navbar-brand ms-3 my-2" href="index.html"><img src="images/general/logo_Light.png" alt="logo_white 1.png" width="100%"></a>
-            <button class="navbar-toggler navbar-dark me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse bg-mobile-dropdown-green-yellow" id="navbarNavDropdown">
-              <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3" aria-current="page" href="#">ABOUT</a>
+  <body class="container-1920">
+    <!-- Navbar -->
+    <nav class="autohide navbar navbar-expand-md bg-light sticky-top py-0">
+      <div class="container-fluid bg-top-nav-green px-0">
+        <a class="navbar-brand ms-3 my-2" href="index.html"
+          ><img
+            src="images/general/logo_light.png"
+            alt="logo_white 1.png"
+            width="80%"
+        /></a>
+        <button
+          class="navbar-toggler navbar-dark me-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse bg-mobile-dropdown-green-yellow"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3"
+                aria-current="page"
+                href="#"
+                >ABOUT</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                MOUNTAIN
+              </a>
+              <ul class="dropdown-menu bg-dropdown-yellow-green">
+                <li>
+                  <a class="dropdown-item item-fw-bold fs-5" href="#"
+                    >Genting Highland</a
+                  >
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    MOUNTAIN
-                  </a>
-                  <ul class="dropdown-menu bg-dropdown-yellow-green">
-                    <li><a class="dropdown-item item-fw-bold fs-5" href="#">Genting Highland</a></li>
-                    <li><a class="dropdown-item item-fw-bold fs-5" href="#">Cameron Highland</a></li>
-                    <li><a class="dropdown-item item-fw-bold fs-5" href="mountain_penang.html">Penang Hill</a></li>
-                  </ul>
+                <li>
+                  <a class="dropdown-item item-fw-bold fs-5" href="#"
+                    >Cameron Highland</a
+                  >
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    BEACH
-                  </a>
-                  <ul class="dropdown-menu bg-dropdown-yellow-green">
-                    <li><a class="dropdown-item item-fw-bold fs-5" href="#">Perhentian Island</a></li>
-                      <li><a class="dropdown-item item-fw-bold fs-5 active" href="beach_pulau.html">Pulau Rawa</a></li>
-                    <li><a class="dropdown-item item-fw-bold fs-5" href="#">Pantai Cenang</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    CULTURE
-                  </a>
-                  <ul class="dropdown-menu bg-dropdown-yellow-green bg-dropdown-yellow-width">
-                    <li><a class="dropdown-item item-fw-bold fs-5" href="#">Thean Hou Temple</a></li>
-                    <li><a class="dropdown-item item-fw-bold fs-5" href="#">Batu Caves</a></li>
-                    <li><a class="dropdown-item item-fw-bold fs-5 text-wrap" href="culture_sultan.html">Sultan Salahuddin Abdul Aziz Mosque</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3" aria-current="page" href="#">CONTACT</a>
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-5"
+                    href="mountain_penang.html"
+                    >Penang Hill</a
+                  >
                 </li>
               </ul>
-            </div>
-          </div>
-        </nav>
-        <!-- !Navbar -->
-        <div id="back-top">
-          <a href="#"><img src="images/general/top.png" alt="arrow to top" width="30px"></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                BEACH
+              </a>
+              <ul class="dropdown-menu bg-dropdown-yellow-green">
+                <li>
+                  <a class="dropdown-item item-fw-bold fs-5" href="#"
+                    >Perhentian Island</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-5 active"
+                    href="beach_pulau.html"
+                    >Pulau Rawa</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item item-fw-bold fs-5" href="#"
+                    >Pantai Cenang</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CULTURE
+              </a>
+              <ul
+                class="dropdown-menu bg-dropdown-yellow-green bg-dropdown-yellow-width"
+              >
+                <li>
+                  <a class="dropdown-item item-fw-bold fs-5" href="#"
+                    >Thean Hou Temple</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item item-fw-bold fs-5" href="#"
+                    >Batu Caves</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-5 text-wrap"
+                    href="culture_sultan.html"
+                    >Sultan Salahuddin Abdul Aziz Mosque</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3"
+                aria-current="page"
+                href="#"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
         </div>
-        <!-- Showcase -->
-        <section class="background d-flex flex-column justify-content-between container-fluid text-white py-5">
-          <div></div>
-          <div class="location-name container text-center">
-            <h1>Pulau Rawa</h1>
-            <p>"Nothing soothes the soul like a day by the ocean!"</p>
-          </div>
-          <div class="location d-flex ps-5">
-            <a class="d-flex text-decoration-none text-white" href="https://goo.gl/maps/jSwVZEcrJTwB54cJ9" target="_blank">
-              <img src="images/beach_pulau/location-icon1.png" alt="">
-              <h4 class="m-0 ms-3">Pulau Rawa, Johor</h4></a>
-          </div>
-        </section>
-        <!-- !Showcase -->
+      </div>
+    </nav>
+    <!-- !Navbar -->
+    <div id="back-top">
+      <a href="#"
+        ><img src="images/general/top.png" alt="arrow to top" width="30px"
+      /></a>
+    </div>
+    <!-- Showcase -->
+    <section
+      class="background d-flex flex-column justify-content-between container-fluid text-white py-5"
+    >
+      <div></div>
+      <div class="location-name container text-center">
+        <h1>Pulau Rawa</h1>
+        <p>"Nothing soothes the soul like a day by the ocean!"</p>
+      </div>
+      <div class="location d-flex ps-5">
+        <a class="d-flex text-decoration-none text-white" href="https://goo.gl/maps/jSwVZEcrJTwB54cJ9" target="_blank">
+          <img src="images/beach_pulau/location-icon1.png" alt="">
+          <h4 class="m-0 ms-3">Pulau Rawa, Johor</h4></a>
+      </div>
+    </section>
+    <!-- !Showcase -->
 
-        <!-- About -->
-        <section class="px-4 px-sm-0">
-          <div class="main-title mb-5 mx-lg-5 pb-5 px-sm-5">
-            <div class="d-sm-flex p-5 justify-content-center align-items-center text-center">
-              <img src="images/beach_pulau/umbrella-icon.png" alt="">
-              <h1 class="m-sm-5 m-0 ">About</h1>
+    <!-- About -->
+    <section class="px-4 px-sm-0">
+      <div class="main-title mb-5 mx-lg-5 pb-5 px-sm-5">
+        <div
+          class="d-sm-flex p-5 justify-content-center align-items-center text-center"
+        >
+          <img src="images/beach_pulau/umbrella-icon.png" alt="" />
+          <h1 class="m-sm-5 m-0">About</h1>
+        </div>
+        <div class="text-center text-sm-start">
+          <p>
+            Rawa Island is rich in eco-tourism activities and natural wonders
+            for travellers to enjoy. Rawa Island is surrounded by crystal clear
+            waters and gorgeous beaches. If you are a snorkelling enthusiast or
+            you love diving, then you won't regret visiting this island.
+          </p>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row px-sm-5 align-items-center justify-content-center">
+          <div class="col-12 col-xl-6 p-sm-5 d-flex justify-content-center">
+            <img
+              src="images/beach_pulau/beach-pulau-img.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div
+            class="detail py-5 col-12 col-lg-10 col-xl-6 p-sm-5 text-sm-start text-center"
+          >
+            <div class="d-sm-flex justify-content-between">
+              <div class="py-4">
+                <h2>Contact</h2>
+                <p>+607-799 1204</p>
+              </div>
+              <div class="py-4">
+                <h2>Opening Hours</h2>
+                <p>8:30am - 5pm</p>
+              </div>
             </div>
-            <div class="text-center text-sm-start">
-              <p>Rawa Island is rich in eco-tourism activities and natural wonders for travellers to enjoy. Rawa Island is surrounded by crystal clear waters and gorgeous beaches. If you are a snorkelling enthusiast or you love diving, then you won't regret visiting this island. </p>
+            <div class="py-4">
+              <h2>Address</h2>
+              <p>Rawa Island, 86800 Mersing, Johor</p>
+            </div>
+            <div class="py-4">
+              <h2>Price/Entrance Fees</h2>
+              <p>
+                No permit fee; however course fees varies based on the
+                activities.
+              </p>
             </div>
           </div>
-          <div class="container-fluid">
-            <div class="row px-sm-5 align-items-center justify-content-center">
-              <div class="col-12 col-xl-6 p-sm-5 d-flex justify-content-center">
-                <img src="images/beach_pulau/beach-pulau-img.png" class="img-fluid" alt="">
-              </div>
-              <div class="detail py-5 col-12 col-lg-10 col-xl-6 p-sm-5 text-sm-start text-center">
-                <div class="d-sm-flex justify-content-between">
-                  <div class="py-4">
-                    <h2>Contact</h2>
-                    <p>+607-799 1204</p>
-                  </div>
-                  <div class="py-4">
-                    <h2>Opening Hours</h2>
-                    <p>8:30am - 5pm</p>
-                  </div>
-                </div>
-                <div class="py-4">
-                  <h2>Address</h2>
-                  <p>Rawa Island, 86800 Mersing, Johor</p>
-                </div>
-                <div class="py-4">
-                  <h2>Price/Entrance Fees</h2>
-                  <p>No permit fee; however course fees varies based on the activities.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- !About -->
+        </div>
+      </div>
+    </section>
+    <!-- !About -->
 
-        <!-- Activities -->
-        <section class="activity pe-0">
-          <div class="main-title mx-md-5 py-5 px-sm-5">
-            <div class="d-sm-flex text-center justify-content-center align-items-center">
-              <img src="images/beach_pulau/beach-icon.png" alt="">
-              <h1 class="m-sm-5">What can we do?</h1>
-            </div>
+    <!-- Activities -->
+    <section class="activity pe-0">
+      <div class="main-title mx-md-5 py-5 px-sm-5">
+        <div
+          class="d-sm-flex text-center justify-content-center align-items-center"
+        >
+          <img src="images/beach_pulau/beach-icon.png" alt="" />
+          <h1 class="m-sm-5">What can we do?</h1>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl d-flex justify-content-center align-items-center">
+            <img
+              src="images/beach_pulau/beach-pulau-activity1.png"
+              class="img-fluid px-3 px-sm-5"
+              alt=""
+            />
           </div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-xl d-flex justify-content-center align-items-center">
-                <img src="images/beach_pulau/beach-pulau-activity1.png" class="img-fluid px-3 px-sm-5" alt="">
-              </div>
-              <div class="right-ellipse p-0 col text-center text-sm-end d-flex flex-column justify-content-center align-items-center align-items-sm-end">
-                <img src="images/beach_pulau/blue-ellipse(goggles).png" class="img-fluid" alt="">
-                <img src="images/beach_pulau/blue-ellipse(Full).png" class="img2 img-fluid" alt="">
-                  <h2 class="pe-sm-5">Beach Volleyball</h2>
-                  <p class="pe-sm-5">Need something else to do other than lazing on the beach or getting into the water? What better way to bond with your travel mates and maybe make new friends, than over a rousing game of beach volleyball by the ocean!</p>
-              </div>
-            </div>
-            <div style class="row flex-xl-row-reverse">
-              <div class="col-xl d-flex justify-content-center align-items-center">
-                <img src="images/beach_pulau/beach-pulau-activity2.png" class="img-fluid px-3 px-sm-5" alt="">
-              </div>
-              <div class="right-ellipse p-0 col text-center text-sm-start d-flex flex-column justify-content-center align-items-center align-items-sm-start">
-                <img src="images/beach_pulau/green-ellipse(volleyball).png" class="img-fluid" alt="">
-                <img src="images/beach_pulau/green-ellipse(Full).png" class="img2 img-fluid" alt="">
-                  <h2 class="ps-sm-5">Snorkelling</h2>
-                  <p class="ps-sm-5">Treat yourself to an amazing snorkelling experience surrounded by a wonderful variety of fish and marine species. You can choose to have guided snorkelling sessions if you are not familiar with the activity.</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xl d-flex justify-content-center align-items-center">
-                <img src="images/beach_pulau/beach-pulau-activity3.png" class="img-fluid px-3 px-sm-5" alt="">
-              </div>
-              <div class="right-ellipse p-0 col text-center text-sm-end d-flex flex-column justify-content-center align-items-center align-items-sm-end">
-                <img src="images/beach_pulau/blue-ellipse(slider).png" class="img-fluid" alt="">
-                <img src="images/beach_pulau/blue-ellipse(Full).png" class="img2 img-fluid" alt="">
-                  <h2 class="pe-sm-5">Water Sliding</h2>
-                  <p class="pe-sm-5">The slides may belong to one of the resorts but nobody will try to stop you from sliding! Both slides will have you splashing into the sea with glee! The orange slide consists of some turns while the blue slide goes straight into the water!</p>
-              </div>
-            </div>
+          <div
+            class="right-ellipse p-0 col text-center text-sm-end d-flex flex-column justify-content-center align-items-center align-items-sm-end"
+          >
+            <img
+              src="images/beach_pulau/blue-ellipse(goggles).png"
+              class="img-fluid"
+              alt=""
+            />
+            <img
+              src="images/beach_pulau/blue-ellipse(Full).png"
+              class="img2 img-fluid"
+              alt=""
+            />
+            <h2 class="pe-sm-5">Beach Volleyball</h2>
+            <p class="pe-sm-5">
+              Need something else to do other than lazing on the beach or
+              getting into the water? What better way to bond with your travel
+              mates and maybe make new friends, than over a rousing game of
+              beach volleyball by the ocean!
+            </p>
           </div>
-        </section>
-        <!-- !Activities -->
+        </div>
+        <div style class="row flex-xl-row-reverse">
+          <div class="col-xl d-flex justify-content-center align-items-center">
+            <img
+              src="images/beach_pulau/beach-pulau-activity2.png"
+              class="img-fluid px-3 px-sm-5"
+              alt=""
+            />
+          </div>
+          <div
+            class="right-ellipse p-0 col text-center text-sm-start d-flex flex-column justify-content-center align-items-center align-items-sm-start"
+          >
+            <img
+              src="images/beach_pulau/green-ellipse(volleyball).png"
+              class="img-fluid"
+              alt=""
+            />
+            <img
+              src="images/beach_pulau/green-ellipse(Full).png"
+              class="img2 img-fluid"
+              alt=""
+            />
+            <h2 class="ps-sm-5">Snorkelling</h2>
+            <p class="ps-sm-5">
+              Treat yourself to an amazing snorkelling experience surrounded by
+              a wonderful variety of fish and marine species. You can choose to
+              have guided snorkelling sessions if you are not familiar with the
+              activity.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl d-flex justify-content-center align-items-center">
+            <img
+              src="images/beach_pulau/beach-pulau-activity3.png"
+              class="img-fluid px-3 px-sm-5"
+              alt=""
+            />
+          </div>
+          <div
+            class="right-ellipse p-0 col text-center text-sm-end d-flex flex-column justify-content-center align-items-center align-items-sm-end"
+          >
+            <img
+              src="images/beach_pulau/blue-ellipse(slider).png"
+              class="img-fluid"
+              alt=""
+            />
+            <img
+              src="images/beach_pulau/blue-ellipse(Full).png"
+              class="img2 img-fluid"
+              alt=""
+            />
+            <h2 class="pe-sm-5">Water Sliding</h2>
+            <p class="pe-sm-5">
+              The slides may belong to one of the resorts but nobody will try to
+              stop you from sliding! Both slides will have you splashing into
+              the sea with glee! The orange slide consists of some turns while
+              the blue slide goes straight into the water!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !Activities -->
 
-        <!-- Food -->
-        <section class="food px-4 px-sm-5 mx-xxl-5">
-          <div class="main-title mx-md-5 py-5 px-sm-5">
-            <div class="d-sm-flex text-center justify-content-center align-items-center">
-              <img src="images/beach_pulau/food-icon.png" alt="">
-              <h1 class="m-0 m-sm-5">Nearby food</h1>
-            </div>
+    <!-- Food -->
+    <section class="food px-4 px-sm-5 mx-xxl-5">
+      <div class="main-title mx-md-5 py-5 px-sm-5">
+        <div
+          class="d-sm-flex text-center justify-content-center align-items-center"
+        >
+          <img src="images/beach_pulau/food-icon.png" alt="" />
+          <h1 class="m-0 m-sm-5">Nearby food</h1>
+        </div>
+      </div>
+      <div class="food-title container-fluid">
+        <div class="row px-md-5 flex-row-reverse">
+          <div class="col-xl d-flex justify-content-center align-items-center">
+            <img
+              src="images/beach_pulau/beach-pulau-restaurant1.png"
+              class="img-fluid w-100 px-xl-5"
+              alt=""
+            />
           </div>
-          <div class="food-title container-fluid">
-            <div class="row px-md-5 flex-row-reverse">
-              <div class="col-xl d-flex justify-content-center align-items-center">
-                <img src="images/beach_pulau/beach-pulau-restaurant1.png" class="img-fluid w-100 px-xl-5" alt="">
-              </div>
-              <div class="col px-xl-5 pt-5 pt-xl-0">
-                <h2>Kluang Rail Cofee</h2>
-                <p><br>Kluang Rail Coffee is synonymous with a quaint little town in Johor. Having been in operation since 78 years ago, the irresistible aroma of this kopitiam's coffee still lures loyal customers, the most famous among them being the Johor ruler Sultan Ibrahim Sultan Iskandar.
-                </p>
-                <p><br>Opening Hours:</p>
-                <p>7am - 6pm</p>
-              </div>
-            </div>
+          <div class="col px-xl-5 pt-5 pt-xl-0">
+            <h2>Kluang Rail Cofee</h2>
+            <p>
+              <br />Kluang Rail Coffee is synonymous with a quaint little town
+              in Johor. Having been in operation since 78 years ago, the
+              irresistible aroma of this kopitiam's coffee still lures loyal
+              customers, the most famous among them being the Johor ruler Sultan
+              Ibrahim Sultan Iskandar.
+            </p>
+            <p><br />Opening Hours:</p>
+            <p>7am - 6pm</p>
           </div>
-          <div class="food-title container-fluid">
-            <div class="row px-md-5 flex-row-reverse">
-              <div class="col-xl d-flex justify-content-center align-items-center">
-                <img src="images/beach_pulau/beach-pulau-restaurant2.png" class="img-fluid w-100 px-xl-5" alt="">
-              </div>
-              <div class="col px-xl-5 pt-5 pt-xl-0">
-                <h2>Mersing Seafood Restaurant</h2>
-                <p><br>Mersing Seafood Restaurant is the destination you must go for fresh and delicious seafood. The air-conditioned restaurant, which clean and tidy decoration and furniture, is always crowded with customers especially during dinner hours.
-                </p>
-                <p><br>Opening Hours:</p>
-                <p>12:30pm - 8pm</p>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div class="food-title container-fluid">
+        <div class="row px-md-5 flex-row-reverse">
+          <div class="col-xl d-flex justify-content-center align-items-center">
+            <img
+              src="images/beach_pulau/beach-pulau-restaurant2.png"
+              class="img-fluid w-100 px-xl-5"
+              alt=""
+            />
           </div>
-          <div class="food-title container-fluid">
-            <div class="row px-md-5 flex-row-reverse">
-              <div class="col-xl d-flex justify-content-center align-items-center">
-                <img src="images/beach_pulau/beach-pulau-restaurant3.png" class="img-fluid w-100 px-xl-5" alt="">
-              </div>
-              <div class="col px-xl-5 pt-5 pt-xl-0">
-                <h2>History 1948 Cafe & Bistro</h2>
-                <p><br>Best place to hang out and have a beer and enjoy the evening in Mersing. Fussion food, like pizza was pretty good, despite the fact they used a tortilla for the crust. Great ambiance for this town.
-                </p>
-                <p><br>Opening Hours:</p>
-                <p>5pm - 1am</p>
-              </div>
-            </div>
+          <div class="col px-xl-5 pt-5 pt-xl-0">
+            <h2>Mersing Seafood Restaurant</h2>
+            <p>
+              <br />Mersing Seafood Restaurant is the destination you must go
+              for fresh and delicious seafood. The air-conditioned restaurant,
+              which clean and tidy decoration and furniture, is always crowded
+              with customers especially during dinner hours.
+            </p>
+            <p><br />Opening Hours:</p>
+            <p>12:30pm - 8pm</p>
           </div>
-        </section>
-        <!-- !Food -->
+        </div>
+      </div>
+      <div class="food-title container-fluid">
+        <div class="row px-md-5 flex-row-reverse">
+          <div class="col-xl d-flex justify-content-center align-items-center">
+            <img
+              src="images/beach_pulau/beach-pulau-restaurant3.png"
+              class="img-fluid w-100 px-xl-5"
+              alt=""
+            />
+          </div>
+          <div class="col px-xl-5 pt-5 pt-xl-0">
+            <h2>History 1948 Cafe & Bistro</h2>
+            <p>
+              <br />Best place to hang out and have a beer and enjoy the evening
+              in Mersing. Fussion food, like pizza was pretty good, despite the
+              fact they used a tortilla for the crust. Great ambiance for this
+              town.
+            </p>
+            <p><br />Opening Hours:</p>
+            <p>5pm - 1am</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !Food -->
 
-        <!-- Gallery -->
-        <section class="gallery px-5 pb-5">
-          <div class="main-title mx-md-5 py-5 px-sm-5">
-            <div class="d-sm-flex text-center justify-content-center align-items-center">
-              <img src="images/beach_pulau/camera-icon.png" alt="">
-              <h1 class="m-0 m-sm-5">Gallery</h1>
-            </div>
-          </div>
-          <div class="row py-4">
-            <div class="box col-sm-6 col-lg-4 p-4"><img src="images/beach_pulau/beach-pulau-gallery1.png" class="img-fluid" alt=""></div>
-            <div class="box col-sm-6 col-lg-4 p-4"><img src="images/beach_pulau/beach-pulau-gallery2.png" class="img-fluid" alt=""></div>
-            <div class="box col-sm-6 col-lg-4 p-4"><img src="images/beach_pulau/beach-pulau-gallery3.png" class="img-fluid" alt=""></div>
-            <div class="box col-sm-6 col-lg-4 pt-4 p-4"><img src="images/beach_pulau/beach-pulau-gallery4.png" class="img4 img-fluid" alt=""></div>
-            <div class="box col-sm-6 col-lg-4 pt-4 p-4"><img src="images/beach_pulau/beach-pulau-gallery5.png" class="img-fluid" alt=""></div>
-            <div class="box col-sm-6 col-lg-4 pt-4 p-4"><img src="images/beach_pulau/beach-pulau-gallery6.png" class="img6 img-fluid" alt=""></div>
-          </div>
-        </section>
-        <!-- !Gallery -->
+    <!-- Gallery -->
+    <section class="gallery px-5 pb-5">
+      <div class="main-title mx-md-5 py-5 px-sm-5">
+        <div
+          class="d-sm-flex text-center justify-content-center align-items-center"
+        >
+          <img src="images/beach_pulau/camera-icon.png" alt="" />
+          <h1 class="m-0 m-sm-5">Gallery</h1>
+        </div>
+      </div>
+      <div class="row py-4">
+        <div class="box col-sm-6 col-lg-4 p-4">
+          <img
+            src="images/beach_pulau/beach-pulau-gallery1.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="box col-sm-6 col-lg-4 p-4">
+          <img
+            src="images/beach_pulau/beach-pulau-gallery2.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="box col-sm-6 col-lg-4 p-4">
+          <img
+            src="images/beach_pulau/beach-pulau-gallery3.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="box col-sm-6 col-lg-4 pt-4 p-4">
+          <img
+            src="images/beach_pulau/beach-pulau-gallery4.png"
+            class="img4 img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="box col-sm-6 col-lg-4 pt-4 p-4">
+          <img
+            src="images/beach_pulau/beach-pulau-gallery5.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="box col-sm-6 col-lg-4 pt-4 p-4">
+          <img
+            src="images/beach_pulau/beach-pulau-gallery6.png"
+            class="img6 img-fluid"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- !Gallery -->
 
-        <!-- Footer -->
-        <footer class="position-relative d-flex align-items-center flex-column">
-          <div class="container-fluid">
-            <div class="row pt-5 justify-content-center">
-              <div class="col-12 col-sm-5 col-md-3 mx-md-3 mx-lg-5 mb-5 mb-sm-0 d-flex justify-content-center align-items-end">
-                <a href="index.html"><img src="images/general/logo_Light.png" width="117px"></a>
-              </div>
-              <div class="col-12 col-sm-2 col-md-2 ms-md-35 ms-lg-5 mb-3 mb-sm-0 text-center text-sm-start text-white">
-                <h3 class="fw-bold">MENU</h3>
-                <ul class="list-unstyled fs-5 ">
-                  <a href="#about"><li class="mb-2">ABOUT</li></a>
-                  <a href="category_mountain.html"><li class="mb-2">MOUNTAIN</li></a>
-                  <a href="#category_beach.html"><li class="mb-2">BEACH</li></a>
-                  <a href="#category_culturehtml"><li class="mb-2">CULTURE</li></a>
-                  <a href="#contact.html"><li >CONTACT</li></a>
-                </ul>
-              </div>
-              <div class="col-12 col-sm-5 col-md-3 text-white d-flex flex-column text-center align-self-end">
-                <h3 class="fw-bold">CONTACT US</h3>
-                <div>
-                  <a href="https://www.facebook.com/profile.php?id=100002367838790" target="_blank"><img src="images/general/facebook.png" class="mx-2"></a>
-                  <a href="https://www.instagram.com/yeushyang/" target="_blank"><img src="images/general/instagram.png" class="mx-2"></a>
-                  <a href="https://github.com/chiayeushyang" target="_blank"><img src="images/general/github.png" class="mx-2"></a>
-                </div>
-              </div>
+    <!-- Footer -->
+    <footer class="position-relative d-flex align-items-center flex-column">
+      <div class="container-fluid">
+        <div class="row pt-5 justify-content-center">
+          <div
+            class="col-12 col-sm-5 col-md-3 mx-md-3 mx-lg-5 mb-5 mb-sm-0 d-flex justify-content-center align-items-end"
+          >
+            <a href="index.html"
+              ><img src="images/general/logo_light.png" width="117px"
+            /></a>
+          </div>
+          <div
+            class="col-12 col-sm-2 col-md-2 ms-md-35 ms-lg-5 mb-3 mb-sm-0 text-center text-sm-start text-white"
+          >
+            <h3 class="fw-bold">MENU</h3>
+            <ul class="list-unstyled fs-5">
+              <a href="#about"><li class="mb-2">ABOUT</li></a>
+              <a href="category_mountain.html"
+                ><li class="mb-2">MOUNTAIN</li></a
+              >
+              <a href="#category_beach.html"><li class="mb-2">BEACH</li></a>
+              <a href="#category_culturehtml"><li class="mb-2">CULTURE</li></a>
+              <a href="#contact.html"><li>CONTACT</li></a>
+            </ul>
+          </div>
+          <div
+            class="col-12 col-sm-5 col-md-3 text-white d-flex flex-column text-center align-self-end"
+          >
+            <h3 class="fw-bold">CONTACT US</h3>
+            <div>
+              <a
+                href="https://www.facebook.com/profile.php?id=100002367838790"
+                target="_blank"
+                ><img src="images/general/facebook.png" class="mx-2"
+              /></a>
+              <a href="https://www.instagram.com/yeushyang/" target="_blank"
+                ><img src="images/general/instagram.png" class="mx-2"
+              /></a>
+              <a href="https://github.com/chiayeushyang" target="_blank"
+                ><img src="images/general/github.png" class="mx-2"
+              /></a>
             </div>
           </div>
-          <img src="images/general/west_malaysia 1.png" width="15%" id="west_malaysia" class="position-absolute d-none d-lg-block">
-          <img src="images/general/east_malaysia 2.png" width="20%" id="east_malaysia" class="position-absolute d-none d-lg-block">
-          <div id="line" class="position-absolute"></div>
-          <p class="position-absolute bottom-0 text-light">Copyright © 2022 3C2L. All Rights Reserved.</p>
-        </footer>
-        <!-- Footer -->
-    </body>
+        </div>
+      </div>
+      <img
+        src="images/general/west_malaysia 1.png"
+        width="15%"
+        id="west_malaysia"
+        class="position-absolute d-none d-lg-block"
+      />
+      <img
+        src="images/general/east_malaysia 2.png"
+        width="20%"
+        id="east_malaysia"
+        class="position-absolute d-none d-lg-block"
+      />
+      <div id="line" class="position-absolute"></div>
+      <p class="position-absolute bottom-0 text-light">
+        Copyright © 2022 3C2L. All Rights Reserved.
+      </p>
+    </footer>
+    <!-- Footer -->
+  </body>
 </html>

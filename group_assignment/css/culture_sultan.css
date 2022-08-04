@@ -5,6 +5,7 @@
   
   #pin p {
     margin-bottom: 0%;
+    font-size: calc(10px + 1vw);
   }
   
   .mimg {
@@ -35,7 +36,8 @@
     font-size: 1.3vw;
   }
   
-  a {
+  .container-fuild a,
+  .card-body a {
     font-size: 1.5vw;
   }
   
@@ -53,8 +55,73 @@
     margin-bottom: 0%;
     padding-bottom: 0%;
   }
+
+  .fixed-heigh{
+    min-height: 400px;
+  }
+
+  i{
+    font-size: 1vw;
+  }
+
+  @media screen and (min-width: 2800px) {
+    .carousel h1{
+      font-size: 1vw;
+    }
+
+    #pin p{
+      font-size: 0.8vw;
+    }
+
+    i{
+      font-size: 0.8vw;
+    }
+
+    .head {
+      font-size: 1vw;
+    }
+  
+    .t1 {
+      font-size: 1vw;
+    }
+  
+    .t2 {
+      font-size: 0.8vw;
+    }
+  
+    .t3 {
+      font-size: 1vw;
+    }
+  
+    .container-fuild a,
+    .card-body a {
+      font-size: 1vw;
+    }
+  
+    .col-6 p {
+      font-size: 1vw;
+    }
+  
+    .link {
+      font-size: 2.3vw;
+    }
+
+    div p{
+      font-size: 1vw;
+    }
+
+    .card p{
+      font-size: 0.8vw;
+    }
+
+    .card a{
+      font-size: 0.8vw;
+    }
+  }
+
   
   @media screen and (max-width: 768px) and (min-width: 577px) {
+
     .head {
       font-weight: 400;
     }
@@ -75,16 +142,23 @@
       font-size: 1.5vw;
     }
   
-    a {
-      font-size: 1.8vw;
+    .container-fuild a,
+    .card-body a {
+      font-size: 2vw;
     }
-  
-    p {
-      font-size: 1.8vw;
+    
+    .card p,
+    .container-fuild p,
+    .col-6 p {
+      font-size: 2vw;
     }
   
     .link {
       font-size: 2.3vw;
+    }
+
+    i{
+      font-size: 2vw;
     }
   }
   
@@ -109,15 +183,22 @@
       font-size: 4vw;
     }
   
-    a {
+    .container-fuild a,
+    .card-body a {
       font-size: 4.3vw;
     }
-  
-    p {
+    
+    .card p,
+    .container-fuild p,
+    .col-6 p {
       font-size: 4.3vw;
     }
   
     .link {
       font-size: 4.8vw;
+    }
+
+    i{
+      font-size: 4vw;
     }
   }

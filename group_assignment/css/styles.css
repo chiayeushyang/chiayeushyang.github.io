@@ -8,10 +8,6 @@
     --bg-toolsTip-lightGreen: #a6dc98f1;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 .text-justify {
     text-align: justify;
 }
@@ -136,6 +132,10 @@ h1 {
     height: 220vh;
 }
 
+#second-content-h1{
+    z-index: 2;
+}
+
 #second-content-p1 {
     width: 50%;
     z-index: 2;
@@ -181,6 +181,24 @@ h1 {
     margin-bottom: 50px;
 }
 
+@media screen and (max-width: 1200px) {
+    #waterfall {
+        top: 35vw;
+    }
+    
+    #river {
+        top: 55vw;
+    }
+    
+    #b-leaf {
+        top: -22%;
+    }
+    
+    #s-leaf {
+        top: 82vw;
+    }
+}
+
 @media screen and (max-width: 1149px) {
     #first-content-bg3 {
         top: 80%;
@@ -202,6 +220,23 @@ h1 {
 
     #second-content {
         height: 150vh;
+    }
+
+    #waterfall {
+        top: 50vw;
+    }
+    
+    #river {
+        top: 70vw;
+    }
+    
+    #b-leaf {
+        top: 10%;
+        left: 6%;
+    }
+    
+    #s-leaf {
+        top: 90vw;
     }
 }
 

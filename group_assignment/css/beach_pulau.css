@@ -174,3 +174,46 @@ footer {
 
 @media screen and (max-width: 400px) {
 }
+
+@media screen and (min-width: 2800px) {
+    .background {
+        min-height: 14.5vw;
+    }
+}
+
+@media screen and (min-width: 3800px) {
+    .location h4 {
+        font-size: 0.8vw;
+    }
+
+    .location img {
+        width: 10%;
+    }
+
+    .location-name p {
+        font-size: 0.8vw;
+    }
+
+    .main-title p{
+        font-size: 1.2vw;
+    }
+    
+    .food-title h2,
+    .right-ellipse h2,
+    .detail h2{
+        font-size: 1vw;
+    }
+
+    .food-title p,
+    .detail p{
+        font-size: 0.8vw;
+    }
+
+    .right-ellipse p{
+        font-size: 25px;
+    }
+
+    .right-ellipse h2{
+        font-size: 0.6vw;
+    }
+}

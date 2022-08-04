@@ -1,6 +1,6 @@
 body, html {
   height: 100%;
-  background-color: #D2DDCD;
+  background-color: #D2DDCD !important;
 }
 image{
   width: 100%;
@@ -11,6 +11,8 @@ image{
 div p{
   font-size: 200%;
 }
+
+
 @media only screen and (max-width: 850px) {
   div p{
     font-size: 4vw;
@@ -27,20 +29,20 @@ div p{
     background-image: url(../images/penanghill/penang-5230946_960_720.jpg);
     
     /* Full height */
-    height: 50%; 
+    min-height: 400px; 
   
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
     color: white;
   }
 }
 .bg {
   /* The image used */
-  background-image: url(../images/penanghill/penang-5230946_960_720.jpg);
-  
+  /* background-image: url(../images/penanghill/penang-5230946_960_720.jpg); */
+  background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/penanghill/penang-5230946_960_720.jpg);
   /* Full height */
   height: 100%; 
 
@@ -58,6 +60,9 @@ div p{
 #pin{
   bottom: 5%;
   left: 5%;
+}
+#pin p {
+  font-size: calc(10px + 1vw);
 }
 .white a{
   color: white;
@@ -87,4 +92,42 @@ div p{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (min-width: 3800px) {
+  .bg{
+    max-height: 14.5vw;
+  }
+
+  .bg h1{
+    font-size: 1vw;
+  }
+
+  #pin p{
+    font-size: 1vw;
+  }
+
+  #pin i{
+    font-size: 0.7vw;
+  }
+
+  h3:not(footer h3){
+    font-size: 0.8vw !important;
+  }
+
+  h1{
+    font-size: 0.8vw !important;
+  }
+
+  p:not(footer p){
+    font-size: 0.8vw !important;
+  }
+
+  strong{
+    font-size: 0.5vw;
+  }
+
+  button{
+    font-size: 0.5vw !important;
+  }
 }
