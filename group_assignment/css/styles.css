@@ -8,6 +8,10 @@
     --bg-toolsTip-lightGreen: #a6dc98f1;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .text-justify {
     text-align: justify;
 }
