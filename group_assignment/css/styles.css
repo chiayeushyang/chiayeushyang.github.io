@@ -397,6 +397,20 @@
     }
 }
 
+@media screen and (max-width: 440px) {
+    #carousel_1 img{
+        content: url(../images/home/home_moutain_500px.jpg)
+    }
+
+    #carousel_2 img{
+        content: url(../images/home/home_beach_500px.jpg)
+    }
+
+    #carousel_3 img{
+        content: url(../images/home/home_temple_500px.jpg)
+    }
+}
+
 @media screen and (max-width: 400px) {
     #first-content {
         height: 120vh;
