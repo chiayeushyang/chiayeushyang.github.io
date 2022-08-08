@@ -6,25 +6,12 @@
 }
 
 .image-fill-black{
-    filter: brightness(70%); 
-}
-
-.slidetshow-fixed-heigh{
-    min-height: 500px;
+    filter: brightness(50%);
 }
 
 .slideshow-content-position{
     top: 0;
     left: 60px;
-}
-
-.slideshow-content-header{
-    font-size: 75px;
-    font-weight: 600;
-}
-
-.slideshow-content-paragraph{
-    font-size: calc(1.325rem + .9vw);
 }
 
 .carousel-control-prev {
@@ -115,8 +102,22 @@
     height: 1000%;
 }
 
-
 .third_container_image{
+    z-index: 2;
+}
+
+.icon-info_1{
+    font-size: 50px;
+    color: lightgray;
+    right: 22%;
+    top: 320%;
+    z-index: 2;
+}
+
+.icon-info_2{
+    font-size: 50px;
+    color: lightgray;
+    left: 22%;
     z-index: 2;
 }
 
@@ -142,6 +143,7 @@
     }
 }
 
+
 @media screen and (min-width: 2500px) {
     .padding-image-top{
         padding-top: 2vw;
@@ -151,6 +153,21 @@
     .padding-image-bwl{
         padding-top: 8vw;
         padding-bottom: 2vw;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .round-shape_d2{
+        width: 30%;
+        height: 800%;
+    }
+
+    .icon-info_2{
+        left: 32%;
+    }
+
+    .img-h{
+        height: 110% !important;
     }
 }
 
@@ -175,6 +192,10 @@
     .round-shape{
         width: 50%;
         height: 500%;
+    } 
+
+    .icon-info_1{
+        top: 220%;
     }
 }
 
@@ -188,6 +209,16 @@
         width: 30%;
         height: 500%;
     }
+
+    .icon-info_2{
+        top: -20%;
+        font-size: 35px;
+    }
+
+    .icon-info_1{
+        top: 150%;
+        font-size: 35px;
+    }
 }
 
 @media screen and (max-width: 440px) {
@@ -197,6 +228,26 @@
 
     .round-shape{
         height: 250%;
+    }
+
+    .carousel_1 img{
+        content: url(../images/category_mountain/categorie_slideshow_1_500px.png)
+    }
+
+    .carousel_2 img{
+        content: url(../images/category_mountain/categorie_slideshow_2_500px.png)
+    }
+
+    .carousel_3 img{
+        content: url(../images/category_mountain/categorie_slideshow_3_500px.png)
+    }
+
+    .carousel_4 img{
+        content: url(../images/category_mountain/categorie_slideshow_4_500px.png)
+    }
+
+    .carousel_5 img{
+        content: url(../images/category_mountain/categorie_slideshow_5_500px.png)
     }
 }
 
@@ -238,6 +289,10 @@
     transform: translateY(-1rem) rotateZ(5deg);
 }
 
+.hover{
+    transform: translateY(-1rem) rotateZ(3deg);
+}
+
 .card:hover~.card,
 .card:focus-within~.card {
     transform: translateX(8rem);
@@ -268,18 +323,18 @@
     }
 
     .card:not(:first-child) {
-        margin-top: -5rem;
+        margin-top: -2rem;
         margin-left: 0rem;
     }
 
     .card:hover~.card,
     .card:focus-within~.card {
-        transform: translateY(8rem);
+        transform: translateY(5rem);
         transform: translateX(0rem);
     }
 
     .card:hover,
     .card:focus-within{
-        transform: translateY(-8rem) rotateZ(5deg);
+        transform: translateY(-5rem) rotateZ(3deg);
     }
 }

@@ -6,20 +6,8 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 100vh;
 }
 
-.location-name h1 {
-    font-size: 6rem;
-}
-
-.location-name p {
-    font-size: 2.25rem;
-}
-
-.location img{
-    width: 20px;
-}
 /* Showcase */
 
 /* About */
@@ -27,25 +15,7 @@
     width: 90px;
 }
 
-.main-title h1 {
-    font-size: 6rem;
-    font-weight: 700;
-}
 
-.main-title p {
-    font-size: 2.5rem;
-    font-weight: 400;
-}
-
-.detail h2 {
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.detail p {
-    font-size: 2rem;
-    font-weight: 400;
-}
 /* About */
 
 /* Activities */
@@ -76,26 +46,12 @@
     z-index: 1;
 }
 
-.right-ellipse h2{
-    font-size: 2rem;
-    font-weight: 600;
-}
-
 .right-ellipse p {
-    font-size: 24px;
     width: 30rem;
 }
 /* Activities */
 
 /* Food */
-.food-title h2{
-    font-size: 2.5rem;
-    font-weight: 600;
-}
-
-.food-title p {
-    font-size: 2rem;
-}
 
 .food .row {
     padding-top: 6.25rem;
@@ -127,24 +83,7 @@ footer {
 }
 
 @media screen and (max-width: 575px) {        
-    .main-title h1 {
-        font-size: 3rem;
-    }
-
-    .main-title p {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    
-
-    .location-name h1 {
-        font-size: 4rem;
-    }
-    
-    .location-name p {
-        font-size: 1.5rem;
-    }
-
+   
     
     .activity .row {
         padding-top: 1rem;
@@ -159,14 +98,6 @@ footer {
         width: 90vw;
     }
 
-    .food-title h2 {
-        font-size: 2rem;
-    }
-    
-        .food-title p {
-        font-size: 1.5rem;
-    }
-
     .food .row {
         padding-top: 1.5rem;
     }
@@ -175,45 +106,4 @@ footer {
 @media screen and (max-width: 400px) {
 }
 
-@media screen and (min-width: 2800px) {
-    .background {
-        min-height: 14.5vw;
-    }
-}
 
-@media screen and (min-width: 3800px) {
-    .location h4 {
-        font-size: 0.8vw;
-    }
-
-    .location img {
-        width: 10%;
-    }
-
-    .location-name p {
-        font-size: 0.8vw;
-    }
-
-    .main-title p{
-        font-size: 1.2vw;
-    }
-    
-    .food-title h2,
-    .right-ellipse h2,
-    .detail h2{
-        font-size: 1vw;
-    }
-
-    .food-title p,
-    .detail p{
-        font-size: 0.8vw;
-    }
-
-    .right-ellipse p{
-        font-size: 25px;
-    }
-
-    .right-ellipse h2{
-        font-size: 0.6vw;
-    }
-}

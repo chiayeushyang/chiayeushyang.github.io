@@ -1,34 +1,226 @@
 body, html {
   background-color: #D2DDCD !important;
+  background-image: url(../images/penanghill/Polygon18.png);
 }
 image{
   width: 100%;
+  border-radius:5px;
 }
 .wd-50{
   width: 45%;
+  height: fit-content;
+}
+.texthover:hover{
+  color: rgb(85, 210, 210);
 }
 div p{
   font-size: 200%;
 }
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width:100%;max-width:400px;
+}
+#myImg2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width:100%;max-width:400px;
+}
+#myImg3 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width:100%;max-width:400px;
+}
+#myImg4 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width:100%;max-width:400px;
+}
+#myImg5 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width:100%;max-width:400px;
+}
+#myImg6 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width:100%;max-width:400px;
+}
+#myImg7 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width:100%;max-width:400px;
+}
+#myImg8 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width:100%;max-width:400px;
+}
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}#caption2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+#caption3 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+#caption4 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+#caption5 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+#caption6 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+#caption7 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+#caption8 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
 
 
-@media only screen and (max-width: 850px) {
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption, #caption2, #caption3, #caption4, #caption5, #caption6, #caption7, #caption8 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
   div p{
     font-size: 4vw;
   }
   .wd-50{
-    width: 100%;
+    width: 75%;
   }
   body, html {
     background-color: #D2DDCD;
   }
   .bg {
     /* The image used */
-    background-image: url(../images/penanghill/penang-5230946_960_720.jpg);
-    
-    /* Full height */
-    min-height: 400px; 
-  
+    background-image: url(../images/mountain_penang/penang-5230946_960_720.jpg);
+
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -39,10 +231,10 @@ div p{
 }
 .bg {
   /* The image used */
-  /* background-image: url(../images/penanghill/penang-5230946_960_720.jpg); */
-  background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/penanghill/penang-5230946_960_720.jpg);
+  /* background-image: url(../images/mountain_penang/penang-5230946_960_720.jpg); */
+  background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/mountain_penang/penang-5230946_960_720.jpg);
   /* Full height */
-  height: 100%; 
+  min-height: 970px; 
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -71,22 +263,22 @@ div p{
 }
 
 .zoom:hover {
-  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 #shop1{
-  background-image: url(../images/penanghill/qchyi7wcku0tniqukwde.webp);
+  background-image: url(../images/mountain_penang/qchyi7wcku0tniqukwde.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #shop2{
-  background-image: url(../images/penanghill/DSC_0079.JPG);
+  background-image: url(../images/mountain_penang/DSC_0079.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #shop3{
-  background-image: url(../images/penanghill/109337102_1580324648798137_2152564181306334125_o.jpg);
+  background-image: url(../images/mountain_penang/109337102_1580324648798137_2152564181306334125_o.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,31 +1,216 @@
 :root {
-  --bg-green: #064635;
-  --bg-mobile-dropdown-yellow: #f4eea9;
-  --bg-dropdown-yellow: rgba(244, 238, 169, 0.9);
-  --bg-dropdown-green: rgba(81, 146, 89, 0.3);
-  --bg-back-top: #ef6c58aa;
-  --bg-back-top-hover: #ef6c58;
-  --bg-line: #f3d1bf;
+  /* background color */
+  --bg-green-full: #064635;
+  --bg-yellow-full : #f4eea9;
+  --bg-yellow-transparent: rgba(244, 238, 169, 0.9);
+  --bg-green-transparent: rgba(81, 146, 89, 0.3);
+  --bg-dark-orange: #ef6c58aa;
+  --bg-dark-orange-hover: #ef6c58;
+  --bg-light-orange: #f3d1bf;
+  --bg-btn-green: #519259E5;
+  --bg-btn-lightBlue: #66BFBFE5;
+  --bg-btn-brown: #CCA035E5;
+  --bg-btn-blue: #5899E7E5;
+
+  /* font-color */
+  --fc-black: black;
+  --fc-white: white;
+
+  /* max-width / height*/
+  --mx-w: 1920px;
+  --mx-h: 1072px;
+
+  /* min-width/ height */
+  --mn-w5: 500px;
+
+  /* font-weight */
+  --fw-4: 400;
+  --fw-5: 500;
+  --fw-6: 600;
+  --fw-7: 700;
+
+  /* font-size */
+  --fs-top-foot-3xl: 1.5rem;
+  --fs-top-foot-xxl: 18px;
+
+  --fs-drop-3xl: 1.7rem;
+  --fs-drop-xxl: 1.25rem;
+
+  --fs-t1-3xl: 8rem;
+  --fs-t1-xxl: 6rem;
+  --fs-t1-md: 4rem;
+  --fs-t1-sm: 2.5rem;
+
+  --fs-t2-3xl: 4rem;
+  --fs-t2-xxl: 2.5rem;
+  --fs-t2-sm: 2rem;
+
+  --fs-st2-3xl: 3rem;
+  --fs-st2-xxl: 1.5rem;
+  --fs-st2-sm: calc(0.7rem + 0.5vw);
+
+  --fs-t3-3xl: 3rem;
+  --fs-t3-xxl: 2rem;
+
+  --fs-p1-3xl: 4rem;
+  --fs-p1-xxl: 2.25rem;
+  --fs-p1-sm: 1.5rem;
+
+  --fs-p2-3xl: 3rem;
+  --fs-p2-xxl: 1.8rem;
+
+  --fs-p3-3xl: 1.8rem;
+  --fs-p3-xxl: 1.5rem;
+
+  --fs-i1-3xl: 3rem;
+  --fs-i1-xxl: 1.5rem;
+  --fs-i1-sm: calc(0.7rem + 0.5vw);
+
+}
+/* ############################################################################ */
+/* Below is the class of the text size and background colour size and other*/
+/* ############################################################################ */
+
+/* slide-show or background center title and content */
+
+/* slider title body title */
+.t1{
+  font-size: var(--fs-t1-xxl) !important;
+  font-weight: var(--fw-5) !important;
 }
 
+.t2{
+  font-size: var(--fs-t2-xxl) !important;
+  font-weight: var(--fw-6) !important;
+}
+
+/* body subtitle */
+.t3{
+  font-weight: var(--fw-6) !important;
+  font-size: var(--fs-t3-xxl) !important;
+}
+
+/* slider content */
+.p1{
+  font-size: var(--fs-p1-xxl) !important;
+}
+
+/* body subtitle content */
+.p2{
+  font-size: var(--fs-p2-xxl) !important;
+}
+
+/* specify for beach pulau img inside content */
+.p3{
+  font-size: var(--fs-p3-xxl) !important;
+}
+
+/* slider location link, body content */
+.pin-t2{
+  font-size: var(--fs-st2-xxl) !important;
+}
+
+.pin-i1{
+  font-size: var(--fs-i1-xxl) !important;
+}
+
+/* slider / background height */
+.s_bg-h{
+  min-height: var(--mn-w5) !important;
+  max-height: var(--mx-h) !important;
+  height: 100vw;
+}
+
+@media screen and (min-width : 2800px) {
+  .t1{
+    font-size: var(--fs-t1-3xl) !important;
+  }
+
+  .t2{
+    font-size: var(--fs-t2-3xl) !important;
+  }
+
+  .t3{
+    font-size: var(--fs-t3-3xl) !important;
+  }
+
+  .p1{
+    font-size: var(--fs-p1-3xl) !important;
+  }
+
+  .p2{
+    font-size: var(--fs-p2-3xl) !important;
+  }
+
+  .p3{
+    font-size: var(--fs-p3-3xl) !important;
+  }
+
+  .pin-t2{
+    font-size: var(--fs-st2-3xl) !important;
+  }
+
+  .pin-i1{
+    font-size: var(--fs-si1-3xl) !important;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .t1{
+    font-size: var(--fs-t1-md) !important;
+  }
+
+  .pin-t2{
+    font-size: var(--fs-st2-sm) !important;
+  }
+
+  .pin-i1{
+    font-size: var(--fs-i1-sm) !important;
+  }
+}
+
+@media screen and (max-width : 576px) {
+  .t1{
+    font-size: var(--fs-t1-sm) !important;
+  }
+
+  .t2{
+    font-size: var(--fs-t2-sm) !important;
+  }
+
+  .p1{
+    font-size: var(--fs-p1-sm) !important;
+  }
+
+  .pin-i1{
+    font-size: var(--fs-i1-sm) !important;
+  }
+}
+
+
+/* ############################################################################ */
+/* Below is the class of header and footer attribute and element */
+/* ############################################################################ */
+/* whole html file */
 * {
   font-family: "Edu SA Beginner", cursive;
-  font-weight: 500;
+  /* font-weight: var(--fw-5); */
 }
 
 .container-1920 {
-  max-width: 1920px;
+  max-width: var(--mx-w);
   margin: auto;
 }
 
+/* top-navbar */
 .dropdown-item.item-fw-bold {
-  font-weight: 500 !important;
+  font-weight: var(--fw-5) !important;
 }
 
 .dropdown-item.active {
-  font-weight: 700 !important;
+  font-weight: var(--fw-7) !important;
   background-color: inherit !important;
-  color: black !important;
+  color: var(--fc-black) !important;
 }
 
 .scrolled-down {
@@ -38,44 +223,67 @@
 }
 
 .nav-link.active {
-  font-weight: 700;
+  font-weight: var(--fw-7);
 }
 
 .nav-link:hover {
-  font-weight: 700;
+  font-weight: var(--fw-7);
 }
 
 .bg-top-nav-green {
-  background-color: var(--bg-green);
+  background-color: var(--bg-green-full);
 }
 
 .bg-dropdown-yellow-green {
-  background-color: var(--bg-dropdown-yellow) !important;
+  background-color: var(--bg-yellow-transparent) !important;
 }
 
 .bg-mobile-dropdown-green-yellow {
-  background-color: var(--bg-green) !important;
+  background-color: var(--bg-green-full) !important;
 }
 
 .bg-dropdown-yellow-width {
   width: 230px !important;
 }
 
+.btn {
+  --bs-btn-padding-x: 1.5rem !important;
+}
+
+.btn-green {
+  background-color: var(--bg-btn-green) !important;
+}
+
+.btn-lightBlue {
+  background-color: var(--bg-btn-lightBlue) !important;
+}
+
+.btn-brown {
+  background-color: var(--bg-btn-brown) !important;
+}
+
 .fs-top-nav-vm {
-  font-size: 18px !important;
+  font-size: var(--fs-top-foot-xxl) !important;
+}
+
+.fs-drown_menu{
+  font-size: var(--fs-drop-xxl) !important;
 }
 
 .text-light-lg {
-  color: white !important;
+  color: var(--fc-white) !important;
+}
+
+.ms-f{
+  margin-left: 3.5rem !important;
 }
 
 /* backtop button */
-
 #back-top {
   display: none;
   position: fixed;
   padding: 10px 10px;
-  background-color: var(--bg-back-top);
+  background-color: var(--bg-dark-orange);
   border-radius: 50%;
   right: 10px;
   bottom: 10px;
@@ -86,7 +294,7 @@
   display: none;
   position: fixed;
   padding: 12px 12px;
-  background-color: var(--bg-back-top-hover);
+  background-color: var(--bg-dark-orange-hover);
   border-radius: 50%;
   right: 10px;
   bottom: 10px;
@@ -118,23 +326,24 @@
 
 /* footer */
 footer {
-  background-image: url(../images/general/Rectanglefooter-round.png);
-  background-size: cover;
+  background-image: url(../images/general/malaysia.png), url(../images/general/Rectanglefooter-round.png); 
+  background-size: 40%, cover;
+  background-position: 50% 55%, 0% -0.5%;
   background-repeat: no-repeat;
   padding-top: 80px;
   padding-bottom: 70px;
 }
 
 footer ul a {
-  font-size: 1.25rem !important;
+  font-size: var(--fs-top-foot-xxl) !important;
   text-decoration: none;
-  color: white;
+  color: var(--fc-white);
 }
 
 footer ul a:hover li {
   text-decoration: none;
-  font-weight: 700;
-  color: white;
+  font-weight: var(--fw-7);
+  color: var(--fc-white);
 }
 
 footer a:hover img {
@@ -145,44 +354,64 @@ footer a:hover img {
 #line {
   width: 70%;
   height: 1px;
-  background-color: var(--bg-line);
+  background-color: var(--bg-light-orange);
   bottom: 50px;
 }
 
-#west_malaysia {
-  left: 30%;
-  bottom: 85px;
-  width: 15%;
+@media screen and (min-width : 2000px) {
+  footer {
+    background-size: 35%, cover;
+  }
 }
 
-#east_malaysia {
-  right: 24%;
-  bottom: 85px;
-  width: 20%;
+@media screen and (min-width : 2800px) {
+  .fs-top-nav-vm{
+    font-size: var(--fs-top-foot-3xl) !important;
+  }
+
+  .fs-drown_menu{
+    font-size: var(--fs-drop-3xl) !important;
+  }
+
+  footer ul a {
+    font-size: var(--fs-top-foot-3xl) !important;
+  }
+
 }
 
-@media screen and (min-width: 1920px) {
-  #east_malaysia,
-  #west_malaysia {
-    display: none;
+@media screen and (max-width: 1200px) {
+  .ms-f{
+    margin-left: 0.8vw !important;
+  }
+
+  footer {
+    background-position-y: 55%, -2.5%;
   }
 }
 
 @media screen and (max-width: 992px) {
+  /* footer */
   footer {
     padding-top: 0px;
+  }
+
+  footer {
+    background-image: none, url(../images/general/Rectanglefooter-round.png); 
+    background-position-y: 0%;
   }
 }
 
 @media screen and (max-width: 767px) {
+
+  /* top navbar */
   .bg-dropdown-yellow-green {
-    background-color: var(--bg-dropdown-green) !important;
+    background-color: var(--bg-green-transparent) !important;
     margin-left: 20px !important;
     max-width: 300px !important;
   }
 
   .bg-mobile-dropdown-green-yellow {
-    background-color: var(--bg-mobile-dropdown-yellow) !important;
+    background-color: var(--bg-yellow-full ) !important;
   }
 
   .bg-dropdown-yellow-width {
@@ -190,17 +419,18 @@ footer a:hover img {
   }
 
   .text-dark-md {
-    color: black !important;
+    color: var(--fc-black) !important;
   }
 
   .text-dark-md:hover {
-    font-weight: 700 !important;
+    font-weight: var(--fw-7) !important;
   }
 
+  .ms-f{
+    margin-left: 0vw !important;
+  }
+  /* footer */
   #line {
     width: 85%;
   }
-}
-
-@media screen and (max-width: 576px) {
 }
