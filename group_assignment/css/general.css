@@ -121,6 +121,12 @@
   height: 100vw;
 }
 
+/* slider / image width 100% after 1300px */
+@media (min-width: 1300px) {
+  .w-lg-100 { width: 100%!important; }
+}
+
+
 @media screen and (min-width : 2800px) {
   .t1{
     font-size: var(--fs-t1-3xl) !important;
