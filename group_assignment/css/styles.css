@@ -183,7 +183,7 @@
     #first-content {
         background-position: 75% 57%;
     }
-
+    
     #waterfall {
         top: 35vw;
     }
@@ -214,6 +214,10 @@
     #second-content {
         height: 170vh;
     }
+}
+
+@media (min-width: 1300px) {
+    .w-lg-100 { width: 100%!important; }
 }
 
 @media screen and (max-width: 993px) {
@@ -410,17 +414,14 @@
 @media screen and (max-width: 440px) {
     #carousel_1 img{
         content: url(../images/home/home_moutain_500px.jpg);
-        width:auto;
     }
 
     #carousel_2 img{
         content: url(../images/home/home_beach_500px.jpg);
-        width: auto;
     }
 
     #carousel_3 img{
         content: url(../images/home/home_temple_500px.jpg);
-        width:auto;
     }
 }
 
