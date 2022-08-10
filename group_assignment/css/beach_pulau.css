@@ -42,11 +42,13 @@
     width: 38rem;
 }
 
-.right-ellipse h2,p {
+.right-ellipse h2 {
     z-index: 1;
+    width: 30rem;
 }
 
 .right-ellipse p {
+    z-index: 1;
     width: 30rem;
 }
 /* Activities */
@@ -59,23 +61,29 @@
 }
 /* Food */
 
-/* Gallery */
-.gallery {
+/* Details */
+.detail {
     background-color: rgba(215, 255, 55, 0.1);
 }
 
-.gallery .box :hover {
-    transition-duration: 0.3s;
+.detail .row img{
+    border: 3px solid #009c43;
+}
+/* Details */
+
+/* Gallery */
+.gallery .item img {
     border-radius: 20px;
-    z-index: 1;
-    transform: scale(1.25);
-    box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+
+.gallery .item {
+    transition: .5s ease-in-out;
+}
+.gallery .item:hover {
+    filter: brightness(80%)
 }
 /* Gallery */
 
-footer {
-    background-color: rgba(215, 255, 55, 0.1);
-}
 @media screen and (max-width: 1200px){
     .right-ellipse {
         height: 40rem;

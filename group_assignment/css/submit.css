@@ -1,0 +1,45 @@
+#back-home {
+    position: relative;
+}
+
+#back-home:hover {
+    animation: moveLeft 1.2s;
+}
+
+#back-home div {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color:#E7B025E5;
+    border-radius: 20px;
+}
+
+#back-home div p {
+    margin: 0 0 0 20px;
+
+}
+
+@keyframes moveLeft {
+    0% {
+        left: 0px;
+        ;
+    }
+
+    25% {
+        left: -30px;
+    }
+
+    50% {
+        left: 10px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #earth {
+        width: 70%;
+    }
+}

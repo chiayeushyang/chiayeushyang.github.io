@@ -1,0 +1,37 @@
+#pin {
+  bottom: 5%;
+  left: 5%;
+}
+
+.himg {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+
+.background1 {
+  background-image: url(../images/culture_batu/b1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.background2 {
+  background-image: url(../images/culture_batu/b2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 440px) {
+  .carousel-1 img {
+    content: url(../images/culture_batu/h2-500.jpg);
+  }
+
+  .carousel_2 img {
+    content: url(../images/culture_batu/h3-500.jpg);
+  }
+
+  .carousel_3 img {
+    content: url(../images/culture_batu/h6-500.jpg);
+  }
+}

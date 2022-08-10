@@ -1,0 +1,270 @@
+:root {
+    --bg-gradient-black: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+    --bg-btn-green: #519259E5;
+    --bg-btn-lightBlue: #66BFBFE5;
+    --bg-btn-brown: #CCA035E5;
+    --bg-btn-blue: #5899E7E5;
+    --bg-btn-card: #A5BD46;
+    --bg-toolsTip-orange: #F0BB62F2;
+    --bg-toolsTip-lightGreen: #a6dc98f1;
+    --bg-toolsTip-lightBlue: #88f3f3e2;
+    --bd-popover-green: rgb(20, 181, 199);
+    --bg-info2-lightGreen: #93dd80f1;
+    --bg-second-content: #BDF1F1;
+    --card-yellow: rgb(235, 228, 148);
+    --card-white: rgba(226, 226, 224, 0.633);
+    --bg-card: linear-gradient(4deg, var(--card-yellow), var(--card-white)), #F4EEA9;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.btn-card {
+    background: var(--bg-btn-card) !important;
+}
+
+/* Card Animation */
+
+.container-xl .card
+{
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    background: var(--bg-card);
+    transition: 0.3s ease-in-out;
+}
+.container-xl .card:hover
+{
+    height: 400px;
+    transition: 0.7s;
+}
+
+.container-xl .card .imgContainer
+{
+    position: relative;
+    width:250px;
+    height:170px;
+    top:-60px;
+    left:2px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+.container-xl .card:hover .imgContainer
+{
+    height:220px;
+    transition: 1s ease;
+}
+
+.container-xl .card .imgContainer img
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container-xl .card .content
+{
+    position: relative;
+    margin-top: -180px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s ease;
+}
+.container-xl .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+    pointer-events: auto;
+    transition-delay: 0.2s;
+ }
+
+ .container-xl .card.hover{
+    transform: translateY(5px);
+ }
+
+@media (max-width: 330px){
+    .container-xl .card .imgContainer{
+        left: -2px;
+    }
+}
+
+/* ----------------------------------- */
+
+#first-content{
+    width: 90%;
+}
+
+#first-content-text {
+    flex: 0.55;
+}
+
+#first-content-img {
+    flex: 0.4;
+}
+
+#first-content-img img{
+    width: 80%;
+}
+
+#first-content-img-mobile img{
+    width: 80%;
+}
+ 
+#icon-info_mobile {
+    color: var(--bg-toolsTip-orange);
+    font-size: 30px;
+    left: 10%;
+    top: -10%;
+    z-index: 2;
+}
+
+#icon-info_1 {
+    color: var(--bg-toolsTip-orange);
+    font-size: 30px;
+    left: 10%;
+    top: 5%;
+    z-index: 2;
+}
+
+.custom-tooltip .tooltip-inner {
+    --bs-tooltip-bg: var(--bg-toolsTip-orange);
+    color: black !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.custom-tooltip .tooltip-arrow {
+    --bs-tooltip-bg: var(--bg-toolsTip-orange);
+}
+
+.custom-tooltip2 .tooltip-inner {
+    --bs-tooltip-bg: var(--bg-toolsTip-lightBlue);
+    color: black !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.custom-tooltip2 .tooltip-arrow {
+    --bs-tooltip-bg: var(--bg-toolsTip-lightBlue);
+}
+
+#second-content {
+    background-color: var(--bg-second-content);
+    margin-top: 100px;
+}
+
+#NEUC_logo {
+    width: 30%;
+    top: -17%;
+    left: -5%;
+}
+
+.custom-popover .popover-header {
+    font-weight: bold;
+}
+
+.custom-popover{
+    --bs-popover-border-color: var(--bd-popover-green) !important; 
+    --bs-popover-header-font-size: 1.5rem !important;
+    --bs-popover-font-size: 1.25rem !important;
+}
+
+#earth {
+    width: 25%;
+    top: -45%;
+    right: 0%;
+}
+
+@media screen and (min-width : 1700px) {
+    #earth {
+        width: 20%;
+        top: -30%;
+        right: 0%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #second-content {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width: 1149px) {
+    #NEUC_logo {
+        width: 30%;
+        top: -15%;
+        left: -5%;
+    }
+}
+
+@media screen and (max-width: 993px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    #first-content-p2 p{
+        width: 65%;
+    }
+
+    #second-content {
+        margin-top: 50px;
+    }
+
+    #NEUC_logo {
+        width: 40%;
+        top: -10%;
+        left: -5%;
+    }
+
+    #earth {
+        width: 40%;
+        top: -60%;
+        right: 0%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #icon-info_mobile {
+        color: var(--bg-toolsTip-orange);
+        font-size: 30px;
+        left: 10%;
+        top: 5%;
+        z-index: 2;
+    }
+
+    #first-content-img-mobile img{
+        width: 70%;
+    }
+
+    #first-content-p2 p{
+        width: 100%;
+    }
+
+    #second-content {
+        margin-top: 100px;
+    }
+
+    #NEUC_logo {
+        width: 38%;
+        top: -5%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+@media screen and (max-width: 475px) {
+    
+}
+
+@media screen and (max-width: 440px) {
+  
+}

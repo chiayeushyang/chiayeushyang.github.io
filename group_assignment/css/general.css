@@ -1,16 +1,16 @@
 :root {
   /* background color */
   --bg-green-full: #064635;
-  --bg-yellow-full : #f4eea9;
+  --bg-yellow-full: #f4eea9;
   --bg-yellow-transparent: rgba(244, 238, 169, 0.9);
   --bg-green-transparent: rgba(81, 146, 89, 0.3);
   --bg-dark-orange: #ef6c58aa;
   --bg-dark-orange-hover: #ef6c58;
   --bg-light-orange: #f3d1bf;
-  --bg-btn-green: #519259E5;
-  --bg-btn-lightBlue: #66BFBFE5;
-  --bg-btn-brown: #CCA035E5;
-  --bg-btn-blue: #5899E7E5;
+  --bg-btn-green: #519259e5;
+  --bg-btn-lightBlue: #66bfbfe5;
+  --bg-btn-brown: #cca035e5;
+  --bg-btn-blue: #5899e7e5;
 
   /* font-color */
   --fc-black: black;
@@ -47,7 +47,7 @@
 
   --fs-st2-3xl: 3rem;
   --fs-st2-xxl: 1.5rem;
-  --fs-st2-sm: calc(0.7rem + 0.5vw);
+  --fs-st2-md: calc(0.7rem + 0.5vw);
 
   --fs-t3-3xl: 3rem;
   --fs-t3-xxl: 2rem;
@@ -62,10 +62,16 @@
   --fs-p3-3xl: 1.8rem;
   --fs-p3-xxl: 1.5rem;
 
+  --fs-p4-3xl: 3rem;
+  --fs-p4-xxl: 1.9rem;
+  --fs-p4-lg: 1.4rem;
+
+  --fs-p5-xxl: 1.8rem;
+  --fs-p5-sm: 1.4rem;
+
   --fs-i1-3xl: 3rem;
   --fs-i1-xxl: 1.5rem;
-  --fs-i1-sm: calc(0.7rem + 0.5vw);
-
+  --fs-i1-md: calc(0.7rem + 0.5vw);
 }
 /* ############################################################################ */
 /* Below is the class of the text size and background colour size and other*/
@@ -74,48 +80,57 @@
 /* slide-show or background center title and content */
 
 /* slider title body title */
-.t1{
+.t1 {
   font-size: var(--fs-t1-xxl) !important;
   font-weight: var(--fw-5) !important;
 }
 
-.t2{
+.t2 {
   font-size: var(--fs-t2-xxl) !important;
   font-weight: var(--fw-6) !important;
 }
 
 /* body subtitle */
-.t3{
+.t3 {
   font-weight: var(--fw-6) !important;
   font-size: var(--fs-t3-xxl) !important;
 }
 
 /* slider content */
-.p1{
+.p1 {
   font-size: var(--fs-p1-xxl) !important;
 }
 
 /* body subtitle content */
-.p2{
+.p2 {
   font-size: var(--fs-p2-xxl) !important;
 }
 
 /* specify for beach pulau img inside content */
-.p3{
+.p3 {
   font-size: var(--fs-p3-xxl) !important;
 }
 
+.p4 {
+  font-size: var(--fs-p4-xxl) !important;
+}
+
+/* Paragraph of attractions */
+.p5 {
+  font-size: var(--fs-p5-xxl) !important;
+}
+
 /* slider location link, body content */
-.pin-t2{
+.pin-t2 {
   font-size: var(--fs-st2-xxl) !important;
 }
 
-.pin-i1{
+.pin-i1 {
   font-size: var(--fs-i1-xxl) !important;
 }
 
 /* slider / background height */
-.s_bg-h{
+.s_bg-h {
   min-height: var(--mn-w5) !important;
   max-height: var(--mx-h) !important;
   height: 100vw;
@@ -123,76 +138,86 @@
 
 /* slider / image width 100% after 1300px */
 @media (min-width: 1300px) {
-  .w-lg-100 { width: 100%!important; }
+  .w-lg-100 {
+    width: 100% !important;
+  }
 }
 
-
-@media screen and (min-width : 2800px) {
-  .t1{
+@media screen and (min-width: 2800px) {
+  .t1 {
     font-size: var(--fs-t1-3xl) !important;
   }
 
-  .t2{
+  .t2 {
     font-size: var(--fs-t2-3xl) !important;
   }
 
-  .t3{
+  .t3 {
     font-size: var(--fs-t3-3xl) !important;
   }
 
-  .p1{
+  .p1 {
     font-size: var(--fs-p1-3xl) !important;
   }
 
-  .p2{
+  .p2 {
     font-size: var(--fs-p2-3xl) !important;
   }
 
-  .p3{
+  .p3 {
     font-size: var(--fs-p3-3xl) !important;
   }
 
-  .pin-t2{
+  .p4 {
+    font-size: var(--fs-p4-3xl) !important;
+  }
+
+  .pin-t2 {
     font-size: var(--fs-st2-3xl) !important;
   }
 
-  .pin-i1{
+  .pin-i1 {
     font-size: var(--fs-si1-3xl) !important;
   }
 }
 
-@media screen and (max-width : 768px) {
-  .t1{
+@media screen and (max-width: 992px) {
+  .p4 {
+    font-size: var(--fs-p4-lg) !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .t1 {
     font-size: var(--fs-t1-md) !important;
   }
 
-  .pin-t2{
-    font-size: var(--fs-st2-sm) !important;
+  .pin-t2 {
+    font-size: var(--fs-st2-md) !important;
   }
 
-  .pin-i1{
-    font-size: var(--fs-i1-sm) !important;
+  .pin-i1 {
+    font-size: var(--fs-i1-md) !important;
   }
 }
 
-@media screen and (max-width : 576px) {
-  .t1{
+@media screen and (max-width: 576px) {
+  .t1 {
     font-size: var(--fs-t1-sm) !important;
   }
 
-  .t2{
+  .t2 {
     font-size: var(--fs-t2-sm) !important;
   }
 
-  .p1{
+  .p1 {
     font-size: var(--fs-p1-sm) !important;
   }
 
-  .pin-i1{
-    font-size: var(--fs-i1-sm) !important;
+  .p5 {
+    font-size: var(--fs-p5-sm) !important;
   }
 }
-
 
 /* ############################################################################ */
 /* Below is the class of header and footer attribute and element */
@@ -272,7 +297,7 @@
   font-size: var(--fs-top-foot-xxl) !important;
 }
 
-.fs-drown_menu{
+.fs-drown_menu {
   font-size: var(--fs-drop-xxl) !important;
 }
 
@@ -280,7 +305,7 @@
   color: var(--fc-white) !important;
 }
 
-.ms-f{
+.ms-f {
   margin-left: 3.5rem !important;
 }
 
@@ -332,9 +357,10 @@
 
 /* footer */
 footer {
-  background-image: url(../images/general/malaysia.png), url(../images/general/Rectanglefooter-round.png); 
+  background-image: url(../images/general/malaysia.png),
+    url(../images/general/Rectanglefooter-round.png);
   background-size: 40%, cover;
-  background-position: 50% 55%, 0% -0.5%;
+  background-position: 52% 55%, 0% -0.5%;
   background-repeat: no-repeat;
   padding-top: 80px;
   padding-bottom: 70px;
@@ -364,29 +390,28 @@ footer a:hover img {
   bottom: 50px;
 }
 
-@media screen and (min-width : 2000px) {
+@media screen and (min-width: 2000px) {
   footer {
     background-size: 35%, cover;
   }
 }
 
-@media screen and (min-width : 2800px) {
-  .fs-top-nav-vm{
+@media screen and (min-width: 2800px) {
+  .fs-top-nav-vm {
     font-size: var(--fs-top-foot-3xl) !important;
   }
 
-  .fs-drown_menu{
+  .fs-drown_menu {
     font-size: var(--fs-drop-3xl) !important;
   }
 
   footer ul a {
     font-size: var(--fs-top-foot-3xl) !important;
   }
-
 }
 
 @media screen and (max-width: 1200px) {
-  .ms-f{
+  .ms-f {
     margin-left: 0.8vw !important;
   }
 
@@ -402,13 +427,12 @@ footer a:hover img {
   }
 
   footer {
-    background-image: none, url(../images/general/Rectanglefooter-round.png); 
+    background-image: none, url(../images/general/Rectanglefooter-round.png);
     background-position-y: 0%;
   }
 }
 
 @media screen and (max-width: 767px) {
-
   /* top navbar */
   .bg-dropdown-yellow-green {
     background-color: var(--bg-green-transparent) !important;
@@ -417,7 +441,7 @@ footer a:hover img {
   }
 
   .bg-mobile-dropdown-green-yellow {
-    background-color: var(--bg-yellow-full ) !important;
+    background-color: var(--bg-yellow-full) !important;
   }
 
   .bg-dropdown-yellow-width {
@@ -432,7 +456,7 @@ footer a:hover img {
     font-weight: var(--fw-7) !important;
   }
 
-  .ms-f{
+  .ms-f {
     margin-left: 0vw !important;
   }
   /* footer */

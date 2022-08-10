@@ -1,6 +1,10 @@
-body, html {
+html,body {
   background-color: #D2DDCD !important;
-  background-image: url(../images/penanghill/Polygon18.png);
+}
+.bg1{
+  background-image: url(../images/mountain_penang/Polygon18.png);
+  background-position:left;
+  background-size: cover;
 }
 image{
   width: 100%;
@@ -8,7 +12,6 @@ image{
 }
 .wd-50{
   width: 45%;
-  height: fit-content;
 }
 .texthover:hover{
   color: rgb(85, 210, 210);
@@ -217,21 +220,8 @@ div p{
   body, html {
     background-color: #D2DDCD;
   }
-  .bg {
-    /* The image used */
-    background-image: url(../images/mountain_penang/penang-5230946_960_720.jpg);
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    color: white;
-  }
 }
 .bg {
-  /* The image used */
-  /* background-image: url(../images/mountain_penang/penang-5230946_960_720.jpg); */
   background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/mountain_penang/penang-5230946_960_720.jpg);
   /* Full height */
   min-height: 970px; 

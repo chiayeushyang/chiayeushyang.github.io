@@ -1,0 +1,115 @@
+/* Showcase */
+.background {
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    background: url(../images/beach_perhentian/background.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Showcase */
+
+/* About */
+.main-title img {
+    width: 90px;
+}
+
+
+/* About */
+
+/* Activities */
+.activity {
+    background-color: rgba(215, 255, 55, 0.1);
+}
+
+.activity .row {
+    padding-top: 6.25rem;
+    padding-bottom: 10rem;
+}
+
+.right-ellipse {
+    position: relative;
+}
+
+.right-ellipse img {
+    position: absolute;
+    width: 40rem;
+}
+
+.img2 {
+    display: none;
+    width: 38rem;
+}
+
+.right-ellipse h2 {
+    z-index: 1;
+    width: 30rem;
+}
+
+.right-ellipse p {
+    z-index: 1;
+    width: 30rem;
+}
+/* Activities */
+
+/* Food */
+
+.food .row {
+    padding-top: 6.25rem;
+    padding-bottom: 10rem;
+}
+/* Food */
+
+/* Details */
+.detail {
+    background-color: rgba(215, 255, 55, 0.1);
+}
+
+.detail .row img{
+    border: 3px solid #009c43;
+}
+/* Details */
+
+/* Gallery */
+.gallery .item img {
+    border-radius: 20px;
+}
+
+.gallery .item {
+    transition: .5s ease-in-out;
+}
+.gallery .item:hover {
+    filter: brightness(80%)
+}
+/* Gallery */
+
+@media screen and (max-width: 1200px){
+    .right-ellipse {
+        height: 40rem;
+    }
+}
+
+@media screen and (max-width: 575px) {        
+    .activity .row {
+        padding-top: 1rem;
+    }
+
+    .img2 {
+        display: block;
+        min-height: 30rem;
+    }
+
+    .right-ellipse p {
+        width: 90vw;
+    }
+
+    .food .row {
+        padding-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+}
+
+

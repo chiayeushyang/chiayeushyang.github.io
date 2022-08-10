@@ -1,457 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>3C2L_Home</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Favicon-->
-    <link rel="icon" type="image/png" href="images/general/favicon.png" />
-    <link rel="stylesheet" href="css/general.css" />
-    <!-- add your css file here for example -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <!-- JavaScript Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/13427233db.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body class="container-1920">
-    <nav class="autohide navbar sticky-top navbar-expand-md bg-light py-0">
-      <div class="container-fluid bg-top-nav-green px-0">
-        <a class="navbar-brand ms-3 my-2" href="index.html"
-          ><img
-            src="images/general/logo_light.png"
-            alt="logo_white 1.png"
-            width="80%"
-        /></a>
-        <button
-          class="navbar-toggler navbar-dark me-3"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse bg-mobile-dropdown-green-yellow"
-          id="navbarNavDropdown"
-        >
-          <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3"
-                aria-current="page"
-                href="#"
-                >ABOUT</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <!-- based on page that you do, for example, if u are doing the culture page, then u add the active class to line 67 -->
-              <a
-                class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
-                href="category_mountain.html"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                MOUNTAIN
-              </a>
-              <ul class="dropdown-menu bg-dropdown-yellow-green">
-                <li>
-                  <a class="dropdown-item item-fw-bold fs-drown_menu" href="#"
-                    >Genting Highland</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item item-fw-bold fs-drown_menu" href="#"
-                    >Cameron Highland</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item item-fw-bold fs-drown_menu"
-                    href="mountain_penang.html"
-                    >Penang Hill</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                BEACH
-              </a>
-              <ul class="dropdown-menu bg-dropdown-yellow-green">
-                <li>
-                  <a class="dropdown-item item-fw-bold fs-drown_menu" href="#"
-                    >Perhentian Island</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item item-fw-bold fs-drown_menu" href="beach_pulau.html"
-                    >Pulau Rawa</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item item-fw-bold fs-drown_menu" href="#"
-                    >Pantai Cenang</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                CULTURE
-              </a>
-              <ul
-                class="dropdown-menu bg-dropdown-yellow-green bg-dropdown-yellow-width"
-              >
-                <li>
-                  <a class="dropdown-item item-fw-bold fs-drown_menu" href="#"
-                    >Thean Hou Temple</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item item-fw-bold fs-drown_menu" href="#">Batu Caves</a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item item-fw-bold fs-drown_menu text-wrap"
-                    href="culture_sultan.html"
-                    >Sultan Salahuddin Abdul Aziz Mosque</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3"
-                aria-current="page"
-                href="#"
-                >CONTACT</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<head>
+  <title>3C2L_Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Favicon-->
+  <link rel="icon" type="image/png" href="images/general/favicon.png" />
+  <link rel="stylesheet" href="css/general.css" />
+  <!-- add your css file here for example -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/13427233db.js" crossorigin="anonymous"></script>
+</head>
 
-    <div id="back-top">
-      <a href="#"
-        ><img src="images/general/top.png" alt="arrow to top" width="30px"
-      /></a>
-    </div>
-
-    <!-- Your content here -->
-    <div>
-      <!-- Slide Show -->
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide"
-        data-bs-ride="false"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" id="carousel_1">
-            <img
-              src="images/home/home_moutain_2.jpg"
-              class="d-block image-fill-black w-lg-100 s_bg-h"
-              alt="..."
-            />
-            <div class="carousel-caption-middle px-5">
-              <h1 class="slideshow-content-header t1">MOUNTAIN</h1>
-              <p class="slideshow-content-paragraph p1 mb-4">
-                Leaving the heat and noisy city, hike to the peak and listen to
-                your echo blended with the natural music.
-              </p>
-              <a
-                href="category_mountain.html"
-                class="btn btn-green text-light fs-5"
-                >Let's go</a
-              >
-            </div>
-          </div>
-          <div class="carousel-item" id="carousel_2">
-            <img
-              src="images/home/home_beach.jpg"
-              class="d-block image-fill-black w-lg-100 s_bg-h"
-              alt="..."
-            />
-            <div class="carousel-caption-middle px-5">
-              <h1 class="slideshow-content-header t1">BEACH</h1>
-              <p class="slideshow-content-paragraph p1 mb-4">
-                Sunshine, beach, and waves as well as you, make up an amazing
-                image and memories.
-              </p>
-              <a href="#" class="btn btn-lightBlue text-light fs-5">Let's go</a>
-            </div>
-          </div>
-          <div class="carousel-item" id="carousel_3">
-            <img
-              src="images/home/home_temple.jpg"
-              class="d-block image-fill-black w-lg-100 s_bg-h"
-              alt="..."
-            />
-            <div class="carousel-caption-middle px-5">
-              <h1 class="slideshow-content-header t1">CULTURE</h1>
-              <p class="slideshow-content-paragraph p1 mb-4">
-                Belief, prayer, and worship of our own religion are some of the
-                things that our mortals can do it.
-              </p>
-              <a href="#" class="btn btn-brown text-light fs-5">Let's go</a>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+<body class="container-1920">
+  <nav class="autohide navbar navbar-expand-md bg-light py-0 sticky-top">
+    <div class="container-fluid bg-top-nav-green px-0">
+      <a class="navbar-brand ms-3 my-2" href="index.html"><img src="images/general/logo_light.png"
+          alt="logo_white 1.png" width="80%" /></a>
+      <button class="navbar-toggler navbar-dark me-3" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse bg-mobile-dropdown-green-yellow" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3" aria-current="page"
+              href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3" href="category_mountain.html" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              MOUNTAIN
+            </a>
+            <ul class="dropdown-menu bg-dropdown-yellow-green">
+              <li>
+                <a class="dropdown-item item-fw-bold fs-drown_menu" href="mountain_genting.html">Genting Highland</a>
+              </li>
+              <li>
+                <a class="dropdown-item item-fw-bold fs-drown_menu" href="mountain_cameron.html">Cameron Highland</a>
+              </li>
+              <li>
+                <a class="dropdown-item item-fw-bold fs-drown_menu" href="mountain_penang.html">Penang Hill</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3" href="category_beach.html" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              BEACH
+            </a>
+            <ul class="dropdown-menu bg-dropdown-yellow-green">
+              <li>
+                <a class="dropdown-item item-fw-bold fs-drown_menu" href="beach_perhentian.html">Perhentian Island</a>
+              </li>
+              <li>
+                <a class="dropdown-item item-fw-bold fs-drown_menu" href="beach_pulau.html">Pulau Rawa</a>
+              </li>
+              <li>
+                <a class="dropdown-item item-fw-bold fs-drown_menu" href="beach_pantai.html">Pantai Cenang</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3" href="category_culture.html" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              CULTURE
+            </a>
+            <ul class="dropdown-menu bg-dropdown-yellow-green bg-dropdown-yellow-width">
+              <li>
+                <a class="dropdown-item item-fw-bold fs-drown_menu" href="culture_thean.html">Thean Hou Temple</a>
+              </li>
+              <li>
+                <a class="dropdown-item item-fw-bold fs-drown_menu" href="culture_batu.html">Batu Caves</a>
+              </li>
+              <li>
+                <a class="dropdown-item item-fw-bold fs-drown_menu text-wrap" href="culture_sultan.html">Sultan
+                  Salahuddin Abdul Aziz Mosque</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3" aria-current="page"
+              href="contact.html">CONTACT</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <div id="first-content" class="position-relative mx-auto mb-5 mb-md-2">
-      <div class="row d-flex align-items-center justify-content-between">
-        <div class="col-12 col-lg-7 col-sm-8">
-          <h1 class="fw-bold mb-5 t2">Plan for your next destination ?</h1>
-          <p class="p3 text text-justify">
-            Still confusing where you want to go? Don’t hesitate, Malaysia is
-            the best choice for your next trip. Why is it so special? It is a
-            places that mixed with a varied cultures of the different people of
-            Malaysia. You may experience different type of cultural, different
-            style of temple by just coming to Malaysia.
-          </p>
-          <div class="d-none d-md-flex justify-content-end mt-4 mt-md-2">
-            <a href="category_culture.html" class="btn btn-brown text-light fs-5">Read More</a>
+  <div id="back-top">
+    <a href="#"><img src="images/general/top.png" alt="arrow to top" width="30px" /></a>
+  </div>
+
+  <!-- Your content here -->
+  <div>
+    <!-- Slide Show -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="carousel_1">
+          <img src="images/home/home_moutain_2.jpg" class="d-block image-fill-black w-lg-100 s_bg-h" alt="..." />
+          <div class="carousel-caption-middle px-5">
+            <h1 class="slideshow-content-header t1">MOUNTAIN</h1>
+            <p class="slideshow-content-paragraph p1 mb-4">
+              Leaving the heat and noisy city, hike to the peak and listen to
+              your echo blended with the natural music.
+            </p>
+            <a href="category_mountain.html" class="btn btn-green text-light fs-5">Let's go</a>
           </div>
         </div>
-        <div class="col-12 col-sm-4">
-          <img
-            src="images/home/chinese_temple.png"
-            id="chineseTemple"
-            class="d-flex" 
-          />
-          <div class="position-absolute" id="icon-info_1">
-            <i class="fa-solid fa-circle-info fa-beat-fade icon-info" 
-            data-bs-toggle="tooltip"
-            data-bs-placement="left"
-            data-bs-custom-class="custom-tooltip"
-            data-bs-title="Calm down your mind, pray and bless. "></i>
+        <div class="carousel-item" id="carousel_2">
+          <img src="images/home/home_beach.jpg" class="d-block image-fill-black w-lg-100 s_bg-h" alt="..." />
+          <div class="carousel-caption-middle px-5">
+            <h1 class="slideshow-content-header t1">BEACH</h1>
+            <p class="slideshow-content-paragraph p1 mb-4">
+              Sunshine, beach, and waves as well as you, make up an amazing
+              image and memories.
+            </p>
+            <a href="category_beach.html" class="btn btn-lightBlue text-light fs-5">Let's go</a>
           </div>
         </div>
-        <div class="d-md-none d-flex justify-content-center mt-4 mt-md-0">
+        <div class="carousel-item" id="carousel_3">
+          <img src="images/home/home_temple.jpg" class="d-block image-fill-black w-lg-100 s_bg-h" alt="..." />
+          <div class="carousel-caption-middle px-5">
+            <h1 class="slideshow-content-header t1">CULTURE</h1>
+            <p class="slideshow-content-paragraph p1 mb-4">
+              Belief, prayer, and worship of our own religion are some of the
+              things that our mortals can do it.
+            </p>
+            <a href="category_culture.html" class="btn btn-brown text-light fs-5">Let's go</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="first-content" class="position-relative mx-auto mb-5 mb-md-2">
+    <div class="row d-flex align-items-center justify-content-between">
+      <div class="col-12 col-lg-7 col-sm-8">
+        <h1 class="fw-bold mb-5 t2">Plan for your next destination ?</h1>
+        <p class="p3 text text-justify">
+          Still confusing where you want to go? Don’t hesitate, Malaysia is
+          the best choice for your next trip. Why is it so special? It is a
+          places that mixed with a varied cultures of the different people of
+          Malaysia. You may experience different type of cultural, different
+          style of temple by just coming to Malaysia.
+        </p>
+        <div class="d-none d-md-flex justify-content-end mt-4 mt-md-2">
           <a href="category_culture.html" class="btn btn-brown text-light fs-5">Read More</a>
         </div>
       </div>
-      <img
-        src="images/home/Group_1475.png"
-        id="first-content-bg1"
-        class="position-absolute d-none d-sm-flex"
-      />
-      <img
-        src="images/home/istockphoto-972680176-612x612-removebg-preview.png"
-        id="first-content-bg2"
-        class="position-absolute d-none d-sm-flex"
-      />
-    </div>
-    <div id="second-content" class="py-5 position-relative">
-      <img src="images/home/b-leaf.png" id="b-leaf" class="position-absolute d-none d-sm-flex"/>
-      <img src="images/home/waterfall.jpg" id="waterfall" class="position-absolute d-none d-sm-block"/>
-      <img src="images/home/river.jpg" id="river" class="position-absolute d-none d-sm-block"/>
-      <div class="position-absolute" id="s-leaf">
-          <i class="fa-solid fa-circle-info fa-beat-fade icon-info position-relative"  id="icon-info_2"
-          data-bs-toggle="tooltip"
-          data-bs-placement="left"
-          data-bs-custom-class="custom-tooltip2"
-          data-bs-title="Away from screen, enjoy the nature."></i>
-        <img src="images/home/s-leaf.png" class="position-relative"/>
-      </div>
-      <div id="second-content-text" class="container-md">
-        <div class="d-flex flex-column justify-content-end">
-          <h1 id="second-content-h1" class="fw-bold mb-5 text-center text-sm-end t2">Bored with human &ldquo;made&bdquo;?</h1>
-          <p id="second-content-p1" class="text text-justify align-self-end p3">
-            Spend too much time in technology or human ”made„ product ? Time to
-            release your stress and calm down your mind. Besides of temple,
-            Malaysia also full of wonderful natural creation. You can reach to
-            the moutain or by the sea and enjoy the beauty of natural.
-            Definately, you will being impress by thoes natural ‟made„ artwork
-            when you get yourself there but not from screen.
-          </p>
-          <div class="d-flex justify-content-end mt-4 mt-md-2 d-none d-sm-flex" id="second-content-btn1">
-            <a href="category_mountain.html" class="btn btn-green text-light fs-5">Read More</a>
-          </div>
-          <img src="images/home/waterfall.jpg" class="my-5 d-flex d-sm-none">
-          <img src="images/home/river.jpg" class="mb-5 d-flex d-sm-none">
-          <div class="d-flex justify-content-center mt-4 mt-md-2 d-flex d-sm-none" id="second-content-btn2">
-            <a href="category_mountain.html" class="btn btn-green text-light fs-5">Read More</a>
-          </div>
+      <div class="col-12 col-sm-4">
+        <img src="images/home/chinese_temple.png" data-bs-toggle="tooltip" data-bs-placement="left"
+        data-bs-custom-class="custom-tooltip" data-bs-title="Calm down your mind, pray and bless. " id="chineseTemple" class="d-flex" />
+        <div class="position-absolute" id="icon-info_1">
+          <i class="fa-solid fa-circle-info fa-beat-fade icon-info" data-bs-toggle="tooltip" data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip" data-bs-title="Calm down your mind, pray and bless. "></i>
         </div>
       </div>
+      <div class="d-md-none d-flex justify-content-center mt-4 mt-md-0">
+        <a href="category_culture.html" class="btn btn-brown text-light fs-5">Read More</a>
+      </div>
     </div>
-    <div id="third-content" class="pt-5">
-      <div id="third-content-text" class="m-auto">
-        <h1 class="fw-bold mb-3 t2">About Us</h1>
-        <p class="text align-self-end position-relative mb-5 p3">
-          Who are us ? We are team 3C2L from New Era University College.
+    <img src="images/home/Group_1475.png" id="first-content-bg1" class="position-absolute d-none d-sm-flex" />
+    <img src="images/home/istockphoto-972680176-612x612-removebg-preview.png" id="first-content-bg2"
+      class="position-absolute d-none d-sm-flex" />
+  </div>
+  <div id="second-content" class="py-5 position-relative">
+    <img src="images/home/b-leaf.png" id="b-leaf" class="position-absolute d-none d-sm-flex" />
+    <img src="images/home/waterfall.jpg" id="waterfall" class="position-absolute d-none d-sm-block" />
+    <img src="images/home/river.jpg" id="river" class="position-absolute d-none d-sm-block" />
+    <div class="position-absolute" id="s-leaf">
+      <i class="fa-solid fa-circle-info fa-beat-fade icon-info position-relative" id="icon-info_2"
+        data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip2"
+        data-bs-title="Away from screen, enjoy the nature."></i>
+      <img src="images/home/s-leaf.png" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="custom-tooltip2"
+      data-bs-title="Away from screen, enjoy the nature." class="position-relative" />
+    </div>
+    <div id="second-content-text" class="container-md">
+      <div class="d-flex flex-column justify-content-end">
+        <h1 id="second-content-h1" class="fw-bold mb-5 text-center text-sm-end t2">Bored with human &ldquo;made&bdquo;?
+        </h1>
+        <p id="second-content-p1" class="text text-justify align-self-end p3">
+          Spend too much time in technology or human ”made„ product ? Time to
+          release your stress and calm down your mind. Besides of temple,
+          Malaysia also full of wonderful natural creation. You can reach to
+          the moutain or by the sea and enjoy the beauty of natural.
+          Definately, you will being impress by thoes natural ‟made„ artwork
+          when you get yourself there but not from screen.
         </p>
+        <div class="d-flex justify-content-end mt-4 mt-md-2 d-none d-sm-flex" id="second-content-btn1">
+          <a href="category_mountain.html" class="btn btn-green text-light fs-5">Read More</a>
+        </div>
+        <img src="images/home/waterfall.jpg" class="my-5 d-flex d-sm-none">
+        <img src="images/home/river.jpg" class="mb-5 d-flex d-sm-none">
+        <div class="d-flex justify-content-center mt-4 mt-md-2 d-flex d-sm-none" id="second-content-btn2">
+          <a href="category_mountain.html" class="btn btn-green text-light fs-5">Read More</a>
+        </div>
       </div>
-      <div
-        id="third-content-img"
-        class="row d-flex justify-content-center text-center">
-        <div class="col-0 col-lg-1 col-sm-0"></div>
-        <div class="col-10 col-lg-2 col-sm-4">
-          <img src="images/home/cys.png" width="100%"/>
-        </div>
-        <div class="col-10 col-lg-2 col-sm-4">
-          <img src="images/home/lwh.png" width="100%"/>
-        </div>
-        <div class="col-10 col-lg-2 col-sm-4">
-          <img src="images/home/czs.png" width="100%"/>
-        </div>
-        <div class="col-10 col-lg-2 col-sm-4">
-          <img src="images/home/lch.png" width="100%"/>
-        </div>
-        <div class="col-10 col-lg-2 col-sm-4">
-          <img src="images/home/ccs.png" width="100%"/>
-        </div>
-        <div class="col- col-lg-1 col-md-0"></div>
+    </div>
+  </div>
+  <div id="third-content" class="pt-5">
+    <div id="third-content-text" class="m-auto">
+      <h1 class="fw-bold mb-3 t2">About Us</h1>
+      <p class="text align-self-end position-relative mb-5 p3">
+        Who are us ? We are team 3C2L from New Era University College.
+      </p>
+    </div>
+    <div id="third-content-img" class="row d-flex justify-content-center text-center">
+      <div class="col-0 col-lg-1 col-sm-0"></div>
+      <div class="col-10 col-lg-2 col-sm-4">
+        <img src="images/home/cys.png" width="100%" />
       </div>
-      <div class="d-flex justify-content-center mt-4 mt-md-2">
-        <a
-          href="about.html"
-          target="_blank"
-          class="btn btn-lightBlue text-light mb-5 fs-5"
-          >Read More</a
-        >
+      <div class="col-10 col-lg-2 col-sm-4">
+        <img src="images/home/lwh.png" width="100%" />
       </div>
-      <footer class="position-relative d-flex align-items-center flex-column">
-        <div class="container-fluid">
-          <div class="row pt-5 justify-content-center">
-            <div
-              class="col-12 col-sm-5 col-md-3 mx-md-3 mb-5 mb-sm-0 d-flex justify-content-center align-items-end"
-            >
-              <a href="index.html"
-                ><img src="images/general/logo_light.png" width="117px"
-              /></a>
-            </div>
-            <div
-              class="col-12 col-sm-2 col-md-2 ms-f mb-3 mb-sm-0 text-center text-sm-start text-white"
-            >
-              <h3 class="fw-bold">MENU</h3>
-              <ul class="list-unstyled fs-5">
-                <a href="#about"><li class="mb-2">ABOUT</li></a>
-                <a href="category_mountain.html"
-                  ><li class="mb-2">MOUNTAIN</li></a
-                >
-                <a href="#category_beach.html"><li class="mb-2">BEACH</li></a>
-                <a href="#category_culturehtml"
-                  ><li class="mb-2">CULTURE</li></a
-                >
-                <a href="#contact.html"><li>CONTACT</li></a>
-              </ul>
-            </div>
-            <div
-              class="col-12 col-sm-5 col-md-3 text-white d-flex flex-column text-center align-self-end"
-            >
-              <h3 class="fw-bold">CONTACT US</h3>
-              <div>
-                <a
-                  href="https://www.facebook.com/profile.php?id=100002367838790"
-                  target="_blank"
-                  ><img src="images/general/facebook.png" class="mx-2"
-                /></a>
-                <a href="https://www.instagram.com/yeushyang/" target="_blank"
-                  ><img src="images/general/instagram.png" class="mx-2"
-                /></a>
-                <a href="https://github.com/chiayeushyang" target="_blank"
-                  ><img src="images/general/github.png" class="mx-2"
-                /></a>
-              </div>
+      <div class="col-10 col-lg-2 col-sm-4">
+        <img src="images/home/czs.png" width="100%" />
+      </div>
+      <div class="col-10 col-lg-2 col-sm-4">
+        <img src="images/home/lch2.png" width="100%" />
+      </div>
+      <div class="col-10 col-lg-2 col-sm-4">
+        <img src="images/home/ccs.png" width="100%" />
+      </div>
+      <div class="col- col-lg-1 col-md-0"></div>
+    </div>
+    <div class="d-flex justify-content-center mt-4 mt-md-2">
+      <a href="about.html" class="btn btn-lightBlue text-light mb-5 fs-5">Read More</a>
+    </div>
+    <footer class="position-relative d-flex align-items-center flex-column">
+      <div class="container-fluid">
+        <div class="row pt-5 justify-content-center">
+          <div class="col-12 col-sm-5 col-md-3 mx-md-3 mb-5 mb-sm-0 d-flex justify-content-center align-items-end">
+            <a href="index.html"><img src="images/general/logo_light.png" width="117px" /></a>
+          </div>
+          <div class="col-12 col-sm-2 col-md-2 ms-f mb-3 mb-sm-0 text-center text-sm-start text-white">
+            <h3 class="fw-bold">MENU</h3>
+            <ul class="list-unstyled fs-5">
+              <a href="about.html">
+                <li class="mb-2">ABOUT</li>
+              </a>
+              <a href="category_mountain.html">
+                <li class="mb-2">MOUNTAIN</li>
+              </a>
+              <a href="category_beach.html">
+                <li class="mb-2">BEACH</li>
+              </a>
+              <a href="category_culturehtml">
+                <li class="mb-2">CULTURE</li>
+              </a>
+              <a href="contact.html">
+                <li>CONTACT</li>
+              </a>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-5 col-md-3 text-white d-flex flex-column text-center align-self-end">
+            <h3 class="fw-bold">CONTACT US</h3>
+            <div>
+              <a href="https://www.facebook.com/profile.php?id=100002367838790" target="_blank"><img
+                  src="images/general/facebook.png" class="mx-2" /></a>
+              <a href="https://www.instagram.com/yeushyang/" target="_blank"><img src="images/general/instagram.png"
+                  class="mx-2" /></a>
+              <a href="https://github.com/chiayeushyang" target="_blank"><img src="images/general/github.png"
+                  class="mx-2" /></a>
             </div>
           </div>
         </div>
-        
-        <div id="line" class="position-absolute"></div>
-        <p class="position-absolute bottom-0 text-light">
-          Copyright © 2022 3C2L. All Rights Reserved.
-        </p>
-      </footer>
-    </div>
-    <script src="js/scripts.js"></script>
-    <script>
-      const tooltipTriggerList = document.querySelectorAll(
-        '[data-bs-toggle="tooltip"]'
-      );
-      const tooltipList = [...tooltipTriggerList].map(
-        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
-      );
-    </script>
-  </body>
+      </div>
+
+      <div id="line" class="position-absolute"></div>
+      <p class="position-absolute bottom-0 text-light">
+        Copyright © 2022 3C2L. All Rights Reserved.
+      </p>
+    </footer>
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>

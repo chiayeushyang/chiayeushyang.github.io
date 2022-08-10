@@ -33,11 +33,8 @@ document.addEventListener("DOMContentLoaded", function(){
       return new bootstrap.Tooltip(tooltipTriggerEl)
     })
 
-    // const isHover = e => $(e).each(function(){
-    //   console.log(this.parentElement.querySelector(':hover'));
-    //   $(this).parentElement.querySelector(':hover') === e; 
-    // }) 
-    // const isHover = e => e.parentElement.querySelector(':hover') === e;  
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
     function checkCardHover(){
       let card = document.getElementsByClassName('card')
@@ -62,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function(){
       }else{
         count += 1;
         if (count == 1){
-          myInterval = setInterval(everyTime, 3000);
+          myInterval = setInterval(everyTime, 4000);
         }
       }
     });
@@ -85,3 +82,14 @@ function everyTime () {
 
   });
 }
+
+/* Fancybox */
+Fancybox.bind('[data-fancybox="gallery"]', {
+
+  Image: {
+    zoom: false,
+    click: false,
+    wheel: "slide",
+  },
+});
+/* Fancybox */

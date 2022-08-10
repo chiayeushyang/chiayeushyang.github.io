@@ -1,0 +1,227 @@
+:root {
+    --bg-green-full: #064635;
+    --bg-toolsTip-grey: #bab19ef2;
+    --bg-toolsTip-darkgrey: #888070f2;
+    --bg-toolsTip-lightGreen: #a6dc98f1;
+    --bg-toolsTip-lightBlue: #88f3f3e2;
+}
+
+#first-content {
+    background-color: var(--bg-green-full);
+}
+
+#second-content {
+    padding: 100px 0px;
+    background-image: url(../images/contact/KL.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Form */
+#myForm {
+    max-width: 40%;
+    margin: auto;
+    padding: 30px 50px;
+    background-color: rgba(188, 187, 187, 0.226);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+}
+
+::placeholder {
+    color: #5f651f;
+}
+
+#name,
+#phone {
+    width: 49%;
+}
+
+input[type=text].half,
+input[type=tel].half {
+    width: 49%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+input[type=text].full,
+input[type=tel].full {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#phone {
+    margin-left: 4px;
+}
+
+#message {
+    resize: none;
+}
+
+#submit input {
+    background-color: #e7b025e2;
+    color: white;
+}
+
+/* -------------- */
+.mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 650px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 650px;
+}
+
+.gmap_iframe {
+    width: 100% !important;
+    height: 650px !important;
+}
+
+#fourth-content {
+    background: url(../images/contact/paper_bg.png);
+    margin-bottom: 100px;
+}
+
+#info {
+    width: 25%;
+    top: 10%;
+    right: 7%;
+}
+
+#icon-info_1 {
+    color: var(--bg-toolsTip-darkgrey);
+    font-size: 30px;
+    left: 10%;
+    top: 5%;
+    z-index: 2;
+}
+
+.custom-tooltip .tooltip-inner {
+    --bs-tooltip-bg: var(--bg-toolsTip-grey);
+    color: black !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.custom-tooltip .tooltip-arrow {
+    --bs-tooltip-bg: var(--bg-toolsTip-grey);
+}
+
+.custom-tooltip2 .tooltip-inner {
+    --bs-tooltip-bg: var(--bg-toolsTip-lightBlue);
+    color: black !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.custom-tooltip2 .tooltip-arrow {
+    --bs-tooltip-bg: var(--bg-toolsTip-lightBlue);
+}
+
+#contact-phone {
+    width: 65%;
+    margin-bottom: 100px;
+}
+
+#contact-email {
+    width: 55%;
+    margin-bottom: 100px;
+}
+
+#contact-locate {
+    width: 90%;
+}
+
+#contact-phone img{
+    width: 133px;
+    height: 133px;
+    margin-right: 90px;
+}
+
+#contact-email img{
+    width: 133px;
+    height: 133px;
+    margin-right: 90px;
+}
+
+#contact-locate img{
+    width: 133px;
+    margin-right: 90px;
+}
+
+#contact-email img#pen {
+    bottom: 55px;
+    left: 5px;
+    width: 100px;
+    height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    #info {
+        width: 28%;
+        top: 20%;
+        right: 7%;
+    }
+
+    #contact-phone {
+        width: 90%;
+        margin-bottom: 100px;
+    }
+    
+    #contact-email {
+        width: 90%;
+        margin-bottom: 100px;
+    }
+    
+    #contact-locate {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    #myForm {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #contact-phone img{
+        width: 80px;
+        height: 80px;
+        margin-right: 50px;
+    }
+    
+    #contact-email img{
+        width: 80px;
+        height: 80px;
+        margin-right: 50px;
+    }
+    
+    #contact-locate img{
+        width: 80px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #second-content {
+        padding: 0px;
+    }
+
+    #myForm {
+        max-width: 100%;
+    }
+}

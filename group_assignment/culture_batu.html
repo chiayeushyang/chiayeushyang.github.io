@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Batu Caves</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="images/general/favicon.png" />
+    <link rel="stylesheet" href="css/general.css" />
+    <!-- add your css file here for example -->
+    <link rel="stylesheet" href="css/culture_batu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/13427233db.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </head>
+
+  <body class="container-1920">
+    <nav class="autohide navbar navbar-expand-md bg-light py-0 sticky-top">
+      <div class="container-fluid bg-top-nav-green px-0">
+        <a class="navbar-brand ms-3 my-2" href="index.html"
+          ><img
+            src="images/general/logo_light.png"
+            alt="logo_white 1.png"
+            width="80%"
+        /></a>
+        <button
+          class="navbar-toggler navbar-dark me-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse bg-mobile-dropdown-green-yellow"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3"
+                aria-current="page"
+                href="about.html"
+                >ABOUT</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
+                href="category_mountain.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                MOUNTAIN
+              </a>
+              <ul class="dropdown-menu bg-dropdown-yellow-green">
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="mountain_genting.html"
+                    >Genting Highland</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="mountain_cameron.html"
+                    >Cameron Highland</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="mountain_penang.html"
+                    >Penang Hill</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
+                href="category_beach.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                BEACH
+              </a>
+              <ul class="dropdown-menu bg-dropdown-yellow-green">
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="beach_perhentian.html"
+                    >Perhentian Island</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="beach_pulau.html"
+                    >Pulau Rawa</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="beach_pantai.html"
+                    >Pantai Cenang</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
+                href="category_culture.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CULTURE
+              </a>
+              <ul
+                class="dropdown-menu bg-dropdown-yellow-green bg-dropdown-yellow-width"
+              >
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="culture_thean.html"
+                    >Thean Hou Temple</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu active"
+                    href="culture_batu.html"
+                    >Batu Caves</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu text-wrap"
+                    href="culture_sultan.html"
+                    >Sultan Salahuddin Abdul Aziz Mosque</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3"
+                aria-current="page"
+                href="contact.html"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="back-top">
+      <a href="#"
+        ><img src="images/general/top.png" alt="arrow to top" width="30px"
+      /></a>
+    </div>
+
+    <!-- Your content here -->
+    <!-- Slide -->
+    <div class="carousel slide position-relative" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active carousel-1">
+          <img
+            src="images/culture_batu/h2.jpg"
+            class="d-block w-100 s_bg-h"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item carousel-2">
+          <img
+            src="images/culture_batu/h3.jpg"
+            class="d-block w-100 s_bg-h"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item carousel-3">
+          <img
+            src="images/culture_batu/h6.jpg"
+            class="d-block w-100 s_bg-h"
+            alt="..."
+          />
+        </div>
+        <div
+          class="container-fluid position-absolute slideshow-content-position d-flex justify-content-center align-items-center h-100"
+        >
+          <div class="w-100 mx-5 p-5 p-md-5">
+            <h1 class="text-light m-auto text-center t1">Batu Caves</h1>
+          </div>
+        </div>
+        <div id="pin" class="position-absolute">
+          <a
+            class="text-decoration-none text-light d-flex align-items-center"
+            href="https://www.google.com/maps?q=batu+caves&rlz=1C1CHBF_enMY991MY991&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjBlsXFgbz5AhU37zgGHeCrC6QQ_AUoAnoECAEQBA"
+            target="_blank"
+          >
+            <i
+              class="fa-solid fa-location-dot d-flex align-items-center pin-i1"
+            ></i>
+            <p class="ps-3 mb-0 pin-t2">Batu Caves, Selangor</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="background1">
+      <div class="container p-3">
+        <h1 class="t1 pt-3">About</h1>
+        <p class="p1">
+          Leave the city behind and bask in the wonders of Batu Caves - one of
+          the most beautiful tourist destinations in Malaysia. There are three
+          main attractions. which are Temple Cave, Cave Villa, and Ramayana
+          Cave.
+        </p>
+        <h1 class="t1 pt-3">Attractions</h1>
+        <div class="container-fuild d-flex align-items-center flex-wrap mb-5">
+          <div class="col-lg-6 col-md-12">
+            <img class="himg rounded" src="images/culture_batu/h4.jpg" />
+          </div>
+
+          <div class="col-lg-6 col-md-12 pt-md-3 d-flex align-items-center">
+            <p class="p5">
+              According to experts, the limestone forming the caves is about 400
+              million years old. Back in the days, the Orang Asli used some of
+              the cave entrances as their living quarters and for shelter. The
+              caves quickly became famous after being recorded by zoologist
+              William Temple Hornaday in 1878. In 1890, K.Thamboosamy Pillai, an
+              Indian trader, was moved by the beauty of the cave and went to
+              build the first cave temple of Batu Caves.
+            </p>
+          </div>
+        </div>
+        <h1 class="t1 pt-3">Before Visit Batu Caves</h1>
+        <div
+          class="container-fuild d-flex align-items-center flex-row-reverse pt-3 flex-wrap"
+        >
+          <div class="col-lg-6 col-md-12">
+            <img
+              class="himg rounded d-flex ms-lg-3"
+              src="images/culture_batu/h8.jpeg"
+            />
+          </div>
+
+          <div class="col-lg-6 col-md-12 pt-md-3 align-items-center">
+            <p class="p1 fw-bold">Rainbow Staircase</p>
+            <p class="p5">
+              Remember that there are 272 steps to climb to enter the caves - in
+              reality it's not that much but this depends on your age and
+              fitness level! The climb is not advised for anyone with heart
+              problems, so know your limits.
+            </p>
+          </div>
+        </div>
+        <div
+          class="container-fuild d-flex align-items-center flex-row-reverse pt-3 flex-wrap"
+        >
+          <div class="col-lg-6 col-md-12">
+            <img
+              class="himg rounded d-flex ms-lg-3"
+              src="images/culture_batu/h9.jpeg"
+            />
+          </div>
+
+          <div class="col-lg-6 col-md-12 pt-md-3 align-items-center">
+            <p class="p1 fw-bold">Follow The Dress Code</p>
+            <p class="p5">
+              If you've been to pretty much any other religious temple in the
+              world, you'll be aware that there is usually a modest dress code
+              in place. <br />When you arrive at Batu Caves there will be
+              members of staff scanning the crowd to make sure this is adhered
+              to. This means a long skirt or pants for women, and make sure your
+              shoulders are covered. For the guys a t shirt and shorts or long
+              pants will be fine.
+            </p>
+          </div>
+        </div>
+        <div
+          class="container-fuild d-flex align-items-center flex-row-reverse pt-3 flex-wrap"
+        >
+          <div class="col-lg-6 col-md-12">
+            <img
+              class="himg rounded d-flex ms-lg-3"
+              src="images/culture_batu/h10.jpeg"
+            />
+          </div>
+
+          <div class="col-lg-6 col-md-12 pt-md-3 align-items-center">
+            <p class="p1 fw-bold">Watch Out For Monkeys</p>
+            <p class="p5">
+              The Batu caves are home to a few packs of monkeys. These guys
+              won't harm you but they do have a bit of a reputation for grabbing
+              phones and bags away from people so just be sure to keep an eye on
+              your belongings!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="background2">
+      <div class="container p-t4">
+        <h1 class="t1 pt-5">Details</h1>
+        <div class="container-fuild d-flex flex-wrap">
+          <div class="col-md-6 col-xs-12">
+            <p class="t3 mb-0">Contact</p>
+            <div>
+              <a
+                class="text-decoration-none text-dark p3"
+                href="tel:+60361896284"
+                ><i class="fa-solid fa-phone align-items-center"></i>
+                <p class="d-inline">+603 6189 6284</p></a
+              >
+            </div>
+            <div>
+              <a
+                class="text-decoration-none text-dark align-items-center p3"
+                href="mailto:aduanmps@mps.gov.my"
+              >
+                <i class="fa-solid fa-envelope"></i>
+                <p class="d-inline">aduanmps@mps.gov.my</p></a
+              >
+            </div>
+            <div>
+              <a
+                class="text-decoration-none text-dark p3"
+                href="https://mps.gov.my/"
+                target="_blank"
+              >
+                <i class="fa-solid fa-computer-mouse align-items-center"></i>
+                <p class="d-inline">mps.gov.my</p></a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xs-12">
+            <div class="d-flex p3">
+              <i class="fa-solid fa-location-dot d-flex align-items-center"></i>
+              <p class="t3 mb-0 ps-1">Address</p>
+            </div>
+            <a
+              class="text-decoration-none text-dark p3"
+              href="https://www.google.com/maps/place/Batu+Caves/@3.2374545,101.6817347,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc470c8949a805:0xf2bfebb2b36f9ef9!8m2!3d3.2378844!4d101.6840385"
+              target="_blank"
+            >
+              Gombak, 68100 Batu Caves, Selangor
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex pt-3 p3">
+          <i class="fa-solid fa-clock d-flex align-items-center"></i>
+          <p class="t3 ps-1 mb-0">Opening Hours</p>
+        </div>
+
+        <div
+          class="container-fuild d-flex justify-content-between flex-wrap p3"
+        >
+          <div class="col-md-6 col-xs-12">
+            <p>Temple (Main Cave):<br />6.00am - 9.00pm</p>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <p>Ramayana Cave:<br />9.00am - 6.30pm</p>
+          </div>
+        </div>
+
+        <div
+          class="container-fuild d-flex justify-content-between flex-wrap p3"
+        >
+          <div class="col-md-6 col-xs-12">
+            <p>
+              Dark Cave:<br />10.00am - 5.00pm (Weekdays)<br />10.30am - 5.30pm
+              (Weekends)
+            </p>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <p>Cave Villa:<br />8.30am - 5.30pm</p>
+          </div>
+        </div>
+
+        <div class="d-flex pt-3 p3">
+          <i class="fa-solid fa-dollar-sign d-flex align-items-center"></i>
+          <p class="t3 mb-0 ps-1">Price/Entrance Fees</p>
+        </div>
+
+        <div
+          class="container-fuild d-flex justify-content-between flex-wrap p3"
+        >
+          <div class="col-md-6 col-xs-12">
+            <p>Temple (Main Cave):<br />Free</p>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <p>Ramayana Cave:<br />RM 5.00</p>
+          </div>
+        </div>
+
+        <div
+          class="container-fuild d-flex justify-content-between flex-wrap p3"
+        >
+          <div class="col-md-6 col-xs-12">
+            <p>Dark Cave:<br />Adult - RM 35.00<br />Children(&#60 12) - RM 25.00</p>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <p>Cave Villa:<br />With MyKad - RM 7.00<br />Without MyKad - RM 15.00</p>
+          </div>
+        </div>
+
+      <h1 class="t1 py-3">Nearby Food</h1>
+      <div class="row mb-3">
+        <div class="col-md-4 col-xs-12">
+          <div class="card">
+            <img
+              src="images/culture_batu/hf1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h3 class="card-title t3">Songkhla Thai Seafood Restaurant</h3>
+              <p class="card-text p3">
+                Phone:<br /><a
+                  class="text-decoration-none text-dark"
+                  href="+60361277768"
+                  >+60 3-6127 7768</a
+                >
+              </p>
+              <p class="card-text p3">
+                Address:<br /><a
+                  class="text-decoration-none text-dark"
+                  href="https://www.google.com/maps/place/Songkhla+Thai+Seafood+Restaurant/@3.2116647,101.6394923,13.81z/data=!4m5!3m4!1s0x31cc470d2a3315bf:0x94053a3f17900829!8m2!3d3.2342151!4d101.6411856"
+                  target="_blank"
+                  >No. 18, Jalan Paragan Utama 1, Paragan Village-Selayang, 68100 Batu Caves, Selangor</a>
+              </p>
+              <div class="d-flex justify-content-center">
+                <button
+                  class="btn btn-warning fs-5"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#details1"
+                  aria-expanded="false"
+                  aria-controls="details1"
+                >
+                  <p class="fw-bold text-light mb-0">Details</p>
+                </button>
+              </div>
+              <div class="collapse pt-3" id="details1">
+                <p class="p3">
+                  CUISINES : <br />Asian, Thai, Seafood<br /><br />MEALS:<br />Lunch,
+                  Dinner<br /><br />FEATURES :<br />Seating
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <div class="card">
+            <img
+              src="images/culture_batu/hf2.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h3 class="card-title t3">Sangeetha Veg Restaurant</h3>
+              <p class="card-text p3">
+                Phone:<br /><a
+                  class="text-decoration-none text-dark"
+                  href="tel:+60322741633"
+                  >+60 3-2274 1633</a
+                >
+              </p>
+              <p class="card-text p3">
+                Address:<br /><a
+                  class="text-decoration-none text-dark"
+                  href="https://www.google.com/maps/place/Sangeetha+Veg+Restaurant/@3.1490971,101.6976115,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc49d2f7c7088f:0x80392e60c68c148b!8m2!3d3.1490971!4d101.6976115?authuser=0&hl=en"
+                  target="_blank"
+                  >65, Leboh Ampang, City Centre, 50100 Kuala Lumpur</a
+                >
+              </p>
+              <div class="d-flex justify-content-center">
+                <button
+                  class="btn btn-warning fs-5"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#details2"
+                  aria-expanded="false"
+                  aria-controls="details2"
+                >
+                  <p class="fw-bold text-light mb-0">Details</p>
+                </button>
+              </div>
+              <div class="collapse pt-3" id="details2">
+                <p class="p3">
+                  CUISINES :<br />Indian, Asian<br /><br />SPECIAL DIETS :<br />Vegetarian Friendly, Vegan Options, Gluten Free Options
+                  <br /><br />MEALS :<br />Breakfast, Lunch, Dinner, Brunch, After-hours
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <div class="card">
+            <img
+              src="images/culture_batu/hf3.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h3 class="card-title t3">Coca Seafood Restaurant</h3>
+              <p class="card-text p3">
+                Phone:<br /><a
+                  class="text-decoration-none text-dark"
+                  href="tel:+60322733233"
+                  target="_blank"
+                  >+60 3-2273 3233</a
+                >
+              </p>
+              <p class="card-text p3">
+                Address:<br /><a
+                  class="text-decoration-none text-dark"
+                  href="https://www.google.com/maps?q=coco+seafood+restaurant&rlz=1C1CHBF_enMY991MY991&um=1&ie=UTF-8&sa=X&ved=2ahUKEwj5uNXPnLz5AhV28zgGHZB9Ap0Q_AUoAXoECAIQAw"
+                  >29, Jalan Bidara 1, Taman Bidara, 68100 Batu Caves, Selangor</a
+                >
+              </p>
+              <div class="d-flex justify-content-center">
+                <button
+                  class="btn btn-warning fs-5"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#details3"
+                  aria-expanded="false"
+                  aria-controls="details3"
+                >
+                  <p class="fw-bold text-light mb-0">Details</p>
+                </button>
+              </div>
+              <div class="collapse pt-3" id="details3">
+                <p class="p3">
+                  CUISINES :<br />Chinese, Asian, Seafood<br /><br />MEALS:<br />Lunch,
+                  Dinner<br /><br />FEATURES :<br />Takeout, Serves Alcohol
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- ----------------- -->
+
+    <footer class="position-relative d-flex align-items-center flex-column">
+      <div class="container-fluid">
+        <div class="row pt-5 justify-content-center">
+          <div
+            class="col-12 col-sm-5 col-md-3 mx-md-3 mb-5 mb-sm-0 d-flex justify-content-center align-items-end"
+          >
+            <a href="index.html"
+              ><img src="images/general/logo_light.png" width="117px"
+            /></a>
+          </div>
+          <div
+            class="col-12 col-sm-2 col-md-2 ms-f mb-3 mb-sm-0 text-center text-sm-start text-white"
+          >
+            <h3 class="fw-bold">MENU</h3>
+            <ul class="list-unstyled fs-5">
+              <a href="about.html"><li class="mb-2">ABOUT</li></a>
+              <a href="category_mountain.html"
+                ><li class="mb-2">MOUNTAIN</li></a
+              >
+              <a href="category_beach.html"><li class="mb-2">BEACH</li></a>
+              <a href="category_culture.html"><li class="mb-2">CULTURE</li></a>
+              <a href="contact.html"><li>CONTACT</li></a>
+            </ul>
+          </div>
+          <div
+            class="col-12 col-sm-5 col-md-3 text-white d-flex flex-column text-center align-self-end"
+          >
+            <h3 class="fw-bold">CONTACT US</h3>
+            <div>
+              <a
+                href="https://www.facebook.com/profile.php?id=100002367838790"
+                target="_blank"
+                ><img src="images/general/facebook.png" class="mx-2"
+              /></a>
+              <a href="https://www.instagram.com/yeushyang/" target="_blank"
+                ><img src="images/general/instagram.png" class="mx-2"
+              /></a>
+              <a href="https://github.com/chiayeushyang" target="_blank"
+                ><img src="images/general/github.png" class="mx-2"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="line" class="position-absolute"></div>
+      <p class="position-absolute bottom-0 text-light">
+        Copyright © 2022 3C2L. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>

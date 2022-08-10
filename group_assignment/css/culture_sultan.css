@@ -1,12 +1,37 @@
 #pin {
-    bottom: 5%;
-    left: 5%;
-  }
-    
+  bottom: 5%;
+  left: 5%;
+}
+
 .mimg {
   width: 95%;
   display: flex;
   justify-content: center;
 }
 
-  
+.background1 {
+  background-image: url(../images/culture_sultan/b1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.background2 {
+  background-image: url(../images/culture_sultan/b2.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 440px) {
+  .carousel-1 img {
+    content: url(../images/culture_sultan/m1-500.jpg);
+  }
+
+  .carousel_2 img {
+    content: url(../images/culture_sultan/m2-500.jpg);
+  }
+
+  .carousel_3 img {
+    content: url(../images/culture_sultan/m3-500.jpg);
+  }
+}

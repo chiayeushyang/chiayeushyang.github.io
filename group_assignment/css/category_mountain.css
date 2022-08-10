@@ -19,6 +19,13 @@
     margin-left: 4%;
 }
 
+.btn{
+    border: var(--bg-btn-green) 2px solid !important;
+}
+
+.btn:hover{
+    border: white 2px solid !important;
+}
 
 .bg-btn-green{
     background-color: var(--bg-btn-green) !important;
@@ -92,33 +99,40 @@
     background-size: cover; 
 }
 
-.round-shape{
-    width: 30%;
-    height: 950%;
-}
-
-.round-shape_d2{
-    width: 20%;
-    height: 1000%;
-}
-
 .third_container_image{
     z-index: 2;
 }
 
 .icon-info_1{
-    font-size: 50px;
-    color: lightgray;
-    right: 22%;
-    top: 320%;
+    font-size: 40px;
+    color: #f7e036;
+    right: 23%;
+    top: 380%;
     z-index: 2;
+    animation-name: info_icon_1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes info_icon_1{
+    0% {transform: scale(1); color: #f59236; right: 23%}
+    50% {transform: scale(1.1); color: #d1c62e; right: 22.5%}
+    100% {transform: scale(1); color: #f59236; right: 23%}
 }
 
 .icon-info_2{
-    font-size: 50px;
-    color: lightgray;
-    left: 22%;
+    font-size: 40px;
+    left: 28%;
     z-index: 2;
+    animation-name: info_icon_2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes info_icon_2{
+    0% {transform: scale(1); color: #f59236; left:28%}
+    50% {transform: scale(1.1); color: #d1c62e; left:28.5%}
+    100% {transform: scale(1); color: #f59236; left:28%}
 }
 
 @media screen and (min-width: 3800px) {
@@ -157,9 +171,8 @@
 }
 
 @media screen and (max-width: 992px) {
-    .round-shape_d2{
-        width: 30%;
-        height: 800%;
+    .icon-info_1{
+        top: 250%;
     }
 
     .icon-info_2{
@@ -189,27 +202,12 @@
         padding: 20px 0px;
     }
 
-    .round-shape{
-        width: 50%;
-        height: 500%;
-    } 
-
     .icon-info_1{
         top: 220%;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .round-shape{
-        width: 40%;
-        height: 400%;
-    }
-
-    .round-shape_d2{
-        width: 30%;
-        height: 500%;
-    }
-
     .icon-info_2{
         top: -20%;
         font-size: 35px;

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Beach Category</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="images/general/favicon.png" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/category_beach.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/13427233db.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="js/scripts.js"></script>
+  </head>
+
+  <body class="container-1920">
+    <nav class="autohide navbar navbar-expand-md bg-light py-0 sticky-top">
+      <div class="container-fluid bg-top-nav-green px-0">
+        <a class="navbar-brand ms-3 my-2" href="index.html"
+          ><img
+            src="images/general/logo_light.png"
+            alt="logo_white 1.png"
+            width="80%"
+        /></a>
+        <button
+          class="navbar-toggler navbar-dark me-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse bg-mobile-dropdown-green-yellow"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3"
+                aria-current="page"
+                href="about.html"
+                >ABOUT</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
+                href="category_mountain.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                MOUNTAIN
+              </a>
+              <ul class="dropdown-menu bg-dropdown-yellow-green">
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="mountain_genting.html"
+                    >Genting Highland</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="mountain_cameron.html"
+                    >Cameron Highland</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="mountain_penang.html"
+                    >Penang Hill</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
+                href="category_beach.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                BEACH
+              </a>
+              <ul class="dropdown-menu bg-dropdown-yellow-green">
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="beach_perhentian.html"
+                    >Perhentian Island</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item item-fw-bold fs-drown_menu" href="beach_pulau.html"
+                    >Pulau Rawa</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="beach_pantai.html"
+                    >Pantai Cenang</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
+                href="category_culture.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CULTURE
+              </a>
+              <ul
+                class="dropdown-menu bg-dropdown-yellow-green bg-dropdown-yellow-width"
+              >
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="culture_thean.html"
+                    >Thean Hou Temple</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="culture_batu.html"
+                    >Batu Caves</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu text-wrap"
+                    href="culture_sultan.html"
+                    >Sultan Salahuddin Abdul Aziz Mosque</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3"
+                aria-current="page"
+                href="contact.html"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid px-0 position-relative">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide s_bg-h"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel_1 active ">
+            <img
+              src="images/category_beach/slider_img_1.jpg"
+              class="d-block image-fill-black s_bg-h w-lg-100"
+              alt="categorie_slideshow_1.png"
+            />
+          </div>
+          <div class="carousel-item carousel_2">
+            <img
+              src="images/category_beach/slider_img_2.jpg"
+              class="d-block image-fill-black s_bg-h w-lg-100"
+              alt="categorie_slideshow_2.png"
+            />
+          </div>
+          <div class="carousel-item carousel_3">
+            <img
+              src="images/category_beach/slider_img_3.jpg"
+              class="d-block image-fill-black s_bg-h w-lg-100" 
+              alt="categorie_slideshow_3.png"
+            />
+          </div>
+          <div class="carousel-item carousel_4">
+            <img
+              src="images/category_beach/slider_img_4.jpg"
+              class="d-block image-fill-black s_bg-h w-lg-100"
+              alt="categorie_slideshow_4.png"
+            />
+          </div>
+          <div class="carousel-item carousel_5">
+            <img
+              src="images/category_beach/slider_img_5.jpg"
+              class="d-block image-fill-black s_bg-h w-lg-100"
+              alt="categorie_slideshow_5.png"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div
+        class="container position-absolute slideshow-content-position d-flex justify-content-end align-items-center h-100"
+      >
+        <div class="w-100 mx-sm-5 mx-4 mt-2 p-2 p-md-5 text-end">
+          <h1 class="text-light t1">BEACH</h1>
+          <p class="text-light p1">
+            Sunshine, beach, and waves as well as you, make up an amazing image and memories.
+          </p>
+          <a
+            type="button"
+            href="#second_container"
+            class="btn bg-btn-blue text-light fs-5"
+            >Read More</a
+          >
+        </div>
+      </div>
+    </div>
+    <div id="second_container" class="bg-desert-blue">
+      <div class="coutainer-fluid padding-image-top">
+        <div class="container m-auto pt-5 pb-4 px-4 px-sm-5">
+          <h1 class="fw-bold t2">Come here, leave down your step on the beach </h1>
+          <p class="p1">
+          Walking on the beach, listening to the sound of waves, relaxing your mind. Put down your responsible, worry, and enjoy your beach traveling. Everything will be good. Perhaps you can try to share anything with your forever friend, "The Sea". Because you are on alone. 
+          </p>
+        </div>
+        <div class="d-block pb-5">
+          <div class="container d-lg-flex d-block justify-content-center pb-3">
+              <div class="d-block pe-3">
+                  <img class="pb-3" src="images/category_beach/second_img_1.png" alt="" width="100%">
+                  <div class="d-flex">
+                      <div class="d-block d-lg-none">
+                          <img class="pe-3" src="images/category_beach/second_img_3.png" alt="" width="100%">
+                          <img class="pe-3 pt-4 pt-md-3" src="images/category_beach/second_img_5.png" alt="" width="100%">
+                      </div>
+                      <img class="pe-1 d-none d-lg-block" src="images/category_beach/second_img_3.png" alt="" width="50%">
+                      <img class="d-block d-lg-none" src="images/category_beach/second_img_2.png" alt="" width="50%">
+                      <img class="ps-2 d-none d-lg-block" src="images/category_beach/second_img_4.png" alt="" width="50%">
+                  </div>
+              </div>
+              <div class="d-lg-block d-none">
+                  <img src="images/category_beach/second_img_2.png" alt="" width="100%">
+              </div>
+          </div>
+          <div class="container d-flex d-lg-none">
+              <div class="container ps-0"> 
+                  <img src="images/category_beach/second_img_6.png" alt="" width="100%">
+              </div>
+          </div>
+          <div class="container d-none d-lg-flex justify-content-center">
+              <div class="pe-3">
+                  <img src="images/category_beach/second_img_5_mobile.png" alt="" width="100%">
+              </div>
+              <div>
+                  <img src="images/category_beach/second_img_6.png" alt="" width="100%">
+              </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="bg-desert-yellow">
+      <div class="container pb-5 pb-sm-0">
+        <h1 class="text-left ms-3 ms-sm-5">
+          <i class="fa-solid fa-quote-left"></i> Live in the sunshine, swim the sea, drink the wild air.<i class="fa-solid fa-quote-right"></i>
+        </h1>
+        <p class="text-left ms-md-5 ms-3 fs-3 pt-3 p3">- Ralph Waldo Emerson</p>
+      </div>
+        <div class="position-relative pt-5">
+          <img
+            src="images/category_beach/first_decoration.png"
+            class="ms-auto position-absolute decoration_1-position"
+            width="25%"
+          />
+          <div class="position-absolute icon-info_1">
+            <i class="fa-solid fa-circle-info"
+            data-bs-toggle="tooltip"
+            data-bs-placement="left"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Wear your slippers and glasses, Let's go!!"></i>
+          </div>
+        
+          <img
+            id="decoration_2"
+            src="images/category_beach/second_decoration.png"
+            class="position-absolute decoration_2-position"
+            
+            width="25%"
+          />
+          <div class="position-absolute icon-info_2">
+            <i class="fa-solid fa-circle-info"
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            data-bs-custom-class="custom-tooltip"
+            data-bs-title="Wear your glasses, don't hurt your eyes!!"></i>
+          </div>
+        </div>
+      <div class="padding-image-bwl">
+        <div class="container-fluid d-md-flex d-block justify-content-center">
+          <div
+            class="content_body row d-sm-flex flex-sm-row d-flex flex-column flex-nowrap justify-content-center align-items-start m-0 pt-sm-3 pt-1"
+          >
+            <div
+              class="col-md-7 col-sm-5 col-12 ms-sm-3 ms-0 h-100 align-self-center"
+            >
+              <div class="h-50 d-none d-md-flex justify-content-center">
+                <div class="align-self-center">
+                  <h2>Are you ready to enjoy your beach holiday? <br> Everything is ready just less you, is it too bad?</h2>
+                </div>
+              </div>
+              <img
+                src="images/category_beach/thrid_img_1.png"
+                class="h-50 w-100 d-none d-md-block"
+                alt="third_container_mountain_2_image.png"
+                width="100%"
+              />
+
+              <div class="h-100 d-bloc d-md-none justify-content-center">
+                <h1>Are you ready to enjoy your beach holiday?</h1>
+                <h1 class="pt-2">Everything is ready just less you, is it too bad?</h1>
+              </div>
+            </div>
+            <div
+              class="third_container_image col-md-4 col-sm-6 col-12 d-flex justify-content-center px-0 h-100"
+            >
+              <img
+                src="images/category_beach/thrid_img_2.png"
+                alt="third_container_mountain_image.png"
+                width="100%"
+              />
+            </div>
+            
+          </div>
+          <img
+            src="images/category_beach/thrid_img_1.png"
+            class="h-50 d-md-none d-block container-fluid px-sm-3 px-0"
+            alt="third_container_mountain_2_image.png"
+            width="100%"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="back-top">
+      <a href="#"
+        ><img src="images/general/top.png" alt="arrow to top" width="30px"
+      /></a>
+    </div>
+    <div class="bg-bottom">
+      <div class="container-fluid mt-5 p-0 p-sm-3">
+        <div
+          class="d-block d-sm-flex align-items-center justify-content-center py-5"
+        >
+        <div class="row container-fluid d-flex align-items-center justify-content-center position-relative px-sm-2 px-0 mx-sm-2 mx-0 ">
+          <div class="card card_1 d-flex position-relative flex-column">
+              <div class="imgContainer">
+                  <img src="images/category_beach/pulau_perhentian.png">
+              </div>
+              <div class="content card-body text-start">
+                  <h5 class="card-title fs-2 fw-bold">Pulau Rawa</h5>
+                  <p class="card-text fs-4">Rawa Island Resort is one of the most beautiful beach resorts in the Malaysia.</p>
+                  <a href="beach_pulau.html" class="btn btn-primary bg-btn-blue fs-5">Read More</a>
+              </div>
+          </div>
+          <div class="card card_2 d-flex position-relative flex-column">
+              <div class="imgContainer">
+                  <img src="images/category_beach/pulau_cenang.png">
+              </div>
+              <div class="content card-body text-start">
+                  <h5 class="card-title fs-2 fw-bold">Pantai Cenang</h5>
+                  <p class="card-text fs-4">Pantai Cenang beach is a 2km long stretch of white sand located on the western shoreline of Langkawi..</p>
+                  <a href="beach_pantai.html" class="btn btn-primary bg-btn-blue fs-5">Read More</a>
+              </div>
+          </div>
+          <div class="card card_3 d-flex position-relative flex-column">
+              <div class="imgContainer">
+                  <img src="images/category_beach/pulau_rawa.png">
+              </div>
+              <div class="content card-body text-start">
+                  <h5 class="card-title fs-2 fw-bold">Perhentian Island</h5>
+                  <p class="card-text fs-4">Surrounded by lush greenery, facing white sandy beaches and a warm blue sea, Perhentian Island is a holiday paradise not to be missed..</p>
+                  <a href="beach_perhentian.html" class="btn btn-primary bg-btn-blue fs-5">Read More</a>
+              </div>
+          </div>
+      </div>
+        </div>
+      </div>
+      <footer class="position-relative d-flex align-items-center flex-column">
+        <div class="container-fluid">
+          <div class="row pt-5 justify-content-center">
+            <div
+              class="col-12 col-sm-5 col-md-3 mx-md-3 mb-5 mb-sm-0 d-flex justify-content-center align-items-end"
+            >
+              <a href="index.html"
+                ><img src="images/general/logo_light.png" width="117px"
+              /></a>
+            </div>
+            <div
+              class="col-12 col-sm-2 col-md-2 ms-f mb-3 mb-sm-0 text-center text-sm-start text-white"
+            >
+              <h3 class="fw-bold">MENU</h3>
+              <ul class="list-unstyled fs-5">
+                <a href="about.html"><li class="mb-2">ABOUT</li></a>
+                <a href="category_mountain.html"
+                  ><li class="mb-2">MOUNTAIN</li></a
+                >
+                <a href="category_beach.html"><li class="mb-2">BEACH</li></a>
+                <a href="category_culture.html"
+                  ><li class="mb-2">CULTURE</li></a
+                >
+                <a href="contact.html"><li>CONTACT</li></a>
+              </ul>
+            </div>
+            <div
+              class="col-12 col-sm-5 col-md-3 text-white d-flex flex-column text-center align-self-end"
+            >
+              <h3 class="fw-bold">CONTACT US</h3>
+              <div>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100002367838790"
+                  target="_blank"
+                  ><img src="images/general/facebook.png" class="mx-2"
+                /></a>
+                <a href="https://www.instagram.com/yeushyang/" target="_blank"
+                  ><img src="images/general/instagram.png" class="mx-2"
+                /></a>
+                <a href="https://github.com/chiayeushyang" target="_blank"
+                  ><img src="images/general/github.png" class="mx-2"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="line" class="position-absolute"></div>
+        <p class="position-absolute bottom-0 text-light">
+          Copyright © 2022 3C2L. All Rights Reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

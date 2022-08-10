@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <t1>
+  <head>
     <title>Sultan Salahuddin Abdul Aziz Mosque</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -32,10 +32,11 @@
       src="https://kit.fontawesome.com/13427233db.js"
       crossorigin="anonymous"
     ></script>
-  </t1>
+    <script src="js/scripts.js"></script>
+  </head>
 
   <body class="container-1920">
-    <nav class="autohide navbar sticky-top navbar-expand-md bg-light py-0">
+    <nav class="autohide navbar navbar-expand-md bg-light py-0 sticky-top">
       <div class="container-fluid bg-top-nav-green px-0">
         <a class="navbar-brand ms-3 my-2" href="index.html"
           ><img
@@ -63,12 +64,11 @@
               <a
                 class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3"
                 aria-current="page"
-                href="#"
+                href="about.html"
                 >ABOUT</a
               >
             </li>
             <li class="nav-item dropdown">
-              <!-- based on page that you do, for example, if u are doing the culture page, then u add the active class to line 67 -->
               <a
                 class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
                 href="category_mountain.html"
@@ -80,12 +80,16 @@
               </a>
               <ul class="dropdown-menu bg-dropdown-yellow-green">
                 <li>
-                  <a class="dropdown-item item-fw-bold fs-drown_menu" href="#"
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="mountain_genting.html"
                     >Genting Highland</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item item-fw-bold fs-drown_menu" href="#"
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="mountain_cameron.html"
                     >Cameron Highland</a
                   >
                 </li>
@@ -101,7 +105,7 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
-                href="#"
+                href="category_beach.html"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -110,7 +114,9 @@
               </a>
               <ul class="dropdown-menu bg-dropdown-yellow-green">
                 <li>
-                  <a class="dropdown-item item-fw-bold fs-drown_menu" href="#"
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="beach_perhentian.html"
                     >Perhentian Island</a
                   >
                 </li>
@@ -122,7 +128,9 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item item-fw-bold fs-drown_menu" href="#"
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="beach_pantai.html"
                     >Pantai Cenang</a
                   >
                 </li>
@@ -130,8 +138,8 @@
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link active dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
-                href="#"
+                class="nav-link dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
+                href="category_culture.html"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -142,12 +150,16 @@
                 class="dropdown-menu bg-dropdown-yellow-green bg-dropdown-yellow-width"
               >
                 <li>
-                  <a class="dropdown-item item-fw-bold fs-drown_menu" href="#"
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="culture_thean.html"
                     >Thean Hou Temple</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item item-fw-bold fs-drown_menu" href="#"
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu"
+                    href="culture_batu.html"
                     >Batu Caves</a
                   >
                 </li>
@@ -164,7 +176,7 @@
               <a
                 class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3"
                 aria-current="page"
-                href="#"
+                href="contact.html"
                 >CONTACT</a
               >
             </li>
@@ -183,21 +195,21 @@
     <!-- Slide -->
     <div class="carousel slide position-relative" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active carousel-1">
           <img
             src="images/culture_sultan/m1.jpg"
             class="d-block w-100 s_bg-h"
             alt="..."
           />
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item carousel-2">
           <img
             src="images/culture_sultan/m2.jpg"
             class="d-block w-100 s_bg-h"
             alt="..."
           />
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item carousel-3">
           <img
             src="images/culture_sultan/m3.jpg"
             class="d-block w-100 s_bg-h"
@@ -208,7 +220,7 @@
           class="container-fluid position-absolute slideshow-content-position d-flex justify-content-center align-items-center h-100"
         >
           <div class="w-100 mx-5 p-5 p-md-5">
-            <h1 class="text-light m-auto text-center">
+            <h1 class="text-light m-auto text-center t1">
               Sultan Salahuddin Abdul Aziz Mosque
             </h1>
           </div>
@@ -217,18 +229,23 @@
           <a
             class="text-decoration-none text-light d-flex align-items-center"
             href="https://www.google.com/maps/place/Sultan+Salahuddin+Abdul+Aziz+Mosque/@3.0786225,101.5185297,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc527ec7366823:0xd59cd5f00940bc42!8m2!3d3.0786225!4d101.5207184"
+            target="_blank"
           >
-            <i class="fa-solid fa-location-dot d-flex align-items-center pin-i1"></i>
-            <p class="ps-3 mb-0 pin-t2">Sultan Salahuddin Abdul Aziz Mosque, Selangor</p>
+            <i
+              class="fa-solid fa-location-dot d-flex align-items-center pin-i1"
+            ></i>
+            <p class="ps-3 mb-0 pin-t2">
+              Sultan Salahuddin Abdul Aziz Mosque, Selangor
+            </p>
           </a>
         </div>
       </div>
     </div>
 
     <!-- Body -->
-    <div class="container p-4">
-      <h1 class="t1 pt-3">About</h1>
-      <div class="container">
+    <div class="background1">
+      <div class="container p-4">
+        <h1 class="t1 pt-3">About</h1>
         <p class="p1">
           The Sultan Salahuddin Abdul Aziz Shah Mosque is the largest in
           Malaysia and second largest in Southeast Asia after Jakarta's Istiqlal
@@ -238,250 +255,264 @@
           1988. The mosque is also known as the Blue Mosque owing to its blue
           dome.
         </p>
-      </div>
 
-      <h1 class="t1 pt-5">Attractions</h1>
-      <div class="container-fuild d-flex align-items-center flex-wrap mb-5">
-        <div class="col-lg-6 col-md-12">
-          <img class="mimg rounded" src="images/culture_sultan/m4.jpg" />
-        </div>
-
-        <div class="col-lg-6 col-md-12 pt-md-3 d-flex align-items-center">
-          <p class="p2">
-            Capable of accommodating up to 24,000 worshipers at any one time,
-            the mosque overlooks the International Islamic Arts Garden Complex
-            and a beautifully landscaped park inspired by the Quranic Garden of
-            Paradise.
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="container-fuild d-flex align-items-center flex-row-reverse pt-3 flex-wrap"
-      >
-        <div class="col-lg-6 col-md-12">
-          <img
-            class="mimg rounded d-flex ms-lg-3"
-            src="images/culture_sultan/m5.jfif"
-          />
-        </div>
-
-        <div class="col-lg-6 col-md-12 pt-md-3 d-flex align-items-center">
-          <p class="p2">
-            Masjid Sultan Salahuddin Abdul Aziz Shah features a combination of
-            traditional Islamic, West Asian and Malay design elements.<br /><br />
-            Decorative Islamic calligraphy surrounds the edges of the mosque's
-            dome, while its main prayer hall exhibits ethnic Malay architectural
-            features.<br /><br />
-            Sunlight filtering through the mosque's blue stained glass renders a
-            surreal, bluish ambiance to its interior, instantly evoking a sense
-            of peace and serenity.
-          </p>
-        </div>
-      </div>
-
-      <h1 class="t1 pt-5">Details</h1>
-      <div class="container-fuild d-flex flex-wrap">
-        <div class="col-md-6 col-xs-12">
-          <p class="t3 mb-0">Contact</p>
-          <div>
-            
-            <a class="text-decoration-none text-dark p3" href="tel:+60355199988"
-              ><i class="fa-solid fa-phone align-items-center"></i>
-              <p class="d-inline">+603 5519 9988</p></a
-            >
+        <h1 class="t1 pt-5">Attractions</h1>
+        <div class="container-fuild d-flex align-items-center flex-wrap mb-5">
+          <div class="col-lg-6 col-md-12">
+            <img class="mimg rounded" src="images/culture_sultan/m4.jpg" />
           </div>
-          <div>
-            <a
-              class="text-decoration-none text-dark align-items-center p3"
-              href="mailto:mssaas@jais.gov.my"
+
+          <div class="col-lg-6 col-md-12 pt-md-3 d-flex align-items-center">
+            <p class="p5">
+              Capable of accommodating up to 24,000 worshipers at any one time,
+              the mosque overlooks the International Islamic Arts Garden Complex
+              and a beautifully landscaped park inspired by the Quranic Garden
+              of Paradise.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="container-fuild d-flex align-items-center flex-row-reverse pt-3 flex-wrap"
+        >
+          <div class="col-lg-6 col-md-12">
+            <img
+              class="mimg rounded d-flex ms-lg-3"
+              src="images/culture_sultan/m5.jfif"
+            />
+          </div>
+
+          <div class="col-lg-6 col-md-12 pt-md-3 d-flex align-items-center">
+            <p class="p5">
+              Masjid Sultan Salahuddin Abdul Aziz Shah features a combination of
+              traditional Islamic, West Asian and Malay design elements.<br /><br />
+              Decorative Islamic calligraphy surrounds the edges of the mosque's
+              dome, while its main prayer hall exhibits ethnic Malay
+              architectural features.<br /><br />
+              Sunlight filtering through the mosque's blue stained glass renders
+              a surreal, bluish ambiance to its interior, instantly evoking a
+              sense of peace and serenity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="background2">
+      <div class="container">
+        <h1 class="t1 pt-5">Details</h1>
+        <div class="container-fuild d-flex flex-wrap">
+          <div class="col-md-6 col-xs-12">
+            <p class="t3 mb-0">Contact</p>
+            <div>
+              <a
+                class="text-decoration-none text-dark p3"
+                href="tel:+60355199988"
+                ><i class="fa-solid fa-phone align-items-center"></i>
+                <p class="d-inline">+603 5519 9988</p></a
               >
-              <i class="fa-solid fa-envelope"></i>
-              <p class="d-inline">mssaas@jais.gov.my</p></a
-            >
+            </div>
+            <div>
+              <a
+                class="text-decoration-none text-dark align-items-center p3"
+                href="mailto:mssaas@jais.gov.my"
+              >
+                <i class="fa-solid fa-envelope"></i>
+                <p class="d-inline">mssaas@jais.gov.my</p></a
+              >
+            </div>
+            <div>
+              <a
+                class="text-decoration-none text-dark p3"
+                href="https://www.mssaas.gov.my/"
+                target="_blank"
+              >
+                <i class="fa-solid fa-computer-mouse align-items-center"></i>
+                <p class="d-inline">mssaas.gov.my</p></a
+              >
+            </div>
           </div>
-          <div>
-            
+
+          <div class="col-md-6 col-xs-12">
+            <div class="d-flex p3">
+              <i class="fa-solid fa-location-dot d-flex align-items-center"></i>
+              <p class="t3 mb-0 ps-1">Address</p>
+            </div>
             <a
               class="text-decoration-none text-dark p3"
-              href="https://www.mssaas.gov.my/"
-              >
-              <i class="fa-solid fa-computer-mouse align-items-center"></i>
-              <p class="d-inline">mssaas.gov.my</p></a
+              href="https://www.google.com/maps/place/Sultan+Salahuddin+Abdul+Aziz+Mosque/@3.0786225,101.5185297,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc527ec7366823:0xd59cd5f00940bc42!8m2!3d3.0786225!4d101.5207184"
+              target="_blank"
             >
+              Masjid Sultan Salahuddin Abdul Aziz Shah, Persiaran Masjid, Sekyen
+              14, Shah Alam 40000, Selangor.
+            </a>
           </div>
         </div>
 
-        <div class="col-md-6 col-xs-12">
-          <div class="d-flex p3">
-            <i class="fa-solid fa-location-dot d-flex align-items-center"></i>
-            <p class="mb-0 ps-1">Address</p>
+        <div class="d-flex pt-3 p3">
+          <i class="fa-solid fa-clock d-flex align-items-center"></i>
+          <p class="t3 ps-1 mb-0">Opening Hours</p>
+        </div>
+
+        <div
+          class="container-fuild d-flex justify-content-between flex-wrap p3"
+        >
+          <div class="col-md-6 col-xs-12">
+            <p>Monday - Thurday:<br />8.00am - 1.00pm<br />2.00pm - 5.00pm</p>
           </div>
-          <a
-            class="text-decoration-none text-dark p3"
-            href="https://www.google.com/maps/place/Sultan+Salahuddin+Abdul+Aziz+Mosque/@3.0786225,101.5185297,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc527ec7366823:0xd59cd5f00940bc42!8m2!3d3.0786225!4d101.5207184"
-          >
-            Masjid Sultan Salahuddin Abdul Aziz Shah, Persiaran Masjid, Sekyen
-            14, Shah Alam 40000, Selangor.
-          </a>
+          <div class="col-md-6 col-xs-12">
+            <p>Friday:<br />8.00am - 12.15pm<br />2.45pm - 5.00pm</p>
+          </div>
         </div>
-      </div>
 
-      <div class="d-flex pt-3 p3">
-        <i class="fa-solid fa-clock d-flex align-items-center"></i>
-        <p class="ps-1 mb-0">Opening Hours</p>
-      </div>
-
-      <div class="container-fuild d-flex flex-wrap p3">
-        <div class="col-6">
-          <p>Monday - Thurday:<br />8.00am - 1.00pm<br />2.00pm - 5.00pm</p>
+        <div class="d-flex pt-3 p3">
+          <i class="fa-solid fa-dollar-sign d-flex align-items-center"></i>
+          <p class="t3 mb-0 ps-1">Price/Entrance Fees</p>
         </div>
-        <div class="col-6">
-          <p>Friday:<br />8.00am - 12.15pm<br />2.45pm - 5.00pm</p>
+
+        <div class="container-fuild d-flex">
+          <p class="p3">Entry to mosque is free.</p>
         </div>
-      </div>
 
-      <div class="d-flex pt-3 p3">
-        <i class="fa-solid fa-dollar-sign d-flex align-items-center"></i>
-        <p class="mb-0 ps-1">Price/Entrance Fees</p>
-      </div>
-
-      <div class="container-fuild d-flex">
-        <p class="p3">Entry to mosque is free.</p>
-      </div>
-
-      <h1 class="t1 py-3">Nearby Food</h1>
-      <div class="row mb-3">
-        <div class="col-md-4 col-xs-12">
-          <div class="card">
-            <img
-              src="images/culture_sultan/mf1.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h3 class="card-title t3">Pak Mal Nasi Ayam</h3>
-              <p class="card-text p3">
-                Phone:<br /><a
-                  class="text-decoration-none text-dark"
-                  href="tel:+60196609669"
-                  >+60 19-660 9669</a
-                >
-              </p>
-              <p class="card-text p3">
-                Address:<br /><a
-                  class="text-decoration-none text-dark"
-                  href="https://www.google.com/maps/place/Pak+Mal+Nasi+Ayam/@3.0807337,101.522612,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc5278a726b6cf:0x3a02673dc04f8272!8m2!3d3.0807337!4d101.5248007?hl=en"
-                  >2, Jalan Selendang 10/10, Seksyen 10, 40100 Shah Alam,
-                  Selangor<br
-                /></a>
-              </p>
-              <div class="d-flex justify-content-center">
-                <button
-                  class="btn btn-success fs-5"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#details1"
-                  aria-expanded="false"
-                  aria-controls="details1"
-                >
-                  <p class="fs-5 mb-0">Details</p>
-                </button>
-              </div>
-              <div class="collapse pt-3" id="details1">
-                <p class="p3">CUISINES : <br />Asian, Malaysian</p>
+        <h1 class="t1 py-3">Nearby Food</h1>
+        <div class="row mb-3">
+          <div class="col-md-4 col-xs-12">
+            <div class="card">
+              <img
+                src="images/culture_sultan/mf1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title t3">Pak Mal Nasi Ayam</h3>
+                <p class="card-text p3">
+                  Phone:<br /><a
+                    class="text-decoration-none text-dark"
+                    href="tel:+60196609669"
+                    >+60 19-660 9669</a
+                  >
+                </p>
+                <p class="card-text p3">
+                  Address:<br /><a
+                    class="text-decoration-none text-dark"
+                    href="https://www.google.com/maps/place/Pak+Mal+Nasi+Ayam/@3.0807337,101.522612,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc5278a726b6cf:0x3a02673dc04f8272!8m2!3d3.0807337!4d101.5248007?hl=en"
+                    target="_blank"
+                    >2, Jalan Selendang 10/10, Seksyen 10, 40100 Shah Alam,
+                    Selangor<br
+                  /></a>
+                </p>
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="btn btn-success fs-5"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#details1"
+                    aria-expanded="false"
+                    aria-controls="details1"
+                  >
+                    <p class="fw-bold mb-0">Details</p>
+                  </button>
+                </div>
+                <div class="collapse pt-3" id="details1">
+                  <p class="p3">
+                    CUISINES : <br />Asian, Malaysian<br /><br />SPECIAL DIETS
+                    :<br />Halal<br /><br />MEALS:<br />Breakfast, Lunch, Brunch
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 col-xs-12">
-          <div class="card">
-            <img
-              src="images/culture_sultan/mf2.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h3 class="card-title t3">Restoran Hatinie</h3>
-              <p class="card-text p3">
-                Phone:<br /><a
-                  class="text-decoration-none text-dark"
-                  href="tel:+60192667810"
-                  >+60 19-266 7810</a
-                >
-              </p>
-              <p class="card-text p3">
-                Address:<br /><a
-                  class="text-decoration-none text-dark"
-                  href="https://www.google.com/maps/place/Restoran+Hatinie/@3.0812355,101.5222205,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc527890777e17:0xb5101c9385e1726c!8m2!3d3.0812355!4d101.5244092"
-                  >18 & 20, Jalan Selendang 10/10, Seksyen 10, 40100 Shah Alam,
-                  Selangor</a
-                >
-              </p>
-              <div class="d-flex justify-content-center">
-                <button
-                  class="btn btn-success"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#details2"
-                  aria-expanded="false"
-                  aria-controls="details2"
-                >
-                  <p class="fs-5 mb-0">Details</p>
-                </button>
-              </div>
-              <div class="collapse pt-3" id="details2">
-                <p class="p3">
-                  CUISINES :<br />Asian, Malaysian <br /><br />SPECIAL DIETS
-                  :<br />Vegan Options, Vegetarian Friendly, Halal<br /><br />MEALS:<br />Breakfast,
-                  Lunch, Brunch, Dinner
+          <div class="col-md-4 col-xs-12">
+            <div class="card">
+              <img
+                src="images/culture_sultan/mf2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title t3">Restoran Hatinie</h3>
+                <p class="card-text p3">
+                  Phone:<br /><a
+                    class="text-decoration-none text-dark"
+                    href="tel:+60192667810"
+                    >+60 19-266 7810</a
+                  >
                 </p>
+                <p class="card-text p3">
+                  Address:<br /><a
+                    class="text-decoration-none text-dark"
+                    href="https://www.google.com/maps/place/Restoran+Hatinie/@3.0812355,101.5222205,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc527890777e17:0xb5101c9385e1726c!8m2!3d3.0812355!4d101.5244092"
+                    target="_blank"
+                    >18 & 20, Jalan Selendang 10/10, Seksyen 10, 40100 Shah
+                    Alam, Selangor</a
+                  >
+                </p>
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="btn btn-success fs-5"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#details2"
+                    aria-expanded="false"
+                    aria-controls="details2"
+                  >
+                    <p class="fw-bold mb-0">Details</p>
+                  </button>
+                </div>
+                <div class="collapse pt-3" id="details2">
+                  <p class="p3">
+                    CUISINES :<br />Asian, Malaysian <br /><br />SPECIAL DIETS
+                    :<br />Vegan Options, Vegetarian Friendly, Halal<br /><br />MEALS:<br />Breakfast,
+                    Lunch, Brunch, Dinner
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 col-xs-12">
-          <div class="card">
-            <img
-              src="images/culture_sultan/mf3.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h3 class="card-title t3">Melting Pot Café</h3>
-              <p class="card-text p3">
-                Phone:<br /><a
-                  class="text-decoration-none text-dark"
-                  href="tel:+60355122200"
-                  >+60 3-5512 2200</a
-                >
-              </p>
-              <p class="card-text p3">
-                Address:<br /><a
-                  class="text-decoration-none text-dark"
-                  href="https://www.google.com/maps/place/Melting+Pot+Cafe,+Concorde+Hotel/@3.079397,101.5188195,16z/data=!4m5!3m4!1s0x31cc52780881f54f:0x3e32295b1d4161!8m2!3d3.083892!4d101.5246058?hl=en"
-                  >3, Jalan Tengku Ampuan Zabedah C9/C, Seksyen 9, 40100 Shah
-                  Alam, Selangor</a
-                >
-              </p>
-              <div class="d-flex justify-content-center">
-                <button
-                  class="btn btn-success"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#details3"
-                  aria-expanded="false"
-                  aria-controls="details3"
-                >
-                  <p class="fs-5 mb-0">Details</p>
-                </button>
-              </div>
-              <div class="collapse pt-3" id="details3">
-                <p class="p3">
-                  CUISINES : <br />Asian, Malaysian <br /><br />SPECIAL DIETS :
-                  <br />Vegetarian Friendly <br /><br />MEALS : <br />Breakfast,
-                  Dinner, Brunch, Lunch
+          <div class="col-md-4 col-xs-12">
+            <div class="card">
+              <img
+                src="images/culture_sultan/mf3.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h3 class="card-title t3">Melting Pot Café</h3>
+                <p class="card-text p3">
+                  Phone:<br /><a
+                    class="text-decoration-none text-dark"
+                    href="tel:+60355122200"
+                    target="_blank"
+                    >+60 3-5512 2200</a
+                  >
                 </p>
+                <p class="card-text p3">
+                  Address:<br /><a
+                    class="text-decoration-none text-dark"
+                    href="https://www.google.com/maps/place/Melting+Pot+Cafe,+Concorde+Hotel/@3.079397,101.5188195,16z/data=!4m5!3m4!1s0x31cc52780881f54f:0x3e32295b1d4161!8m2!3d3.083892!4d101.5246058?hl=en"
+                    >3, Jalan Tengku Ampuan Zabedah C9/C, Seksyen 9, 40100 Shah
+                    Alam, Selangor</a
+                  >
+                </p>
+                <div class="d-flex justify-content-center">
+                  <button
+                    class="btn btn-success fs-5"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#details3"
+                    aria-expanded="false"
+                    aria-controls="details3"
+                  >
+                    <p class="fw-bold mb-0">Details</p>
+                  </button>
+                </div>
+                <div class="collapse pt-3" id="details3">
+                  <p class="p3">
+                    CUISINES : <br />Asian, Malaysian <br /><br />SPECIAL DIETS
+                    : <br />Vegetarian Friendly <br /><br />MEALS :
+                    <br />Breakfast, Dinner, Brunch, Lunch
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -494,24 +525,24 @@
       <div class="container-fluid">
         <div class="row pt-5 justify-content-center">
           <div
-            class="col-12 col-sm-5 col-md-3 mx-md-3 mx-lg-5 mb-5 mb-sm-0 d-flex justify-content-center align-items-end"
+            class="col-12 col-sm-5 col-md-3 mx-md-3 mb-5 mb-sm-0 d-flex justify-content-center align-items-end"
           >
             <a href="index.html"
               ><img src="images/general/logo_light.png" width="117px"
             /></a>
           </div>
           <div
-            class="col-12 col-sm-2 col-md-2 ms-md-35 ms-lg-5 mb-3 mb-sm-0 text-center text-sm-start text-white"
+            class="col-12 col-sm-2 col-md-2 ms-f mb-3 mb-sm-0 text-center text-sm-start text-white"
           >
             <h3 class="fw-bold">MENU</h3>
             <ul class="list-unstyled fs-5">
-              <a href="#about"><li class="mb-2">ABOUT</li></a>
+              <a href="about.html"><li class="mb-2">ABOUT</li></a>
               <a href="category_mountain.html"
                 ><li class="mb-2">MOUNTAIN</li></a
               >
-              <a href="#category_beach.html"><li class="mb-2">BEACH</li></a>
-              <a href="#category_culturehtml"><li class="mb-2">CULTURE</li></a>
-              <a href="#contact.html"><li>CONTACT</li></a>
+              <a href="category_beach.html"><li class="mb-2">BEACH</li></a>
+              <a href="category_culture.html"><li class="mb-2">CULTURE</li></a>
+              <a href="contact.html"><li>CONTACT</li></a>
             </ul>
           </div>
           <div
@@ -534,18 +565,7 @@
           </div>
         </div>
       </div>
-      <img
-        src="images/general/west_malaysia 1.png"
-        width="15%"
-        id="west_malaysia"
-        class="position-absolute d-none d-lg-block"
-      />
-      <img
-        src="images/general/east_malaysia 2.png"
-        width="20%"
-        id="east_malaysia"
-        class="position-absolute d-none d-lg-block"
-      />
+
       <div id="line" class="position-absolute"></div>
       <p class="position-absolute bottom-0 text-light">
         Copyright © 2022 3C2L. All Rights Reserved.
