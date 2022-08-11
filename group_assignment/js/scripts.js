@@ -87,8 +87,8 @@ function everyTime () {
 Fancybox.bind('[data-fancybox="gallery"]', {
 
   Image: {
-    zoom: false,
-    click: false,
+    zoom: true,
+    click: true,
     wheel: "slide",
   },
 });
