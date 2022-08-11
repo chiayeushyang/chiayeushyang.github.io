@@ -102,6 +102,10 @@
         min-height: 30rem;
     }
 
+    .right-ellipse h2 {
+        width: 90vw;
+    }
+
     .right-ellipse p {
         width: 90vw;
     }
