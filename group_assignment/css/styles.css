@@ -114,6 +114,10 @@ body {
     height: 220vh;
 }
 
+#second-content span {
+    font-family: Arial, Helvetica, sans-serif
+}
+
 #second-content-h1 {
     z-index: 2;
 }
