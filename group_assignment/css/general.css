@@ -52,6 +52,12 @@
   --fs-t3-3xl: 3rem;
   --fs-t3-xxl: 2rem;
 
+  --fs-t4-3xl: 8rem;  
+  --fs-t4-xxl: 6rem;
+  --fs-t4-lg: 5rem;
+  --fs-t4-md: 4rem;
+  --fs-t4-sm: 3rem;
+
   --fs-p1-3xl: 4rem;
   --fs-p1-xxl: 2.25rem;
   --fs-p1-sm: 1.5rem;
@@ -94,6 +100,10 @@
 .t3 {
   font-weight: var(--fw-6) !important;
   font-size: var(--fs-t3-xxl) !important;
+}
+.t4 {
+  font-weight: var(--fw-6) !important;
+  font-size: var(--fs-t4-xxl) !important;
 }
 
 /* slider content */
@@ -156,6 +166,10 @@
     font-size: var(--fs-t3-3xl) !important;
   }
 
+  .t4 {
+    font-size: var(--fs-t4-3xl) !important;
+  }
+
   .p1 {
     font-size: var(--fs-p1-3xl) !important;
   }
@@ -185,11 +199,18 @@
   .p4 {
     font-size: var(--fs-p4-lg) !important;
   }
+  .t4 {
+    font-size: var(--fs-t4-lg) !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .t1 {
     font-size: var(--fs-t1-md) !important;
+  }
+
+  .t4 {
+    font-size: var(--fs-t4-md) !important;
   }
 
   .pin-t2 {
@@ -208,6 +229,10 @@
 
   .t2 {
     font-size: var(--fs-t2-sm) !important;
+  }
+
+  .t4 {
+    font-size: var(--fs-t4-sm) !important;
   }
 
   .p1 {
