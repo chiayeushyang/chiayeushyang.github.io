@@ -25,6 +25,11 @@
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/13427233db.js" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
 </head>
 
 <body onload="getPics()" class="container-1920 position-relative">
@@ -149,7 +154,7 @@
 
     <!-- activity 1 -->
     <div class="d-flex justify-content-center flex-wrap">
-      <div class="ms-5 wd-50">
+      <div class="wd-50">
         <div class="d-flex justify-content-center">
           <h2 class="ms-1 t3">Cameron Flora Park</h2>
         </div>
@@ -167,7 +172,7 @@
 
     <!-- activity 2 -->
     <div class="d-flex justify-content-center flex-wrap">
-      <div class="ms-5 wd-50">
+      <div class=" wd-50">
         <div class="d-flex justify-content-center">
           <h2 class="ms-1 t3">The Sheep Sanctuary</h2>
         </div>
@@ -185,7 +190,7 @@
 
     <!-- activity 3 -->
     <div class="d-flex justify-content-center flex-wrap">
-      <div class="ms-5 wd-50">
+      <div class=" wd-50">
         <div class="d-flex justify-content-center">
           <h2 class="ms-1 t3">Cameron Centrum</h2>
         </div>
@@ -213,12 +218,12 @@
       </div>
     </div>
     <!-- food 1 -->
-    <div class="d-flex justify-content-center align-items-center">
+    <div class="d-flex justify-content-center text-center align-items-center">
       <h2 class="t2">Restaurant Ferm Nyonya</h2>
     </div>
 
     <div class="d-flex justify-content-center align-items-center flex-wrap">
-      <div class="d-flex justify-content-center align-items-center px-5 wd-50 flex-wrap mb-3">
+      <div class="d-flex justify-content-center align-items-center pt-3 wd-50 px-0 px-sm-5 flex-wrap mb-3">
         <p class="p1">
           If you want to eat hot pot, there is also a hot pot set menu for four! It is recommended that you try to avoid visiting this restaurant at 1:00 pm and 7:00 pm, because these times are the most crowded times in the restaurant!
         </p>
@@ -268,13 +273,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/mountain_cameron/hotpot/296732437_7874780435897039_3734436988729921762_n.jpg" class="d-block w-100" alt="food1" />
+            <img src="images/mountain_cameron/hotpot/296732437_7874780435897039_3734436988729921762_n.jpg" width="600px" class="d-block w-100" alt="food1" />
           </div>
           <div class="carousel-item">
-            <img src="images/mountain_cameron/hotpot/297406223_10220355228580514_9027495316819611136_n.jpg" class="d-block w-100" alt="food2" />
+            <img src="images/mountain_cameron/hotpot/297406223_10220355228580514_9027495316819611136_n.jpg" width="600px" class="d-block w-100" alt="food2" />
           </div>
           <div class="carousel-item">
-            <img src="images/mountain_cameron/hotpot/Steamboat-Ferm-Nyonya.jpg" class="d-block w-100"
+            <img src="images/mountain_cameron/hotpot/Steamboat-Ferm-Nyonya.jpg" width="600px" class="d-block w-100"
               alt="food3" />
           </div>
         </div>
@@ -295,11 +300,11 @@
     </div>
 
     <!-- food 2 -->
-    <div class="d-flex justify-content-center align-items-center flex-wrap">
+    <div class="d-flex justify-content-center text-center align-items-center flex-wrap">
       <h2 class="t2">Misokimchi Tanah Rata</h2>
     </div>
     <div class="d-flex justify-content-center align-items-center flex-wrap">
-      <div class="d-flex justify-content-center align-items-center px-5 wd-50 flex-wrap mb-3">
+      <div class="d-flex justify-content-center align-items-center pt-3 wd-50 px-0 px-sm-5 flex-wrap mb-3">
         <p class="p1">
           At Misokimchi, you can order a wide variety of classic Korean and Japanese dishes, such as bibimbap, bulgogi, Japanese bento, tempura ramen, kimchi, and kimchi, and are perfect for dining in Miso soup for cold nights.
         </p>
@@ -373,11 +378,11 @@
     </div>
 
     <!-- food 3 -->
-    <div class="d-flex justify-content-center align-items-center flex-wrap">
+    <div class="d-flex justify-content-center text-center align-items-center flex-wrap">
       <h2 class="t2">Xin Teh Bak Kut Teh</h2>
     </div>
     <div class="d-flex justify-content-center align-items-center flex-wrap">
-      <div class="d-flex justify-content-center align-items-center px-5 wd-50 flex-wrap mb-3">
+      <div class="d-flex justify-content-center align-items-center pt-3 wd-50 px-0 px-sm-5 flex-wrap mb-3">
         <p class="p1">
           The portion of Bak Kut Teh is very generous, so the price is also very reasonable. Only about RM50 for two people.
         </p>
@@ -451,118 +456,50 @@
     </div>
   </div>
   <!-- Gallery -->
-  <div class="d-flex justify-content-center align-items-center my-5">
-    <div class="px-3">
-      <img src="images/mountain_penang/camera.png" alt="camera" width="60px" />&nbsp;&nbsp;
+  <section class="gallery px-5 pb-5">
+    <div class="main-title mx-md-5 py-5 px-sm-5">
+      <div class="px-3">
+        <img src="images/mountain_penang/camera.png" alt="camera" width="60px" />&nbsp;&nbsp;
+      </div>
+      <div class="px-3">
+        <h1 class="t1">Gallery</h1>
+      </div>
     </div>
-    <div class="px-3">
-      <h1 class="t1">Gallery</h1>
+    <div class="container-fluid">
+      <div class="row mt-4">
+        <div class="item col-sm-6 col-md-4 mb-3">
+          <a href="images/mountain_cameron/gettyimages-1229825970-612x612.jpg" class="fancybox" data-fancybox="gallery">
+            <img src="images/mountain_cameron/gettyimages-1229825970-612x612.jpg" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-4 mb-3">
+          <a href="images/mountain_cameron/gettyimages-1254938075-612x612.jpg" class="fancybox" data-fancybox="gallery">
+            <img src="images/mountain_cameron/gettyimages-1254938075-612x612.jpg" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-4 mb-3">
+          <a href="images/mountain_cameron/gettyimages-1343321041-612x612.jpg" class="fancybox`" data-fancybox="gallery">
+            <img src="images/mountain_cameron/gettyimages-1343321041-612x612.jpg" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-4 mb-3">
+          <a href="images/mountain_cameron/10021f000001gxdfa0050_C_640_320_R5_Q70.jpg_.webp" class="fancybox" data-fancybox="gallery">
+            <img src="images/mountain_cameron/10021f000001gxdfa0050_C_640_320_R5_Q70.jpg_.webp" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-4 mb-3">
+          <a href="images/mountain_cameron/cameron.jpg" class="fancybox" data-fancybox="gallery">
+            <img src="images/mountain_cameron/cameron.jpg" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-4 mb-3">
+          <a href="images/mountain_cameron/Cameron-Highlands.jpg" class="fancybox " data-fancybox="gallery">
+            <img src="images/mountain_cameron/Cameron-Highlands.jpg" width="100%" height="100%">
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-  <!-- Trigger the Modal -->
-  <div class="d-flex gap-5 flex-wrap justify-content-center">
-    <img id="myImg" src="images/mountain_cameron/gettyimages-1229825970-612x612.jpg" class="img-fluid zoom" />
-    <img id="myImg2" src="images/mountain_cameron/gettyimages-1254938075-612x612.jpg" class="img-fluid zoom"  />
-    <img id="myImg3" src="images/mountain_cameron/gettyimages-1343321041-612x612.jpg" class="img-fluid zoom"
-       />
-    <img id="myImg4" src="images/mountain_cameron/10021f000001gxdfa0050_C_640_320_R5_Q70.jpg_.webp" class="img-fluid zoom"  />
-    <img id="myImg5" src="images/mountain_cameron/Brinchang-Market.jpg" class="img-fluid zoom"  />
-    <img id="myImg6" src="images/mountain_cameron/cameron.jpg" class="img-fluid zoom" />
-    <img id="myImg7" src="images/mountain_cameron/Cameron-Highlands-Cactus-Point.jpg" class="img-fluid zoom"
-      />
-    <img id="myImg8" src="images/mountain_cameron/Cameron-Highlands.jpg" class="img-fluid zoom"  />
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img01">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption"></div>
-    </div>
-    <div id="myModal2" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img02">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption2"></div>
-    </div>
-    <div id="myModal3" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img03">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption3"></div>
-    </div>
-    <div id="myModal4" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img04">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption4"></div>
-    </div>
-    <div id="myModal5" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img05">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption5"></div>
-    </div>
-    <div id="myModal6" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img06">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption6"></div>
-    </div>
-    <div id="myModal7" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img07">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption7"></div>
-    </div>
-    <div id="myModal8" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img08">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption8"></div>
-    </div>
-    
-
-  </div>
+  </section>
   <br /><br /><br /><br /><br />
 
   <!-- ----------------- -->

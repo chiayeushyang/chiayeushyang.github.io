@@ -25,6 +25,11 @@
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/13427233db.js" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
 </head>
 
 <body onload="getPics()" class="container-1920 position-relative">
@@ -154,7 +159,7 @@
 
     <!-- activity 1 -->
     <div class="d-flex justify-content-center flex-wrap">
-      <div class="ms-5 wd-50">
+      <div class="wd-50">
         <div class="d-flex justify-content-center">
           <h2 class="ms-1 t3">Hop off the flag mountain train</h2>
         </div>
@@ -175,7 +180,7 @@
 
     <!-- activity 2 -->
     <div class="d-flex justify-content-center flex-wrap">
-      <div class="ms-5 wd-50">
+      <div class="wd-50">
         <div class="d-flex justify-content-center">
           <h2 class="ms-1 t3">Lock love</h2>
         </div>
@@ -195,7 +200,7 @@
 
     <!-- activity 3 -->
     <div class="d-flex justify-content-center flex-wrap">
-      <div class="ms-5 wd-50">
+      <div class="wd-50">
         <div class="d-flex justify-content-center">
           <h2 class="ms-1 t3">Visit some historic buildings</h2>
         </div>
@@ -224,12 +229,12 @@
       </div>
     </div>
     <!-- food 1 -->
-    <div class="d-flex justify-content-center align-items-center">
+    <div class="d-flex justify-content-center text-center align-items-center">
       <h2 class="t2">Kopi Hutan Cafe</h2>
     </div>
 
     <div class="d-flex justify-content-center align-items-center flex-wrap">
-      <div class="d-flex justify-content-center align-items-center px-5 wd-50 flex-wrap mb-3">
+      <div class="d-flex justify-content-center align-items-center pt-3 wd-50 px-0 px-sm-5 flex-wrap mb-3">
         <p class="p1">
           Kopi Hutan Cafe is a great place to grab a cup of coffee and a
           delicious cake while surrounded by trees and fresh air for the
@@ -298,11 +303,11 @@
     </div>
 
     <!-- food 2 -->
-    <div class="d-flex justify-content-center align-items-center flex-wrap">
+    <div class="d-flex justify-content-center text-center align-items-center flex-wrap">
       <h2 class="t2">Astaka/ Cliff Cafe</h2>
     </div>
     <div class="d-flex justify-content-center align-items-center flex-wrap">
-      <div class="d-flex justify-content-center align-items-center px-5 wd-50 flex-wrap mb-3">
+      <div class="d-flex justify-content-center align-items-center pt-3 wd-50 px-0 px-sm-5 flex-wrap mb-3">
         <p class="p1">
           Cliff Cafe or Astaka Bukit Bendera is a three-storey food and
           beverage centre in Penang Hill. The view is particularly beautiful
@@ -370,11 +375,11 @@
     </div>
 
     <!-- food 3 -->
-    <div class="d-flex justify-content-center align-items-center flex-wrap">
+    <div class="d-flex justify-content-center text-center align-items-center flex-wrap">
       <h2 class="t2">The Habitat Shop & Cafe</h2>
     </div>
     <div class="d-flex justify-content-center align-items-center flex-wrap">
-      <div class="d-flex justify-content-center align-items-center px-5 wd-50 flex-wrap mb-3">
+      <div class="d-flex justify-content-center align-items-center pt-3 wd-50 px-0 px-sm-5 flex-wrap mb-3">
         <p class="p1">
           Located within The Habitat Penang Hill, this café is an ideal spot
           to quench thirst and satisfy hunger after exploring the century-old
@@ -448,118 +453,52 @@
     </div>
   </div>
   <!-- Gallery -->
-  <div class="d-flex justify-content-center align-items-center my-5">
-    <div class="px-3">
-      <img src="images/mountain_penang/camera.png" alt="camera" width="60px" />&nbsp;&nbsp;
+  <section class="gallery px-5 pb-5">
+    <div class="main-title mx-md-5 py-5 px-sm-5">
+    <div class="d-flex justify-content-center align-items-center my-5">
+      <div class="px-3">
+        <img src="images/mountain_penang/camera.png" alt="camera" width="60px" />&nbsp;&nbsp;
+      </div>
+      <div class="px-3">
+        <h1 class="t1">Gallery</h1>
+      </div>
     </div>
-    <div class="px-3">
-      <h1 class="t1">Gallery</h1>
     </div>
-  </div>
-  <!-- Trigger the Modal -->
-  <div class="d-flex gap-5 flex-wrap justify-content-center">
-    <img id="myImg" src="images/mountain_penang/file.jpg" class="img-fluid zoom" />
-    <img id="myImg2" src="images/mountain_penang/IMG-20210320-WA0030.jpg" class="img-fluid zoom"  />
-    <img id="myImg3" src="images/mountain_penang/1280px-View_from_top_of_Penang_Hill.jpg" class="img-fluid zoom"
-       />
-    <img id="myImg4" src="images/mountain_penang/penang-hill-1-1-1.png" class="img-fluid zoom"  />
-    <img id="myImg5" src="images/mountain_penang/LV3-3ef74962.jpeg" class="img-fluid zoom"  />
-    <img id="myImg6" src="images/mountain_penang/jpg.jpg" class="img-fluid zoom" />
-    <img id="myImg7" src="images/mountain_penang/Penang_Hill_Funicular_Train2.jpg" class="img-fluid zoom"
-      />
-    <img id="myImg8" src="images/mountain_penang/SGE_5644Penang.JPG" class="img-fluid zoom"  />
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img01">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption"></div>
+    <div class="container-fluid">
+      <div class="row mt-4">
+        <div class="item col-sm-6 col-md-4 mb-3">
+          <a href="images/mountain_penang/file.jpg" class="fancybox" data-fancybox="gallery">
+            <img src="images/mountain_penang/file.jpg" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-4 mb-3">
+          <a href="images/mountain_penang/IMG-20210320-WA0030.jpg" class="fancybox" data-fancybox="gallery">
+            <img src="images/mountain_penang/IMG-20210320-WA0030.jpg" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-4 mb-3">
+          <a href="images/mountain_penang/1280px-View_from_top_of_Penang_Hill.jpg" class="fancybox`" data-fancybox="gallery">
+            <img src="images/mountain_penang/1280px-View_from_top_of_Penang_Hill.jpg" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-4 mb-3">
+          <a href="images/mountain_penang/penang-hill-1-1-1.png" class="fancybox" data-fancybox="gallery">
+            <img src="images/mountain_penang/penang-hill-1-1-1.png" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-4 mb-3">
+          <a href="images/mountain_penang/LV3-3ef74962.jpeg" class="fancybox" data-fancybox="gallery">
+            <img src="images/mountain_penang/LV3-3ef74962.jpeg" width="100%" height="100%">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-4 mb-3">
+          <a href="images/mountain_penang/jpg.jpg" class="fancybox " data-fancybox="gallery">
+            <img src="images/mountain_penang/jpg.jpg" width="100%" height="100%">
+          </a>
+        </div>
+      </div>
     </div>
-    <div id="myModal2" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img02">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption2"></div>
-    </div>
-    <div id="myModal3" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img03">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption3"></div>
-    </div>
-    <div id="myModal4" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img04">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption4"></div>
-    </div>
-    <div id="myModal5" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img05">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption5"></div>
-    </div>
-    <div id="myModal6" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img06">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption6"></div>
-    </div>
-    <div id="myModal7" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img07">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption7"></div>
-    </div>
-    <div id="myModal8" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img08">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption8"></div>
-    </div>
-    
-
-  </div>
+  </section>
   <br /><br /><br /><br /><br />
 
   <!-- ----------------- -->

@@ -267,7 +267,10 @@
     box-shadow: -5px 5px 25px #0000009d;
     padding: 20px;
     transition: all .3s ease-in-out;
+    border-radius: 70px 70px 0px 0px !important;
+    --bs-card-border-width: 0px !important;
 }
+
 
 .card .fs-5 {
     font-size: 1.15rem !important;
