@@ -99,6 +99,7 @@
     background-size: cover; 
     background-position: 0% 10%;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 .third_container_image{
