@@ -60,7 +60,7 @@
 }
 
 .bg-desert-yellow h1{
-    font-size: calc(18px + 1.5vw);
+    font-size: calc(20px + 3vw);
 }
 
 .bg-desert-yellow h2{
@@ -143,10 +143,30 @@
     100% {transform: scale(1); color: #6f47d6; left: 31%}
 }
 
+/* Gallery */
+.gallery .item img {
+    border-radius: 20px;
+}
+
+.gallery .item {
+    transition: .5s ease-in-out;
+}
+.gallery .item:hover {
+    filter: brightness(80%)
+}
+/* Gallery */
+
+.prev-btn{
+    background-image: linear-gradient(to right, rgba(64, 166, 43, 0.7) , rgba(53, 212, 185,0.7));
+}
+
+.next-btn{
+    background-image: linear-gradient(to right, rgba(222, 205, 73,0.7),  rgba(163, 78, 39, 0.7));
+}
 
 @media screen and (min-width: 3800px) {
     #second_container h1{
-        font-size: 1vw !important;
+        font-size: 1.5vw !important;
     }
 
     #second_container h2{
@@ -158,7 +178,7 @@
     }
 
     .bg-desert-yellow h1{
-        font-size: calc(10px + 1.3vw);
+        font-size: calc(10px + 1vw) !important;
     }
 
     .bg-desert-yellow p{
@@ -189,6 +209,29 @@
     .img-h{
         height: 110% !important;
     }
+}
+
+
+@media screen and (max-width: 800px) {
+    .carousel_1 img{
+       content: url(../images/category_beach/slider_img_1_800px.jpg)
+   }
+
+   .carousel_2 img{
+       content: url(../images/category_beach/slider_img_2_800px.jpg)
+   }
+
+   .carousel_3 img{
+       content: url(../images/category_beach/slider_img_3_800px.jpg)
+   }
+
+   .carousel_4 img{
+       content: url(../images/category_beach/slider_img_4_800px.jpg)
+   }
+
+   .carousel_5 img{
+       content: url(../images/category_beach/slider_img_5_800px.jpg)
+   }
 }
 
 @media screen and (max-width: 768px) {
@@ -237,260 +280,62 @@
         padding-top: 7vw;
     }
 
-    .carousel_1 img{
-        content: url(../images/category_beach/slider_img_1_500px.jpg);
-    }
-
-    .carousel_2 img{
-        content: url(../images/category_beach/slider_img_2_500px.jpg);
-    }
-
-    .carousel_3 img{
-        content: url(../images/category_beach/slider_img_3_500px.jpg);
-    }
-
-    .carousel_4 img{
-        content: url(../images/category_beach/slider_img_4_500px.jpg);
-    }
-
-    .carousel_5 img{
-        content: url(../images/category_beach/slider_img_5_500px.jpg);
-    }
-
     .decoration_1-position{
         top: -120px;
     }
 
     .icon-info_1{
-        top: -60px;
+        top: -65px;
+        font-size: 25px;
+    }
+
+    .icon-info_2{
+        font-size: 25px;
     }
 }
 
-
-/* card css design, copy from my bootstrap_test folder file*/
-.container-fluid .card
-{   
-    max-width: 430px;
-    height: 250px;
-    margin: 45px 20px;
-    padding: 20px 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-    background-color: var(--card-yellow);
-    transition: 0.8s ease-in-out;
+.card {
+    min-width: 300px !important;
+    transition: 1s;
 }
 
-.container-fluid .card_1:hover
-{   
-    height: 500px;
-    transition: 0.8s ease-in-out;
-}
-
-.container-fluid .card_2:hover
-{
-    height: 550px;
-    transition: 0.8s ease-in-out;
-}
-
-.container-fluid .card_3:hover
-{
-    height: 580px;
-    transition: 0.8s ease-in-out;
-}
-
-.container-fluid .card .imgContainer
-{
-    position: relative;
-    border-radius: 20px;
-    width:380px;
-    top:-40px;
-    left:10px;
-    z-index: 1;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
-.container-fluid .card .imgContainer img
-{
-    width: 100%;
-    border-radius: 4px;
-}
-.container-fluid .card .content
-{
-    position: relative;
-    margin-top: -10px;
-    padding: 0px 15px;
-    text-align: center;
-    color:#111;
+.card .content{
+    height: 0px !important;
+    width: 100% !important;
+    padding: 0px;
     visibility: hidden;
-    opacity: 0;
-    transition: 1s ease-in-out;
-}
-.container-fluid .card:hover .content
-{
-    visibility: visible;
+    transform: translateX(-100%);
+    transition: 0.05s;
     opacity: 1;
-    transition: 1s ease-in-out;
 }
 
-.hover{
-    transform: translateY(0.5rem);
-}
-
-@media screen and (max-width:1060px) {
-    .container-fluid .card
-    {
-        width: 390px;
-        height: 200px;
-    }
-
-    .container-fluid .card .imgContainer
-    {
-        width: 350px;
-        left:6px;
-    }
-
-    .container-fluid .card_2:hover
-    {
-        height: 500px;
-    }
-
-    .container-fluid .card_3:hover
-    {
-        height: 540px;
-    }
-
-}
-
-@media screen and (max-width:940px) {
-    .container-fluid .card
-    {
-        width: 310px;
-        height: 170px;
-    }
-
-    .container-fluid .card .imgContainer
-    {
-        width: 270px;
-        left:6px;
-    }
-
-    .container-fluid .card_1:hover
-    {   
-        height: 440px;
-    }
-
-    .container-fluid .card_2:hover
-    {
-        height: 470px;
-    }
-
-    .container-fluid .card_3:hover
-    {
-        height: 510px;
-    }
-
+@keyframes test {
+    0% {opacity: 0.2;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
 }
 
 
-@media screen and (max-width:773px) {
-    .container-fluid .card
-    {
-        width: 268px;
-        height: 120px;
-    }
+.card:hover .content{
+    height: 100% !important;
+    width: 100% !important;
+    padding: 20px;
+    transform: translateX(0%);
+    transition: 1s;
+    animation: test 1s ;
+}
 
-    .container-fluid .card .imgContainer
-    {
-        width:230px;
-    }
 
-    .container-fluid .card_3:hover
-    {
-        height: 540px;
-    }
+.card:hover .content .card-title,
+.card:hover .content .card-text,
+.card:hover .content .btn{
+    visibility: visible !important;
+    width: fit-content !important;
+    transition: 1s;
     
 }
 
-@media screen and (max-width:700px) {
-    .container-fluid .card
-    {
-        max-width: 440px;
-        width: 440px;
-        height: 250px;
-    }
-
-    .container-fluid .card .imgContainer
-    {
-        width: 400px;
-    }
-    .container-fluid .card_1:hover
-    {   
-        height: 500px;
-    }
-
-    .container-fluid .card_2:hover
-    {
-        height: 530px;
-    }
-
-    .container-fluid .card_3:hover
-    {
-        height: 560px;
-    }
-    
+.card.hover{
+    transform: scale(1.05);
+    transition: 1s;
 }
-
-@media (max-width: 500px){
-    .container-fluid .card
-    {
-        width: 380px;
-        height: 220px;
-    }
-
-    .container-fluid .card .imgContainer
-    {
-        width: 340px;
-    }
-
-    .container-fluid .card_1:hover
-    {   
-        height: 450px;
-    }
-
-    .container-fluid .card_2:hover
-    {
-        height: 480px;
-    }
-
-    .container-fluid .card_3:hover
-    {
-        height: 515px;
-    }
-}
-
-@media (max-width: 430px){
-    .container-fluid .card
-    {
-        width: 300px;
-        height: 150px;
-    }
-
-    .container-fluid .card .imgContainer
-    {
-        width: 260px;
-    }
-
-    .container-fluid .card_1:hover
-    {   
-        height: 420px;
-    }
-
-    .container-fluid .card_2:hover
-    {
-        height: 450px;
-    }
-
-    .container-fluid .card_3:hover
-    {
-        height: 485px;
-    }
-}
-

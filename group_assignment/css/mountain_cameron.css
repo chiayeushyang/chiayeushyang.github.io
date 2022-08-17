@@ -1,193 +1,213 @@
 body, html {
   background-color: #D2DDCD !important;
-  }
-  .bg1{
-    background-image: url(../images/mountain_penang/Polygon18.png);
+  
+}
+.gallery .item img {
+  border-radius: 20px;
+}
+
+.gallery .item {
+  transition: .5s ease-in-out;
+}
+.gallery .item:hover {
+  filter: brightness(80%)
+}
+.prev-btn{
+  /* background-image: linear-gradient(to right, rgba(191, 77, 42, 0.7) , rgba(63, 201, 50,0.7)); */
+  background-image: linear-gradient(to right, rgba(148, 208, 186, 0.7),  rgba(116, 145, 75, 0.7));
+}
+
+.next-btn{
+  background-image: linear-gradient(to right, rgba(177, 175, 54, 0.7) , rgba(246, 220, 23, 0.7));
+}
+.bg1{
+  background-image: url(../images/mountain_penang/background.png);
   background-position:left;
   background-size: cover;
-  }
-  .gallery .item img {
-    border-radius: 20px;
-  }
-  
-  .gallery .item {
-    transition: .5s ease-in-out;
-  }
-  .gallery .item:hover {
-    filter: brightness(80%)
-  }
-  image{
+}
+image{
+  width: 100%;
+  border-radius:5px;
+}
+.wd-50{
+  width: 45%;
+}
+.texthover:hover{
+  color: rgb(85, 210, 210);
+}
+div p{
+  font-size: 200%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption, #caption2, #caption3, #caption4, #caption5, #caption6, #caption7, #caption8 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
     width: 100%;
-    border-radius:5px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  div p{
+    font-size: 4vw;
   }
   .wd-50{
-    width: 50%;
+    width: 90%;
   }
-  .texthover:hover{
-    color: rgb(85, 210, 210);
+  #activity2{
+    display: none!important;
   }
-  div p{
-    font-size: 200%;
-  }
-  
-  /* The Modal (background) */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  body, html {
+    background-color: #D2DDCD;
   }
   
-  /* Modal Content (Image) */
-  .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+}
+@media only screen and (min-width: 1400px) {
+  #activity2mobile{
+    display: none!important;
   }
-  
+}
 
-  /* Add Animation - Zoom in the Modal */
-  .modal-content, #caption, #caption2, #caption3, #caption4, #caption5, #caption6, #caption7, #caption8 {
-    animation-name: zoom;
-    animation-duration: 0.6s;
+.bg {
+  background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/mountain_cameron/Penang_cover.jpg);
+  /* Full height */
+  min-height: 970px; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: white;
+}
+.accordion-button{
+  background-color: #519259!important;
+  color: white!important;
+}
+#pin{
+  bottom: 5%;
+  left: 5%;
+}
+#pin p {
+  font-size: calc(10px + 1vw);
+}
+.white a{
+  color: white;
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+#shop1{
+  background-image: url(../images/mountain_genting/zok/Shop1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+#shop2{
+  background-image: url(../images/mountain_genting/fish/Shop2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#shop3{
+  background-image: url(../images/mountain_genting/daxia/Shop3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 3800px) {
+  .bg{
+    max-height: 14.5vw;
   }
-  
-  @keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
+
+  .bg h1{
+    font-size: 1vw;
   }
-  
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+
+  #pin p{
+    font-size: 1vw;
   }
-  
-  .close:hover,
-  .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+
+  #pin i{
+    font-size: 0.7vw;
   }
-  
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
+
+  h3:not(footer h3){
+    font-size: 0.8vw !important;
   }
-  
-  @media only screen and (max-width: 1400px) {
-    div p{
-      font-size: 4vw;
-    }
-    .wd-50{
-      width: 75%;
-    }
-    body, html {
-      background-color: #D2DDCD;
-    }
+
+  h1{
+    font-size: 0.8vw !important;
   }
-  .bg {
-    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/mountain_cameron/cover.jpg);
-    /* Full height */
-    min-height: 970px; 
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-    color: white;
+
+  p:not(footer p){
+    font-size: 0.8vw !important;
   }
-  .accordion-button{
-    background-color: #519259!important;
-    color: white!important;
+
+  strong{
+    font-size: 0.5vw;
   }
-  #pin{
-    bottom: 5%;
-    left: 5%;
+
+  button{
+    font-size: 0.5vw !important;
   }
-  #pin p {
-    font-size: calc(10px + 1vw);
-  }
-  .white a{
-    color: white;
-  }
-  .zoom {
-    transition: transform .2s; /* Animation */
-    margin: 0 auto;
-  }
-  
-  .zoom:hover {
-    transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
-  #shop1{
-    background-image: url(../images/mountain_cameron/hotpot/330269800.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #shop2{
-    background-image: url(../images/mountain_cameron/miso/hcmp156293_575423.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  #shop3{
-    background-image: url(../images/mountain_cameron/bkt/Xin-Teh-Bak-Kut-Teh-At-Cameron-Square.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  @media screen and (min-width: 3800px) {
-    .bg{
-      max-height: 14.5vw;
-    }
-  
-    .bg h1{
-      font-size: 1vw;
-    }
-  
-    #pin p{
-      font-size: 1vw;
-    }
-  
-    #pin i{
-      font-size: 0.7vw;
-    }
-  
-    h3:not(footer h3){
-      font-size: 0.8vw !important;
-    }
-  
-    h1{
-      font-size: 0.8vw !important;
-    }
-  
-    p:not(footer p){
-      font-size: 0.8vw !important;
-    }
-  
-    strong{
-      font-size: 0.5vw;
-    }
-  
-    button{
-      font-size: 0.5vw !important;
-    }
-  }
+}

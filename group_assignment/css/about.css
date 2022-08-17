@@ -26,47 +26,45 @@
 
 /* Card Animation */
 
-.container-xl .card
+.container-fluid .card
 {
-    max-width: 300px;
-    height: 215px;
+    height: 200px;
     margin: 30px 10px;
-    padding: 20px 15px;
+    padding: 20px 0px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     background: var(--bg-card);
     transition: 0.3s ease-in-out;
 }
-.container-xl .card:hover
+.container-fluid .card:hover
 {
     height: 400px;
     transition: 0.7s;
 }
 
-.container-xl .card .imgContainer
+.container-fluid .card .imgContainer
 {
     position: relative;
-    width:250px;
-    height:170px;
+    width:270px;
+    height:190px;
     top:-60px;
-    left:2px;
     z-index: 1;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     transition: 0.3s ease;
 }
 
-.container-xl .card:hover .imgContainer
+.container-fluid .card:hover .imgContainer
 {
-    height:220px;
+    height:240px;
     transition: 1s ease;
 }
 
-.container-xl .card .imgContainer img
+.container-fluid .card .imgContainer img
 {
     max-width: 100%;
     border-radius: 4px;
 }
 
-.container-xl .card .content
+.container-fluid .card .content
 {
     position: relative;
     margin-top: -180px;
@@ -78,21 +76,22 @@
     pointer-events: none;
     transition: 1s ease;
 }
-.container-xl .card:hover .content
+.container-fluid .card:hover .content
 {
     visibility: visible;
     opacity: 1;
-    margin-top: -50px;
+    margin-top: -110px;
     pointer-events: auto;
     transition-delay: 0.2s;
  }
 
- .container-xl .card.hover{
-    transform: translateY(5px);
+ .container-fluid .card.hover{
+    transform: scale(1.05);
+    transition: 0.5s;
  }
 
 @media (max-width: 330px){
-    .container-xl .card .imgContainer{
+    .container-fluid .card .imgContainer{
         left: -2px;
     }
 }

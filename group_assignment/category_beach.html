@@ -32,17 +32,22 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
     <script src="js/scripts.js"></script>
   </head>
 
   <body class="container-1920">
     <nav class="autohide navbar navbar-expand-md bg-light py-0 sticky-top">
       <div class="container-fluid bg-top-nav-green px-0">
-        <a class="navbar-brand ms-3 my-2" href="index.html"
+        <a class="navbar-brand ms-3 my-2 text-center" href="index.html"
           ><img
             src="images/general/logo_light.png"
-            alt="logo_white 1.png"
-            width="80%"
+            alt="logo_white"
+            width="65%"
         /></a>
         <button
           class="navbar-toggler navbar-dark me-3"
@@ -59,7 +64,7 @@
           class="collapse navbar-collapse bg-mobile-dropdown-green-yellow"
           id="navbarNavDropdown"
         >
-          <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+          <ul class="navbar-nav mb-0 mb-lg-0 text-center move-auto-right">
             <li class="nav-item">
               <a
                 class="nav-link text-light-lg text-dark-md fs-top-nav-vm px-3"
@@ -78,31 +83,35 @@
               >
                 MOUNTAIN
               </a>
-              <ul class="dropdown-menu bg-dropdown-yellow-green">
-                <li>
-                  <a
-                    class="dropdown-item item-fw-bold fs-drown_menu"
-                    href="mountain_genting.html"
-                    >Genting Highland</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item item-fw-bold fs-drown_menu"
-                    href="mountain_cameron.html"
-                    >Cameron Highland</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item item-fw-bold fs-drown_menu"
-                    href="mountain_penang.html"
-                    >Penang Hill</a
-                  >
-                </li>
+              <ul class="dropdown-menu bg-dropdown-yellow-green mx-5">
+                  <li>
+                    <a class="dropdown-item item-fw-bold fs-drown_menu text-center" href="category_mountain.html">Category</a>
+                  </li>
+                  <li><hr class="dropdown-divider"></li>
+                    <li>
+                      <a
+                        class="dropdown-item item-fw-bold fs-drown_menu"
+                        href="mountain_genting.html"
+                        ><i class="fa-solid fa-turn-up icon_rotate "></i>&nbsp;Genting Highland</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item item-fw-bold fs-drown_menu"
+                        href="mountain_cameron.html"
+                        ><i class="fa-solid fa-turn-up icon_rotate"></i>&nbsp;Cameron Highland</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item item-fw-bold fs-drown_menu"
+                        href="mountain_penang.html"
+                        ><i class="fa-solid fa-turn-up icon_rotate"></i>&nbsp;Penang Hill</a
+                      >
+                    </li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown ">
               <a
                 class="nav-link active dropdown-toggle text-light-lg text-dark-md fs-top-nav-vm px-3"
                 href="category_beach.html"
@@ -112,24 +121,28 @@
               >
                 BEACH
               </a>
-              <ul class="dropdown-menu bg-dropdown-yellow-green">
+              <ul class="dropdown-menu bg-dropdown-yellow-green mx-5">
+                <li>
+                  <a class="dropdown-item item-fw-bold fs-drown_menu text-center active" href="category_beach.html">Category</a>
+                </li>
+                <li><hr class="dropdown-divider"></li>
                 <li>
                   <a
                     class="dropdown-item item-fw-bold fs-drown_menu"
                     href="beach_perhentian.html"
-                    >Perhentian Island</a
+                    ><i class="fa-solid fa-turn-up icon_rotate"></i>&nbsp;Perhentian Island</a
                   >
                 </li>
                 <li>
                   <a class="dropdown-item item-fw-bold fs-drown_menu" href="beach_pulau.html"
-                    >Pulau Rawa</a
+                    ><i class="fa-solid fa-turn-up icon_rotate"></i>&nbsp;Pulau Rawa</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item item-fw-bold fs-drown_menu"
                     href="beach_pantai.html"
-                    >Pantai Cenang</a
+                    ><i class="fa-solid fa-turn-up icon_rotate"></i>&nbsp;Pantai Cenang</a
                   >
                 </li>
               </ul>
@@ -145,27 +158,36 @@
                 CULTURE
               </a>
               <ul
-                class="dropdown-menu bg-dropdown-yellow-green bg-dropdown-yellow-width"
+                class="dropdown-menu bg-dropdown-yellow-green bg-dropdown-yellow-width mx-5"
               >
+                <li>
+                  <a class="dropdown-item item-fw-bold fs-drown_menu text-center" href="category_culture.html">Category</a>
+                </li>
+                <li><hr class="dropdown-divider"></li>
                 <li>
                   <a
                     class="dropdown-item item-fw-bold fs-drown_menu"
                     href="culture_thean.html"
-                    >Thean Hou Temple</a
+                    ><i class="fa-solid fa-turn-up icon_rotate"></i>&nbsp;Thean Hou Temple</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item item-fw-bold fs-drown_menu"
                     href="culture_batu.html"
-                    >Batu Caves</a
+                    ><i class="fa-solid fa-turn-up icon_rotate"></i>&nbsp;Batu Caves</a
                   >
                 </li>
                 <li>
                   <a
-                    class="dropdown-item item-fw-bold fs-drown_menu text-wrap"
+                    class="dropdown-item item-fw-bold fs-drown_menu text-wrap d-md-inline d-none"
                     href="culture_sultan.html"
-                    >Sultan Salahuddin Abdul Aziz Mosque</a
+                    ><i class="fa-solid fa-turn-up icon_rotate"></i>&nbsp;Sultan Salahuddin <br> &nbsp;Abdul Aziz Mosque</a
+                  >
+                  <a
+                    class="dropdown-item item-fw-bold fs-drown_menu text-wrap text-wrap d-md-none inline-flex"
+                    href="culture_sultan.html"
+                    ><i class="fa-solid fa-turn-up icon_rotate"></i>&nbsp;Sultan Salahuddin Abdul Aziz Mosque</a
                   >
                 </li>
               </ul>
@@ -225,37 +247,37 @@
         <div class="carousel-inner">
           <div class="carousel-item carousel_1 active ">
             <img
-              src="images/category_beach/slider_img_1.jpg"
-              class="d-block image-fill-black s_bg-h w-lg-100"
-              alt="categorie_slideshow_1.jpg"
+              src="images/category_beach/slider_img_1_1920px.jpg"
+              class="d-block image-fill-black s_bg-h"
+              alt="categorie_slideshow_beach_1"
             />
           </div>
           <div class="carousel-item carousel_2">
             <img
-              src="images/category_beach/slider_img_2.jpg"
-              class="d-block image-fill-black s_bg-h w-lg-100"
-              alt="categorie_slideshow_2.jpg"
+              src="images/category_beach/slider_img_2_1920px.jpg"
+              class="d-block image-fill-black s_bg-h"
+              alt="categorie_slideshow_beach_2.jpg"
             />
           </div>
           <div class="carousel-item carousel_3">
             <img
-              src="images/category_beach/slider_img_3.jpg"
-              class="d-block image-fill-black s_bg-h w-lg-100" 
-              alt="categorie_slideshow_3.jpg"
+              src="images/category_beach/slider_img_3_1920px.jpg"
+              class="d-block image-fill-black s_bg-h" 
+              alt="categorie_slideshow_beach_3.jpg"
             />
           </div>
           <div class="carousel-item carousel_4">
             <img
-              src="images/category_beach/slider_img_4.jpg"
-              class="d-block image-fill-black s_bg-h w-lg-100"
-              alt="categorie_slideshow_4.jpg"
+              src="images/category_beach/slider_img_4_1920px.jpg"
+              class="d-block image-fill-black s_bg-h"
+              alt="categorie_slideshow_beach_4.jpg"
             />
           </div>
           <div class="carousel-item carousel_5">
             <img
-              src="images/category_beach/slider_img_5.jpg"
-              class="d-block image-fill-black s_bg-h w-lg-100"
-              alt="categorie_slideshow_5.jpg"
+              src="images/category_beach/slider_img_5_1920px.jpg"
+              class="d-block image-fill-black s_bg-h"
+              alt="categorie_slideshow_beach_5.jpg"
             />
           </div>
         </div>
@@ -298,41 +320,57 @@
     <div id="second_container" class="bg-desert-blue">
       <div class="coutainer-fluid padding-image-top">
         <div class="container m-auto pt-5 pb-4 px-4 px-sm-5">
-          <h1 class="fw-bold t2">Come here, leave down your step on the beach </h1>
-          <p class="p1">
+          <h1 class="fw-bold t5">Come here, leave down your step on the beach </h1>
+          <p class="p4">
           Walking on the beach, listening to the sound of waves, relaxing your mind. Put down your responsible, worry, and enjoy your beach traveling. Everything will be good. Perhaps you can try to share anything with your forever friend, "The Sea". Because you are on alone. 
           </p>
         </div>
-        <div class="d-block pb-5">
+        <div class="gallery d-block pb-5">
           <div class="container d-lg-flex d-block justify-content-center pb-3">
               <div class="d-block pe-3">
-                  <img class="mb-3 rounded-3" src="images/category_beach/second_img_1.jpg" alt="" width="100%">
+                <a href="images/category_beach/second_img_1_fullsize.jpg" class="w-100 col-6 col-sm-4 d-none d-lg-block img-fluid fancybox" data-fancybox="gallery_1">
+                    <img class="mb-3 rounded-3" src="images/category_beach/second_img_1.jpg" alt="second_img_1" width="100%">
+                </a>  
+                <a href="images/category_beach/second_img_1_fullsize.jpg" class="w-100 col-6 col-sm-4 d-block d-lg-none img-fluid fancybox" data-fancybox="gallery_2">
+                  <img class="mb-3 rounded-3" src="images/category_beach/second_img_1.jpg" alt="second_img_1" width="100%">
+              </a>
                   <div class="d-flex">
-                      <div class="d-block d-lg-none">
-                          <img class="pe-3 rounded-3" src="images/category_beach/second_img_3.jpg" alt="" width="100%">
-                          <img class="pe-3 pt-4 pt-md-3 rounded-3" src="images/category_beach/second_img_5.jpg" alt="" width="100%">
+                      <div class="d-block d-lg-none w-50">
+                        <a href="images/category_beach/second_img_3_fullsize.jpg" class="fancybox" data-fancybox="gallery_2">
+                          <img class="pe-3 rounded-3" src="images/category_beach/second_img_3_copy2.jpg" alt="second_img_3_copy2" width="100%">
+                        </a>
+                        <a href="images/category_beach/second_img_5_fullsize.jpg" class="fancybox" data-fancybox="gallery_2">
+                          <img class="pe-3 pt-4 pt-md-3 rounded-3" src="images/category_beach/second_img_5.jpg" alt="second_img_5" width="100%">
+                        </a>
                       </div>
-                      <img class="pe-1 d-none d-lg-block rounded-3" src="images/category_beach/second_img_3.jpg" alt="" width="50%">
-                      <img class="d-block d-lg-none rounded-3" src="images/category_beach/second_img_2.jpg" alt="" width="50%">
-                      <img class="ms-2 d-none d-lg-block rounded-3" src="images/category_beach/second_img_4.jpg" alt="" width="50%">
+                      <a href="images/category_beach/second_img_3_fullsize.jpg" class="d-none d-lg-block w-50 fancybox" data-fancybox="gallery_1">
+                        <img class="pe-1 d-none d-lg-block rounded-3" src="images/category_beach/second_img_3.jpg" alt="second_img_3" width="100%">
+                      </a>
+                      <a href="images/category_beach/second_img_2_fullsize.jpg" class="d-block d-lg-none fancybox w-50" data-fancybox="gallery_2">
+                        <img class="d-block d-lg-none rounded-3" src="images/category_beach/second_img_2.jpg" alt="second_img_2" width="100%">
+                      </a>
+                      <a href="images/category_beach/second_img_4_fullsize.jpg" class="w-lg-100 w-50 ms-2 d-none d-lg-block rounded-3 fancybox" data-fancybox="gallery_1">
+                        <img class="d-none d-lg-block rounded-3" src="images/category_beach/second_img_4.jpg" alt="second_img_4" width="100%">
+                      </a>
+
                   </div>
               </div>
-              <div class="d-lg-block d-none">
-                  <img class="rounded-3" src="images/category_beach/second_img_2.jpg" alt="" width="100%">
-              </div>
+              <a href="images/category_beach/second_img_2_fullsize.jpg" class="d-lg-block d-none fancybox" data-fancybox="gallery_1">
+                <img class="rounded-3" src="images/category_beach/second_img_2.jpg" alt="second_img_2" width="100%">
+              </a>
           </div>
           <div class="container d-flex d-lg-none">
-              <div class="container ps-0"> 
-                  <img class="rounded-3" src="images/category_beach/second_img_6.jpg" alt="" width="100%">
-              </div>
+            <a href="images/category_beach/second_img_6_fullsize.jpg" class="container ps-0 fancybox" data-fancybox="gallery_2">
+              <img class="rounded-3" src="images/category_beach/second_img_6.jpg" alt="second_img_6." width="100%">
+            </a>
           </div>
           <div class="container d-none d-lg-flex justify-content-center">
-              <div class="me-3">
-                  <img class="rounded-3" src="images/category_beach/second_img_5_mobile.jpg" alt="" width="100%">
-              </div>
-              <div>
-                  <img class="rounded-3" src="images/category_beach/second_img_6.jpg" alt="" width="100%">
-              </div>
+            <a href="images/category_beach/second_img_5_fullsize.jpg" class="me-3 fancybox" data-fancybox="gallery_1">
+              <img class="rounded-3" src="images/category_beach/second_img_5_mobile.jpg" alt="second_img_5_mobile" width="100%">
+            </a>
+            <a href="images/category_beach/second_img_6_fullsize.jpg" class="fancybox" data-fancybox="gallery_1">
+              <img class="rounded-3" src="images/category_beach/second_img_6.jpg" alt="second_img_6" width="100%">
+            </a>
           </div>
         </div>
         
@@ -343,13 +381,14 @@
         <h1 class="text-left ms-3 ms-sm-5">
           <i class="fa-solid fa-quote-left"></i> Live in the sunshine, swim the sea, drink the wild air.<i class="fa-solid fa-quote-right"></i>
         </h1>
-        <p class="text-left ms-md-5 ms-3 fs-3 pt-3 p3">- Ralph Waldo Emerson</p>
+        <p class="text-left ms-md-5 ms-3 fs-2 pt-3 p3">- Ralph Waldo Emerson</p>
       </div>
         <div class="position-relative pt-5">
           <img
             src="images/category_beach/first_decoration.png"
             class="ms-auto position-absolute decoration_1-position"
             width="25%"
+            alt="first_decoration"
           />
           <div class="position-absolute icon-info_1">
             <i class="fa-solid fa-circle-info"
@@ -363,7 +402,7 @@
             id="decoration_2"
             src="images/category_beach/second_decoration.png"
             class="position-absolute decoration_2-position"
-            
+            alt="second_decoration"
             width="25%"
           />
           <div class="position-absolute icon-info_2">
@@ -380,20 +419,19 @@
             class="content_body row d-sm-flex flex-sm-row d-flex flex-column flex-nowrap justify-content-center align-items-start m-0 pt-sm-3 pt-1"
           >
             <div
-              class="col-md-7 col-sm-5 col-12 ms-sm-3 ms-0 h-100 align-self-center"
+              class="col-md-7 col-sm-5 col-12 ms-sm-3 ms-0 me-sm-4 me-0 h-100 align-self-center"
             >
               <div class="h-50 d-none d-md-flex justify-content-center">
                 <div class="align-self-center">
                   <h2>Are you ready to enjoy your beach holiday? <br> Everything is ready just less you, is it too bad?</h2>
                 </div>
               </div>
-              <img
-                src="images/category_beach/thrid_img_1.jpg"
-                class="h-50 w-100 d-none d-md-block rounded-3"
-                alt="third_container_mountain_2_image.jpg"
-                width="100%"
-              />
 
+              <a href="images/category_beach/thrid_img_1_fullsize.jpg" class="fancybox" data-fancybox="gallery_3">
+                <img class="h-50 w-100 d-none d-md-block rounded-3" src="images/category_beach/thrid_img_1.jpg" alt="third_container_mountain_1_image" width="100%">
+              </a>
+
+             
               <div class="h-100 d-bloc d-md-none justify-content-center">
                 <h1>Are you ready to enjoy your beach holiday?</h1>
                 <h1 class="pt-2">Everything is ready just less you, is it too bad?</h1>
@@ -402,21 +440,21 @@
             <div
               class="third_container_image col-md-4 col-sm-6 col-12 d-flex justify-content-center px-0 h-100"
             >
-              <img
-                src="images/category_beach/thrid_img_2.jpg"
-                alt="third_container_mountain_image.jpg"
-                class="rounded-3"
-                width="100%"
-              />
+              <a href="images/category_beach/thrid_img_2_fullsize.jpg" class="d-md-flex d-none fancybox" data-fancybox="gallery_3">
+                <img class="rounded-3" src="images/category_beach/thrid_img_2.jpg" alt="third_container_mountain_2_image" width="100%">
+              </a>
+
+              <a href="images/category_beach/thrid_img_2_fullsize.jpg" class="d-md-none d-flecx fancybox" data-fancybox="gallery_4">
+                <img class="rounded-3" src="images/category_beach/thrid_img_2.jpg" alt="third_container_mountain_2_image" width="100%">
+              </a>
             </div>
             
           </div>
-          <img
-            src="images/category_beach/thrid_img_1.jpg"
-            class="h-50 d-md-none d-block container-fluid px-sm-3 px-0 rounded-3"
-            alt="third_container_mountain_2_image.jpg"
-            width="100%"
-          />
+
+          <a href="images/category_beach/thrid_img_1_fullsize.jpg" class="fancybox" data-fancybox="gallery_4">
+            <img class="h-50 d-md-none d-block container-fluid px-sm-3 px-0 rounded-3" src="images/category_beach/thrid_img_1.jpg" alt="third_container_mountain_1_image" width="100%">
+          </a>
+          
         </div>
       </div>
     </div>
@@ -426,44 +464,56 @@
       /></a>
     </div>
     <div class="bg-bottom">
-      <div class="container-fluid mt-5 p-0 p-sm-3">
+      <div class="container mt-5 p-0 ">
         <div
-          class="d-block d-sm-flex align-items-center justify-content-center py-5"
+          class="row d-block d-sm-flex align-items-start justify-content-center pt-5 pb-lg-0 py-xl-5 mx-sm-3 mx-0 overflow-hidden"
         >
-        <div class="row container-fluid d-flex align-items-center justify-content-center position-relative px-sm-2 px-0 mx-sm-2 mx-0 ">
-          <div class="card card_1 d-flex position-relative flex-column">
-              <div class="imgContainer">
-                  <img src="images/category_beach/pulau_perhentian.jpg">
-              </div>
-              <div class="content card-body text-start">
+          <div class="col-lg-3 col-sm-5 col-10 card card_1 mx-sm-3 mt-sm-5 mt-md-0 m-auto px-0">
+              <img class="rounded-3" src="images/category_beach/pulau_perhentian.jpg" alt="pulau_perhentian">
+              <div id="card_1_content" class="content card-body text-start">
                   <h5 class="card-title fs-2 fw-bold">Pulau Rawa</h5>
-                  <p class="card-text fs-4">Rawa Island Resort is one of the most beautiful beach resorts in the Malaysia.</p>
+                  <p class="card-text fs-3">Rawa Island Resort is one of the most beautiful beach resorts in the Malaysia.</p>
                   <a href="beach_pulau.html" class="btn btn-primary bg-btn-blue fs-5">Read More</a>
               </div>
           </div>
-          <div class="card card_2 d-flex position-relative flex-column">
-              <div class="imgContainer">
-                  <img src="images/category_beach/pulau_cenang.jpg">
-              </div>
+          <div class="col-lg-3 col-sm-5 col-10 card card_2 mx-sm-3 mt-sm-5 mt-md-0 m-auto px-0 my-3">
+              <img class="rounded-3" src="images/category_beach/pulau_cenang.jpg" alt="pulau_cenang">
               <div class="content card-body text-start">
                   <h5 class="card-title fs-2 fw-bold">Pantai Cenang</h5>
-                  <p class="card-text fs-4">Pantai Cenang beach is a 2km long stretch of white sand located on the western shoreline of Langkawi..</p>
+                  <p class="card-text fs-3">Pantai Cenang beach is a 2km long stretch of white sand located on the western shoreline of Langkawi..</p>
                   <a href="beach_pantai.html" class="btn btn-primary bg-btn-blue fs-5">Read More</a>
               </div>
           </div>
-          <div class="card card_3 d-flex position-relative flex-column">
-              <div class="imgContainer">
-                  <img src="images/category_beach/pulau_rawa.jpg">
-              </div>
+          <div class="col-lg-3 col-sm-5 col-10 card card_3 mx-sm-3 mx-sm-0 px-0 my-xl-0 m-auto my-sm-4 mb-3">
+              <img class="rounded-3" src="images/category_beach/pulau_rawa.jpg" alt="pulau_rawa">
               <div class="content card-body text-start">
                   <h5 class="card-title fs-2 fw-bold">Perhentian Island</h5>
-                  <p class="card-text fs-4">Surrounded by lush greenery, facing white sandy beaches and a warm blue sea, Perhentian Island is a holiday paradise not to be missed..</p>
+                  <p class="card-text fs-3">Surrounded by lush greenery, facing white sandy beaches and a warm blue sea, Perhentian Island is a holiday paradise not to be missed..</p>
                   <a href="beach_perhentian.html" class="btn btn-primary bg-btn-blue fs-5">Read More</a>
               </div>
           </div>
-      </div>
+
         </div>
       </div>
+      <div class="d-sm-flex d-block justify-content-between my-5">
+      <a class="prev-btn ms-sm-3 ms-0 p-3 rounded left_arrow d-flex text-decoration-none d-flex align-items-center" href="category_mountain.html">
+        <div class="left_arrow">
+          <img src="images/general/top.png" alt="arrow to left" width="30px"/>
+        </div>
+        <div class="prev-content ms-3 d-block text-dark text-center">
+          <h3 class="mb-0">Mountain Category</h3>
+        </div>
+      </a>
+
+      <a class="next-btn me-sm-3 me-0 p-3 my-sm-0 my-3 rounded left_arrow d-flex text-decoration-none d-flex flex-row-reverse align-items-center" href="category_culture.html">
+        <div class="right_arrow">
+          <img src="images/general/top.png" alt="arrow to right" width="30px"/>
+        </div>
+        <div class="next-content me-3 d-block text-dark">
+          <h3 class="mb-0">Culture Category</h3>
+        </div>
+      </a>
+    </div>
       <footer class="position-relative d-flex align-items-center flex-column">
         <div class="container-fluid">
           <div class="row pt-5 justify-content-center">
@@ -471,7 +521,7 @@
               class="col-12 col-sm-5 col-md-3 mx-md-3 mb-5 mb-sm-0 d-flex justify-content-center align-items-end"
             >
               <a href="index.html"
-                ><img src="images/general/logo_light.png" width="117px"
+                ><img src="images/general/logo_light.png" width="117px" alt="logo_light"
               /></a>
             </div>
             <div
@@ -498,13 +548,13 @@
                 <a
                   href="https://www.facebook.com/profile.php?id=100002367838790"
                   target="_blank"
-                  ><img src="images/general/facebook.png" class="mx-2"
+                  ><img src="images/general/facebook.png" alt="facebook_icon" class="mx-2"
                 /></a>
                 <a href="https://www.instagram.com/yeushyang/" target="_blank"
-                  ><img src="images/general/instagram.png" class="mx-2"
+                  ><img src="images/general/instagram.png" alt="facebook_icon" class="mx-2"
                 /></a>
                 <a href="https://github.com/chiayeushyang" target="_blank"
-                  ><img src="images/general/github.png" class="mx-2"
+                  ><img src="images/general/github.png" alt="github_icon" class="mx-2"
                 /></a>
               </div>
             </div>

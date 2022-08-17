@@ -1,7 +1,9 @@
 window.addEventListener("scroll", function () {
-  var t = document.querySelector("#back-top");
-  t.classList.toggle("sticky", window.scrollY > 100);
+  var top = document.querySelector("#back-top");
+  top.classList.toggle("sticky", window.scrollY > 100);
 })
+
+
 
 
 // https://bootstrap-menu.com/detail-autohide.html
@@ -59,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function(){
       }else{
         count += 1;
         if (count == 1){
-          myInterval = setInterval(everyTime, 4000);
+          myInterval = setInterval(everyTime, 5000);
         }
       }
     });

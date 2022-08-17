@@ -17,7 +17,7 @@
   --fc-white: white;
 
   /* max-width / height*/
-  --mx-w: 1920px;
+  --mx-w: 1906px;
   --mx-h: 1072px;
 
   /* min-width/ height */
@@ -42,7 +42,7 @@
   --fs-t1-sm: 2.5rem;
 
   --fs-t2-3xl: 4rem;
-  --fs-t2-xxl: 2.5rem;
+  --fs-t2-xxl: 3rem;
   --fs-t2-sm: 2rem;
 
   --fs-st2-3xl: 3rem;
@@ -58,6 +58,11 @@
   --fs-t4-md: 4rem;
   --fs-t4-sm: 3rem;
 
+  --fs-t5-3xl: 4.5rem;
+  --fs-t5-xxl: 2.8rem;
+  --fs-t5-lg: 2rem;
+  --fs-t5-sm: 2rem;
+
   --fs-p1-3xl: 4rem;
   --fs-p1-xxl: 2.25rem;
   --fs-p1-sm: 1.5rem;
@@ -68,9 +73,10 @@
   --fs-p3-3xl: 1.8rem;
   --fs-p3-xxl: 1.5rem;
 
-  --fs-p4-3xl: 3rem;
-  --fs-p4-xxl: 1.9rem;
-  --fs-p4-lg: 1.4rem;
+  --fs-p4-3xl: 3.3rem;
+  --fs-p4-xxl: 2.2rem;
+  --fs-p4-xl: 1.9rem;
+  --fs-p4-lg: 1.5rem;
 
   --fs-p5-xxl: 1.8rem;
   --fs-p5-sm: 1.4rem;
@@ -101,9 +107,15 @@
   font-weight: var(--fw-6) !important;
   font-size: var(--fs-t3-xxl) !important;
 }
+
 .t4 {
   font-weight: var(--fw-6) !important;
   font-size: var(--fs-t4-xxl) !important;
+}
+
+.t5 {
+  font-size: var(--fs-t5-xxl) !important;
+  font-weight: var(--fw-6) !important;
 }
 
 /* slider content */
@@ -146,12 +158,7 @@
   height: 100vw;
 }
 
-/* slider / image width 100% after 1300px */
-@media (min-width: 1300px) {
-  .w-lg-100 {
-    width: 100% !important;
-  }
-}
+
 
 @media screen and (min-width: 2800px) {
   .t1 {
@@ -168,6 +175,10 @@
 
   .t4 {
     font-size: var(--fs-t4-3xl) !important;
+  }
+
+  .t5 {
+    font-size: var(--fs-t5-3xl) !important;
   }
 
   .p1 {
@@ -195,12 +206,30 @@
   }
 }
 
+/* slider / image width 100% after 1300px */
+@media (min-width: 1300px) {
+  .w-lg-100 {
+    width: 100% !important;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .p4 {
+    font-size: var(--fs-p4-xl) !important;
+  }
+}
+
+
 @media screen and (max-width: 992px) {
   .p4 {
     font-size: var(--fs-p4-lg) !important;
   }
   .t4 {
     font-size: var(--fs-t4-lg) !important;
+  }
+  .t5 {
+    font-size: var(--fs-t5-lg) !important;
   }
 }
 
@@ -233,6 +262,10 @@
 
   .t4 {
     font-size: var(--fs-t4-sm) !important;
+  }
+
+  .t2 {
+    font-size: var(--fs-t5-sm) !important;
   }
 
   .p1 {
@@ -299,7 +332,7 @@
 }
 
 .bg-dropdown-yellow-width {
-  width: 230px !important;
+  width: fit-content !important;
 }
 
 .btn {
@@ -334,6 +367,19 @@
   margin-left: 3.5rem !important;
 }
 
+.icon_rotate{
+  transform: rotate(90deg);
+}
+
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+
+.move-auto-right{
+  margin-left: auto;
+  margin-right: 30px;
+}
+
 /* backtop button */
 #back-top {
   display: none;
@@ -347,19 +393,42 @@
 }
 
 #back-top:hover {
-  display: none;
-  position: fixed;
   padding: 12px 12px;
-  background-color: var(--bg-dark-orange-hover);
-  border-radius: 50%;
-  right: 10px;
-  bottom: 10px;
   animation: backtop-rotate 1.5s;
-  z-index: 1000;
 }
 
 #back-top.sticky {
   display: block;
+}
+
+.left_arrow img{
+  transform: rotateZ(270deg);
+}
+
+.prev-btn:hover .left_arrow{
+  animation: left_arrow_amination 1s infinite;
+}
+
+@keyframes left_arrow_amination {
+  0% {transform: translateX(0px);}
+  50% {transform: translateX(10px);}
+  100% {transform: translateX(0px);}
+}
+
+
+.right_arrow img{
+  transform: rotateZ(90deg);
+  background-color: transparent;
+}
+
+.next-btn:hover .right_arrow{
+  animation: right_arrow_amination 1s infinite;
+}
+
+@keyframes right_arrow_amination {
+  0% {transform: translateX(0px);}
+  50% {transform: translateX(-10px);}
+  100% {transform: translateX(0px);}
 }
 
 @keyframes backtop-rotate {
@@ -461,8 +530,7 @@ footer a:hover img {
   /* top navbar */
   .bg-dropdown-yellow-green {
     background-color: var(--bg-green-transparent) !important;
-    margin-left: 20px !important;
-    max-width: 300px !important;
+    min-width: fit-content !important;
   }
 
   .bg-mobile-dropdown-green-yellow {
@@ -470,7 +538,7 @@ footer a:hover img {
   }
 
   .bg-dropdown-yellow-width {
-    width: 280px !important;
+    width: inherit !important;
   }
 
   .text-dark-md {
@@ -487,5 +555,10 @@ footer a:hover img {
   /* footer */
   #line {
     width: 85%;
+  }
+
+  .move-auto-right{
+    text-align: left;
+    margin-right: 0px;
   }
 }

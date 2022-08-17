@@ -9,6 +9,26 @@
   justify-content: center;
 }
 
+.cm {
+  margin-top: 0%;
+}
+
+.prev-btn {
+  background-image: linear-gradient(
+    to right,
+    rgba(180, 255, 159, 0.7),
+    rgba(249, 255, 164, 0.7)
+  );
+}
+
+.next-btn {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 213, 158, 0.7),
+    rgba(255, 161, 161, 0.7)
+  );
+}
+
 .background1 {
   background-image: url(../images/culture_batu/b1.png);
   background-size: contain;
@@ -33,5 +53,9 @@
 
   .carousel_3 img {
     content: url(../images/culture_batu/h6-500.jpg);
+  }
+
+  .cm {
+    margin-top: 5%;
   }
 }

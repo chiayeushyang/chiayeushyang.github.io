@@ -492,7 +492,22 @@ body {
     }
 }
 
+@media screen and (min-width: 2570px) {
+    #first-content {
+        height: 45vh;
+    }
+}
+
+
 @media screen and (min-width: 3800px) {
+    #first-content {
+        height: 40vh;
+    }
+
+    #second-content {
+        height: 65vh;
+    }
+
     #second-content-h1 {
         margin: auto;
     }

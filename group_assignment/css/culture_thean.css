@@ -9,6 +9,26 @@
   justify-content: center;
 }
 
+.cm {
+  margin-top: 0%;
+}
+
+.prev-btn {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 227, 169, 0.7),
+    rgba(255, 195, 195, 0.7)
+  );
+}
+
+.next-btn {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 140, 140, 0.7),
+    rgba(255, 93, 93, 0.7)
+  );
+}
+
 .background1 {
   background-image: url(../images/culture_thean/b1.png);
   background-size: contain;
@@ -22,7 +42,6 @@
   background-repeat: no-repeat;
 }
 
-
 @media screen and (max-width: 440px) {
   .carousel-1 img {
     content: url(../images/culture_thean/t1-500.jpg);
@@ -34,5 +53,9 @@
 
   .carousel_3 img {
     content: url(../images/culture_thean/t4-500.jpg);
+  }
+
+  .cm {
+    margin-top: 5%;
   }
 }

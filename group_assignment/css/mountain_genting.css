@@ -12,8 +12,16 @@ body, html {
   .gallery .item:hover {
     filter: brightness(80%)
   }
+  .prev-btn{
+    /* background-image: linear-gradient(to right, rgba(191, 77, 42, 0.7) , rgba(63, 201, 50,0.7)); */
+    background-image: linear-gradient(to right, rgba(148, 208, 186, 0.7),  rgba(116, 145, 75, 0.7));
+}
+
+.next-btn{
+    background-image: linear-gradient(to right, rgba(177, 175, 54, 0.7) , rgba(246, 220, 23, 0.7));
+}
   .bg1{
-    background-image: url(../images/mountain_penang/Polygon18.png);
+    background-image: url(../images/mountain_penang/background.png);
     background-position:left;
     background-size: cover;
   }
@@ -97,15 +105,24 @@ body, html {
       font-size: 4vw;
     }
     .wd-50{
-      width: 75%;
+      width: 90%;
+    }
+    #activity2{
+      display: none!important;
     }
     body, html {
       background-color: #D2DDCD;
     }
     
   }
+  @media only screen and (min-width: 1400px) {
+    #activity2mobile{
+      display: none!important;
+    }
+  }
+  
   .bg {
-    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/mountain_genting/GentingHighlandsDayTrip.jpg);
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/mountain_genting/Genting_cover.jpg);
     /* Full height */
     min-height: 970px; 
   
@@ -139,19 +156,19 @@ body, html {
     transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
   #shop1{
-    background-image: url(../images/mountain_genting/zok/gentinghigland.jpg);
+    background-image: url(../images/mountain_genting/zok/Shop1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
   }
   #shop2{
-    background-image: url(../images/mountain_genting/fish/Laughingfish-a.jpg);
+    background-image: url(../images/mountain_genting/fish/Shop2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   #shop3{
-    background-image: url(../images/mountain_genting/daxia/49364760156_78b4f15477_o.jpg);
+    background-image: url(../images/mountain_genting/daxia/Shop3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

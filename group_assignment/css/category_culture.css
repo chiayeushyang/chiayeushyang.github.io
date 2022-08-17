@@ -145,10 +145,37 @@
     100% {transform: scale(1); color: #f08b54; left:30%}
 }
 
+.second_container img{
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.second_container img:hover{
+    filter: grayscale(0%);
+    transition: 1s;
+}
+
+.padding-image-bwl img{
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.padding-image-bwl img:hover{
+    filter: grayscale(0%);
+    transition: 1s;
+}
+
+.prev-btn{
+    background-image: linear-gradient(to right, rgba(50, 171, 201, 0.7) , rgba(227, 197, 66, 0.7));
+}
+
+.next-btn{
+    background-image: linear-gradient(to right, rgba(53, 212, 185,0.7), rgba(64, 166, 43, 0.7));
+}
 
 @media screen and (min-width: 3800px) {
     #second_container h1{
-        font-size: 1vw !important;
+        font-size: 1.5vw !important;
     }
 
     #second_container h2{
@@ -159,11 +186,11 @@
         font-size: 0.8vw;
     }
 
-    .bg-desert-yellow h1{
-        font-size: calc(10px + 1.3vw);
+    .bg-circle-yellow h1{
+        font-size: calc(10px + 1vw) !important;
     }
 
-    .bg-desert-yellow p{
+    .bg-circle-yellow p{
         font-size: calc(10px + 1vw) !important;
     }
 }
@@ -176,7 +203,7 @@
     }
     
     .padding-image-bwl{
-        padding-top: 8vw;
+        padding-top: 800px;
         padding-bottom: 2vw;
     }
 }
@@ -191,6 +218,28 @@
     .img-h{
         height: 110% !important;
     }
+}
+
+@media screen and (max-width: 800px) {
+    .carousel_1 img{
+       content: url(../images/category_culture/slider_img_1_800px.jpg)
+   }
+
+   .carousel_2 img{
+       content: url(../images/category_culture/slider_img_2_800px.jpg)
+   }
+
+   .carousel_3 img{
+       content: url(../images/category_culture/slider_img_3_800px.jpg)
+   }
+
+   .carousel_4 img{
+       content: url(../images/category_culture/slider_img_4_800px.jpg)
+   }
+
+   .carousel_5 img{
+       content: url(../images/category_culture/slider_img_5_800px.jpg)
+   }
 }
 
 @media screen and (max-width: 768px) {
@@ -238,32 +287,17 @@
         padding-top: 7vw;
     }
 
-    .carousel_1 img{
-        content: url(../images/category_culture/slider_img_1_500px.jpg);
-    }
-
-    .carousel_2 img{
-        content: url(../images/category_culture/slider_img_2_500px.jpg);
-    }
-
-    .carousel_3 img{
-        content: url(../images/category_culture/slider_img_3_500px.jpg);
-    }
-
-    .carousel_4 img{
-        content: url(../images/category_culture/slider_img_4_500px.jpg);
-    }
-
-    .carousel_5 img{
-        content: url(../images/category_culture/slider_img_5_500px.jpg);
-    }
-
     .decoration_1-position{
         top: -120px;
     }
 
     .icon-info_1{
         top: -60px;
+        font-size: 25px;
+    }
+
+    .icon-info_2{
+        font-size: 25px;
     }
 }
 

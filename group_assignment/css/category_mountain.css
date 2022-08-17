@@ -11,7 +11,7 @@
 
 .slideshow-content-position{
     top: 0;
-    left: 60px;
+    left: 20px;
 }
 
 .carousel-control-prev {
@@ -116,6 +116,15 @@
     animation-iteration-count: infinite;
 }
 
+.prev-btn{
+    background-image: linear-gradient(to right, rgba(163, 78, 39, 0.7), rgba(222, 205, 73,0.7));
+}
+
+.next-btn{
+    background-image: linear-gradient(to right, rgba(227, 197, 66, 0.7), rgba(50, 171, 201, 0.7));
+}
+  
+
 @keyframes info_icon_1{
     0% {transform: scale(1); color: #f59236; right: 23%}
     50% {transform: scale(1.1); color: #d1c62e; right: 22.5%}
@@ -139,7 +148,7 @@
 
 @media screen and (min-width: 3800px) {
     #second_container h1{
-        font-size: 1vw !important;
+        font-size: 1.5vw !important;
     }
 
     #second_container h2{
@@ -172,6 +181,7 @@
     }
 }
 
+
 @media screen and (max-width: 992px) {
     .icon-info_1{
         top: 250%;
@@ -184,6 +194,29 @@
     .img-h{
         height: 110% !important;
     }
+}
+
+
+@media screen and (max-width: 800px) {
+    .carousel_1 img{
+       content: url(../images/category_mountain/categorie_slideshow_1_800px.jpg)
+   }
+
+   .carousel_2 img{
+       content: url(../images/category_mountain/categorie_slideshow_2_800px.jpg)
+   }
+
+   .carousel_3 img{
+       content: url(../images/category_mountain/categorie_slideshow_3_800px.jpg)
+   }
+
+   .carousel_4 img{
+       content: url(../images/category_mountain/categorie_slideshow_4_800px.jpg)
+   }
+
+   .carousel_5 img{
+       content: url(../images/category_mountain/categorie_slideshow_5_800px.jpg)
+   }
 }
 
 @media screen and (max-width: 768px) {
@@ -226,28 +259,12 @@
         padding-top: 7vw;
     }
 
-    .round-shape{
-        height: 250%;
+    .icon-info_1{
+        font-size: 25px;
     }
 
-    .carousel_1 img{
-        content: url(../images/category_mountain/categorie_slideshow_1_500px.png)
-    }
-
-    .carousel_2 img{
-        content: url(../images/category_mountain/categorie_slideshow_2_500px.png)
-    }
-
-    .carousel_3 img{
-        content: url(../images/category_mountain/categorie_slideshow_3_500px.png)
-    }
-
-    .carousel_4 img{
-        content: url(../images/category_mountain/categorie_slideshow_4_500px.png)
-    }
-
-    .carousel_5 img{
-        content: url(../images/category_mountain/categorie_slideshow_5_500px.png)
+    .icon-info_2{
+        font-size: 25px;
     }
 }
 

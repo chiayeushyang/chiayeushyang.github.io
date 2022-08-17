@@ -1,5 +1,6 @@
 :root {
     --bg-green-full: #064635;
+    --bg-green-contact: #064635;
     --bg-toolsTip-grey: #bab19ef2;
     --bg-toolsTip-darkgrey: #888070f2;
     --bg-toolsTip-lightGreen: #a6dc98f1;
@@ -7,7 +8,7 @@
 }
 
 #first-content {
-    background-color: var(--bg-green-full);
+    background-color: var(--bg-green-contact);
 }
 
 #second-content {
