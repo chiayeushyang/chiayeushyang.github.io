@@ -42,6 +42,17 @@
   background-repeat: no-repeat;
 }
 
+.carousel-1 img{
+  filter: brightness(95%);
+}
+
+.carousel-2 img{
+  filter: brightness(95%);
+}
+.carousel-3 img{
+  filter: brightness(95%);
+}
+
 @media screen and (max-width: 440px) {
   .carousel-1 img {
     content: url(../images/culture_batu/h2-500.jpg);

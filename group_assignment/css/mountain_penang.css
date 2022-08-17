@@ -148,17 +148,8 @@ div p{
     max-height: 14.5vw;
   }
 
-
   .bg h1{
     font-size: 1vw;
-  }
-
-  #pin p{
-    font-size: 1vw;
-  }
-
-  #pin i{
-    font-size: 0.7vw;
   }
 
   h3:not(footer h3){

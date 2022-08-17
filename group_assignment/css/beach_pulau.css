@@ -92,11 +92,6 @@
     background-image: linear-gradient(to right, rgba(88,204,247,255), rgba(180,227,242,255), rgba(240,214,129,255), rgba(251,231,176,255));
 }
 
-@media screen and (min-width: 2800px) {
-    .pin-i1 {
-        font-size: 2.5rem !important;
-    }
-}
 
 @media screen and (min-width: 1800px) {
     .right-ellipse h2 {

@@ -81,9 +81,9 @@
   --fs-p5-xxl: 1.8rem;
   --fs-p5-sm: 1.4rem;
 
-  --fs-i1-3xl: 3rem;
-  --fs-i1-xxl: 1.5rem;
-  --fs-i1-md: calc(0.7rem + 0.5vw);
+  --fs-si1-3xl: 2.5rem;
+  --fs-si1-xxl: 1.5rem;
+  --fs-si1-md: calc(0.7rem + 0.5vw);
 }
 /* ############################################################################ */
 /* Below is the class of the text size and background colour size and other*/
@@ -454,7 +454,7 @@ footer {
   background-image: url(../images/general/malaysia.png),
     url(../images/general/Rectanglefooter-round.png);
   background-size: 40%, cover;
-  background-position: 52% 55%, 0% -0.5%;
+  background-position: 54% 60%, 0% -0.5%;
   background-repeat: no-repeat;
   padding-top: 80px;
   padding-bottom: 70px;

@@ -183,14 +183,6 @@ body, html {
       font-size: 1vw;
     }
   
-    #pin p{
-      font-size: 1vw;
-    }
-  
-    #pin i{
-      font-size: 0.7vw;
-    }
-  
     h3:not(footer h3){
       font-size: 0.8vw !important;
     }

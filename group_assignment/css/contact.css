@@ -48,6 +48,7 @@ input[type=tel].half {
 
 }
 
+input[type=email].full,
 input[type=text].full,
 input[type=tel].full {
     width: 100%;
