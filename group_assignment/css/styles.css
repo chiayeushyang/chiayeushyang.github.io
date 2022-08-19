@@ -40,13 +40,13 @@ body {
 }
 
 #first-content {
-    background-image: url(../images/home/hindutemplebg.png);
+    background: url(../images/home/hindutemplebg.png);
     background-repeat: no-repeat;
-    background-size: 90%;
-    background-position: 70% 90%;
-    min-height: 800px;
+    background-size: contain;
+    background-position: center 80px;
     width: 80%;
     margin-top: 80px;
+    padding-bottom: 300px;
 }
 
 #chineseTemple {
@@ -111,7 +111,7 @@ body {
 
 #second-content {
     background-color: #DCF5C8;
-    height: 220vh;
+    padding-bottom: 1000px;
 }
 
 #second-content span {
@@ -130,29 +130,31 @@ body {
 #b-leaf {
     width: 65%;
     opacity: 0.85;
-    top: 5%;
-    left: 2%;
+    top: 30px;
+    left: 30px;
 }
 
 #waterfall {
     width: 50%;
-    top: 30%;
-    left: 7%;
+    top: 450px;
+    left: 20%;
+    transform: translateX(-20%);
 }
 
 #river {
     width: 50%;
-    top: 57%;
-    left: 40%;
+    top: 800px;
+    left: 80%;
+    transform: translateX(-80%);
 }
 
 #s-leaf {
-    bottom: 4%;
-    right: 8%;
+    bottom: 45px;
+    right: 90px;
 }
 
 #s-leaf i {
-    left: 50%;
+    right: -120px;
 }
 
 #s-leaf img {
@@ -181,104 +183,161 @@ body {
 }
 
 
-@media screen and (min-width : 2000px) {
-
+ @media screen and (min-width: 1700px) {
     #second-content {
-        height: 150vh;
+        background-color: #DCF5C8;
+        padding-bottom: 1050px;
+    }
+
+    #s-leaf {
+        bottom: 45px;
+        right: 140px;
+    }
+ }
+
+ @media screen and (min-width: 1900px) {
+    #second-content {
+        background-color: #DCF5C8;
+        padding-bottom: 1220px;
+    }
+
+    #river {
+        width: 50%;
+        top: 900px;
+        left: 80%;
+        transform: translateX(-80%);
+    }
+
+    #s-leaf {
+        bottom: 60px;
+        right: 140px;
+    }
+ }
+
+ @media screen and (min-width: 3000px) {
+    #second-content {
+        background-color: #DCF5C8;
+        padding-bottom: 1130px;
     }
 
     #waterfall {
-        width: 40%;
-        top: 30%;
-        left: 12%;
+        width: 50%;
+        top: 540px;
+        left: 20%;
+        transform: translateX(-20%);
     }
     
     #river {
-        width: 40%;
-        top: 57%;
-        left: 45%;
+        width: 50%;
+        top: 890px;
+        left: 80%;
+        transform: translateX(-80%);
     }
-    
+
     #s-leaf {
-        bottom: 4%;
-        right: 12%;
+        bottom: 70px;
+        right: 140px;
     }
-}
+ }
 
-@media screen and (min-width : 3600px) {
-
-
+ @media screen and (min-width: 4000px) {
     #second-content {
-        height: 80vh;
+        background-color: #DCF5C8;
+        padding-bottom: 1230px;
     }
 
     #waterfall {
-        width: 40%;
-        top: 30%;
-        left: 12%;
+        width: 50%;
+        top: 400px;
+        left: 20%;
+        transform: translateX(-20%);
     }
     
     #river {
-        width: 40%;
-        top: 57%;
-        left: 45%;
+        width: 50%;
+        top: 850px;
+        left: 80%;
+        transform: translateX(-80%);
     }
-    
+
     #s-leaf {
-        bottom: 7%;
-        right: 12%;
+        bottom: 70px;
+        right: 140px;
+    }
+ }
+
+@media screen and (max-width: 1300px) {
+    #first-content {
+        background: url(../images/home/hindutemplebg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 120px;
+        width: 80%;
+        margin-top: 80px;
+        padding-bottom: 150px;
+    }
+
+    #second-content {
+        background-color: #DCF5C8;
+        padding-bottom: 900px;
+    }
+
+    #s-leaf {
+        bottom: 60px;
+        right: 90px;
     }
 }
-
 @media screen and (max-width: 1200px) {
     #first-content {
-        background-position: 75% 90%;
-    }
-
-    #second-content {
-        height: 200vh;
+        background: url(../images/home/hindutemplebg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 150px;
+        width: 80%;
+        margin-top: 80px;
+        padding-bottom: 100px;
     }
 
     #second-content-p1 {
         width: 80%;
         z-index: 2;
     }
+}
+
+@media screen and (max-width: 1149px) {
+    #first-content-bg3 {
+        top: 80%;
+    }
+
+    #second-content {
+        background-color: #DCF5C8;
+        padding-bottom: 750px;
+    }
 
     #b-leaf {
         width: 65%;
         opacity: 0.85;
-        top: 5%;
-        left: 2%;
+        top: 30px;
+        left: 30px;
     }
-
+    
     #waterfall {
-        width: 60%;
-        top: 32%;
-        left: 10%;
+        width: 50%;
+        top: 420px;
+        left: 20%;
+        transform: translateX(-20%);
     }
-
-
+    
     #river {
-        width: 60%;
-        top: 57%;
-        left: 33%;
+        width: 50%;
+        top: 700px;
+        left: 80%;
+        transform: translateX(-80%);
     }
-
+    
     #s-leaf {
-        bottom: 4%;
-        right: 3%;
-    }
-
-}
-
-@media screen and (max-width: 1149px) {
-    #first-content {
-        background: none;
-        height: 78vh;
-    }
-
-    #first-content-bg3 {
-        top: 80%;
+        bottom: 20px;
+        right: 50px;
     }
 
     #icon-info_1 {
@@ -289,7 +348,13 @@ body {
 
 @media screen and (max-width: 993px) {
     #first-content {
-        background: none;
+        background: url(../images/home/hindutemplebg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 180px;
+        width: 80%;
+        margin-top: 80px;
+        padding-bottom: 50px;
     }
 
     #first-content-bg1 {
@@ -304,37 +369,44 @@ body {
     }
 
     #second-content {
-        height: 180vh;
-    }
-
-    #second-content-p1 {
-        width: 100%;
-        z-index: 2;
+        background-color: #DCF5C8;
+        padding-bottom: 680px;
     }
 
     #b-leaf {
         width: 65%;
         opacity: 0.85;
-        top: 10%;
-        left: 2%;
+        top: 30px;
+        left: 30px;
     }
-
+    
     #waterfall {
-        width: 60%;
-        top: 32%;
-        left: 10%;
+        width: 50%;
+        top: 400px;
+        left: 20%;
+        transform: translateX(-20%);
     }
-
-
+    
     #river {
-        width: 60%;
-        top: 57%;
-        left: 33%;
+        width: 50%;
+        top: 680px;
+        left: 80%;
+        transform: translateX(-80%);
+    }
+    
+    #s-leaf {
+        width: 35%;
+        bottom: 20px;
+        right: 50px;
     }
 
-    #s-leaf {
-        bottom: 4%;
-        right: 3%;
+    #s-leaf i {
+        right: -120px;
+    }
+
+    #second-content-p1 {
+        width: 100%;
+        z-index: 2;
     }
 
     #third-content-img div img {
@@ -345,19 +417,21 @@ body {
 @media screen and (max-width: 768px) {
     #first-content {
         margin-top: 50px;
+        background: none;
+        padding-bottom: 0;
         height: auto;
     }
 
     #first-content-bg1 {
-        width: 65%;
-        top: 25%;
-        right: -5%;
+        width: 75%;
+        top: 28%;
+        right: -10%;
         opacity: 0.7;
     }
 
     #first-content-bg2 {
-        width: 40%;
-        top: 55%;
+        width: 45%;
+        top: 62%;
         left: -7%;
         z-index: -1;
         opacity: 0.2;
@@ -369,42 +443,79 @@ body {
     }
 
     #second-content {
-        height: 170vh;
-    }
-
-    #second-content-p1 {
-        width: 95%;
-        margin: auto;
-        z-index: 2;
+        background-color: #DCF5C8;
+        padding-bottom: 530px;
     }
 
     #b-leaf {
         width: 65%;
         opacity: 0.85;
-        top: 20%;
-        left: 2%;
+        top: 30px;
+        left: 30px;
     }
-
+    
     #waterfall {
-        width: 60%;
-        top: 42%;
-        left: 10%;
+        width: 50%;
+        top: 400px;
+        left: 20%;
+        transform: translateX(-20%);
     }
-
-
+    
     #river {
-        width: 60%;
-        top: 63%;
-        left: 33%;
+        width: 50%;
+        top: 600px;
+        left: 80%;
+        transform: translateX(-80%);
+    }
+    
+    #s-leaf {
+        bottom: 40px;
+        right: 50px;
     }
 
-    #s-leaf {
-        bottom: 3%;
-        right: 3%;
-    }
+
+    #second-content-p1 {
+        width: 95%;
+        margin: auto;
+        z-index: 2;
+    } 
 
     #third-content {
         background-position-y: 70%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #second-content {
+        background-color: #DCF5C8;
+        padding-bottom: 500px;
+    }
+
+    #b-leaf {
+        width: 65%;
+        opacity: 0.85;
+        top: 30px;
+        left: 30px;
+    }
+    
+    #waterfall {
+        width: 50%;
+        top: 450px;
+        left: 20%;
+        transform: translateX(-20%);
+    }
+    
+    #river {
+        width: 50%;
+        top: 630px;
+        left: 80%;
+        transform: translateX(-80%);
+    }
+    
+    #s-leaf {
+        width: 38%;
+        bottom: 45px;
+        right: 30px;
     }
 }
 
@@ -436,6 +547,7 @@ body {
 
     #second-content {
         height: auto;
+        padding-bottom: 70px;
     }
 
     #second-content-p1 {
@@ -443,14 +555,18 @@ body {
         margin: auto;
         z-index: 2;
     }
-
-    #s-leaf {
-        bottom: 7%;
-        right: 0%;
-    }
     
-    #s-leaf img {
-        width: 40%;
+    #s-leaf {
+        bottom: 120px;
+        width: 43%;
+    }
+
+    #s-leaf i {
+        right: -40%;
+    }
+
+    #icon-info_2 {
+        font-size: 25px;
     }
 
     #third-content {
@@ -487,26 +603,12 @@ body {
     }
 
     #s-leaf {
-        bottom: 8%;
-        right: 0%;
-    }
-    
-    #s-leaf img {
-        width: 30%;
-        left: 50%;
+        bottom: 130px;
+        width: 43%;
     }
 }
-
-@media screen and (min-width: 2570px) {
-
-}
-
 
 @media screen and (min-width: 3800px) {
-    #second-content {
-        height: 65vh;
-    }
-
     #second-content-h1 {
         margin: auto;
     }
