@@ -40,12 +40,12 @@ body {
 }
 
 #first-content {
-    background-image: url(../images/home/Vector_1.png);
+    background-image: url(../images/home/hindutemplebg.png);
     background-repeat: no-repeat;
-    background-size: 57%;
-    background-position: 75% 69%;
+    background-size: 90%;
+    background-position: 70% 90%;
+    min-height: 800px;
     width: 80%;
-    height: 100vh;
     margin-top: 80px;
 }
 
@@ -74,7 +74,7 @@ body {
 
 #first-content-bg1 {
     width: 60%;
-    top: 9%;
+    top: 10%;
     right: 1%;
     z-index: -1;
 }
@@ -182,10 +182,6 @@ body {
 
 
 @media screen and (min-width : 2000px) {
-    #first-content {
-        height: 85vh;
-        background: none;
-    }
 
     #second-content {
         height: 150vh;
@@ -210,9 +206,7 @@ body {
 }
 
 @media screen and (min-width : 3600px) {
-    #first-content {
-        height: 50vh;
-    }
+
 
     #second-content {
         height: 80vh;
@@ -238,7 +232,7 @@ body {
 
 @media screen and (max-width: 1200px) {
     #first-content {
-        background-position: 75% 57%;
+        background-position: 75% 90%;
     }
 
     #second-content {
@@ -278,6 +272,11 @@ body {
 }
 
 @media screen and (max-width: 1149px) {
+    #first-content {
+        background: none;
+        height: 78vh;
+    }
+
     #first-content-bg3 {
         top: 80%;
     }
@@ -291,7 +290,6 @@ body {
 @media screen and (max-width: 993px) {
     #first-content {
         background: none;
-        height: 75vh;
     }
 
     #first-content-bg1 {
@@ -348,6 +346,13 @@ body {
     #first-content {
         margin-top: 50px;
         height: auto;
+    }
+
+    #first-content-bg1 {
+        width: 65%;
+        top: 25%;
+        right: -5%;
+        opacity: 0.7;
     }
 
     #first-content-bg2 {
@@ -493,17 +498,11 @@ body {
 }
 
 @media screen and (min-width: 2570px) {
-    #first-content {
-        height: 45vh;
-    }
+
 }
 
 
 @media screen and (min-width: 3800px) {
-    #first-content {
-        height: 40vh;
-    }
-
     #second-content {
         height: 65vh;
     }

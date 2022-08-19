@@ -14,11 +14,11 @@ body, html {
   }
   .prev-btn{
     /* background-image: linear-gradient(to right, rgba(191, 77, 42, 0.7) , rgba(63, 201, 50,0.7)); */
-    background-image: linear-gradient(to right, rgba(148, 208, 186, 0.7),  rgba(116, 145, 75, 0.7));
+    background-image: linear-gradient(to right, rgba(177, 175, 54, 0.7) , rgba(246, 220, 23, 0.7));
 }
 
 .next-btn{
-    background-image: linear-gradient(to right, rgba(177, 175, 54, 0.7) , rgba(246, 220, 23, 0.7));
+    background-image: linear-gradient(to right, rgba(148, 208, 186, 0.7),  rgba(116, 145, 75, 0.7));
 }
   .bg1{
     background-image: url(../images/mountain_penang/background.png);

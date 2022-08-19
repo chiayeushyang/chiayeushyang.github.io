@@ -156,19 +156,19 @@ div p{
   transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 #shop1{
-  background-image: url(../images/mountain_genting/zok/Shop1.jpg);
+  background-image: url(../images/mountain_cameron/hotpot/Shop1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
 }
 #shop2{
-  background-image: url(../images/mountain_genting/fish/Shop2.jpg);
+  background-image: url(../images/mountain_cameron/miso/Shop2.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #shop3{
-  background-image: url(../images/mountain_genting/daxia/Shop3.jpg);
+  background-image: url(../images/mountain_cameron/bkt/Shop3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
